@@ -2,31 +2,113 @@
 
 ## Esquema RNG 
 
-Para la codificación de los textos se ha creado un esquema específico para la codificación de la obra de Garcilaso, disponible desde el mismo sitio: <https://pronapoli.com/ediciondigital/pronapoli.rng> así como desde este repositorio en GitHub.  También está disponible en este mismo repositorio la ODD, bajo el nombre pronapoli_ODD.xml.
+Para la codificación de los textos que comprenden la edición *Soledad Amena* se ha creado un esquema específico `pronapoli.rng`, disponible desde el sitio: <https://pronapoli.com/ediciondigital/pronapoli.rng> así como desde este repositorio en GitHub.  También está disponible en este mismo repositorio la ODD, bajo el nombre `pronapoli_ODD.xml`.
 
-## ENCABEZADO
+## Encabezado
 
 El encabezado del documento TEI, para el que se utiliza el elemento `teiHeader`, siempre es el mismo.  
 
 Los encabezados de todas las composiciones poéticas tienen la misma información, varía sólo quien ha preparado la edición filológica y la edición digital. Debe seguirse la plantilla (template.xml) y rellenar las informaciones. 
 
 ### >> fileDesc >> titleStmt 
-Título en dos idiomas 
-Autores y editores con un `@corresp` hacia el archivo de `global.xml` 
-respStmt: señalamos los editores de la parte filológica y digital. Se indica en español “es” y en inglés “en” repitiendo las informaciones. 
->> fileDesc >> publicationStmt
+
+- Título en dos idiomas 
+- Autores y editores con un `@corresp` hacia el archivo de `global.xml` 
+- `respStmt`: señalamos los editores de la parte filológica y digital. Se indica en español “es” y en inglés “en” repitiendo las informaciones.
+
+### >> fileDesc >> publicationStmt
+
 Aparecen las informaciones sobre la UdG, URL, y licencia. 
->> /TEI/teiHeader/profileDesc
-Se señalan las diferentes lenguas utilizadas en los archivos XML-TEI. Los valores deben añadirse al esquema. 
->> /TEI/teiHeader/encodingDesc 
-projectDesc: Falta una breve descripción sobre el proyecto 
-editorialDecl: enlace a esta documentación técnica del proyecto así como de los criterios de edición. 
-schemaRef: enlace al esquema rng y la ODD. 
->> /TEI/teiHeader/revisionDesc
+
+### >> /TEI/teiHeader/profileDesc
+Se señalan las diferentes lenguas utilizadas en los archivos XML-TEI. 
+
+### >> /TEI/teiHeader/encodingDesc 
+
+- `projectDesc`: Breve descripción sobre el proyecto 
+- `editorialDecl`: enlace a esta documentación técnica del proyecto así como de los criterios de edición. 
+- `schemaRef`: enlace al esquema rng y la ODD.
+
+## >> /TEI/teiHeader/revisionDesc
+
 Serie de intervenciones en el archivo digital. 
-ESTRUCTURA CUERPO 
-La parte general que corresponde al elemento <body> se estructura de la siguiente manera: 
->> /TEI/text/body
+
+### Ejemplo de `teiHeader`
+
+
+```xml
+ <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="es">Canción V</title>
+            <title xml:lang="en">Canción V</title>
+            <author corresp="#GdV">Garcilaso de la Vega</author>
+
+            <respStmt xml:lang="es" resp="editor_filologico">
+               <resp>Edición filológica preparada por</resp>
+               <persName corresp="#EF" ref="https://pronapoli.com/equipo/eugenia-fosalba/"
+                  >XX</persName>
+            </respStmt>
+         </titleStmt>
+
+         <publicationStmt>
+            <publisher>Universitat de Girona</publisher>
+            <address>
+               <addrLine>Edifici Sant Domènec I</addrLine>
+               <addrLine> Pl. Ferrater i Mora, 1</addrLine>
+               <addrLine>17004 - Girona</addrLine>
+            </address>
+            <idno type="general">https://pronapoli.com/</idno>
+            <idno type="url_poema">https://pronapoli.com/ediciondigital/oda4</idno>
+            <availability status="restricted">
+               <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"
+                  >http://creativecommons.org/licenses/by-nc-nd/3.0/es/</licence>
+            </availability>
+         </publicationStmt>
+
+         <sourceDesc xml:lang="en">
+            <!-- in fieri -->
+            <p/>
+         </sourceDesc>
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="en">Inglés</language>
+            <language ident="es">Español</language>
+            <language ident="lat">Latín</language>
+            <language ident="cat">Catalán</language>
+         </langUsage>
+      </profileDesc>
+
+      <encodingDesc>
+         <projectDesc>
+            <p>Proyecto Pronapoli... </p>
+            <!-- SAT: Breve descripción del proyecto. -->
+         </projectDesc>
+         <editorialDecl>
+            <p><!-- SAT: enlazar con la documentación técnica del proyecto. --></p>
+         </editorialDecl>
+         <schemaRef url="https://pronapoli.com/edicion/pronapoli.rng"/>
+         <!-- SAT: comprobar -->
+      </encodingDesc>
+
+
+      <revisionDesc>
+         <change resp="#SAT"><date when="2024-05-06"/>Creación del documento XML-TEI.</change>
+         <change resp="#SAT"><date when="2024-05"/>Codificación documento XML-TEI.</change>
+      </revisionDesc>
+
+   </teiHeader>
+```
+
+## ESTRUCTURA CUERPO 
+
+La parte general que corresponde al elemento `<body>` se estructura de la siguiente manera: 
+
+### >> /TEI/text/body
+
+```xml
 <div type="contexto">
 <div xml:lang="es">
 <p>(...)</p>
@@ -102,8 +184,10 @@ La parte general que corresponde al elemento <body> se estructura de la siguient
 			<bibl> items </bibl>
 </listBibl>
 	</div>
+```
 
-TEXTO DEL POEMA
+## TEXTO DEL POEMA
+
 El cuerpo del poema se codifica en la sección: div[@type= “poema”]	
 
 <head> y <title>, donde <title> lleva el identificador. Esta solución se adoptó para poder crear una nota separada y general al poema. 
