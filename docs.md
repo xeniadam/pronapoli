@@ -188,40 +188,48 @@ La parte general que corresponde al elemento `<body>` se estructura de la siguie
 
 ## TEXTO DEL POEMA
 
-El cuerpo del poema se codifica en la sección: div[@type= “poema”]	
+El cuerpo del poema se codifica en la sección: `div[@type= “poema”]`	
 
-<head> y <title>, donde <title> lleva el identificador. Esta solución se adoptó para poder crear una nota separada y general al poema. 
-<lg>: Toda la composición se incluye en un elemento <lg> que indica sólo la lengua del poema. 
-<head>: y dentro un <title> / título del poema con un identificador @xml:id, e.g. Od4_t = Oda 4, título:  
+- `<head>` y `<title>`, donde `<title>` lleva el identificador. Esta solución se adoptó para poder crear una nota separada y general al poema. 
+- `<lg>`: Toda la composición se incluye en un elemento `<lg>` que indica sólo la lengua del poema. 
+- `<head>`: y dentro un `<title>`, el título del poema con un identificador `@xml:id`, e.g. Od4_t = Oda 4, título:
+
+```xml
 <head>
 <title xml:id="Od4_t">Eiusdem ad Petrum Bembum</title>
 <linkGrp><link type="a_comentarios" xml:id="a_Od4_c1" corresp="#Od4_c1"/></linkGrp>
 </head>
-<lg xml:id="Od_4_1" type="estrofa" corresp=“#”>: cada estrofa va en un elemento <lg>, con un identificador (eg. Od_4_1 = Oda 4, verso 1), un atributo tipo “estrofa” y un @corresp que corresponde a la traducción.
-<l>: Cada verso va en un elemento <l>, seguido del número de verso @n, y un identificador @xml:id. Siempre separados por un _ para entenderlo mejor. 
-Racional de los identificadores: 
-Od_4_1_1 =  Oda 4, estrofa 1, verso 1 
-Od_4_3_9 = Oda 4, estrofa 3, verso 9
-linkGrp: dentro de los versos puede ir linkGrp donde incluimos las referencias externas a notas, loci similes, o comentarios. 
-TRADUCCIÓN
-La traducción se sitúa en una <div type="poema_traduccion">, al que se añade un identificador: 
-<div type="poema_traduccion" xml:id="Oda_4_trad">
-Racional del identificador genérico: Oda_4_trad = Oda 4 en traducción. 
-<lg>: engloba todo el poema y lleva solo un @xml:lang (es, lat). 
-<head>: contiene el título de la composición, con un identificador (igual que al original pero con _trad. E. g. Od4_t_trad = Título de la Oda 4 en traducción) y un @corresp al título que se traduce. 
-<lg type="estrofa"> cada estrofa se señala con un <lg> y un @type = “estrofa”, un identificador paralelo a la estrofa original, más _trad, y tres atributos más: @corresp, @n, y @select.  
-<lg type="estrofa" xml:id="Od_4_1_trad" corresp="#Od_4_3_11" n="3" select="1-4">
-@corresp: corresponde al número de estrofa en latín y al número del verso en el que comienza el enlace. 
-@n: se refiere al número de líneas a los que hace referencia a partir de la siguiente (es decir, si es del verso 13 al verso 16, serán 3 versos).
-@select: los números de líneas en donde debemos hacer highlight (esto responde más bien a una cuestión de visualización y salida web). 
-<l>: La traducción se realiza por estrofas, no por versos, así que en realidad los elementos <l> corresponden a toda la traducción de la estrofa. 
+```
 
-ANOTACIÓN PARATEXTUAL:
+- `<lg xml:id="Od_4_1" type="estrofa" corresp=“#”>`: cada estrofa va en un elemento `<lg>`, con un identificador (eg. Od_4_1 = Oda 4, verso 1), un atributo tipo “estrofa” y un `@corresp` que corresponde a la traducción.
+- `<l>`: Cada verso va en un elemento `<l>`, seguido del número de verso `@n`, y un identificador `@xml:id`. Siempre separados por un `_` para entenderlo mejor. 
+- Racional de los identificadores: 
+	Od_4_1_1 =  Oda 4, estrofa 1, verso 1 
+	Od_4_3_9 = Oda 4, estrofa 3, verso 9
+- `linkGrp`: dentro de los versos puede ir linkGrp donde incluimos las referencias externas a notas, loci similes, o comentarios.
+
+### TRADUCCIÓN
+
+- La traducción se sitúa en una `<div type="poema_traduccion">`, al que se añade un identificador: 
+`<div type="poema_traduccion" xml:id="Oda_4_trad">`
+- Racional del identificador genérico: Oda_4_trad = Oda 4 en traducción. 
+- `<lg>`: engloba todo el poema y lleva solo un `@xml:lang` (es, lat). 
+- `<head>`: contiene el título de la composición, con un identificador (igual que al original pero con `_trad`. E. g. Od4_t_trad = Título de la Oda 4 en traducción) y un `@corresp` al título que se traduce. 
+- `<lg type="estrofa">` cada estrofa se señala con un `<lg>` y un `@type = “estrofa”`, un identificador paralelo a la estrofa original, más `_trad`, y tres atributos más: `@corresp`, `@n`, y `@select`.  
+- `<lg type="estrofa" xml:id="Od_4_1_trad" corresp="#Od_4_3_11" n="3" select="1-4">`
+- `@corresp`: corresponde al número de estrofa en latín y al número del verso en el que comienza el enlace. 
+- `@n`: se refiere al número de líneas a los que hace referencia a partir de la siguiente (es decir, si es del verso 13 al verso 16, serán 3 versos).
+- `@select`: los números de líneas en donde debemos hacer highlight (esto responde más bien a una cuestión de visualización y salida web). 
+- `<l>`: La traducción se realiza por estrofas, no por versos, así que en realidad los elementos `<l>` corresponden a toda la traducción de la estrofa. 
+
+## ANOTACIÓN PARATEXTUAL:
 Hay tres niveles de anotación: 
-Notas generales de comprensión 
-Comentarios eruditos 
-Loci similes 
-Notas 
+
+- Notas generales de comprensión 
+- Comentarios eruditos 
+- Loci similes 
+
+### Notas 
 La sección div[@type=“notas”] se divide en elementos <note> con un @xml:id (e.g. Od4_n1 > Oda 4, nota 1), un número @n, y una correspondencia con el @corresp al ancla en el texto. A su vez esta tiene dos notas descendientes con un identificador @xml:id (e.g. Od4_n1_en, Oda 4, nota 1, inglés), y la lengua de la nota (xml:lang = en, es).  
 Las notas van encabezadas por un el enlace a los versos a los que hacen referencia que se transforman en un link: 
 Si hacen referencia a un solo verso: 
@@ -242,7 +250,8 @@ Si hay notas introductorias sin relación con el texto las codificamos así:
               	resp="#EF"> …</note>
 </note> 
 
-Comentarios 
+### Comentarios 
+
 Tiene la misma estructura que las notas generales. Se divide en elementos <note> con un @xml:id (e.g. Od4_c1 > Oda 4, comentario 1), un número, y una correspondencia con el @corresp al ancla en el texto. A su vez esta tiene dos notas descendientes con un identificador @xml:id (e.g. Od4_n1_en, Oda 4, nota 1, inglés) y la lengua del comentario (en, es).  
 Los comentarios van precedidos de un enlace a los versos a los que hacen referencia que se transforman en un link: 
 Si hacen referencia a un solo verso: 
@@ -259,7 +268,7 @@ Si hay comentarios introductorios sin relación con el texto las codificamos as�
               	resp="#EF"> …</note>
 </note> 
 
-Loci similes 
+### Loci similes 
 Por ahora, los loci similes, es decir, paralelismos con otros textos, sobretodo referencias o versos de clara inspiración horaciana se añaden en esta sección. Cada referencia se inscribe en un <note> con un identificador. 
 El racional de los identificadores es: 
 Od4_ls1 = Oda 4, locus simile 1 
@@ -274,7 +283,7 @@ Ejemplo:
 <note xml:id="Od1_ls43"><span type="link" from="#Od1XX" n="0">37</span> [texto]</note>
 <note xml:id="Od1_ls44"><span type="link" from="#Od1XX" n="0">37</span>[texto] </note>
 
-APARATO CRÍTICO
+## APARATO CRÍTICO
 La estructura general se hace a través de una serie de elementos <ab>; los títulos con <label>. 
 Cuando aparece el número del verso, se usa el sistema de <span type="link" from="#referencia_verso" n="0">18</span>. 
 De momento no se usan elementos <app> <lem> <rdg> porqué la estructura no es sistemática y hubiera sido mucho más complicado. 
