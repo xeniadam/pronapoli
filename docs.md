@@ -36,7 +36,7 @@ Por ahora en esta sección se remite a los criterios de edición generales y a e
 - `editorialDecl`: enlace a esta documentación técnica del proyecto así como de los criterios de edición. 
 - `schemaRef`: enlace al esquema rng y la ODD.
 
-## >> /TEI/teiHeader/revisionDesc
+### >> /TEI/teiHeader/revisionDesc
 
 Aparece la serie de intervenciones en el archivo digital (creación, codificación, revisiones). 
 
@@ -260,19 +260,38 @@ Aquí un ejemplo de un grupo de enlaces de un verso hacia sus correspondientes n
 </l>
 ```
 
-### TRADUCCIÓN
+## TRADUCCIÓN DEL POEMA 
 
-- La traducción se sitúa en una `<div type="poema_traduccion">`, al que se añade un identificador: 
+- La traducción se sitúa en una `<div type="poema_traduccion">`, al que se añade un identificador que es el mismo que el del texto original pero seguido de `_trad` (traducción). Por ahora, sólo tienen traducción al español las composiciones latinas: 
 `<div type="poema_traduccion" xml:id="Oda_4_trad">`
 - Racional del identificador genérico: Oda_4_trad = Oda 4 en traducción. 
-- `<lg>`: engloba todo el poema y lleva solo un `@xml:lang` (es, lat). 
-- `<head>`: contiene el título de la composición, con un identificador (igual que al original pero con `_trad`. E. g. Od4_t_trad = Título de la Oda 4 en traducción) y un `@corresp` al título que se traduce. 
-- `<lg type="estrofa">` cada estrofa se señala con un `<lg>` y un `@type = “estrofa”`, un identificador paralelo a la estrofa original, más `_trad`, y tres atributos más: `@corresp`, `@n`, y `@select`.  
-- `<lg type="estrofa" xml:id="Od_4_1_trad" corresp="#Od_4_3_11" n="3" select="1-4">`
+- `<lg>`: engloba todo el poema y lleva solo un `@xml:lang` (`es`, `lat`). 
+- `<head>`: contiene el título de la composición, con un identificador (igual que al original pero con `_trad`. E. g. Od_1_t_trad = Título de la Oda 1 en traducción) y un `@corresp` al título que se traduce. 
+- `<lg type="estrofa">`: cada estrofa se señala con un `<lg>` y un `@type = “estrofa”`, un identificador paralelo a la estrofa original, más `_trad`, y tres atributos más: `@corresp`, `@n`, y `@select`.  
+- Ejemplo: `<lg type="estrofa" xml:id="Od_1_11_trad" corresp="#Od_1_11" n="3" select="1-4">`
 - `@corresp`: corresponde al número de estrofa en latín y al número del verso en el que comienza el enlace. 
 - `@n`: se refiere al número de líneas a los que hace referencia a partir de la siguiente (es decir, si es del verso 13 al verso 16, serán 3 versos).
 - `@select`: los números de líneas en donde debemos hacer highlight (esto responde más bien a una cuestión de visualización y salida web). 
-- `<l>`: La traducción se realiza por estrofas, no por versos, así que en realidad los elementos `<l>` corresponden a toda la traducción de la estrofa. 
+- `<l>`: La traducción se realiza por estrofas, no por versos, así que en realidad los elementos `<l>` corresponden a toda la traducción de la estrofa.
+
+Un ejemplo de la codificación de la traducción puede ser el siguiente extraído de la [Oda 1](https://pronapoli.com/ediciondigital/oda1): 
+
+```xml
+<div type="poema_traduccion" xml:id="Oda_1_trad">
+     <lg xml:lang="es">
+          <head xml:id="Od1_t_trad">Título</head>
+          <lg type="estrofa" xml:id="Od_1_1_trad" corresp="#Od_1_1" n="3" select="1-4">
+                  <l>Desterrado a un lugar frío, tras abandonar a esposa, hijos,
+                     hermanos y patria, yo, siervo de las Musas, he aprendido ahora, a la fuerza, a
+                     soportar la soberbia y las insolentes</l>
+          </lg>
+          <lg type="estrofa" xml:id="Od_1_2_trad" corresp="#Od_1_5" n="3" select="5-8">
+                  <l>costumbres de los bárbaros y a aliviar mis lamentos al ronco murmullo del
+                     Danubio, entre rocas que redoblaron mis voces y querellas.</l>
+           </lg>
+      </lg>
+</div>
+```
 
 ## ANOTACIÓN PARATEXTUAL:
 Hay tres niveles de anotación: 
