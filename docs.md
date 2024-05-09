@@ -12,26 +12,33 @@ El encabezado del documento TEI, para el que se utiliza el elemento `teiHeader`,
 
 ### >> fileDesc >> titleStmt 
 
-- Título en dos idiomas 
-- Autores y editores con un `@corresp` hacia el archivo de `global.xml` 
-- `respStmt`: señalamos los editores de la parte filológica y digital. Se indica en español “es” y en inglés “en” repitiendo las informaciones.
+- `title`: Título en español y en inglés. 
+- `author`: autor de la composición (por defecto, siempre Garcilaso de la Vega), con un  `@corresp` que apunta hacia el archivo de `global.xml`. 
+- `respStmt`: señalamos los editores de la parte filológica y digital. Puede indicarse en español “es” y en inglés “en” repitiendo las informaciones para las dos futuras versiones de la edición que se ofrecerá en ambos idiomas. Esta información aparece en el resultado HTML de la edición crítico en el recuadro de Créditos. 
 
 ### >> fileDesc >> publicationStmt
 
-Aparecen las informaciones sobre la UdG, URL, y licencia. 
+En esta sección aparecen las informaciones sobre la UdG, URL tanto del proyecto como del poema en concreto, y la licencia. 
+
+### >> /TEI/teiHeader/sourceDesc
+
+La descripción de los testimonios utilizados para la edición aparecen, de momento, en la sección general del proyecto "Nuestra edición". Esta sección en el futuro deberá incluir las siglas de los manuscritos, ediciones príncipes y otras ediciones posteriores utilizadas para el cotejo y se deberán relacionar con la sección de Aparato crítico. 
 
 ### >> /TEI/teiHeader/profileDesc
+
 Se señalan las diferentes lenguas utilizadas en los archivos XML-TEI. 
 
 ### >> /TEI/teiHeader/encodingDesc 
 
-- `projectDesc`: Breve descripción sobre el proyecto 
+Por ahora en esta sección se remite a los criterios de edición generales y a estas guías de codificación. En un futuro, se podrá añadir también los siguientes elementos: 
+
+- `projectDesc`: breve descripción sobre el proyecto 
 - `editorialDecl`: enlace a esta documentación técnica del proyecto así como de los criterios de edición. 
 - `schemaRef`: enlace al esquema rng y la ODD.
 
 ## >> /TEI/teiHeader/revisionDesc
 
-Serie de intervenciones en el archivo digital. 
+Aparece la serie de intervenciones en el archivo digital (creación, codificación, revisiones). 
 
 ### Ejemplo de `teiHeader`
 
