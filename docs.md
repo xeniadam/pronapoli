@@ -242,9 +242,22 @@ Aquí un ejemplo de la codificación de los versos originales correspondiente a 
         </lg>
 ```
 
-Otro elemento esencial que se codifica dentro de los versos son los renvíos a las Notas, Comentarios y Loci similes. En el resultado de la edición digital, puede verse como los versos tiene una pequeña flecha que despliega un menú. Este menú enlaza con la Nota, Comentario o Locus simile correspondiente. 
+Otro elemento esencial que se codifica dentro de los versos son los renvíos a las Notas, Comentarios y Loci similes. En el resultado de la edición digital, puede verse como los versos tiene una pequeña flecha que despliega un menú. Este menú enlaza con las Notas, Comentarios o Loci similes correspondientes. Al interno del mismo elemento `<l>` se añade un `<linkGrp>` con los diferentes enlaces `link`: 
 
-- `linkGrp`: dentro de los versos puede ir linkGrp donde incluimos las referencias externas a notas, loci similes, o comentarios.
+- `linkGrp`: dentro de los versos puede ir `<linkGrp>` donde incluimos las referencias externas a notas, loci similes, o comentarios.
+- `<link>`: Los enlaces pueden ser de tres tipos (`@type`) dependiendo si hacen referncia a las notas `type="a_notas"`, a los comentarios `type="a_comentarios"` y a los loci similes `type="a_ls"`. Además deben tener siempre un identificador (`@xml:id`) y una correspondencia con el identificador de la nota, comentario o loci similes (@corresp) para crear un camino de ida y vuelta. Los enlaces pueden repetirse, es decir, puede haber más de una referencia de un verso a múltiples notas. 
+
+Aquí un ejemplo de un grupo de enlaces de un verso hacia sus correspondientes notas, comentarios y loci similes (Canción 5): 
+
+```xml
+<l n="1" xml:id="cancion_5_1">Si de mi baja lira
+    <linkGrp>
+      <link type="a_notas" xml:id="a_cancion_5_n1" corresp="#cancion_5_n1"/>
+      <link type="a_comentarios" xml:id="a_cancion_5_c1" corresp="#cancion_5_c1"/>
+      <link type="a_ls" xml:id="a_cancion_5_ls1" corresp="#cancion_5_ls1"/>
+    </linkGrp>
+</l>
+```
 
 ### TRADUCCIÓN
 
