@@ -108,7 +108,17 @@ Aparece la serie de intervenciones en el archivo digital (creación, codificaci�
 
 ## ESTRUCTURA CUERPO 
 
-La parte general que corresponde al elemento `<body>` se estructura de la siguiente manera: 
+La parte general que corresponde al elemento `<body>` se estructura en nueve partes principales que básicamente corresponden a las diferentes secciones de la edición digital: 
+
+1. Contexto
+2. Métrica
+3. Notas
+4. Comentarios
+5. Loci similes
+6. Aparato crítico
+7. Texto del poema
+8. Traducción del poema
+9. Bibliografía 
 
 ### >> /TEI/text/body
 
