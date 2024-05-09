@@ -201,24 +201,49 @@ Cada una de estas secciones tiene una estructura muy similar, y se contempla que
 
 ## TEXTO DEL POEMA
 
-El cuerpo del poema se codifica en la sección: `div[@type= “poema”]`	
+El cuerpo del poema se codifica en la sección: `div[@type= “poema”]`. Conviene llevar a cabo en primer lugar esta codificación para otorgar a cada verso su identificación (así cuando los enlaces de las otras secciones hacia los versos serán más fáciles de completar). El poema tiene tres partes esenciales: 
 
-- `<head>` y `<title>`, donde `<title>` lleva el identificador. Esta solución se adoptó para poder crear una nota separada y general al poema. 
+- `<head>` y `<title>`: contiene el título que aparecerá en la sección del poema a la izquierda de la pantalla. `<title>` lleva un identificador y a veces puede llevar una nota separada y general al poema (revisar, pues existe un tipo especial de nota introductoria). 
 - `<lg>`: Toda la composición se incluye en un elemento `<lg>` que indica sólo la lengua del poema. 
-- `<head>`: y dentro un `<title>`, el título del poema con un identificador `@xml:id`, e.g. Od4_t = Oda 4, título:
 
 ```xml
 <head>
-<title xml:id="Od4_t">Eiusdem ad Petrum Bembum</title>
-<linkGrp><link type="a_comentarios" xml:id="a_Od4_c1" corresp="#Od4_c1"/></linkGrp>
+    <title xml:id="Od4_t">Eiusdem ad Petrum Bembum</title>
 </head>
 ```
 
-- `<lg xml:id="Od_4_1" type="estrofa" corresp=“#”>`: cada estrofa va en un elemento `<lg>`, con un identificador (eg. Od_4_1 = Oda 4, verso 1), un atributo tipo “estrofa” y un `@corresp` que corresponde a la traducción.
-- `<l>`: Cada verso va en un elemento `<l>`, seguido del número de verso `@n`, y un identificador `@xml:id`. Siempre separados por un `_` para entenderlo mejor. 
+- `<lg xml:id="id" type="estrofa" corresp=“#”>`: cada estrofa va contenida en un elemento `<lg>`, con un identificador (eg. Od_4_1 = Oda 4, verso 1), un atributo tipo “estrofa” y un `@corresp` que corresponde a la traducción. Hay poemas, como la Epístola a Boscán que no tienen estrofas, por consiguiente todo el poema se incluye dentro de la primera. 
+- `<l>`: Cada verso va en un elemento `<l>`, seguido del número de verso `@n`. Además, cada uno de los elementos `<l>`debe llegar un identificador `@xml:id` que debe crearse con el identificador del poema + el número de verso, separados por un guión bajo `_` . Esta solución es preferible a la de identificador poema + número estrofa + número verso, porqué es más intuitiva y más efectiva (debe solo añadirse el número de verso, sin tener que buscar a qué estrofa corresponde). 
 - Racional de los identificadores: 
-	Od_4_1_1 =  Oda 4, estrofa 1, verso 1 
-	Od_4_3_9 = Oda 4, estrofa 3, verso 9
+	Od_4_1 =  Oda 4, verso 1 
+	Od_4_9 = Oda 4, verso 9
+
+Aquí un ejemplo de la codificación de los versos originales correspondiente a la Canción V: 
+
+```xml
+ <lg xml:lang="lat">
+      <head>
+         <title xml:id="cancion_5_t">Canción V</title>
+      </head>
+
+      <lg type="estrofa">
+          <l n="1" xml:id="cancion_5_1">Si de mi baja lira </l>
+          <l n="2" xml:id="cancion_5_2">tanto pudiese el son que en un momento</l>
+          <l n="3" xml:id="cancion_5_3">aplacase la ira </l>
+          <l n="4" xml:id="cancion_5_4">del animoso viento </l>
+          <l n="5" xml:id="cancion_5_5">y la furia del mar y el movimiento,</l>
+       </lg>
+       <lg type="estrofa">
+           <l n="6" xml:id="cancion_5_6">y en ásperas montañas</l>
+           <l n="7" xml:id="cancion_5_7">con el süave canto enterneciese</l>
+           <l n="8" xml:id="cancion_5_8">las fieras alimañas, </l>
+           <l n="9" xml:id="cancion_5_9">los árboles moviese</l>
+           <l n="10" xml:id="cancion_5_10">y al son confusamente los trujiese:</l>
+        </lg>
+```
+
+Otro elemento esencial que se codifica dentro de los versos son los renvíos a las Notas, Comentarios y Loci similes. En el resultado de la edición digital, puede verse como los versos tiene una pequeña flecha que despliega un menú. Este menú enlaza con la Nota, Comentario o Locus simile correspondiente. 
+
 - `linkGrp`: dentro de los versos puede ir linkGrp donde incluimos las referencias externas a notas, loci similes, o comentarios.
 
 ### TRADUCCIÓN
