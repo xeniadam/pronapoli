@@ -371,42 +371,41 @@ Por ahora, los loci similes, es decir, paralelismos con otros textos, sobretodo 
 		- Od_4_ls4 = Oda 4, locus simile 4 
 
 En los locis similes, la nota va encabezada por el mismo sistema de `<span>` que enlaza con el texto del poema: 
-```
+
+```xml
 <span type="link" from="#Od_4_5" n="3">5-8</span>
 ```
 
 Aquí un ejemplo de un locus simile: 
 
-```
+```xml
 <note xml:id="Od1_ls43"><span type="link" from="#Od1XX" n="0">37</span> [texto]</note>
 <note xml:id="Od1_ls44"><span type="link" from="#Od1XX" n="0">37</span>[texto] </note>
 ```
 
 ## APARATO CRÍTICO
-La estructura general se hace a través de una serie de elementos <ab>; los títulos con <label>. 
-Cuando aparece el número del verso, se usa el sistema de <span type="link" from="#referencia_verso" n="0">18</span>. 
-De momento no se usan elementos <app> <lem> <rdg> porqué la estructura no es sistemática y hubiera sido mucho más complicado. 
-La primera palabra que suele hacer referencia al texto (que aparece al inicio del aparato crítico) se usa <ref type="texto_poema">. 
-Para todas las otras cursivas, de momento usamos <foreign> cuando son palabras en latín. 
+La estructura general se hace a través de una serie de elementos `<ab>`. A veces el aparato va precedido por una sección donde se listan los testimoinos utilizados, en cuyo caso lo marcamos, de momento, como si fuera una lista: 
 
-En la pestaña de Aparato crítico puede haber dos tipos de secciones: 
-Una propiamente de aparato crítico que señala lectura y variantes con los testimonios. 
-Por ejemplo: 74 pulchras V, pulcras Na Nb JR
-La codificación sería esta: 
-<ab resp="#JR">
-<span type="link" from="#Od_3_74" n="0">74</span>
-        <app>
-<lem>pulchras</lem> <wit>V</wit>
-</app>, 
-<app>
-              <rdg>pulcras</rdg> <wit>Na</wit> <wit>Nb</wit> 
-</app>
+```xml
+```
+
+Cuando aparece el número del verso, se usa el sistema de `<span type="link" from="#referencia_verso" n="0">00</span>`. Las composiciones en español presentan los aparatos críticos más simples y estandarizados (los de las Odas latina debe revisarse). Por norma general, codificamos el aparato crítico con el elemento `<app>` que incluye el lema o lectura crítica de la edición `<lem>` seguido, en el mismo nivel, de la o las diferentes variantes con el elemento `<rdg>`. Ambos elementos, tanto `<lem>`como `<rdg>`, suelen llevar la sigla del testimonio marcada con `<wit>`. Después del aparato, puede haber una nota explicativa. Aquí vemos un ejemplo de codificación de un aparato crítico extraído de la [Canción 5](https://pronapoli.com/ediciondigital/cancion5): 
+
+```xml
+<ab>
+    <span type="link" from="#cancion_5_17" n="0">17</span>
+    <app>
+        <lem>ruedas</lem>
+        <rdg>ruedes <wit>E</wit></rdg>
+    </app>
+    <note type="n_ApCrit">Tamayo de Vargas no entiende el plural de ruedas y
+     propone reducir la lectura a singular, aunque después no lo lleva a
+      cabo en su propia edición.</note>
 </ab>
-Una segunda, la más común, que contiene la referencia al texto y un comentario. 
-Se podrían utilizar otros elementos como: 
-<term> (términos en latín, prefijos, comentarios sobre las variantes) 
-<mentioned> para palabras citadas. 
-Sistema de referencias cruzadas: linkGrp, link 
+```
+Algunos aparatos críticos también presentan simples anotaciones a una forma léxica determinada. En estos casos no lo consideramos aparato crítico propiamente (`<app>`), sino una simple referencia al texto: `<ref type="texto_poema"></ref>`. 
+
+
 
 Al final del verso /TEI/text/body/div[@type=“poema”/lg/lg[@type=“estrofa”/l para poder aglutinar todos los comentarios en un dropmenu, se usa un grupo de links o anclas y cada una de ellas contiene uno o diversos elemento <link>. 
 
