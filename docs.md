@@ -1,14 +1,14 @@
 # Documentación técnica para la codificación de *Soledad Amena* 
 
+Las siguientes guías directrices explican la codificación para las diferentes composiciones poéticas de Garcilaso de la Vega, bajo el título *Soledad Amena*, accesible a través de la URL: https://pronapoli.com/ediciondigital/ 
+
 ## Esquema RNG 
 
-Para la codificación de los textos que comprenden la edición *Soledad Amena* se ha creado un esquema específico `pronapoli.rng`, disponible desde el sitio: <https://pronapoli.com/ediciondigital/pronapoli.rng> así como desde este repositorio en GitHub.  También está disponible en este mismo repositorio la ODD, bajo el nombre `pronapoli_ODD.xml`.
+Para la codificación de los textos que comprenden la edición *Soledad Amena* se ha creado un esquema específico `pronapoli.rng`, disponible desde el sitio: <https://pronapoli.com/ediciondigital/pronapoli.rng>, así como desde este repositorio en GitHub.  También está disponible en este mismo repositorio la ODD, bajo el nombre `pronapoli_ODD.xml`.
 
 ## Encabezado
 
-El encabezado del documento TEI, para el que se utiliza el elemento `teiHeader`, siempre es el mismo.  
-
-Los encabezados de todas las composiciones poéticas tienen la misma información, varía sólo quien ha preparado la edición filológica y la edición digital. Debe seguirse la plantilla (template.xml) y rellenar las informaciones. 
+El encabezado del documento TEI, para el que se utiliza el elemento `teiHeader`, siempre es el mismo y contiene las informaciones tanto del proyecto como de los editores de la composición. En principio, todos los encabezados tienen la misma información, varía sólo quien ha preparado la edición filológica y la edición digital. El esquema general se encuentra ya en la plantilla `template.xml` a partir del cual se recomienda empezar a trabajar.
 
 ### >> fileDesc >> titleStmt 
 
