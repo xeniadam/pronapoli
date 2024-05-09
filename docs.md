@@ -471,6 +471,21 @@ En el futuro, cada una de estas citas deberá ir dirigida, con su enlace, a una 
 - Para los textos clásicos, se usaría la [Persus Digital Library](http://www.perseus.tufts.edu/hopper/) apuntando siempre a la URI perenne del fragmento, la “Citation URI”. 
 - Para los autores italianos en lengua latina, se debería usar el portal [Poeti d’Italia in Lingua Latina](https://mizar.unive.it/poetiditalia/public/) 
 
+## Menciones de autoría 
+Ciertos elementos llevan el `@resp` para señalar la autoría de ese fragmento. Por lo general suelen ser notas, comentarios, loci similes, pero también en los párrafos del Contexto y la Métrica, por ejemplo:
+
+- `<p resp="#EF">`
+- `<note xml:id="cancion_5_n1_es" xml:lang="es" resp="#EF">`
+
+Estos iconos, a través de la XSLT, generan unos pequeños iconos con las iniciales del autor/editor. El código HTML es el siguiente: 
+
+```html
+<span class="tooltipx ttip infoicon2 popo" data-bs-toggle="popover"
+	data-bs-placement="top" data-bs-title="Nombre Apellidos"
+	data-bs-content="20/04/2024">NA<i class="tooltiptext">Nombre Apellidos</i>
+</span>
+```
+
 ## Nombres de persona: persName
 
 Debemos distinguir diferentes tipos de nombres de persona, cada uno deberá tener su identificador en el documento general. 
