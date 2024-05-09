@@ -430,9 +430,29 @@ Algunos aparatos críticos también presentan simples anotaciones a una forma l�
 	- Hacia los loci similes: @type="link_int_ls"
 
 ```xml
-<ref type="link_int_c" target="#Od1_c1_es">Comentario 1</ref>
-<ref type="link_int_n" target="#Od1_n12_es">Nota v. 26</ref>
-<ref type="link_int_ls" target="#Od1_ls31">Loci similes vv. 49-50</ref>
+<ref type="link_int_c" target="#Od_1_c1_es">Comentario v. 1</ref>
+<ref type="link_int_n" target="#Od_1_n1_es">Nota v. 1</ref>
+<ref type="link_int_ls" target="#Od_1_ls1">Loci similes v. 1</ref>
+```
+Cada uno de estos tipos de enlace genera, a través de la XSLT, un código HTML que tiene esta forma: 
+
+```html
+<a href="#Od_1_c1_es" data-eltab="comentarios">Comentario 1</a>
+<a href="#Od_1_n1_es" data-eltab="notas">Nota v. 1</a>
+<a href="#Od_1_c1_es" data-eltab="locisimiles">Loci similes v. 1</a>
+```
+
+Los valores en HTML para saltar de una página a otra son: 
+
+```html
+data-eltab="contexto"
+data-eltab="metrica"
+data-eltab="traduccion"
+data-eltab="locisimiles"
+data-eltab="notas"
+data-eltab="comentarios"
+data-eltab="aptcrit"
+data-eltab="bibliografia"
 ```
 
 4. Para los otros enlaces que apuntan a páginas externas al proyecto se usa `@type="link_externo"`:
