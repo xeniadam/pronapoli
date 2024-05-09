@@ -37,17 +37,16 @@ Serie de intervenciones en el archivo digital.
 
 
 ```xml
- <teiHeader>
+   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="es">Canción V</title>
-            <title xml:lang="en">Canción V</title>
+            <title xml:lang="es">Oda I</title>
+            <title xml:lang="en">Ode I</title>
             <author corresp="#GdV">Garcilaso de la Vega</author>
-
             <respStmt xml:lang="es" resp="editor_filologico">
                <resp>Edición filológica preparada por</resp>
-               <persName corresp="#EF" ref="https://pronapoli.com/equipo/eugenia-fosalba/"
-                  >XX</persName>
+               <persName corresp="#RL" ref="https://pronapoli.com/equipo/lokaj-rodney/">Rodney Lokaj
+               </persName>
             </respStmt>
          </titleStmt>
 
@@ -59,17 +58,19 @@ Serie de intervenciones en el archivo digital.
                <addrLine>17004 - Girona</addrLine>
             </address>
             <idno type="general">https://pronapoli.com/</idno>
-            <idno type="url_poema">https://pronapoli.com/ediciondigital/oda4</idno>
+            <idno type="url_poema">https://pronapoli.com/ediciondigital/oda1</idno>
             <availability status="restricted">
                <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"
                   >http://creativecommons.org/licenses/by-nc-nd/3.0/es/</licence>
             </availability>
          </publicationStmt>
 
-         <sourceDesc xml:lang="en">
-            <!-- in fieri -->
-            <p/>
+         <sourceDesc>
+            <p>Para la información de los testimonios utilizados para esta edición crítica digital,
+               se remite de momento, a la sección <ref type="link_interno"
+                  target="https://pronapoli.com/ediciondigital/">Nuestra edición</ref>. </p>
          </sourceDesc>
+
       </fileDesc>
 
       <profileDesc>
@@ -82,24 +83,20 @@ Serie de intervenciones en el archivo digital.
       </profileDesc>
 
       <encodingDesc>
-         <projectDesc>
-            <p>Proyecto Pronapoli... </p>
-            <!-- SAT: Breve descripción del proyecto. -->
-         </projectDesc>
-         <editorialDecl>
-            <p><!-- SAT: enlazar con la documentación técnica del proyecto. --></p>
-         </editorialDecl>
-         <schemaRef url="https://pronapoli.com/edicion/pronapoli.rng"/>
-         <!-- SAT: comprobar -->
+         <p>Los criterios de edición se especifican en la sección general <ref type="link_interno"
+               target="https://pronapoli.com/ediciondigital/">Nuestra edición</ref>, y los criterios
+            para codificación en XML-TEI del documento digital en <ref type="link_externo"
+               target="https://github.com/susannalles/pronapoli/blob/gh-pages/docs.md"/>.</p>
       </encodingDesc>
 
-
       <revisionDesc>
-         <change resp="#SAT"><date when="2024-05-06"/>Creación del documento XML-TEI.</change>
-         <change resp="#SAT"><date when="2024-05"/>Codificación documento XML-TEI.</change>
+         <change resp="#SAT"><date when="2024-02-17"/>Creación del documento XML-TEI.</change>
+         <change resp="#SAT"><date when="2024-02"/>Codificación documento XML-TEI.</change>
+         <change resp="#SAT"><date when="2024-05"/>Revisiones y homogeneización de la codificación
+            documento XML-TEI.</change>
       </revisionDesc>
 
-   </teiHeader>
+   </teiHeader> 
 ```
 
 ## ESTRUCTURA CUERPO 
