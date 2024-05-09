@@ -339,38 +339,48 @@ En el caso que haya notas introductorias sin relación con el texto las codifica
 </note> 
 ```
 
-### Comentarios 
+## COMENTARIOS 
 
-Tiene la misma estructura que las notas generales. Se divide en elementos <note> con un @xml:id (e.g. Od4_c1 > Oda 4, comentario 1), un número, y una correspondencia con el @corresp al ancla en el texto. A su vez esta tiene dos notas descendientes con un identificador @xml:id (e.g. Od4_n1_en, Oda 4, nota 1, inglés) y la lengua del comentario (en, es).  
-Los comentarios van precedidos de un enlace a los versos a los que hacen referencia que se transforman en un link: 
-Si hacen referencia a un solo verso: 
-<span type="link" from="#Od4829" n="0">29</span>
-Si hacen referencia a más de un verso: 
-<span type="link" from="#Od411" n="2">1–3</span>
-Racional de los identificadores: 
-Od414 = Oda 4, estrofa 1, verso 4
-Od428 = Oda 4, estrofa 2, verso 8
+Tiene la misma estructura que las notas generales. Se divide en elementos `<note>` con un `@xml:id` (e.g. Od_4_c1 > Oda 4, comentario 1), un número, y una correspondencia con el `@corresp` al ancla en el texto. A su vez esta tiene dos notas descendientes con un identificador `@xml:id` (e.g. Od_4_n1_en, Oda 4, nota 1, inglés) y la lengua del comentario (`en, es`).  
 
-Si hay comentarios introductorios sin relación con el texto las codificamos así: 
+Los comentarios, como las notas, van precedidos de un enlace a los versos a los que hacen referencia que se transforman en un link. Así si hace referencia a un solo verso, la codificación será: 
+
+```xml
+<span type="link" from="#cancion_5_1" n="0">1</span>
+```
+En cambio si hace referencia a más de un verso (en este caso se incluyen 9 versos) deberá ser: 
+
+```xml
+<span type="link" from="#cancion_5_1" n="9">1-10</span>
+```
+Este sistema de enlazar las notas a los versos es el mismo para los Comentarios y los Loci similes, y en cualquier caso que se quiera crear un enlace a los versos. 
+
+Si hay comentarios introductorios sin relación con el texto las codificamos así:
+
+```xml
 <note type="comentario_intro" n="2">
-   <note type="comentario_intro_es" xml:id="comentario_intro_n2" xml:lang="es"
-              	resp="#EF"> …</note>
+   <note type="comentario_intro_es" xml:id="comentario_intro_n2" xml:lang="es" resp="#EF"> …</note>
 </note> 
+```
 
-### Loci similes 
-Por ahora, los loci similes, es decir, paralelismos con otros textos, sobretodo referencias o versos de clara inspiración horaciana se añaden en esta sección. Cada referencia se inscribe en un <note> con un identificador. 
-El racional de los identificadores es: 
-Od4_ls1 = Oda 4, locus simile 1 
-Od4_ls4 = Oda 4, locus simile 4 
+## LOCI SIMILES 
 
-En los locis similes, la nota va seguida de un span que enlaza el loci similee con el texto del poema: 
-<span type="link" from="#Od425" n="3">5-8</span>
-From: Oda 4, estrofa 2, verso 5
-N: es el número de versos que debe contar. 
+Por ahora, los loci similes, es decir, paralelismos con otros textos, sobretodo referencias o versos de clara inspiración horaciana se añaden en esta sección solo en español (más adelante deberán crearse dos secciones para el inglés y el español). Cada referencia se inscribe en un `<note>` con un identificador. 
+- El racional de los identificadores es: 
+		- Od_4_ls1 = Oda 4, locus simile 1 
+		- Od_4_ls4 = Oda 4, locus simile 4 
 
-Ejemplo: 
+En los locis similes, la nota va encabezada por el mismo sistema de `<span>` que enlaza con el texto del poema: 
+```
+<span type="link" from="#Od_4_5" n="3">5-8</span>
+```
+
+Aquí un ejemplo de un locus simile: 
+
+```
 <note xml:id="Od1_ls43"><span type="link" from="#Od1XX" n="0">37</span> [texto]</note>
 <note xml:id="Od1_ls44"><span type="link" from="#Od1XX" n="0">37</span>[texto] </note>
+```
 
 ## APARATO CRÍTICO
 La estructura general se hace a través de una serie de elementos <ab>; los títulos con <label>. 
