@@ -494,11 +494,14 @@ Cuando el texto tiene cursivas en principio debe corresponder a uno de estos cas
 - `<mentioned>`: cuando se refiere a palabras o sintagmas del poema o al que se hace referencia dentro de la narrativa.  
 - `<term>`: cuando se refiere a una palabra, un término en latín, por ejemplo. 
 - `<hi type="italic">`: indica otras cursivas de difícil categorización. Se usará para casos como por ejemplo, “El niño de Venus” en que simplemente el editor quiere subrayar el término.
-- <foreign>: palabras en otros idiomas, como *locus amoenus*, *emendatio*, etc.
+- `<foreign>`: palabras en otros idiomas, como *locus amoenus*, *emendatio*, etc.
   
 
 ### Errores
 
 Para indicar los errores o dudas de codificación y que el equipo pueda verlo en el resultado y sean corregidos por los editores, se señala así para que después (a través de la xslt) aparezcan en rojo: 
 
-<hi style="error" select= “mensaje”>(5).</hi>
+```xml
+`<hi style="error" select= “mensaje”>(5).</hi>`
+```
+
