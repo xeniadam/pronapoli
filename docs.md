@@ -120,84 +120,83 @@ La parte general que corresponde al elemento `<body>` se estructura en nueve par
 8. Traducción del poema
 9. Bibliografía 
 
-### >> /TEI/text/body
+Cada una de estas secciones tiene una estructura muy similar, y se contempla que cada una se divida en dos partes para contener el texto en español y en inglés. De momento (mayo 2024), solo se ofrece la parte en español. El esquema general es el siguiente: 
 
 ```xml
-<div type="contexto">
-<div xml:lang="es">
-<p>(...)</p>
-</div>
-<div xml:lang="en">
-<p>(...)</p>
-</div>
-</div> 
+   <text>
+      <body>
+         <div type="contexto">
+            <div xml:lang="es">
+               <p/>
+               <p/>
+            </div>
+         </div>
 
-<div type="metrica">
-<div xml:lang="ee">
-<p>(...)</p>
-</div>
-<div xml:lang="en">
-<p>(...)</p>
-</div>
-</div>
+         <div type="metrica">
+            <div xml:lang="es">
+               <p/>
+               <p/>
+            </div>
+         </div>
 
-<div type="notas">
-<note xml:id="" n="" corresp="">
-		<note xml:id="" xml:lang="">
-(...)
-		</note>
-<note xml:id="" xml:lang="">
-(...)
-</note>
-</note>
-</div>
+         <div type="notas">
+            <note type="nota_intro" n="1">
+               <note type="nota_intro_es" xml:id="id" xml:lang="es"/>
+            </note>
+            <note xml:id="id" n="01" corresp="#">
+               <note xml:id="id" xml:lang="es" resp="#">
+         </div>
 
-<div type="comentarios">
-<note xml:id="" n="" corresp="">
-		<note xml:id="" xml:lang="">
-(...)
-		</note>
-<note xml:id="" xml:lang="">
-(...)
-</note>
-</note>
-</div>
+         <div type="comentarios">
+            <note type="comentario_intro" n="1">
+               <note type="comentario_intro_es" xml:id="id" xml:lang="es" resp="#"/>
+            </note>
+            <note xml:id="id" n="01" corresp="#">
+               <note xml:id="id" xml:lang="es" resp="#"/>
+            </note>
+         </div>
 
-<div type="loci_similes">
-<note xml:id="Od4_ls1"> (...)</note>
-</div>
+         <div type="loci_similes">
+            <note type="ls_intro"/>
+            <note xml:id="id" resp="#"/>
+         </div>
 
-<div type="ApCrit">
-<label>...</label>
-<ab> … </ab>
-</div>
+         <div type="ApCrit">
+            <ab>
+                <span type="link" from="#v" n="0">x</span>
+               <app>
+                  <lem>lema</lem>
+                  <rdg>variante <wit>testimonio</wit></rdg>
+                  <rdg>variante <wit>testimonio</wit></rdg>
+               </app>
+               <note type="n_ApCrit">Nota... </note>
+            </ab>
+         </div>
 
-<div type="poema" xml:id="">
-<lg xml:lang="lat">
-           <head><title xml:id="Od4_t">...</title></head>
-           <lg xml:id="" type="estrofa">
-              	<l n="" xml:id=""> (...) </l>
-(...)
-		</lg>
-(...)
-</lg>
-</div>
+         <div type="poema" xml:id="id">
+            <lg xml:lang="lat">
+               <head><title xml:id="cancion_5_t">Canción V</title></head>
+               <lg type="estrofa">
+                  <l n="1" xml:id="id"/>
+                  <l n="2" xml:id="id"/>
+               </lg>
+            </lg>
+         </div>
 
-<div type="poema_traduccion" xml:id="" xml:lang="es">
-	<head> (...) </head>
-	<lg type="estrofa" xml:id="" corresp="" n="" select="1-4">
-              	<l> (...) </l>
-	</lg>
-	<lg type="estrofa" xml:id="" corresp="" n="" select="1-4">
-              	<l> (...) </l>
-	</lg>
-(...)
-</div>
-<div type="bibliografia">
-        	<listBibl type="final">
-			<bibl> items </bibl>
-</listBibl>
-	</div>
+         <div type="poema_traduccion" xml:id="id">
+            <lg xml:lang="es">
+               <l/>
+            </lg>
+         </div>
+
+         <div type="bibliografia">
+            <listBibl type="final">
+               <bibl/>
+               <bibl/>
+            </listBibl>
+         </div>
+      </body>
+   </text>
 ```
 
 ## TEXTO DEL POEMA
