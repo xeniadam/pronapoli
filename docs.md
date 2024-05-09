@@ -453,33 +453,52 @@ Especialmente en los loci similes aparecen referencias con citas, lo marcaremos 
     <bibl type="canon">Hor. Carm. IV. 2. 13–22</bibl>
 </cit>
 ```
-Diferentes tipos de referencias bibliográficas: 
 
-Se añade el tipo genérico y la correspondencia con el identificación de la colección de Zotero, https://www.zotero.org/groups/5225301/Pronapoli:
+Existen diferentes tipos de referencias bibliográficas: 
+- Para la bibliografía secundaria, se usa el `@type="main"`. En el futuro, las bibliografías se crearán importando los items de la biblioteca de Zotero, https://www.zotero.org/groups/5225301/Pronapoli, pero en estos momentos (mayo 2024) todavía no se ha podido completar. La idea es que cada item llevará el ID generado en la colección de Zotero. 
 
 ```XML
 <bibl type="main" corresp="ZQCIPTZH">Czepiel (forthcoming)</bibl>
 ```
 
-Cuando son referencias canónicas de autores clásicos o italianos se usa el tipo “canon” y el enlace a una versión en línea del texto. 
-`<bibl type="canon">Virg. Aen. 4.66</bibl>`
+- Cuando son referencias canónicas o fuentes primarias de autores clásicos o italianos se usa el tipo “canon” `@type="canon"`:
+- 
+ ```XML 
+<bibl type="canon">Virg. Aen. 4.66</bibl>
+```
 
-2.1. Para los textos clásicos, se usa la Persus Digital Library http://www.perseus.tufts.edu/hopper/  Debe utilizarse siempre la URI perenne del fragmento, la “Citation URI”. 
-2.2. Para los italianos en lengua latina, el portal Poeti d’Italia in Lingua Latina 
+En el futuro, cada una de estas citas deberá ir dirigida, con su enlace, a una versión en línea del texto. 
+- Para los textos clásicos, se usaría la [Persus Digital Library](http://www.perseus.tufts.edu/hopper/) apuntando siempre a la URI perenne del fragmento, la “Citation URI”. 
+- Para los autores italianos en lengua latina, se debería usar el portal [Poeti d’Italia in Lingua Latina](https://mizar.unive.it/poetiditalia/public/) 
 
 ## Nombres de persona: persName
 
 Debemos distinguir diferentes tipos de nombres de persona, cada uno deberá tener su identificador en el documento general. 
-Personajes que aparecen en nuestra galería de autores: @corresp y el enlace. <persName corresp=“https://pronapoli.com/autor/pietro-bembo/”>Pietro Bembo</persName>
-¿Qué hacemos con los otros personajes? Ej. Ambrosio de Morales, María de Mendoza, etc. 
 
-## CURSIVAS 
+- Personajes que aparecen en nuestra galería de autores: `@corresp` y el enlace, ej. `<persName corresp=“https://pronapoli.com/autor/pietro-bembo/”>Pietro Bembo</persName>`
+- Para los otros personajes, y a elección del editor, se podrá apuntar a otros sitios, como la [Wikipedia](https://es.wikipedia.org/wiki/Wikipedia:Portada), [Dizionario Biografico degli Italiani](https://www.treccani.it/biografico/), etc. 
+
+## TIPOGRAFÍAS: 
+
+El elemento `<hi>`se podrá utilizar con los siguientes atributos de estilo `@style` en función de lo que se necesite para el marcado semántico y la salida web: 
+
+- `@style = "bold"`: negrita
+- `@style = "italic"`: cursiva (vid. Cursivas)
+- `@style = "error"`: errores o llamadas de atención que deja el editor digital para su posterior revisión.
+- `@style = "superscript"`: para los números superíndices.
+
+### Cursivas:
+
 Cuando el texto tiene cursivas en principio debe corresponder a uno de estos casos: 
-<mentioned>: cuando se refiere a palabras o sintagmas del poema o al que se hace referencia dentro de la narrativa.  
-<term>: cuando se refiere a una palabra, un término en latín, por ejemplo. 
-<hi>: indica otras cursivas de difícil categorización. Se usará para casos como por ejemplo, “El niño de Venus” en que simplemente el editor quiere subrayar el término.
-<foreign>: palabras en otros idiomas, como locus amoenus, emendatio, etc.  
-ERRORES
+
+- `<mentioned>`: cuando se refiere a palabras o sintagmas del poema o al que se hace referencia dentro de la narrativa.  
+- `<term>`: cuando se refiere a una palabra, un término en latín, por ejemplo. 
+- `<hi type="italic">`: indica otras cursivas de difícil categorización. Se usará para casos como por ejemplo, “El niño de Venus” en que simplemente el editor quiere subrayar el término.
+- <foreign>: palabras en otros idiomas, como *locus amoenus*, *emendatio*, etc.
+  
+
+### Errores
+
 Para indicar los errores o dudas de codificación y que el equipo pueda verlo en el resultado y sean corregidos por los editores, se señala así para que después (a través de la xslt) aparezcan en rojo: 
 
 <hi style="error" select= “mensaje”>(5).</hi>
