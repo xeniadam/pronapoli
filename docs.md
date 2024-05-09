@@ -293,33 +293,34 @@ Un ejemplo de la codificación de la traducción puede ser el siguiente extraíd
 </div>
 ```
 
-## ANOTACIÓN PARATEXTUAL:
-Hay tres niveles de anotación: 
+## CONTEXTO 
+En esta sección se describe el contexto histórico en la que se compuso el poema y la datación del mismo. 
 
-- Notas generales de comprensión 
-- Comentarios eruditos 
-- Loci similes 
+## MÉTRICA 
+En esta sección se encuentra una explicación sobre la métrica de cada composición poética. 
 
-### Notas 
-La sección div[@type=“notas”] se divide en elementos <note> con un @xml:id (e.g. Od4_n1 > Oda 4, nota 1), un número @n, y una correspondencia con el @corresp al ancla en el texto. A su vez esta tiene dos notas descendientes con un identificador @xml:id (e.g. Od4_n1_en, Oda 4, nota 1, inglés), y la lengua de la nota (xml:lang = en, es).  
-Las notas van encabezadas por un el enlace a los versos a los que hacen referencia que se transforman en un link: 
-Si hacen referencia a un solo verso: 
-<span type="link" from="#Od411" n="0">1</span>
-Si hacen referencia a más de un verso (en este caso se incluyen 4 versos): 
-<span type="link" from="#Od414" n="4">4–8</span>
-Racional de los identificadores: 
-Od414 = Oda 4, estrofa 1, verso 4
-Od428 = Oda 4, estrofa 2, verso 8
-Este marcado señalando un @n se ha adoptado para saber cuántas líneas deben iluminarse en la salida web: 
-<span type="link" from="#Od414" to="#Od4520" n="16">ll. 4–20</span>
-<span type="link" from="#Od411" n="0">1</span>
+# NOTAS 
+La sección `div[@type=“notas”]` se divide en elementos `<note>` con un `@xml:id` (e.g. Od4_n1 > Oda 4, nota 1), un número `@n`, y una correspondencia `@corresp` con el ancla al texto. A su vez esta tiene dos notas descendientes con un identificador `@xml:id` (e.g. Od4_n1_en, Oda 4, nota 1, inglés), y la lengua de la nota (`xml:lang = en, es`).  
 
-Si hay notas introductorias sin relación con el texto las codificamos así: 
+Las notas por lo general van encabezadas por el número de verso o versos al que hacen referencia, con el fin de poder crear un enlace a dichos versos utilizamos el elemento `<span>` con tres atributos: `@type="link"`, `@from` con el identificador del primer verso al que hace referencia, y un `@n` que señala el número de versos que deben iluminarse (sin contar el primero). Así si hace referencia a un solo verso, la codificación será: 
 
+```xml
+<span type="link" from="#cancion_5_1" n="0">1</span>
+```
+En cambio si hace referencia a más de un verso (en este caso se incluyen 9 versos) deberá ser: 
+
+```xml
+<span type="link" from="#cancion_5_1" n="9">1-10</span>
+```
+Este sistema de enlazar las notas a los versos es el mismo para los Comentarios y los Loci similes, y en cualquier caso que se quiera crear un enlace a los versos. 
+
+En el caso que haya notas introductorias sin relación con el texto las codificamos (es decir, sin un enlace dónde apuntar), las codificaremos con un `@type="nota_intro"`
+
+```xml
 <note type="nota_intro" n="2">
-         <note type="nota_intro_es" xml:id="comentario_intro_n2" xml:lang="es"
-              	resp="#EF"> …</note>
+     <note type="nota_intro_es" xml:id="comentario_intro_n2" xml:lang="es" resp="#EF"> …</note>
 </note> 
+```
 
 ### Comentarios 
 
