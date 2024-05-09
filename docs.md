@@ -299,8 +299,25 @@ En esta sección se describe el contexto histórico en la que se compuso el poem
 ## MÉTRICA 
 En esta sección se encuentra una explicación sobre la métrica de cada composición poética. 
 
-# NOTAS 
-La sección `div[@type=“notas”]` se divide en elementos `<note>` con un `@xml:id` (e.g. Od4_n1 > Oda 4, nota 1), un número `@n`, y una correspondencia `@corresp` con el ancla al texto. A su vez esta tiene dos notas descendientes con un identificador `@xml:id` (e.g. Od4_n1_en, Oda 4, nota 1, inglés), y la lengua de la nota (`xml:lang = en, es`).  
+## NOTAS 
+La sección `div[@type=“notas”]` se divide en elementos `<note>` con un `@xml:id` (e.g. Od4_n1 > Oda 4, nota 1), un número `@n`, y una correspondencia `@corresp` con el ancla al texto. A su vez esta tiene dos notas descendientes con un identificador `@xml:id` (e.g. Od4_n1_en, Oda 4, nota 1, inglés), y la lengua de la nota (`xml:lang = en, es`). He aquí un ejemplo de notas procedente de la Canción 5: 
+
+```xml
+<div type="notas">
+  <note xml:id="cancion_5_n1" n="01" corresp="#a_cancion_5_n1">
+        <note xml:id="cancion_5_n1_es" xml:lang="es" resp="#EF">
+          <span type="link" from="#cancion_5_1" n="0">1</span>
+                  <ref type="texto_poema">mi baja lira</ref>: frente a la lira épica de Clío,
+                  interpelada en la fuente de este pasaje (...).</note>
+            </note>
+
+            <note xml:id="cancion_5_n2" n="02" corresp="a_cancion_5_n2">
+               <note xml:id="cancion_5_n2_es" xml:lang="es" resp="#EF">
+                 <span type="link" from="#cancion_5_1" n="9">1-10</span> En los versos de
+                    Garcilaso, como (...)</note>
+            </note>
+</div>
+```
 
 Las notas por lo general van encabezadas por el número de verso o versos al que hacen referencia, con el fin de poder crear un enlace a dichos versos utilizamos el elemento `<span>` con tres atributos: `@type="link"`, `@from` con el identificador del primer verso al que hace referencia, y un `@n` que señala el número de versos que deben iluminarse (sin contar el primero). Así si hace referencia a un solo verso, la codificación será: 
 
