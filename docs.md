@@ -259,6 +259,10 @@ Aquí un ejemplo de un grupo de enlaces de un verso hacia sus correspondientes n
     </linkGrp>
 </l>
 ```
+- Racional de los identificadores: 
+	- a_Od_4_n9: ancla Oda 4 a la nota 9
+ 	- a_Od_4_c7: ancla Oda 4 al comentario 7
+	- a_Od_4_ls12: ancla Oda 4 al locus simile 12 
 
 ## TRADUCCIÓN DEL POEMA 
 
@@ -403,68 +407,73 @@ Cuando aparece el número del verso, se usa el sistema de `<span type="link" fro
       cabo en su propia edición.</note>
 </ab>
 ```
-Algunos aparatos críticos también presentan simples anotaciones a una forma léxica determinada. En estos casos no lo consideramos aparato crítico propiamente (`<app>`), sino una simple referencia al texto: `<ref type="texto_poema"></ref>`. 
 
+Algunos aparatos críticos también presentan simples anotaciones a una forma léxica determinada. En estos casos no lo consideramos aparato crítico propiamente (`<app>`), sino una simple referencia al texto: `<ref type="texto_poema"></ref>` (vid. infra). 
 
+## ENLACES O REFERENCIAS INTERNOS
 
-Al final del verso /TEI/text/body/div[@type=“poema”/lg/lg[@type=“estrofa”/l para poder aglutinar todos los comentarios en un dropmenu, se usa un grupo de links o anclas y cada una de ellas contiene uno o diversos elemento <link>. 
+1. Cualquier referencia al texto del poema se hace con el elemento `<ref>`: 
 
-<linkGrp>
-<link type="a_notas" xml:id="a_Od4_n9"corresp="#Od4_n9"/>
-<link type="a_comentarios" xml:id="a_Od4_c7" corresp="#Od4_c7"/>
-<link type="a_ls" xml:id="a_Od4_ls12" corresp="#Od4_ls12"/>
-</linkGrp>
-
-Racional de los identificadores: 
-a_Od4_n9: ancla Oda 4 a la nota 9
-a_Od4_c7: ancla Oda 4 al comentario 7
-a_Od4_ls12: ancla Oda 4 al locus simile 12 
-ENLACES O REFERENCIAS INTERNOS
-
-Cualquier cita al texto del poema se hace con el elemento <ref>: 
-
+```xml
 <ref type="texto_poema">non animum pigeat patere</ref>
+```
 
-Todo enlace que sea interno a la página de Pronapoli, por ejemplo a Academias o Equipo, debe llevar el @type “link_int”: 
-<ref type="link_interno" target="#Od1_ls9">15-17</ref>
+2. Todo enlace que sea interno a la página de Pronapoli, por ejemplo a Academias o Equipo, debe llevar el `@type “link_int”`: 
 
-Si es un enlace al interno de la edición crítica que salta de tab debe especificarse: 
-Hacia los comentarios: @type="link_int_c"
-Hacia las notas: @type="link_int_n"
-Hacia los loci similes: @type="link_int_ls"
+```xml
+<ref type="link_interno" target="#Od_1_ls9">15-17</ref>
+```
 
+3. Si es un enlace al interno de la edición crítica que salta de tab debe especificarse: 
+	- Hacia los comentarios: @type="link_int_c"
+	- Hacia las notas: @type="link_int_n"
+	- Hacia los loci similes: @type="link_int_ls"
+
+```xml
 <ref type="link_int_c" target="#Od1_c1_es">Comentario 1</ref>
 <ref type="link_int_n" target="#Od1_n12_es">Nota v. 26</ref>
 <ref type="link_int_ls" target="#Od1_ls31">Loci similes vv. 49-50</ref>
+```
 
-Para los otros enlaces, se usa este:
+4. Para los otros enlaces que apuntan a páginas externas al proyecto se usa `@type="link_externo"`:
+
+```xml
 <ref type="link_externo" target="http://etc.">texto</ref>
+```
 
-Citas 
+## CITAS BIBLIOGRÁFICAS
 
 Cit > quote > bibl 
 Especialmente en los loci similes aparecen referencias con citas, lo marcaremos así: 
-<cit>
-<quote xml:lang="lat">"seu deos regesque canit […] sive […] pugilemve equomve / dicit […] flebili sponsae iuvenemve raptum / plorat"</quote>
-            <bibl type="canon">Hor. Carm. IV. 2. 13–22</bibl>
-</cit>
 
+```XML
+<cit>
+    <quote xml:lang="lat">"seu deos regesque canit […] sive […] pugilemve equomve
+     / dicit […] flebili sponsae iuvenemve raptum / plorat"</quote>
+    <bibl type="canon">Hor. Carm. IV. 2. 13–22</bibl>
+</cit>
+```
 Diferentes tipos de referencias bibliográficas: 
 
-Se añade el tipo genérico y la correspondencia con el identificación de la colección de Zotero, https://www.zotero.org/groups/5225301/pronapoli 
+Se añade el tipo genérico y la correspondencia con el identificación de la colección de Zotero, https://www.zotero.org/groups/5225301/Pronapoli:
+
+```XML
 <bibl type="main" corresp="ZQCIPTZH">Czepiel (forthcoming)</bibl>
+```
 
 Cuando son referencias canónicas de autores clásicos o italianos se usa el tipo “canon” y el enlace a una versión en línea del texto. 
-<bibl type="canon">Virg. Aen. 4.66</bibl> 
+`<bibl type="canon">Virg. Aen. 4.66</bibl>`
+
 2.1. Para los textos clásicos, se usa la Persus Digital Library http://www.perseus.tufts.edu/hopper/  Debe utilizarse siempre la URI perenne del fragmento, la “Citation URI”. 
 2.2. Para los italianos en lengua latina, el portal Poeti d’Italia in Lingua Latina 
-Nombres de persona: persName
+
+## Nombres de persona: persName
 
 Debemos distinguir diferentes tipos de nombres de persona, cada uno deberá tener su identificador en el documento general. 
 Personajes que aparecen en nuestra galería de autores: @corresp y el enlace. <persName corresp=“https://pronapoli.com/autor/pietro-bembo/”>Pietro Bembo</persName>
 ¿Qué hacemos con los otros personajes? Ej. Ambrosio de Morales, María de Mendoza, etc. 
 
-CURSIVAS 
+## CURSIVAS 
 Cuando el texto tiene cursivas en principio debe corresponder a uno de estos casos: 
 <mentioned>: cuando se refiere a palabras o sintagmas del poema o al que se hace referencia dentro de la narrativa.  
 <term>: cuando se refiere a una palabra, un término en latín, por ejemplo. 
