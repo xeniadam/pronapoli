@@ -391,6 +391,23 @@ Aquí un ejemplo de un locus simile:
 La estructura general se hace a través de una serie de elementos `<ab>`. A veces el aparato va precedido por una sección donde se listan los testimoinos utilizados, en cuyo caso lo marcamos, de momento, como si fuera una lista: 
 
 ```xml
+<ab>
+    <span type="link" from="#xx_00" n="0">00</span>
+    <app>
+        <lem>lema</lem>
+        <rdg>variante <wit>testimoino</wit></rdg>
+    </app>
+    <note type="n_ApCrit">Nota explicativa</note>
+</ab>
+
+<ab>
+    <span type="link" from="#xx_00" n="0">00</span>
+    <app>
+        <lem>lema</lem>
+        <rdg>variante <wit>testimoino</wit></rdg>
+    </app>
+    <note type="n_ApCrit">Nota explicativa</note>
+</ab>
 ```
 
 Cuando aparece el número del verso, se usa el sistema de `<span type="link" from="#referencia_verso" n="0">00</span>`. Las composiciones en español presentan los aparatos críticos más simples y estandarizados (los de las Odas latina debe revisarse). Por norma general, codificamos el aparato crítico con el elemento `<app>` que incluye el lema o lectura crítica de la edición `<lem>` seguido, en el mismo nivel, de la o las diferentes variantes con el elemento `<rdg>`. Ambos elementos, tanto `<lem>`como `<rdg>`, suelen llevar la sigla del testimonio marcada con `<wit>`. Después del aparato, puede haber una nota explicativa. Aquí vemos un ejemplo de codificación de un aparato crítico extraído de la [Canción 5](https://pronapoli.com/ediciondigital/cancion5): 
