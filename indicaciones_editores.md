@@ -51,7 +51,7 @@ Editores: Revisad que todos los colores aparezcan correctamente (azul para citas
 
 ## Aparto crítico 
 
-El modelo a seguir es el de la [Elegía II](https://pronapoli.com/ediciondigital/elegia2). Primero se indica el término o lema (que aparece en turquesa) seguido de la variante y de los testimoinos que incluyen esa variante. En una línea diferente se incluye cualquier tipo de nota explicativa ya sea sobre esa variante, sobre otros testimonios, la justificación del editor, etc. 
+El modelo a seguir es el de la [Elegía II](https://pronapoli.com/ediciondigital/elegia2). Primero se indica el término o lema (que aparece en turquesa) seguido de la variante y de los testimonios que incluyen esa variante. En una línea diferente se incluye cualquier tipo de nota explicativa ya sea sobre esa variante, sobre otros testimonios, la justificación del editor, etc. 
 
 ```txt
 número de verso + lema + variantes + testimonios 
