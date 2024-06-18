@@ -1,4 +1,4 @@
-[Español](#Indicaciones) | [English](https://github.com/susannalles/pronapoli/blob/gh-pages/indicaciones_editores.md#guidelines-for-editors)
+[Español](https://github.com/susannalles/pronapoli/blob/gh-pages/indicaciones_editores.md#indicaciones-para-los-editores) | [English](https://github.com/susannalles/pronapoli/blob/gh-pages/indicaciones_editores.md#guidelines-for-editors)
 
 # <a id="Indicaciones">Indicaciones para los editores</a>
 
