@@ -1,4 +1,6 @@
-# Indicaciones para los editores 
+[Español](#Indicaciones) | [English](#Guidelines)
+
+# <a id="Indicaciones">Indicaciones para los editores</a>
 
 Cada editor debe ser responsable de revisar con mucha antención la versión web de la composición que ha editado. Esta revisión es tan crucial como cuando os mandan las primeras pruebas de maquetación. El texto nunca se revisa lo sufiente. Para llevar a cabo estas revisiones y también para faciliatar la codificación posterior de los textos, es conveniente que la redacción se adapte a una serie de convenciones. 
 
@@ -74,4 +76,6 @@ Em la Composición <http//enlace>, sección X, Nota VV. 51-51: donde dice "bla b
 En la Canción V, https://pronapoli.com/ediciondigital/cancion5, sección Notas 61-62: donde dice "de la tierra al sembrarla" debe decur "del cielo a la tierra".
 En la Oda II, https://pronapoli.com/ediciondigital/oda2, sección Contexto, 2 párrafo: donde dice "un expediente" debe decir "un experimento".  
 ```
+
+# <a id="Guidelines">Guidelines for Editors</a>
 
