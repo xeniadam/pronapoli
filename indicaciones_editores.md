@@ -2,7 +2,7 @@
 
 Cada editor debe ser responsable de revisar con mucha antención la versión web de la composición que ha editado. Esta revisión es tan crucial como cuando os mandan las primeras pruebas de maquetación. El texto nunca se revisa lo sufiente. Para llevar a cabo estas revisiones y también para faciliatar la codificación posterior de los textos, es conveniente que la redacción se adapte a una serie de convenciones. 
 
-Recordad que la edición es una versión beta, así que agradeceríamos también cualquier idea que pueda facilitar la comprensión y navegación de la edición digital, así como a su mejora en su versión web. 
+Recordad que la edición es una versión beta, así que agradeceríamos también cualquier idea que pueda facilitar la comprensión y navegación de la edición digital, así como a su mejora en su diseño web. 
 
 Sería interesante que los editores tuvieran en mente la codificación en XML-TEI que se lleva a cabo de sus textos <https://github.com/susannalles/pronapoli/blob/gh-pages/docs.md>. 
 
