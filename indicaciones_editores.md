@@ -76,6 +76,85 @@ Em la Composición <http//enlace>, sección X, Nota VV. 51-51: donde dice "bla b
 En la Canción V, https://pronapoli.com/ediciondigital/cancion5, sección Notas 61-62: donde dice "de la tierra al sembrarla" debe decur "del cielo a la tierra".
 En la Oda II, https://pronapoli.com/ediciondigital/oda2, sección Contexto, 2 párrafo: donde dice "un expediente" debe decir "un experimento".  
 ```
+Cualquier duda que os pudiera surgie, podéis escribirnos a [Eugenia(mailto:eugeniafosalba@gmail.com)] or y [Susanna](mailto:susannalles@gmail.com).
 
 # <a id="Guidelines">Guidelines for Editors</a>
+
+Each editor must be responsible for carefully reviewing the web version of the composition they have edited. This review is as crucial as when you receive the first layout proofs. The text is never reviewed enough! To carry out these reviews and also to facilitate the subsequent encoding of the texts, it is advisable that the writing adapts to a series of conventions.
+
+Remember that the edition is a beta version, so we would also appreciate any ideas that could facilitate the understanding and navigation of the digital edition, as well as its improvement in web design.
+
+It would be interesting for the editors to keep in mind the XML-TEI encoding that is applied to their texts: <https://github.com/susannalles/pronapoli/blob/gh-pages/docs.md>.
+
+## The Poem
+
+Poems always appears on the left side of the screen, usually without stanza separation, and with all the line numbers indicated. In principle, there are no different tabulations based on the number or type of line.
+
+Each line may contain a small icon where references to Notes, Comments, and Loci Similes appear, if there are any.
+
+![Dropdown menu with links to Notes, Comments and Loci similes](img/001.png)
+
+## Notes, Comments, Loci Similes
+
+Each note, comment, or loci similes is followed by an icon indicating the intellectual responsibility for the note, which always appears at the end of the note. The responsibility can be attributed to one or more editors, and in any case, it is signed jointly (that is, a paragraph cannot be signed by one editor and the next paragraph by another).
+
+![Responsability Icon](img/002.png)
+
+Each Note, Comment, or Loci Similes is preceded by the line number it refers to; this number is clickable and highlights the line in question. Next, the word or words of the line to which the note refers may or may not appear; this reference appears in turquoise.
+
+## Links
+
+Throughout all the sections of the edition, links may appear. It is important to always indicate where they point to:
+
+- If it is an external link, the full URL must be added. For example, La Venus de Milo <https://es.wikipedia.org/wiki/Venus_de_Milo>
+- If it is a link within the Pronapoli page, the full URL must also be indicated.
+- If referring to a Note, Comment, or Loci Similes, the exact line number must be indicated. For example, in [Elegy II](https://pronapoli.com/ediciondigital/elegia2), Note vv. 1-2, there is a link to Loci Similes vv. 1-2. In this case, the editor should indicate it as "Loci Similes vv. 1-2".
+
+## Secondary Bibliographic References
+
+All secondary bibliographic references are marked in an XML-TEI element called `<bibl>` and appear later in HTML (in the web version) with a gray background. When hovering over them, a pop-up appears that says "Bibliographic Reference." It is important that these references in the body of the text always appear complete (Author year: page) because the idea is to assign them an identifier and retrieve them automatically to create the bibliography. That is, even if the author is mentioned a few lines above, the parenthesis should still include all the information.
+
+![Pop-up Refs secundarias](/img/003.png)
+
+## Primary Bibliographic References and Quotes 
+
+Las referencia bibliográficas primarias, ya sean fuentes clásicas o contemporáneas al autor, también aparecen en fondo gris pero con una pop-up que dice "Fuente". Si la referencia va acompañada de una cita textual, esta aparece en un fondo azul:
+
+![Quotes](/img/004.png)
+
+All these references and primary quotes are marked in XML so they can be retrieved later to generate some statistics. For example, what percentage is from Cicero, Virgil, or Horace? Therefore, it is very important that we all follow the same citation method and that the author always appears clearly. The previous image shows a correct and easily retrievable example:
+
+```txt
+"Quote" Author, Abbreviated Title, book, line
+```
+
+Editors: Check that all colors appear correctly (blue for quotes, gray background for bibliographic references). Pay attention if double quotation marks are detected in the quotes.
+
+## Critical Apparatus
+
+The model to follow is that of [Elegy II](https://pronapoli.com/ediciondigital/elegia2). First, the term or lemma is indicated (appearing in turquoise) followed by the variant and the testimonies that include that variant. Any explanatory note, whether about that variant, other testimonies, the editor's justification, etc., is included on a separate line.
+
+```txt
+line number + lemma + variants + testimonies 
+note in a new paragraph
+```
+
+As shown in the following image:
+
+![Critical apparatus](/img/005.png)
+
+## Other Tips
+
+- Check that the italics you included in your documents are preserved in the web version.
+- Check that there are no words or fragments in red. If something appears in red, it means we have detected an error.
+- Check that all links work (we may have missed some or there may be an error).
+- When sending revisions, please follow this model:
+
+```txt
+In the Composition <http://link>, section X, Note vv. 51-51: where it says "bla bla" it should say "ble ble".
+In Song V, https://pronapoli.com/ediciondigital/cancion5, section Notes 61-62: where it says "de la tierra al sembrarla" it should say "del cielo a la tierra".
+In Ode II, https://pronapoli.com/ediciondigital/oda2, section Context, 2nd paragraph: where it says "un expediente" it should say "un experimento".
+```
+
+Any question you may have, please write to both of us [Eugenia(mailto:eugeniafosalba@gmail.com)] and [Susanna](mailto:susannalles@gmail.com). 
 
