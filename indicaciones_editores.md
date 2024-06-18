@@ -2,7 +2,7 @@
 
 # <a id="Indicaciones">Indicaciones para los editores</a>
 
-Cada editor debe ser responsable de revisar con mucha antención la versión web de la composición que ha editado. Esta revisión es tan crucial como cuando os mandan las primeras pruebas de maquetación. El texto nunca se revisa lo sufiente. Para llevar a cabo estas revisiones y también para faciliatar la codificación posterior de los textos, es conveniente que la redacción se adapte a una serie de convenciones. 
+Cada editor debe ser responsable de revisar con mucha antención la versión web de la composición que ha editado. Esta revisión es tan crucial como cuando os mandan las primeras pruebas de maquetación. El texto nunca se revisa lo sufiente. Para llevar a cabo estas revisiones y también para facilitar la codificación posterior de los textos, es conveniente que la redacción se adapte a una serie de convenciones. 
 
 Recordad que la edición es una versión beta, así que agradeceríamos también cualquier idea que pueda facilitar la comprensión y navegación de la edición digital, así como a su mejora en su diseño web. 
 
@@ -10,19 +10,19 @@ Sería interesante que los editores tuvieran en mente la codificación en XML-TE
 
 ## El texto poético
 
-El texto poético aparece siempre a la izquierda de la pantalla, normalmente sin separación de estrofas, y con todos los números de los versos indicados. En principio, no hay tabulaciones diferentes en función del núemro o tipo de verso. 
+El texto poético aparece siempre a la izquierda de la pantalla, normalmente sin separación de estrofas, y con todos los números de los versos indicados. En principio, no hay tabulaciones diferentes en función del número o tipo de verso. 
 
 Cada verso puede contener un pequeño icono en donde aparecen, en caso de haberlos, las referencias a: Notas, Comentarios y Loci Similes. 
 
 ![Menú desplegable con enlace a Notas, Comentarios o Loci Similes](img/001.png)
 
-## Notas, Comentarios, Loci similes 
+## Notas, Comentarios,  
 
-Cada nota, comentario o loci similes va seguido de un icono que indica la responsabilidad intelectual de la nota y siempre aparece al final de la nota. La responsabilidad puede ser de uno o más editores, y en todo caso se firma conjuntamente (es decir, no puede haber un párrafo firmado por un editor y el siguiente párrafo por otro). 
+Cada nota, comentario o  va seguido de un icono que indica la responsabilidad intelectual de la nota y siempre aparece al final de la nota. La responsabilidad puede ser de uno o más editores, y en todo caso se firma conjuntamente (es decir, no puede haber un párrafo firmado por un editor y el siguiente párrafo por otro). 
 
 ![Icono de responsabilidad](img/002.png)
 
-Cada Nota, Comentario o Loci similes va precedido por el número de verso al que hace referencia; este número es clicable y subraya el verso en cuestión. A continuación, puede o no aparecer la palabra o palabras del verso al que la nota hace referencia; esta referencia aparece en un color turquesa. 
+Cada Nota, Comentario o Locus similis va precedido por el número de verso al que hace referencia; este número es clicable y subraya el verso en cuestión. A continuación, puede o no aparecer la palabra o palabras del verso al que la nota hace referencia; esta referencia aparece en un color turquesa. 
 
 ## Enlaces
 
@@ -44,7 +44,7 @@ Las referencia bibliográficas primarias, ya sean fuentes clásicas o contempor�
 
 ![Citas](/img/004.png)
 
-Todas estas referncias y citas primarias se marcan en XML para que después puedan recuperarse y hacer algunas estadísticas. Por ejemplo, ¿qué porcentaje hay de Cicerón, o de Virgilio, o de Horario? Por ello es muy importante que todos sigamos una misma manera de citar y que siempre aprezca claramente el autor. En la imagen anterior aparece un ejemplo correcto y de fácil recuperación: 
+Todas estas referencias y citas primarias se marcan en XML para que después puedan recuperarse y hacer algunas estadísticas. Por ejemplo, ¿qué porcentaje hay de Cicerón, o de Virgilio, o de Horario? Por ello es muy importante que todos sigamos una misma manera de citar y que siempre aparezca claramente el autor. En la imagen anterior aparece un ejemplo correcto y de fácil recuperación: 
 
 ```
 "Cita" Autor, Título abreviado, libro, verso
@@ -60,7 +60,7 @@ número de verso + lema + variantes + testimonios
 nota en un nuevo párrafo
 ```
 
-Como aparece en la siguiente imágen: 
+Como aparece en la siguiente imagen: 
 
 ![Aparato crítico](/img/005.png)
 
@@ -68,7 +68,7 @@ Como aparece en la siguiente imágen:
 
 - Comprobad que las cursivas que habíais puesto en vuestros documentos se mantienen en la versión web.
 - Comprobad que no haya ninguna paralabra o fragmento en rojo. Si algo aparece en rojo, es que hemos detectado un error.
-- Compropad que todos los enlaces funcionan (se nos puede haber escapado alguno o que haya algún error).
+- Comprobad que todos los enlaces funcionan (se nos puede haber escapado alguno o que haya algún error).
 - Cuando se mandan las revisiones, por favor, seguid el modelo: 
 
 ```txt
@@ -76,7 +76,7 @@ Em la Composición <http//enlace>, sección X, Nota VV. 51-51: donde dice "bla b
 En la Canción V, https://pronapoli.com/ediciondigital/cancion5, sección Notas 61-62: donde dice "de la tierra al sembrarla" debe decur "del cielo a la tierra".
 En la Oda II, https://pronapoli.com/ediciondigital/oda2, sección Contexto, 2 párrafo: donde dice "un expediente" debe decir "un experimento".  
 ```
-Cualquier duda que os pudiera surgie, podéis escribirnos a [Eugenia](mailto:eugeniafosalba@gmail.com) y [Susanna](mailto:susannalles@gmail.com).
+Cualquier duda que os pudiera surgir, podéis escribirnos a [Eugenia](mailto:eugeniafosalba@gmail.com) y [Susanna](mailto:susannalles@gmail.com).
 
 # <a id="Guidelines">Guidelines for Editors</a>
 
