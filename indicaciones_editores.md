@@ -38,7 +38,7 @@ Las referencias bibliográficas secundarias se marcan todas en un elemento XML-T
 
 ## Referencias bibliográficas primarias y citas
 
-Las referencia bibliográficas primarias, ya sean fuentes clásicas o contemporáneas al autor, también aparecen en fondo gris pero la pop-up. Si la referencia va acompañada de una cita textual, esta aparece en un fondo azul: 
+Las referencia bibliográficas primarias, ya sean fuentes clásicas o contemporáneas al autor, también aparecen en fondo gris pero con una pop-up que dice "Fuente". Si la referencia va acompañada de una cita textual, esta aparece en un fondo azul: 
 
 ![Citas](/img/004.png)
 
