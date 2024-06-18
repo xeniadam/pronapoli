@@ -76,7 +76,7 @@ Em la Composición <http//enlace>, sección X, Nota VV. 51-51: donde dice "bla b
 En la Canción V, https://pronapoli.com/ediciondigital/cancion5, sección Notas 61-62: donde dice "de la tierra al sembrarla" debe decur "del cielo a la tierra".
 En la Oda II, https://pronapoli.com/ediciondigital/oda2, sección Contexto, 2 párrafo: donde dice "un expediente" debe decir "un experimento".  
 ```
-Cualquier duda que os pudiera surgie, podéis escribirnos a [Eugenia](mailto:eugeniafosalba@gmail.com) or y [Susanna](mailto:susannalles@gmail.com).
+Cualquier duda que os pudiera surgie, podéis escribirnos a [Eugenia](mailto:eugeniafosalba@gmail.com) y [Susanna](mailto:susannalles@gmail.com).
 
 # <a id="Guidelines">Guidelines for Editors</a>
 
