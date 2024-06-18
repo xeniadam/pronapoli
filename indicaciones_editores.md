@@ -34,13 +34,13 @@ A lo largo de todas las secciones de la edición pueden aparecen enlaces. Es imp
 
 Las referencias bibliográficas secundarias se marcan todas en un elemento <bibl> y aparecen en HTML (en la versión web) con un fondo gris. Si se pasa el cursor por arriba aparece una "pop-up" que dice "Referencia Bibliográfica". Es importante que estas referencias en el cuerpo del texto sean siempre completas (Autor año: página) porqué la idea es poder otorgarles un identificador y recuperarlas de manera automática para después crear la bibliografía. Es decir, aunque se mencione el autor unas líneas más arriba, de igual manera ese paréntesis debe estar completo con toda la información.  
 
-|[Pop-up Refs secundarias](/img/003.png)
+![Pop-up Refs secundarias](/img/003.png)
 
 ## Referencias bibliográficas primarias y citas
 
 Las referencia bibliográficas primarias, ya sean fuentes clásicas o contemporáneas al autor, también aparecen en fondo gris pero la pop-up. Si la referencia va acompañada de una cita textual, esta aparece en un fondo azul: 
 
-|[Citas](/img/004.png)
+![Citas](/img/004.png)
 
 Todas estas referncias y citas primarias se marcan en XML para que después puedan recuperarse y hacer algunas estadísticas. Por ejemplo, ¿qué porcentaje hay de Cicerón, o de Virgilio, o de Horario? Por ello es muy importante que todos sigamos una misma manera de citas y que siempre aprezca claramente el autor. En la imagen anterior aparece un ejemplo correcto y de fácil recuperación: 
 
@@ -60,7 +60,7 @@ nota en un nuevo párrafo
 
 Como aparece en la siguiente imágen: 
 
-|[Aparato crítico](/img/005.png)
+![Aparato crítico](/img/005.png)
 
 ## Otros consejos 
 
