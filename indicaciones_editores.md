@@ -32,7 +32,7 @@ A lo largo de todas las secciones de la edición pueden aparecen enlaces. Es imp
 
 ## Referencias bibliográficas secundarias
 
-Las referencias bibliográficas secundarias se marcan todas en un elemento <bibl> y aparecen en HTML (en la versión web) con un fondo gris. Si se pasa el cursor por arriba aparece una "pop-up" que dice "Referencia Bibliográfica". Es importante que estas referencias en el cuerpo del texto sean siempre completas (Autor año: página) porqué la idea es poder otorgarles un identificador y recuperarlas de manera automática para después crear la bibliografía. Es decir, aunque se mencione el autor unas líneas más arriba, de igual manera ese paréntesis debe estar completo con toda la información.  
+Las referencias bibliográficas secundarias se marcan todas en un elemento XML-TEI llamado `<bibl>` y aparecen después en HTML (en la versión web) con un fondo gris. Si se pasa el cursor por arriba aparece una "pop-up" que dice "Referencia Bibliográfica". Es importante que estas referencias en el cuerpo del texto aparezcan siempre completas (Autor año: página) porqué la idea es poder otorgarles un identificador y recuperarlas de manera automática para después crear la bibliografía. Es decir, aunque se mencione el autor unas líneas más arriba, de igual manera ese paréntesis debe estar completo con toda la información.  
 
 ![Pop-up Refs secundarias](/img/003.png)
 
