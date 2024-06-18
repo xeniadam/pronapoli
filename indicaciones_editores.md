@@ -42,12 +42,12 @@ Las referencia bibliográficas primarias, ya sean fuentes clásicas o contempor�
 
 ![Citas](/img/004.png)
 
-Todas estas referncias y citas primarias se marcan en XML para que después puedan recuperarse y hacer algunas estadísticas. Por ejemplo, ¿qué porcentaje hay de Cicerón, o de Virgilio, o de Horario? Por ello es muy importante que todos sigamos una misma manera de citas y que siempre aprezca claramente el autor. En la imagen anterior aparece un ejemplo correcto y de fácil recuperación: 
+Todas estas referncias y citas primarias se marcan en XML para que después puedan recuperarse y hacer algunas estadísticas. Por ejemplo, ¿qué porcentaje hay de Cicerón, o de Virgilio, o de Horario? Por ello es muy importante que todos sigamos una misma manera de citar y que siempre aprezca claramente el autor. En la imagen anterior aparece un ejemplo correcto y de fácil recuperación: 
 
 ```
 "Cita" Autor, Título abreviado, libro, verso
 ```
-Editores: Revisad que todos los colores aparecen correctamente (azul para citas, fondo gris para referencias bibliográficas). Poned atención si se detectan doblen camillas en las citas. 
+Editores: Revisad que todos los colores aparezcan correctamente (azul para citas, fondo gris para referencias bibliográficas). Poned atención si se detectan doblen camillas en las citas. 
 
 ## Aparto crítico 
 
