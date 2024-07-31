@@ -1,6 +1,6 @@
 En esta carpeta se encuentras los siguientes archivos: 
 
-- Documento XML-TEI que valida la totalidad del corpus XML-TEI: `Pronapoli-corpus-validator.xml`
+- `Pronapoli-corpus-validator.xml`: Documento XML-TEI que valida la totalidad del corpus XML-TEI. 
 - Corpus de las composiciones editadas de Garcilaso de la Vega:
   * `egloga2.xml`: Égloga II
   * `epistolaBoscan.xml`: Epístola a Boscán
