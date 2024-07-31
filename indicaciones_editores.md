@@ -28,19 +28,19 @@ Cada Nota, Comentario o Locus similis va precedido por el número de verso al qu
 
 A lo largo de todas las secciones de la edición pueden aparecen enlaces. Es importante que se señale siempre dónde apuntan: 
 
-- Si es un enlace exterlo, debe añadirse toda la URL. Ej. La Venus de Nilo <https://es.wikipedia.org/wiki/Venus_de_Milo>
+- Si es un enlace externo, debe añadirse toda la URL. Ej. La Venus de Nilo <https://es.wikipedia.org/wiki/Venus_de_Milo>
 - Si es un enlace dentro de la página de Pronapoli, también debe indicarse la URL completa.
-- Si se hace referencia a una Nota, un Comentario, o un Loci simile debe indicarse exactamente el número de verso. Por ejemplo, en la [Elegía II](https://pronapoli.com/ediciondigital/elegia2), Nota vv. 1-2, aparece un enlace a Loci simili vv. 1-2. En este caso, el editor debe señalarlo así "Loci simili vv. 1-2". 
+- Si se hace referencia a una Nota, un Comentario, o un Loci simile debe indicarse exactamente el número de verso. Por ejemplo, en la [Elegía II](https://pronapoli.com/ediciondigital/elegia2), Nota vv. 1-2, aparece un enlace a Loci similes vv. 1-2. En este caso, el editor debe señalarlo así "Loci similes vv. 1-2". 
 
 ## Referencias bibliográficas secundarias
 
-Las referencias bibliográficas secundarias se marcan todas en un elemento XML-TEI llamado `<bibl>` y aparecen después en HTML (en la versión web) con un fondo gris. Si se pasa el cursor por arriba aparece una "pop-up" que dice "Referencia Bibliográfica". Es importante que estas referencias en el cuerpo del texto aparezcan siempre completas (Autor año: página) porqué la idea es poder otorgarles un identificador y recuperarlas de manera automática para después crear la bibliografía. Es decir, aunque se mencione el autor unas líneas más arriba, de igual manera ese paréntesis debe estar completo con toda la información.  
+Las referencias bibliográficas secundarias se marcan todas en un elemento XML-TEI llamado `<bibl>` y aparecen después en HTML (en la versión web) con un fondo gris. Si se pasa el cursor por arriba aparece una "pop-up" que dice "Referencia Bibliográfica". Es importante que estas referencias en el cuerpo del texto aparezcan siempre completas (Autor año: página) porque la idea es poder otorgarles un identificador y recuperarlas de manera automática para después crear la bibliografía. Es decir, aunque se mencione el autor unas líneas más arriba, de igual manera ese paréntesis debe estar completo con toda la información.  
 
 ![Pop-up Refs secundarias](/img/003.png)
 
 ## Referencias bibliográficas primarias y citas
 
-Las referencia bibliográficas primarias, ya sean fuentes clásicas o contemporáneas al autor, también aparecen en fondo gris pero con una pop-up que dice "Fuente". Si la referencia va acompañada de una cita textual, esta aparece en un fondo azul: 
+Las referencias bibliográficas primarias, ya sean fuentes clásicas o contemporáneas al autor, también aparecen en fondo gris pero con una pop-up que dice "Fuente". Si la referencia va acompañada de una cita textual, esta aparece en un fondo azul: 
 
 ![Citas](/img/004.png)
 
@@ -96,11 +96,11 @@ Each line may contain a small icon where references to Notes, Comments, and Loci
 
 ## Notes, Comments, Loci Similes
 
-Each note, comment, or loci similes is followed by an icon indicating the intellectual responsibility for the note, which always appears at the end of the note. The responsibility can be attributed to one or more editors, and in any case, it is signed jointly (that is, a paragraph cannot be signed by one editor and the next paragraph by another).
+Each note, comment, or locus simili is followed by an icon indicating the intellectual responsibility for the note, which always appears at the end of the note. The responsibility can be attributed to one or more editors, and in any case, it is signed jointly (that is, a paragraph cannot be signed by one editor and the next paragraph by another).
 
 ![Responsability Icon](img/002.png)
 
-Each Note, Comment, or Loci Similes is preceded by the line number it refers to; this number is clickable and highlights the line in question. Next, the word or words of the line to which the note refers may or may not appear; this reference appears in turquoise.
+Each Note, Comment, or Locus Simili is preceded by the line number it refers to; this number is clickable and highlights the line in question. Next, the word or words of the line to which the note refers may or may not appear; this reference appears in turquoise.
 
 ## Links
 
