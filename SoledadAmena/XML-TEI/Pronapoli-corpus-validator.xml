@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="pronapoli.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <teiHeader>
+
+    <fileDesc>
+      <titleStmt>
+        <title>Soledad Amena. Edición crítica y digital de la obra poética de Garcilaso de la
+          Vega</title>
+        <respStmt>
+          <resp>Dir. </resp>
+          <name>Dir. Eugenia Fosalba</name>
+        </respStmt>
+        <respStmt>
+          <resp>Documentación técnica y implementación digital a cargo de</resp>
+          <name xml:id="SAT">Susanna Allés Torrent</name>
+        </respStmt>
+      </titleStmt>
+
+      <publicationStmt>
+        <publisher>Universitat de Girona</publisher>
+        <address>
+          <addrLine>Edifici Sant Domènec I</addrLine>
+          <addrLine> Pl. Ferrater i Mora, 1</addrLine>
+          <addrLine>17004 - Girona</addrLine>
+        </address>
+        <idno type="general">https://pronapoli.com/</idno>
+        <idno type="url_poema">https://pronapoli.com/soledadamena/</idno>
+        <idno type="ISBN">978-84-09-62949-7</idno>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"
+            >http://creativecommons.org/licenses/by-nc-nd/3.0/es/</licence>
+        </availability>
+      </publicationStmt>
+
+      <sourceDesc>
+        <p>Para la información de los testimonios utilizados para esta edición crítica digital, se
+          remite de momento, a la sección <ref type="link_interno"
+            target="https://pronapoli.com/soledadamena/">Nuestra edición</ref>. </p>
+      </sourceDesc>
+    </fileDesc>
+
+    <encodingDesc>
+      <p>Los criterios de edición se especifican en la sección general <ref type="link_interno"
+          target="https://pronapoli.com/soledadamena/">Nuestra edición</ref>, y los criterios para
+        codificación en XML-TEI del documento digital en <ref type="link_externo"
+          target="https://github.com/susannalles/pronapoli/blob/gh-pages/docs.md"/>.</p>
+      <p>La codificación XML-TEI ha sido modelada y realizada por <persName corresp="#SAT">Susanna
+          Allés Torrent</persName>. Los archivos XML-TEI pueden encontrarse en <ref
+          type="link_externo"
+          target="https://github.com/susannalles/pronapoli/tree/gh-pages/SoledadAmena/XML-TEI"/></p>
+    </encodingDesc>
+  </teiHeader>
+
+
+  <!-- Lista de archivos XML-TEI que se validan: -->
+  <xi:include href="oda1.xml" parse="xml"/>
+  <xi:include href="oda2.xml" parse="xml"/>
+  <xi:include href="oda3.xml" parse="xml"/>
+  <xi:include href="oda4.xml" parse="xml"/>
+  <xi:include href="oda5.xml" parse="xml"/>
+  <xi:include href="epistolaBoscan.xml" parse="xml"/>
+  <xi:include href="cancion5.xml" parse="xml"/>
+  <xi:include href="egloga2.xml" parse="xml"/>
+  <xi:include href="elegia2.xml" parse="xml"/>
+
+
+</teiCorpus>

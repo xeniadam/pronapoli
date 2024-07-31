@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Pronapoli</title>
+                <author>Susanna Allés Torrent</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>Pronapoli</p>
+            </publicationStmt>
+            <notesStmt>
+                <note type="ns">http://www.example.org/ns/nonTEI</note>
+            </notesStmt>
+            <sourceDesc>
+                <p>created on Tuesday 29th August 2023 03:33:49 PM</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <divGen type="toc"/>
+        </front>
+        <body>
+            <p>Customizaciónn TEI para el proyecto Pronapoli (módulos obligatorios tei, core,
+                textstructure y header).</p>
+            <schemaSpec ident="pronapoli" docLang="en" prefix="tei_" xml:lang="en">
+                <moduleRef key="core" except=""/>
+                <moduleRef key="tei" except=""/>
+                <moduleRef key="header" except=""/>
+                <moduleRef key="textstructure" except=""/>
+                <moduleRef key="textcrit" except=""/>
+                <moduleRef key="namesdates" except=""/>
+                <moduleRef key="msdescription" except=""/>
+                <moduleRef key="linking" except=""/>
+                <moduleRef key="analysis" except="c cl m phr s w"/>
+                <elementSpec ident="quote" module="core" mode="change">
+                    <attList>
+                        <attDef ident="xml:lang" mode="change">
+                            <valList type="open" mode="replace">
+                                <valItem ident="lat"/>
+                                <valItem ident="es"/>
+                                <valItem ident="en"/>
+                                <valItem ident="it"/>
+                                <valItem ident="fr"/>
+                                <valItem ident="ca"/>
+                            </valList>
+                        </attDef>
+                    </attList>
+                </elementSpec>
+                <moduleRef key="figures" except="formula notatedMusic"/>
+                <elementSpec ident="ref" module="core" mode="change">
+                    <attList>
+                        <attDef ident="type" mode="change" usage="req">
+                            <valList type="closed" mode="replace">
+                                <valItem ident="texto_poema"/>
+                                <valItem ident=" link_int_c"/>
+                                <valItem ident=" link_int_n"/>
+                                <valItem ident=" link_int_ls"/>
+                                <valItem ident=" link_externo"/>
+                                <valItem ident=" link_interno"/>
+                            </valList>
+                        </attDef>
+                        <attDef ident="ana" mode="delete"/>
+                        <attDef ident="cRef" mode="delete"/>
+                        <attDef ident="cert" mode="delete"/>
+                        <attDef ident="change" mode="delete"/>
+                        <attDef ident="copyOf" mode="delete"/>
+                        <attDef ident="decls" mode="delete"/>
+                        <attDef ident="evaluate" mode="delete"/>
+                        <attDef ident="exclude" mode="delete"/>
+                        <attDef ident="mimeType" mode="delete"/>
+                        <attDef ident="next" mode="delete"/>
+                        <attDef ident="prev" mode="delete"/>
+                        <attDef ident="rendition" mode="delete"/>
+                        <attDef ident="sameAs" mode="delete"/>
+                        <attDef ident="source" mode="delete"/>
+                        <attDef ident="subtype" mode="delete"/>
+                        <attDef ident="synch" mode="delete"/>
+                        <attDef ident="targetLang" mode="delete"/>
+                        <attDef ident="xml:base" mode="delete"/>
+                        <attDef ident="xml:space" mode="delete"/>
+                    </attList>
+                </elementSpec>
+                <elementSpec ident="bibl" module="core" mode="change">
+                    <attList>
+                        <attDef ident="type" mode="change">
+                            <valList type="closed" mode="replace">
+                                <valItem ident="main"/>
+                                <valItem ident=" canon"/>
+                            </valList>
+                        </attDef>
+                    </attList>
+                </elementSpec>
+                <elementSpec ident="span" module="analysis" mode="change">
+                    <attList>
+                        <attDef ident="type" mode="change" usage="req">
+                            <defaultVal>link</defaultVal>
+                            <valList type="closed" mode="replace">
+                                <valItem ident="link"/>
+                            </valList>
+                        </attDef>
+                        <attDef ident="ana" mode="delete"/>
+                        <attDef ident="cert" mode="delete"/>
+                        <attDef ident="change" mode="delete"/>
+                        <attDef ident="copyOf" mode="delete"/>
+                        <attDef ident="evaluate" mode="delete"/>
+                        <attDef ident="exclude" mode="delete"/>
+                        <attDef ident="facs" mode="delete"/>
+                        <attDef ident="inst" mode="delete"/>
+                        <attDef ident="next" mode="delete"/>
+                        <attDef ident="prev" mode="delete"/>
+                        <attDef ident="rendition" mode="delete"/>
+                        <attDef ident="sameAs" mode="delete"/>
+                        <attDef ident="source" mode="delete"/>
+                        <attDef ident="subtype" mode="delete"/>
+                        <attDef ident="synch" mode="delete"/>
+                        <attDef ident="targetLang" mode="delete"/>
+                        <attDef ident="xml:base" mode="delete"/>
+                        <attDef ident="xml:space" mode="delete"/>
+                        <attDef ident="from" mode="change" usage="req">
+                            <defaultVal>#</defaultVal>
+                        </attDef>
+                        <attDef ident="n" mode="change" usage="req">
+                            <defaultVal>0</defaultVal>
+                        </attDef>
+                    </attList>
+                </elementSpec>
+                <elementSpec ident="hi" module="core" mode="change">
+                    <attList>
+                        <attDef ident="ana" mode="delete"/>
+                        <attDef ident="cert" mode="delete"/>
+                        <attDef ident="change" mode="delete"/>
+                        <attDef ident="copyOf" mode="delete"/>
+                        <attDef ident="exclude" mode="delete"/>
+                        <attDef ident="facs" mode="delete"/>
+                        <attDef ident="next" mode="delete"/>
+                        <attDef ident="prev" mode="delete"/>
+                        <attDef ident="rendition" mode="delete"/>
+                        <attDef ident="sameAs" mode="delete"/>
+                        <attDef ident="synch" mode="delete"/>
+                        <attDef ident="xml:space" mode="delete"/>
+                        <attDef ident="style" mode="change">
+                            <defaultVal>italic</defaultVal>
+                            <valList type="closed" mode="replace">
+                                <valItem ident="error"/>
+                                <valItem ident=" bold"/>
+                                <valItem ident=" italic"/>
+                                <valItem ident=" superscript"/>
+                            </valList>
+                        </attDef>
+                    </attList>
+                </elementSpec>
+
+                <moduleRef key="drama"
+                    except="actor camera caption performance sound spGrp tech view"/>
+
+            </schemaSpec>
+        </body>
+    </text>
+</TEI>
