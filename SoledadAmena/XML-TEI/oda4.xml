@@ -74,7 +74,7 @@
 
          <div type="contexto">
             <div xml:lang="es">
-               <p>Oda horaciana en latín en alabanza de <persName
+               <p resp="MC">Oda horaciana en latín en alabanza de <persName
                      ref="https://pronapoli.com/autor/pietro-bembo/">Pietro Bembo</persName>,
                   humanista, poeta y futuro cardenal italiano. Entre sus obras más famosas se
                   encuentran <title>Gli asolani</title> (1497-1504), que constituye un diálogo sobre
@@ -82,7 +82,7 @@
                   afirmaba que el toscano del siglo XIV debía ser el modelo de la lengua literaria
                   italiana; y una historia de Venecia (véase infra, <span type="link"
                      from="#Od_4_8_32" n="3">vv. 32-35</span>). También fue interlocutor en
-                     <title>Il Cortigiano</title> de <persName
+                     <bibl type="canon"><title>Il Cortegiano</title></bibl> de <persName
                      ref="https://pronapoli.com/autor/baldassare-castiglione/">Baldassare
                      Castiglione</persName>, traducido por el amigo de Garcilaso, <persName
                      ref="https://pronapoli.com/autor/juan-boscan/">Juan Boscán</persName>, y para
@@ -93,20 +93,20 @@
                   círculos de la élite intelectual europea, además de obtener reconocimiento como
                   poeta, ganándose con él la aprobación de Bembo (sabemos por una carta de Bembo a
                   Garcilaso que no se habían conocido en persona; véase <bibl type="main"
-                     corresp="SQJZYF3I">Fosalba 2019: 214</bibl>). De hecho, la poesía panegírica y
+                     corresp="SQJZYF3I">Fosalba, 2019: 214</bibl>). De hecho, la poesía panegírica y
                   la inmortalidad poética es el tema de gran parte del poema: mientras Garcilaso
                   afirma que no es tan hábil como los famosos poetas líricos clásicos (<span
-                     type="link" from="#Od_4_14" n="16">vv. 4–20</span>), afirma que si pudiera
+                     type="link" from="#Od_4_8_14" n="16">vv. 4–20</span>), afirma que si pudiera
                   escribir poesía lírica, lo haría en alabanza de Bembo para poder ganar renombre
-                     (<span type="link" from="#Od_4_621" n="7">vv. 21–28</span>). De hecho,
+                     (<span type="link" from="#Od_4_6_21" n="7">vv. 21–28</span>). De hecho,
                   Garcilaso alaba a Bembo por su poesía y por su historia (inédita) de Venecia
-                     (<span type="link" from="#Od_4_831" n="4">vv. 31–35</span>). Incluso afirma que
-                  Iberia está celosa de Venecia (<span type="link" from="#Od_4_935" n="5">vv.
+                     (<span type="link" from="#Od_4_8_31" n="4">vv. 31–35</span>). Incluso afirma que
+                  Iberia está celosa de Venecia (<span type="link" from="#Od_4_9_35" n="5">vv.
                      35–40</span>), y la compara con <persName
-                     corresp="https://es.wikipedia.org/wiki/Alejandro_Magno">Alejandro
+                     ref="https://es.wikipedia.org/wiki/Alejandro_Magno">Alejandro
                      Magno</persName> llorando ante la tumba de <persName
-                     corresp="https://es.wikipedia.org/wiki/Aquiles"
-                  >Aquiles</persName> (<span type="link" from="#Od_4_1141"
+                     ref="https://es.wikipedia.org/wiki/Aquiles"
+                  >Aquiles</persName> (<span type="link" from="#Od_4_11_41"
                      n="15">vv. 41–56</span>).</p>
 
                <p>Se trata de un poema muy metapoético. Garcilaso empieza expresando su “ansia de
@@ -114,13 +114,13 @@
                   específica a los autores clásicos Píndaro y Horacio, y a su contemporáneo Bembo.
                   Sentirse rechazado por Apolo constituye un tropo muy conocido; los poetas clásicos
                   relatan a menudo epifanías en las que Apolo aparece y critica su estilo, como en
-                     <bibl type="canon">Virg. <title>Ecl.</title> 6.3-5</bibl> y <bibl type="canon"
-                     >Prop. 3.3.13-24</bibl>. A lo largo de sus afirmaciones sobre su inferioridad e
+                     <bibl type="canon">Virgilius, <title>Eclogae</title>, 6, 3-5</bibl> y <bibl type="canon"
+                     >Propertius, 3, 3, 13-24</bibl>. A lo largo de sus afirmaciones sobre su inferioridad e
                   incapacidad poéticas, Garcilaso se basa especialmente en textos de Horacio en los
                   que el poeta latino expresa sus aspiraciones poéticas (<bibl type="canon"
-                        ><title>Carm.</title> 1.1</bibl>, <bibl type="canon">2.20</bibl>, <bibl
-                     type="canon">3.30</bibl>) o confiesa su deuda con otros antecedentes poéticos
-                     (<bibl type="canon">Carm. 4.2</bibl>, <bibl type="canon">3.30</bibl>).</p>
+                        ><title>Carmina</title>, 1, 1</bibl>, <bibl type="canon">2, 20</bibl>, <bibl
+                     type="canon">3, 30</bibl>) o confiesa su deuda con otros antecedentes poéticos
+                     (<bibl type="canon">Carm.ina, 4, 2</bibl>, <bibl type="canon">3, 30</bibl>).</p>
 
                <p>Este poema, junto con la <ref type="link_externo"
                      target="https://pronapoli.com/soledadamena/oda5">Oda V</ref>, permaneció
@@ -139,7 +139,7 @@
                      <quote>Ma io sopra tutto ho con lui questo vantaggio: che a me pare, che l'Oda,
                         che egli a me scrive, sia etiandio piu vaga e piu elegante et monda et
                         sonora et dolce, che le altre tutte non sono, che in que'fogli sono</quote>
-                     <bibl type="main" corresp="ZVPK8UIX">(Bembo 1562: 207v).</bibl>
+                     <bibl type="main" corresp="ZVPK8UIX">(Bembo, 1562: 207v).</bibl>
                   </cit> Ese mismo mes, Bembo escribe directamente a Garcilaso, alabando su destreza
                   poética: <cit type="blockquote">
                      <quote xml:lang="lat">illud perfecisti, ut non solum Hispanos tuos omneis qui
@@ -149,19 +149,19 @@
                         praeteriri</quote>
                   </cit>
                </p>
-               <p>“Has conseguido no sólo superar y aventajar con creces en tus versos a todos los
+               <p resp="MC">“Has conseguido no sólo superar y aventajar con creces en tus versos a todos los
                   españoles que se han entregado a Apolo y a las Musas, sino que incluso espoleáis a
                   los italianos, para incitarlos cada vez más, si no quieren verse superados por
                   vosotros en este certamen y en estos estudios)” <bibl type="main"
-                     corresp="2XUKZD54">(Sliwa 2006: 132)</bibl> (la traducción es mía). Para obtener
+                     corresp="2XUKZD54">(Sliwa, 2006: 132)</bibl> (la traducción es mía). Para obtener
                   más detalles sobre esta carta, consúltese <bibl type="main" corresp="SQJZYF3I"
-                     >Fosalba 2019: 211–23</bibl> y <bibl type="main" corresp="HYNM6AU5">López
+                     >Fosalba, 2019: 211–223</bibl> y <bibl type="main" corresp="HYNM6AU5">López
                      Griguera 1988</bibl>.</p>
 
-               <p>Según Fosalba, es la aprobación de Bembo lo que inspira a Garcilaso a seguir
+               <p resp="MC">Según Fosalba, es la aprobación de Bembo lo que inspira a Garcilaso a seguir
                   escribiendo sus mejores poemas clasicistas vernáculos (<bibl type="main"
-                     corresp="SQJZYF3I">Fosalba 2020: 219-20</bibl>). </p>
-               <p>Este poema, junto con la Oda V, permaneció perdido hasta que se halló escrito en
+                     corresp="SQJZYF3I">Fosalba, 2020: 219-20</bibl>). </p>
+               <p>Este poema, junto con la <title>Oda V</title>, permaneció perdido hasta que se halló escrito en
                   la parte posterior de un libro impreso conservado en la <placeName
                      type="biblioteca">Biblioteca Nacional de la República Checa</placeName>,
                   signatura E IX 1 (<bibl type="main" corresp="FKFKD3UJ">Czepiel 2022</bibl>). </p>
@@ -172,10 +172,10 @@
 
          <div type="metrica">
             <div xml:lang="es">
-               <p> Este poema está escrito en el segundo asclepiadeo (tres asclepiadeos seguidos de
-                  un glicónico). Se trata de una métrica horaciana (véase, <bibl type="canon">Hor.
-                        <title>Carm.</title> 1.6, 15, 24, 33</bibl>; <bibl type="canon">2.12</bibl>;
-                     <bibl type="canon">3.10, 16</bibl>; <bibl type="canon">4.5, 12</bibl>) no
+               <p resp="MC"> Este poema está escrito en el segundo asclepiadeo (tres asclepiadeos seguidos de
+                  un glicónico). Se trata de una métrica horaciana (véase, <bibl type="canon">Horatius,
+                        <title>Carmina</title>, 1, 6, 15, 24, 33</bibl>; <bibl type="canon">2, 12</bibl>;
+                     <bibl type="canon">3, 10, 16</bibl>; <bibl type="canon">4, 5, 12</bibl>) no
                   utilizada en ninguna de las tres odas conocidas anteriormente, lo que demuestra la
                   predilección de Garcilaso por la <foreign xml:lang="lat">variatio</foreign>.</p>
             </div>
@@ -189,10 +189,10 @@
                   de sus estudios. Esto recuerda a las odas de Horacio dirigidas a Mecenas, que se
                   ocupa de cosas importantes como los cuidados ciudadanos para Roma (<cit>
                      <quote>civilis super urbe curas,</quote>
-                     <bibl type="canon">Hor. <title>Carm.</title> 3. 8. 17</bibl>
+                     <bibl type="canon">Horatius, <title>Carmina</title>, 3, 8, 17</bibl>
                   </cit>) o la mejor forma de gobierno (<cit>
                      <quote>civitatem quis deceat status,</quote>
-                     <bibl>Hor. <title>Carm.</title> 3. 29. 25</bibl>
+                     <bibl>Horatius, <title>Carmina</title>, 3, 29, 25</bibl>
                   </cit>); para más información, véase <bibl type="main">Czepiel 2023</bibl>.
                </note>
             </note>
@@ -201,7 +201,7 @@
                <note xml:id="Od_4_n2_es" xml:lang="es"><span type="link" from="#Od_4_1_4" n="4"
                      >4–8</span> Garcilaso sigue a Horacio al referirse a la variedad temática de
                   Píndaro y comparar su estilo con el de un río (véanse <ref type="link_int_ls"
-                     target="#Od_4_ls4">Loci similes vv. 12-14</ref>). Aquí, Garcilaso se compara
+                     target="#Od_4_ls7">Loci similes vv. 12-14</ref>). Aquí, Garcilaso se compara
                   desfavorablemente con Píndaro.</note>
             </note>
 
@@ -219,8 +219,8 @@
                <note xml:id="Od_4_n4_es" xml:lang="es"><span type="link" from="#Od_4_4_14" n="0"
                      >14</span> Aufidus es el actual río Ofanta. Horacio se refiere en varias
                   ocasiones a su nacimiento cerca de este río (<bibl type="canon"
-                        ><title>Carm</title>. 3.30.10</bibl>, <bibl type="canon">Hor.
-                        <title>Carm.</title> 4.9.2</bibl>).</note>
+                        ><title>Carmina</title>, 3, 30, 10</bibl>, <bibl type="canon">Horatius,
+                        <title>Carmina</title>, 4, 9, 2</bibl>).</note>
             </note>
 
             <note xml:id="Od_4_n5" n="05" corresp="#a_Od_4_n5">
@@ -236,8 +236,8 @@
                <note xml:id="Od_4_n7_es" xml:lang="es"><span type="link" from="#Od_4_8_29" n="0"
                      >29</span> Melpómene era una de las nueve musas, tradicionalmente asociada al
                   canto, y posteriormente a la tragedia. Se la invocaba a menudo en la poesía griega
-                  y latina; véase, por ejemplo, <bibl type="canon">Hor. <title>Carm.</title>
-                     1.24</bibl> (en la misma métrica que esta oda) y <bibl type="canon"
+                  y latina; véase, por ejemplo, <bibl type="canon">Horatius, <title>Carmina</title>,
+                     1, 24</bibl> (en la misma métrica que esta oda) y <bibl type="canon"
                         ><title>Carm.</title> 3.30</bibl>.</note>
             </note>
 
@@ -257,7 +257,7 @@
             <note xml:id="Od_4_n10" n="10" corresp="#a_Od_4_n10">
                <note xml:id="Od_4_n10_es" xml:lang="es"><span type="link" from="#Od_4_11_41" n="15"
                      >41-56</span> Estos versos hacen referencia a una conocida anécdota sobre
-                  Alejandro Magno (‘el Gran Macedonio’). En el relato, Alejandro lloró ante la tumba
+                  Alejandro Magno ("el Gran Macedonio"). En el relato, Alejandro lloró ante la tumba
                   de Aquiles y lo declaró afortunado por haber sido inmortalizado en la poesía de
                   Homero. Aquí, la inmortalidad poética se transmite mediante la idea de Homero
                   llevando a Aquiles a través del Estigia, el principal río del Inframundo. </note>
@@ -267,22 +267,22 @@
          <div type="comentarios">
 
             <note xml:id="Od_4_c1" n="01" corresp="#a_Od_4_c1">
-               <note xml:id="Od_4_c1_es" xml:lang="es"><span type="link" from="#Od_4_11_41" n="15"
+               <note resp="MC" xml:id="Od_4_c1_es" xml:lang="es"><span type="link" from="#Od_4_11_41" n="15"
                      >41–56</span> La principal fuente latina de esta anécdota sería Cicerón: <cit>
                      <quote>Quam multos scriptores rerum suarum magnus ille Alexander secum habuisse
                         dicitur! Atque is tamen, cum in Sigeo ad Achillis tumulum astitisset: ‘o
                         fortunate,’ inquit, ‘adulescens, qui tuae virtutis Homerum praeconem
                         inveneris!’ et vere. Nam, nisi Ilias illa exstitisset, idem tumulus qui
                         corpus eius contexerat nomen etiam obruisset</quote>
-                     <bibl type="canon">Cic. <title>Pro Archia</title> 24</bibl>
+                     <bibl type="canon">Cicero, <title>Pro Archia</title>, 24</bibl>
                   </cit>. No obstante, la referencia a la trompeta apunta a una fuente más cercana
                   en Petrarca: <cit>
                      <quote>Giunto Alexandro a la famosa tomba del fero Achille, sospirando disse: |
                         O fortunato, che sí chiara tromba trovasti, et chi di te sí alto
                         scrisse</quote>
-                     <bibl type="canon">Petr. <title>RVF</title>, 187</bibl>
+                     <bibl type="canon">Petrarca, <title>Rerum vulgarum fragmenta</title>, 187</bibl>
                   </cit>. Es significativo que este pasaje se cite además por el personaje Bembo en
-                  el <title>Cortigiano</title> de Castiglione durante el debate sobre los méritos
+                  <title>Il Cortegiano</title> de Castiglione durante el debate sobre los méritos
                   relativos de las armas y las letras, por lo que su uso puede ser un guiño al
                   destinatario.</note>
             </note>
@@ -294,15 +294,15 @@
                   2023</bibl> y <bibl type="main">Morales 2023</bibl> acerca de las influencias de
                esta Oda.</note>
 
-            <note xml:id="Od_4_ls1"><span type="link" from="#Od_4_1_1" n="3">1-4</span> Cf. <cit>
+            <note xml:id="Od_4_ls1"><span type="link" from="#Od_4_1_1" n="3">1-4</span> <cit>
                   <quote>ut forte legentem / aut tacitum inpellat quovis sermon molestus</quote>
-                  <bibl type="canon">Hor. <title>Sat.</title> 1.3.64–65</bibl>
+                  <bibl type="canon">Horatius, <title>Satirae</title>, 1, 3, 64–65</bibl>
                </cit>. </note>
 
             <note xml:id="Od_4_ls2"><span type="link" from="#Od_4_1_2" n="0">2</span>
                <ref type="texto_poema">sensus forte tuos si ...</ref>: <cit>
                   <quote>quod si forte tuos ....</quote>
-                  <bibl type="canon">Prop. 2.26a.13</bibl>
+                  <bibl type="canon">Propertius, 2, 26a, 13</bibl>
                </cit>
             </note>
 
@@ -310,7 +310,7 @@
                <cit>
                   <quote>.. si auocat arduis / ingratum a studiis, parce precor libens: parce precor
                      precor. / Non sum qualis eram … dulcium … flectere</quote>
-                  <bibl type="canon">Hor. <title>Carm.</title> 4.1.2–6</bibl>
+                  <bibl type="canon">Horatius, <title>Carmina</title>, 4, 1, 2–6</bibl>
                </cit>.</note>
 
             <note xml:id="Od_4_ls4"><span type="link" from="#Od_4_2_5" n="3">5-8</span>
@@ -319,103 +319,103 @@
 
                   <quote xml:lang="lat">seu deos regesque canit […] sive […] pugilemve equomve /
                      dicit […] flebili sponsae iuvenemve raptum / plorat</quote>
-                  <bibl type="canon">Hor. <title>Carm.</title> IV. 2. 13–22</bibl>
+                  <bibl type="canon">Horatius, <title>Carmina</title>, 4, 2, 13–22</bibl>
                </cit>. Sobre la comparación de Píndaro con un río en <span type="link"
-                  from="#Od_4_2_6" n="1">ll. 6-7</span>, cf. <cit>
+                  from="#Od_4_2_6" n="1">ll, 6-7</span>, <cit>
                   <quote>monte decurrens velut amnis, imbres / quem super noteas aluere
                      ripas</quote>
-                  <bibl type="canon">Hor. <title>Carm.</title> 4. 2. 5–6</bibl>
+                  <bibl type="canon">Horatius, <title>Carmina</title>, 4, 2, 5–6</bibl>
                </cit>.</note>
 
             <note xml:id="Od_4_ls5"><span type="link" from="#Od_4_3_9" n="1">9–10</span>
-               <abbr>c.f.</abbr>
+               <abbr></abbr>
                <cit>
                   <quote xml:lang="lat">princeps Aeolium carmen ad Italos / deduxisse modos</quote>
-                  <bibl type="canon">Hor. <title>Carm.</title> 3. 30. 13–14</bibl>
+                  <bibl type="canon">Horatius, <title>Carmina</title>, 3, 30, 13–14</bibl>
                </cit>.</note>
 
             <note xml:id="Od_4_ls6"><span type="link" from="#Od_4_3_10" n="0">10</span>
                <ref type="texto_poema">non sine gloria</ref>: <cit>
                   <quote>non sine gloria</quote>
-                  <bibl type="canon">Hor. <title>Carm.</title> 3. 26. 2</bibl>
+                  <bibl type="canon">Horatius, <title>Carmina</title>, 3, 26, 2</bibl>
                </cit>
             </note>
 
             <note xml:id="Od_4_ls7"><span type="link" from="#Od_4_3_12" n="2">12-14</span>
-               <ref type="texto_poema">volucer... pennis</ref>: <abbr>c.f.</abbr>
+               <ref type="texto_poema">volucer... pennis</ref>: <abbr></abbr>
                <cit>
                   <quote>penna</quote>
-                  <bibl type="canon">Hor. <title>Carm.</title> 2.20.2</bibl>
+                  <bibl type="canon">Horatius, <title>Carmina</title>, 2, 20, 2</bibl>
                </cit>.</note>
 
             <note xml:id="Od_4_ls8"><span type="link" from="#Od_4_5_17" n="2">17–19</span>
                <ref type="texto_poema">Non, inquam, numero nobilium deus ... vatum me
                inseruit</ref>: <cit>
                   <quote xml:lang="lat">quod si me lyricis vatibus inseres</quote>
-                  <bibl type="canon">Hor. <title>Carm.</title> 1. 1. 35</bibl>
+                  <bibl type="canon">Horatius, <title>Carmina</title>, 1, 1, 35</bibl>
                </cit>. </note>
 
             <note xml:id="Od_4_ls9"><span type="link" from="#Od_4_6_21" n="6">21-27</span>
-               <ref type="texto_poema">O si forte detur ... nomen te celebrans</ref>: cf. <cit>
+               <ref type="texto_poema">O si forte detur ... nomen te celebrans</ref>: <cit>
                   <quote>si al gran valor en qu’el sujeto fundo | y al claro resplandor de vuestra
                      llama | arribare mi pluma y do la llama | la voz de vuestro nombre alto y
                      profundo, | seréis vos solo eterno y sin segundo, | y por vos inmortal quien
                      tanto os ama</quote>
-                  <bibl type="canon">Garcilaso, Soneto XXI</bibl>
+                  <bibl type="canon">Garcilaso, <title>Soneto XXI</title></bibl>
                </cit>.</note>
 
             <note xml:id="Od_4_ls10"><span type="link" from="#Od_4_6_22" n="0">22</span>
                <ref type="texto_poema">laudibus | pennatis [...] tollere me</ref>: <cit>
                   <quote xml:lang="lat">ferar | penna</quote>
-                  <bibl type="canon">Hor. <title>Carm.</title> 2.20.2</bibl>
+                  <bibl type="canon">Horatius, <title>Carmina</title>, 2, 20, 2</bibl>
                </cit>.</note>
 
             <note xml:id="Od_4_ls11"><span type="link" from="#Od_4_6_23" n="1">23-24</span>
                <ref type="texto_poema">tangere et ardua / Claro vertice sydera</ref>: <cit>
                   <quote xml:lang="lat">sublimi feriam sidera vertice</quote>
-                  <bibl type="canon">Hor. <title>Carm.</title> 1.1.36</bibl>
+                  <bibl type="canon">Horatius, <title>Carmina</title>, 1, 1, 36</bibl>
                </cit>. </note>
 
             <note xml:id="Od_4_ls12"><span type="link" from="#Od_4_7_25" n="1">25–26</span>
                <ref type="texto_poema">addant avaro divitias</ref>: <cit>
                   <quote>addant avaro divitias mari</quote>
-                  <bibl type="canon">Hor. <title>Carm.</title> 3.29. 61</bibl>
+                  <bibl type="canon">Horatius, <title>Carmina</title>, 3, 29, 61</bibl>
                </cit>.</note>
 
             <note xml:id="Od_4_ls13"><span type="link" from="#Od_4_7_27" n="1">27-28</span>: <ref
                   type="texto_poema">biceps / Collis</ref>: <cit>
                   <quote xml:lang="lat">Parnasosque biceps</quote>
-                  <bibl type="canon">Ov. <title>Met.</title> 2.221</bibl>
+                  <bibl type="canon">Ovidius, <title>Metamorphoses</title>, 2, 221</bibl>
                </cit>; <cit>
                   <quote xml:lang="lat">Helicon collisque biceps</quote>
-                  <bibl type="canon">Petrarca, <title>Epist. metr.</title> 3, 1, 87</bibl>
+                  <bibl type="canon">Petrarca, <title>Epistolae metricae</title>, 3, 1, 87</bibl>
                </cit>; <cit>
                   <quote xml:lang="lat">Parnasusque biceps</quote>
-                  <bibl type="canon">Boccaccio, <title>Egl.</title> 13, 97</bibl>
+                  <bibl type="canon">Boccaccio, <title>Eclogae</title>, 13, 97</bibl>
                </cit>. </note>
 
             <note xml:id="Od_4_ls14"><span type="link" from="#Od_4_8_31" n="0">31</span>
-               <ref type="texto_poema">Lalagen</ref>: <bibl type="canon">Hor. <title>Carm.</title>
-                  2.5.16</bibl>.</note>
+               <ref type="texto_poema">Lalagen</ref>: <bibl type="canon">Horatius, <title>Carmina</title>,
+                  2, 5, 16</bibl>.</note>
 
             <note xml:id="Od_4_ls15"><span type="link" from="#Od_4_12_46" n="1">46-47</span>
                <ref type="texto_poema">Stygias […] undas</ref>
-               <abbr>c.f.</abbr>
-               <bibl type="canon">Ov. <title>Met.</title> 2. 101, 3. 272</bibl>; <bibl type="canon"
-                     ><title>Tr.</title> 1. 65</bibl>; <bibl type="canon"><title>Pont.</title> 2.
-                  43</bibl>; <bibl type="canon">Virg. <title>Aen.</title> 7. 773</bibl>; <bibl
-                  type="canon">Prop. 3. 18. 9</bibl> etc. </note>
+               <abbr></abbr>
+               <bibl type="canon">Ovidius, <title>Metamorphoses</title>, 2, 101, 3, 272</bibl>; <bibl type="canon"
+                     ><title>Tristia</title>, 1, 65</bibl>; <bibl type="canon"><title>Ex Ponto, </title>
+                  43</bibl>; <bibl type="canon">Virgilius, <title>Aeneis</title>, 7, 773</bibl>; <bibl
+                  type="canon">Propertius, 3, 18, 9</bibl>, etc. </note>
 
             <note xml:id="Od_4_ls16"><span type="link" from="#Od_4_13_50" n="0">50</span>
                <cit>
                   <quote>cui non risere parentes</quote>
-                  <bibl type="canon">Virg. <title>Ecl.</title> 4. 62</bibl>
+                  <bibl type="canon">Virgilius, <title>Eclogae</title>, 4, 62</bibl>
                </cit> [según los mss. de Virgilio].</note>
 
             <note xml:id="Od_4_ls17"><span type="link" from="#Od_4_14_55" n="0">55</span>
                <ref type="texto_poema">Quae umbrarum nebulas spargit inertium</ref>: <cit>
                   <quote xml:lang="lat">Styx nebulas exhalat iners, umbraeque recentes</quote>
-                  <bibl type="canon">Ov. <title>Met.</title> 4. 434</bibl>
+                  <bibl type="canon">Ovidius, <title>Metamorphoses</title>, 4, 434</bibl>
                </cit>. </note>
          </div>
 
@@ -680,312 +680,305 @@
 
          <div type="bibliografia">
             <listBibl type="final">
-               <bibl>ALCINA, Juan Francisco, <title>Garcilaso de la Vega: Poesía completa</title>,
-                  Madrid, Austral, 2011.</bibl>
-               <bibl>ALCINA, Juan Francisco y VILLALONGA, Mariàngela, texto y apparatus de
-                     <title>Odas latinas</title>, in Garcilaso de la Vega, <title>Obra poética y
-                     textos en prosa</title>, ed. B. Morros, Barcelona, Crítica, 1995, pp.
+               <bibl>ALCINA, Juan Francisco (2011). <title>Garcilaso de la Vega: Poesía
+                  completa</title>, Austral: Madrid.</bibl>
+               <bibl>— (2023a). «Catulo en las Odas latinas de Garcilaso», <title>Bulletin
+                  Hispanique</title>. 2023/1 (n° 125), 141-160.</bibl>
+               <bibl>— (2023b). «Sobre la oda de Garcilaso a Juan Ginés de Sepúlveda»,
+                  <title>Homenaje a Elena Rodríguez Peregrina</title>. Universidad de Granada, en
+                  prensa.</bibl>
+               <bibl>ALCINA, Juan Francisco y VILLALONGA, Mariàngela (1955). Texto y apparatus de
+                  <title>Odas latinas</title>, in Garcilaso de la Vega, <title>Obra poética y
+                     textos en prosa</title>. (Ed.) Bienvenido Morros. Crítica: Barcelona,
                   251-268.</bibl>
-               <bibl>ALCINA ROVIRA, Juan Francisco, «Catulo en las Odas latinas de Garcilaso»,
-                     <title>Bulletin Hispanique</title> 2023/1 (n° 125), pp. 141-160 = 2023a.</bibl>
-               <bibl>ALCINA ROVIRA, Juan Francisco, «Sobre la oda de Garcilaso a Juan Ginés de
-                  Sepúlveda», <title>Homenaje a Elena Rodríguez Peregrina</title>, Universidad de
-                  Granada, 2023, en prensa.</bibl>
-               <bibl>BARBERIS, Walter, «La ‘lancia’ di Carlo V. Una proposta iconografica»,
-                     <title>Annali della Scuola Normale Superiore di Pisa. Classe di Lettere e
-                     Filosofia</title>, ser. V, 9, n. 2 (2017), pp. 445-463, 639-642.</bibl>
-               <bibl>BARNARD, Mary E., <title>Garcilaso de la Vega and the Material Culture of
-                     Renaissance Europe</title>, Toronto, University of Toronto Press, 2014.</bibl>
-               <bibl>BEMBO, Pietro, <title>Il primo volume delle lettere di M. Pietro Bembo</title>,
-                  Venice, Girolamo Scotto, 1562.</bibl>
-               <bibl>BLOOM, Harold, <title>The Anxiety of Influence: A Theory of Poetry</title>, New
-                  York, Oxford University Press, 1973.</bibl>
-               <bibl>BONILLA Y SAN MARTÍN, Adolfo, «Oda latina de Garci-Lasso de la Vega»,
-                     <title>Revista Crítica de Historia y Literatura españoles, portuguesas, é
-                     hispano-americana</title>s, IV (1899), pp. 362-371.</bibl>
-               <bibl>BRUNETTI, Oronzo, <title>A difesa dell’Impero. Pratica architettonica e
-                     dibattito teorico nel Viceregno di Napoli nel Cinquecento, con la trascrizione
-                     del ‘Trattato delle fortificazioni’ di Mario Galeota</title>, Galatina,
-                  Congedo, 2006.</bibl>
-               <bibl>CAPECE, Scipione, <title>Il poema «De principiis rerum» di Scipione Capece,
-                     patrizio napoletano, illustre scrittore del secolo XVI, colla traduzione in
-                     verso italiano sciolto, e le Annotazioni, di Francesco Maria Ricci, romano,
-                     abate benedettino casinese. Dello stesso Capece il poema «De vate maximo»,
-                     l’elegie, gli epigrammi, e due Prose Latine, con le notizie storiche e
-                     critiche, ec. del Conte Mazzuchelli, oltra le molte altrui testimonianze; e nel
-                     fine un Elegia, ed un poemetto di Onorato Fascitello. Il tutto con opportune
-                     Annotazioni del Traduttore</title>, Venezia, Dalle Stampe Remondiniane con
-                  facoltà de’ superiori, e privilegio, 1754.</bibl>
-               <bibl>CAPILUPI, Ippolito, <title>Hippolyti Capilupi Carmina</title>, Antwerp,
-                  Christophorus Plantinus, 1574.</bibl>
-               <bibl>CARRETER, Lázaro, <title>Clásicos españoles: de Garcilaso a los niños
-                     pícaros</title>, Madrid, Alianza, 2003.</bibl>
-               <bibl>CASTIGLIONE, Baldessar, <title>Carmina</title>, apud Rodney LOKAJ, ed.,
-                     <title>Two Renaissance Friends: Baldassare Castiglione, Domizio Falcone, and
+               <bibl>BARBERIS, Walter (2017). «La ‘lancia’ di Carlo V. Una proposta iconografica»,
+                  <title>Annali della Scuola Normale Superiore di Pisa. Classe di Lettere e
+                     Filosofia</title>, ser. V, 9, n. 2), 445-463, 639-642.</bibl>
+               <bibl>BARNARD, Mary E. (2014). <title>Garcilaso de la Vega and the Material Culture
+                  of Renaissance Europe</title>. University of Toronto Press: Toronto.</bibl>
+               <bibl>BEMBO, Pietro (1562). <title>Il primo volume delle lettere di M. Pietro
+                  Bembo</title>. Girolamo Scotto: Venice.</bibl>
+               <bibl>BLOOM, Harold (1973). <title>The Anxiety of Influence: A Theory of
+                  Poetry</title>. Oxford University Press: New York.</bibl>
+               <bibl>BONILLA Y SAN MARTÍN, Adolfo (1899). «Oda latina de Garci-Lasso de la Vega»,
+                  <title>Revista Crítica de Historia y Literatura españoles, portuguesas, é
+                     hispano-americanas</title>, IV, 362-371.</bibl>
+               <bibl>BRUNETTI, Oronzo (2006). <title>A difesa dell’Impero. Pratica architettonica e
+                  dibattito teorico nel Viceregno di Napoli nel Cinquecento, con la trascrizione
+                  del ‘Trattato delle fortificazioni’ di Mario Galeota</title>. Congedo:
+                  Galatina.</bibl>
+               <bibl>CAPECE, Scipione (1754). <title>Il poema «De principiis rerum» di Scipione
+                  Capece, patrizio napoletano, illustre scrittore del secolo XVI, colla
+                  traduzione in verso italiano sciolto, e le Annotazioni, di Francesco Maria
+                  Ricci, romano, abate benedettino casinese. Dello stesso Capece il poema «De
+                  vate maximo», l’elegie, gli epigrammi, e due Prose Latine, con le notizie
+                  storiche e critiche, ec. del Conte Mazzuchelli, oltra le molte altrui
+                  testimonianze; e nel fine un Elegia, ed un poemetto di Onorato Fascitello. Il
+                  tutto con opportune Annotazioni del Traduttore</title>. Dalle Stampe
+                  Remondiniane con facoltà de’ superiori, e privilegio: Venezia.</bibl>
+               <bibl>CAPILUPI, Ippolito (1574). <title>Hippolyti Capilupi Carmina</title>.
+                  Christophorus Plantinus: Antwerp.</bibl>
+               <bibl>CARRETER, Lázaro (2003). <title>Clásicos españoles: de Garcilaso a los niños
+                  pícaros</title>. Alianza: Madrid.</bibl>
+               <bibl>CASTIGLIONE, Baldessar (2015). <title>Carmina</title>, apud Rodney LOKAJ, ed.,
+                  <title>Two Renaissance Friends: Baldassare Castiglione, Domizio Falcone, and
                      their Neo-Latin Poetry</title>, Tempe, AZ, Arizona Center for Medieval and
-                  Renaissance Studies, 2015.</bibl>
-               <bibl>CASTIGLIONE, Baldessar, <title>Carmina</title>, apud Rodney LOKAJ, ed.,
-                     <title>Two Renaissance Friends: Baldassare Castiglione, Domizio Falcone, and
-                     their Neo-Latin Poetry</title>, Tempe, AZ, Arizona Center for Medieval and
-                  Renaissance Studies, 2015; revised and republished with new carmina in
-                     <title>Amicitia nel Rinascimento. I carmi di Baldassare Castiglione e Domizio
-                     Falcone</title>, di Rodney Lokaj, Roma, L’Erma di Bretschneider, 2018.</bibl>
-               <bibl> ——, <title>Il libro del cortegiano</title>, intr. Amedeo Quondam, Milano,
-                  Garzanti, 1981.</bibl>
-               <bibl>CHARLET, Jean-Louis, <title>Métrique latine humaniste des pré-humanistes
-                     padouans et de Pétrarque au XVIe siècle</title>, Geneva, Droz, 2019.</bibl>
+                  Renaissance Studies.</bibl>
+               <bibl>— (2018). <title>Carmina</title>. (Ed.) Rodney LOKAJ. <title>Two Renaissance
+                  Friends: Baldassare Castiglione, Domizio Falcone, and their Neo-Latin
+                  Poetry</title>, Tempe, AZ, Arizona Center for Medieval and Renaissance Studies,
+                  2015; revised and republished with new carmina in <title>Amicitia nel
+                     Rinascimento. I carmi di Baldassare Castiglione e Domizio Falcone</title>, di
+                  Rodney Lokaj. L’Erma di Bretschneider: Roma.</bibl>
+               <bibl>— (1981) <title>Il libro del cortegiano</title>. (Intr.) Amedeo Quondam.
+                  Garzanti: Milano.</bibl>
+               <bibl>CHARLET, Jean-Louis (2019). <title>Métrique latine humaniste des pré-humanistes
+                  padouans et de Pétrarque au XVIe siècle</title>. Droz: Geneva.</bibl>
                <bibl>CORSINI, Amerigo in website Poeti d’Italia in lingua latina (= <ref
-                     type="link_externo"
-                     target="https://www.poetiditalia.it/public/indici/autori/idautori/194"
-                     >URL</ref>)</bibl>
-               <bibl>CORTÉS TOVAR, Rosario, «Los intertextos latinos en la Ode ad Florem Gnidi: su
-                  dimensión metapoética», <title>Studia aurea</title>, 2 (2008), en línea.</bibl>
-               <bibl>——, «La Ode ad Thylesium, un ejercicio de horacianismo», in <title>Clasicismo
-                     horaciano en tiempos de Garcilaso de la Vega Le Classicime horacien à l’époque
-                     de Garcilaso de la Vega, Bulletin Hispanique</title>, CXXV (2023), pp.
+                  type="link_externo"
+                  target="https://www.poetiditalia.it/public/indici/autori/idautori/194"
+                  >URL</ref>)</bibl>
+               <bibl>CORTÉS TOVAR (2008). Rosario, «Los intertextos latinos en la Ode ad Florem
+                  Gnidi: su dimensión metapoética», <title>Studia aurea</title>, 2, en línea.</bibl>
+               <bibl>— (2023). «La Ode ad Thylesium, un ejercicio de horacianismo», in
+                  <title>Clasicismo horaciano en tiempos de Garcilaso de la Vega Le Classicime
+                     horacien à l’époque de Garcilaso de la Vega, Bulletin Hispanique</title>, CXXV,
                   121-139.</bibl>
-               <bibl>COURTNEY, Edward, <title>The Fragmentary Latin Poets</title>, Oxford, Oxford
-                  University Press, 1993.</bibl>
-               <bibl>COX, Virginia, «The Exemplary Vittoria Colonna», in <title>A Companion to
-                     Vittoria Colonna</title>, Leiden, Brill, 2016, pp. 467–501.</bibl>
-               <bibl>CUART MONER, Baltasar, «Juan Ginés de Sepúlveda: la impronta de Italia en un
-                  cronista del Emperador», <title>Historia, Antropología y Fuentes Orales</title>,
-                  46 (2011), pp. 73-89.</bibl>
-               <bibl>CZEPIEL, Maria, «Garcilaso’s ‘Sedes ad cyprias’: A New Source and a Re-
-                  appraisal», <title>Bulletin of Spanish Studies</title>, 96 (2019), pp.
-                  737–54.</bibl>
-               <bibl>——, «Two Newly Discovered Poems by Garcilaso de la Vega», <title>Bulletin of
-                     Spanish Studies</title>, 96 (2022), pp. 741-776.</bibl>
-               <bibl>——, «A Newly Discovered Poem Attributed to Diego Hurtado de Mendoza», in
-                     <title>Atti del Congresso Internazionale di Studi Diego Hurtado de Mendoza e
+               <bibl>COURTNEY, Edward (1993). <title>The Fragmentary Latin Poets</title>. Oxford
+                  University Press: Oxford.</bibl>
+               <bibl>COX, Virginia (2016). «The Exemplary Vittoria Colonna», in <title>A Companion
+                  to Vittoria Colonna</title>, Leiden, Brill, 467–501.</bibl>
+               <bibl>CUART MONER, Baltasar (2011). «Juan Ginés de Sepúlveda: la impronta de Italia
+                  en un cronista del Emperador», <title>Historia, Antropología y Fuentes
+                     Orales</title>, 46, 73-89.</bibl>
+               <bibl>CZEPIEL, Maria (2019). «Garcilaso’s ‘Sedes ad cyprias’: A New Source and a Re-
+                  appraisal», <title>Bulletin of Spanish Studies</title>, 96, 737–754.</bibl>
+               <bibl>— (2022). «Two Newly Discovered Poems by Garcilaso de la Vega», <title>Bulletin
+                  of Spanish Studies</title>, 96, 741-776.</bibl>
+               <bibl>— (2022). «A Newly Discovered Poem Attributed to Diego Hurtado de Mendoza», in
+                  <title>Atti del Congresso Internazionale di Studi Diego Hurtado de Mendoza e
                      l’Italia. Padova, 12-13 dicembre 2022</title>, Turnhout, Brepols
                   (forthcoming).</bibl>
-               <bibl>——, «Horacio y Sannazaro en las dos odas inéditas de Garcilaso de la Vega»,
-                     <title>Bulletin Hispanique</title>, 125 (2023), pp. 37-52.</bibl>
-               <bibl>DANIELE, F., Francesco, <title>Antonii Thylesii Cosentini Opera</title>,
-                  Naples, Fratres Simonii, 1762.</bibl>
-               <bibl>ERASMUS, Desiderius, and MORE, Thomas, <title>Luciani viri quam disertissimi
-                     compluria opuscula longe festiuissima ab Erasmo Roterodamo et Thoma moro
-                     interpretibus optimis in latinorum linguam traducta</title>, Paris, Ascensius,
-                  1506.</bibl>
-
-               <bibl>FALCONE, Domizio in <title>Amicitia nel Rinascimento. I carmi di Baldassare
-                     Castiglione e Domizio Falcone</title>, di Rodney Lokaj, Roma, L’Erma di
-                  Bretschneider, 2018.</bibl>
-
-               <bibl>FICINO, Marsilio, <title>Commentaire sur le Banquet de Platon</title>, ed. and
-                  tr. Raymond Marcel, Paris, Les Belles Lettres, 1956.</bibl>
-               <bibl>FICINO, Marsilio, <title>Platonic Theology</title>, ed. J. Hankins, trans. M.
-                  J. B. Allen, vol. 4 (I Tatti Renaissance Library 13), Cambridge, Mass., Harvard
-                  University Press, 2004.</bibl>
-               <bibl>FOSALBA, Eugenia, «Descripción del Ms. XIII AA 63 de la BN de Nápoles,
+               <bibl>— (2023). «Horacio y Sannazaro en las dos odas inéditas de Garcilaso de la
+                  Vega», <title>Bulletin Hispanique</title>, 125, 37-52.</bibl>
+               <bibl>DANIELE, F., Francesco (1762). <title>Antonii Thylesii Cosentini Opera</title>.
+                  Fratres Simonii: Naples</bibl>
+               <bibl>ERASMUS, Desiderius, and MORE, Thomas (1506). <title>Luciani viri quam
+                  disertissimi compluria opuscula longe festiuissima ab Erasmo Roterodamo et
+                  Thoma moro interpretibus optimis in latinorum linguam traducta</title>.
+                  Ascensius: Paris.</bibl>
+               
+               <bibl>FALCONE, Domizio (2018). in <title>Amicitia nel Rinascimento. I carmi di
+                  Baldassare Castiglione e Domizio Falcone</title>. (Ed.) Rodney Lokaj. L’Erma di
+                  Bretschneider: Roma.</bibl>
+               
+               <bibl>FICINO, Marsilio (1956). <title>Commentaire sur le Banquet de Platon</title>.
+                  (Ed.) and tr. Raymond Marcel. Les Belles Lettres: Paris.</bibl>
+               <bibl>FICINO, Marsilio (2004). <title>Platonic Theology</title>. (Ed.) J. Hankins,
+                  trans. M. J. B. Allen, vol. 4 (I Tatti Renaissance Library 13). Harvard University
+                  Press: Cambridge.</bibl>
+               <bibl>FOSALBA, Eugenia (2018). «Descripción del Ms. XIII AA 63 de la BN de Nápoles,
                   transmisor de dos odas neolatinas de Garcilaso», in Eugenia Fosalba y Gáldrick de
                   la Torre, eds., <title>Contexto latino y vulgar de Garcilaso en Nápoles: redes de
                      relaciones de humanistas y poetas (manuscritos, cartas, academias)</title>,
-                  Bern, Peter Lang Verlag, 2018, pp. 297-327.</bibl>
-               <bibl> ——, <title>Pulchra Parthenope: Hacia la faceta napolitana de la poesía de
-                     Garcilaso</title>, Madrid, Iberoamericana Vervuert, 2019.</bibl>
-               <bibl>——, «La sodalitas como fuente de inspiración en la poesía de Garcilaso»,
-                     <title>Studia Aurea</title>, 15 (2021), pp. 227-254.</bibl>
-               <bibl> Eugenia Fosalba, Adalid Nievas, “Garcilaso de la Vega, espía y mensajero de
-                  confianza del Virrey de Nápoles. Un documento autógrafo inédito”, <title>Boletín
-                     de la Real Academia Española</title>, t. 102, v. 326 (2022), 471-512.</bibl>
-               <bibl>Fosalba, Eugenia, «El viaje de Garcilaso desde Ratisbona a Nápoles, con
+                  Peter Lang Verlag: Bern, 297-327.</bibl>
+               <bibl>— (2019). <title>Pulchra Parthenope: Hacia la faceta napolitana de la poesía de
+                  Garcilaso</title>. Iberoamericana Vervuert: Madrid.</bibl>
+               <bibl>— (2021). «La sodalitas como fuente de inspiración en la poesía de Garcilaso»,
+                  <title>Studia Aurea</title>, 15, 227-254.</bibl>
+               <bibl> Eugenia Fosalba, Adalid Nievas (2022). “Garcilaso de la Vega, espía y
+                  mensajero de confianza del Virrey de Nápoles. Un documento autógrafo inédito”,
+                  <title>Boletín de la Real Academia Española</title>, t. 102, v. 326),
+                  471-512.</bibl>
+               <bibl>Fosalba, Eugenia (2023a). «El viaje de Garcilaso desde Ratisbona a Nápoles, con
                   estancia en Roma», in Davide Canfora, Nancy De Benedetto, y Paola Laskaris, eds.,
-                     <title>Aun a pesar de las tinieblas bella, aun a pesar de las estrellas clara.
+                  <title>Aun a pesar de las tinieblas bella, aun a pesar de las estrellas clara.
                      Pur nelle tenebre, bella / chiara, pur tra le stelle. Scritti in ricordo di
-                     Ines Ravasini</title>, Bari, Edizioni di Pagina, 2023a, pp. 355-73.</bibl>
-               <bibl> ——, «Hacia la suavitas de Horacio en la trayectoria poética de Garcilaso»,
-                     <title>Bulletin Hispanique</title>, 125, 1 (2023b), pp. 13-36.</bibl>
-               <bibl>——, “Sobre la posible circunstancia y fecha de composición de Sedes ad cyprias
-                  Venus, oda latina de Garcilaso”, <title>e-Humanista</title>, 25 (2024), pp. 10, en
+                     Ines Ravasini</title>, Bari, Edizioni di Pagina, 355-73.</bibl>
+               <bibl>— (2023b). «Hacia la suavitas de Horacio en la trayectoria poética de
+                  Garcilaso», <title>Bulletin Hispanique</title>, 125, 1, 13-36.</bibl>
+               <bibl>— (2024). “Sobre la posible circunstancia y fecha de composición de Sedes ad
+                  cyprias Venus, oda latina de Garcilaso”, <title>e-Humanista</title>, 25, 10, en
                   prensa.</bibl>
-               <bibl>——, “Why, where, and when was Garcilaso's Ode ad Florem Gnidi conceived?»,
-                     <title>Rassegna iberistica</title>, 47, 121 (2024), pp. 20 en prensa.</bibl>
-
-
-               <bibl>GAGNAEUS, I. [= Jean de Gagny], <title>Doctissimorum nostra aetate Italorum
-                     epigrammata</title>, Paris, Nicolaus Dives [= Nicolas le Riche], 1547.</bibl>
-               <bibl>GALLEGO MORELL, Antonio, <title>Garcilaso: documentos completos</title>,
-                  Barcelona, Planeta, 1976.</bibl>
-               <bibl>GAISSER, Julia Haig, <title>Catullus and His Renaissance Readers</title>,
-                  Oxford, Oxford University Press, 1993.</bibl>
-               <bibl>GARGANO, Antonio, «El género bucólico en Nápoles», <title>Bulletin
-                     hispanique</title>, CXIX (2017), pp. 573-590.</bibl>
-               <bibl>– –, «Locating Garcilaso de la Vega: Between Petrarchism and vernacular
+               <bibl>— (2024). “Why, where, and when was Garcilaso's Ode ad Florem Gnidi
+                  conceived?», <title>Rassegna iberistica</title>, 47, 121, 20 en prensa.</bibl>
+               
+               
+               <bibl>GAGNAEUS, I. [= Jean de Gagny] (1547). <title>Doctissimorum nostra aetate
+                  Italorum epigrammata</title>. Nicolaus Dives [= Nicolas le Riche]:
+                  Paris.</bibl>
+               <bibl>GALLEGO MORELL, Antonio (1976). <title>Garcilaso: documentos completos</title>.
+                  Planeta: Barcelona.</bibl>
+               <bibl>GAISSER, Julia Haig (1993). <title>Catullus and His Renaissance
+                  Readers</title>. Oxford University Press: Oxford.</bibl>
+               <bibl>GARGANO, Antonio (2017). «El género bucólico en Nápoles», <title>Bulletin
+                  hispanique</title>, CXIX, 573-590.</bibl>
+               <bibl>— (2022). «Locating Garcilaso de la Vega: Between Petrarchism and vernacular
                   Classicism», in Rodrigo Cacho Casal and Caroline Egan (eds), <title>The Routledge
                      Hispanic Studies Companion to Early Modern Spanish Literature and
-                     Culture</title> (Abingdon: Routledge, 2022)</bibl>
-               <bibl>GRAVINA, Pietro, <title>Petri Gravinae Neapolitani poematum libri</title>,
-                  Naples, ex officina Ioannis Sulsbacchii Hagenovensis Germani, 1532.</bibl>
-               <bibl>GRAY, Andrew F., «Garcilaso at Home in Naples: On the Neo-Latin Muse of the
-                  Príncipe de los Poetas Castellanos», <title>Calíope</title>, 21 (2016)
-                  5-33.</bibl>
-               <bibl>GUTTIÉRREZ VOLTA, J., «Las odas latinas de Garcilaso de la Vega»,
-                     <title>Revista de Literatura</title> II (1952), pp. 280-308.</bibl>
-               <bibl>HERNANDO SÁNCHEZ, Carlos José, «Parthénope, ¿tan lejos de su tierra? Garcilaso
-                  de la Vega y la poesía de la corte en Nápoles», en <title>Garcilaso y su época:
-                     del amor y la guerra</title>, ed. José María Díez Borque, Luis Ribot García,
-                  Madrid, Sociedad Estatal de Conmemoraciones Culturales, 2003.</bibl>
-
-               <bibl>HINDS, Stephen, <title>Allusion and Intertext: dynamics of approproation in
-                     Roman poetry</title>, Cambridge, Cambridge University Press, 1998.</bibl>
-               <bibl>KENISTON, H,<title> Garcilaso De La Vega: Works: A Critical Text With A
-                     Bibliography</title>, New York, Hispanic Society of America, 1925.</bibl>
-               <bibl>LOKAJ, Rodney, <title>Petrarch’s Ascent of Mount Ventoux: The Familiaris IV,
-                     1,</title> Scriptores Latini vol. 23, Rome, Edizioni dell’Ateneo, 2006.</bibl>
-               <bibl>LÓPEZ GRIGERA, María Luisa, «Notas sobre las amistades italianas de Garcilaso:
-                  un nuevo manuscrito de Pietro Bembo», in <title>Homenaje a Eugenio
-                  Asensio</title>, Luisa López Grigera, Augustin Redondo (eds.), Madrid, Gredos,
-                  1988, pp. 219-310.</bibl>
-               <bibl>LOSADA Angel, <title>Juan Gines de Sepúlveda a través de su “Epistolario” y
-                     nuevos documentos</title>, Reimpresión, Madrid, CSIC, 1973 [1949].</bibl>
-               <bibl>LUCIANO, <title>Luciani Samosatensis opuscula quaedam, Erasmo Rote. et Thoma
-                     Moro interpretib. Quorum elenchum sequens pagella complectitur</title>, Seb.
-                  Gryphius Germ. excud Lugudnuni, 1528.</bibl>
-
-               <bibl>LUMSDEN, Audrey, «Garcilaso de la Vega as a Latin poet», <title>MLR</title>,
-                  XLII (1947), pp. 337-341.</bibl>
-               <bibl>LUQUE MORENO, J., «Las poesías latinas de Garcilaso de la Vega: notas sobre
-                  métrica y crítica textual», in Andrés Soria Ortega; Nicolás Marín (coord.),
+                     Culture</title>. Routledge: Abingdon.</bibl>
+               <bibl>GRAVINA, Pietro (1532). <title>Petri Gravinae Neapolitani poematum
+                  libri</title>. Ex officina Ioannis Sulsbacchii Hagenovensis Germani:
+                  Naples.</bibl>
+               <bibl>GRAY, Andrew F. (2016). «Garcilaso at Home in Naples: On the Neo-Latin Muse of
+                  the Príncipe de los Poetas Castellanos», <title>Calíope</title>, 21, 5-33.</bibl>
+               <bibl>GUTTIÉRREZ VOLTA, J. (1952). «Las odas latinas de Garcilaso de la Vega»,
+                  <title>Revista de Literatura</title> II, 280-308.</bibl>
+               <bibl>HERNANDO SÁNCHEZ, Carlos José (2003). «Parthénope, ¿tan lejos de su tierra?
+                  Garcilaso de la Vega y la poesía de la corte en Nápoles», en <title>Garcilaso y su
+                     época: del amor y la guerra</title>. (Ed.) José María Díez Borque, Luis Ribot
+                  García, MSociedad Estatal de Conmemoraciones Culturales: Madrid.</bibl>
+               
+               <bibl>HINDS, Stephen (1998). <title>Allusion and Intertext: dynamics of approproation
+                  in Roman poetry</title>. Cambridge University Press: Cambridge.</bibl>
+               <bibl>KENISTON, Hayward (1925). <title> Garcilaso De La Vega: Works: A Critical Text
+                  With A Bibliography</title>. Hispanic Society of America: New York.</bibl>
+               <bibl>LOKAJ, Rodney (2006). <title>Petrarch’s Ascent of Mount Ventoux: The Familiaris
+                  IV, 1,</title> Scriptores Latini vol. 23, Edizioni dell’Ateneo: Rome.</bibl>
+               <bibl>LÓPEZ GRIGERA, María Luisa (1988). «Notas sobre las amistades italianas de
+                  Garcilaso: un nuevo manuscrito de Pietro Bembo», in <title>Homenaje a Eugenio
+                     Asensio</title>. (Eds.) Luisa López Grigera, Augustin Redondo. Gredos: Madrid,
+                  219-310.</bibl>
+               <bibl>LOSADA Angel (1973)). <title>Juan Gines de Sepúlveda a través de su
+                  “Epistolario” y nuevos documentos</title>. Reimpresión, CSIC: Madrid
+                  [1949].</bibl>
+               <bibl>LUCIANO (1528). <title>Luciani Samosatensis opuscula quaedam, Erasmo Rote. et
+                  Thoma Moro interpretib. Quorum elenchum sequens pagella complectitur</title>,
+                  Seb. Gryphius Germ. excud Lugudnuni.</bibl>
+               
+               <bibl>LUMSDEN, Audrey (1947). «Garcilaso de la Vega as a Latin poet»,
+                  <title>MLR</title>, XLII, 337-341.</bibl>
+               <bibl>LUQUE MORENO, J. (1979). «Las poesías latinas de Garcilaso de la Vega: notas
+                  sobre métrica y crítica textual», in Andrés Soria Ortega; Nicolás Marín (coord.),
                   Antonio Gallego Morell (coord.), Emilio Orozco Díaz (hom.), <title>Estudios sobre
                      literatura y arte dedicados al profesor Emilio Orozco Díaz</title>, Granada,
-                  Universidad de Granada, 1979, pp. 297-310.</bibl>
-               <bibl>MACRIN, Jean Salmon, <title>Le livre des Épithalames (1528-1531). Les Odes de
-                     1530 (Livres I &amp; II)</title>, ed. Georges Soubeille, Publications de
-                  l'Université de Toulouse-Le Mirail, Toulouse, 1978.</bibl>
+                  Universidad de Granada, 297-310.</bibl>
+               <bibl>MACRIN, Jean Salmon (1978). <title>Le livre des Épithalames (1528-1531). Les
+                  Odes de 1530 (Livres I &amp; II)</title>. (Ed.) Georges Soubeille. Publications
+                  de l'Université de Toulouse-Le Mirail: Toulouse.</bibl>
                <bibl>MANTUANUS, Baptista (scil. Battista Spagnoli) in website <title>Poeti d’Italia
-                     in lingua latina</title> (= <ref type="link_externo"
+                  in lingua latina</title> (= <ref type="link_externo"
                      target="https://www.poetiditalia.it/public/indici/autori/idautori/203"
                      >URL</ref>)</bibl>
-
-               <bibl>MELE, Eugenio, «Una Oda latina inedita de Garcilaso de la Vega y tres poesías
-                  inéditas a él dedicadas por Cosimo Anisio», <title>Revista Crítica de Historia y
-                     Literatura españoles, portuguesas, é hispano-americanas</title>, III (1898),
-                  pp. 362-8.</bibl>
-               <bibl>——, «Las poesías latinas de Garcilaso de la Vega y su permanencia en Italia»,
-                  parte 2, <title>Bulletin Hispanique</title>, XXVI (1924), pp. 35-51.</bibl>
-
+               
+               <bibl>MELE, Eugenio (1898). «Una Oda latina inedita de Garcilaso de la Vega y tres
+                  poesías inéditas a él dedicadas por Cosimo Anisio», <title>Revista Crítica de
+                     Historia y Literatura españoles, portuguesas, é hispano-americanas</title>,
+                  III, 362-8.</bibl>
+               <bibl>— (1924). «Las poesías latinas de Garcilaso de la Vega y su permanencia en
+                  Italia», parte 2, <title>Bulletin Hispanique</title>, XXVI, 35-51.</bibl>
+               
                <bibl>MOLZA, Francesco Maria in website <title>Poeti d’Italia in lingua
-                     latina</title> (= <ref type="link_externo"
+                  latina</title> (= <ref type="link_externo"
                      target="https://www.poetiditalia.it/public/indici/autori/idautori/282"
                      >URL</ref>)</bibl>
-
-               <bibl>MORALES LARA, Enrique, «Los dos nuevos poemas latinos de Garcilaso (Garcil IV y
-                  Garcil V): propuesta de traducción y comentario», <title>eHumanista</title>, 56
-                  (2023), pp. 370-392.</bibl>
-               <bibl>MORROS, Bienvenido, <title>Garcilaso de la Vega: Obra poética y textos en
-                     prosa</title>, Barcelona, Crítica, 1995.</bibl>
-               <bibl>MORROS, Bienvenido, <title>Garcilaso de la Vega: Obra poética y textos en
-                     prosa</title>, Clásicos y Modernos 18, Barcelona, Crítica, 2007.</bibl>
-
-               <bibl>NOBLE WOOD, Oliver, <title>A Tale Blazed Through Heaven: Imitation and
-                     Invention in the Golden Age of Spain</title>, Oxford, OUP, 2014.</bibl>
-               <bibl>MUSTARD, W. P., ed., <title>The Piscatory Eclogues of Jacopo Sannazaro</title>,
-                  Baltimore, The Johns Hopkins Press, 1914.</bibl>
-               <bibl>PASTORE, Alessandro al <title>Dizionario Biografico degli italiani</title>,
-                  volumen 52 (1998), ahora online: <ref type="link_externo" target="https://www.
-                     treccani.it/enciclopedia/mario-galeota_%28Dizionario-Biografico%29/"
+               
+               <bibl>MORALES LARA, Enrique (2023). «Los dos nuevos poemas latinos de Garcilaso
+                  (Garcil IV y Garcil V): propuesta de traducción y comentario»,
+                  <title>eHumanista</title>, 56, 370-392.</bibl>
+               <bibl>MORROS, Bienvenido (1995). <title>Garcilaso de la Vega: Obra poética y textos
+                  en prosa</title>. Crítica: Barcelona.</bibl>
+               <bibl>MORROS, Bienvenido (2007). <title>Garcilaso de la Vega: Obra poética y textos
+                  en prosa</title>. Clásicos y Modernos 18. Crítica: Barcelona.</bibl>
+               
+               <bibl>NOBLE WOOD, Oliver (2014). <title>A Tale Blazed Through Heaven: Imitation and
+                  Invention in the Golden Age of Spain</title>. OUP: Oxford.</bibl>
+               <bibl>MUSTARD, W. P. (Ed.) (1914). <title>The Piscatory Eclogues of Jacopo
+                  Sannazaro</title>, The Johns Hopkins Press: Baltimore.</bibl>
+               <bibl>PASTORE, Alessandro al (1988). <title>Dizionario Biografico degli
+                  italiani</title>, volumen 52, ahora online: <ref type="link_externo"
+                     target="https://www.treccani.it/enciclopedia/ricerca/pastore%20alessandro/"
                      >URL</ref>.</bibl>
-               <bibl>PEROSA, Alessandro and John SPARROW, <title>Renaissance Latin Verse: An
-                     Anthology</title>, Chapel Hill, University of North Carolina Press and London,
-                  Duckworth, 1979.</bibl>
-               <bibl> PIGNATTI, Franco, <title>Francesco Maria Molza intelletuale e poeta del
-                     Rinascimento italiano</title>, thèse de doctorat, vol. 3, Genève, Universitat
-                  de Genève, 2018.</bibl>
-               <bibl>PLATNAUER, Maurice, <title>Latin Elegiac Verse: A Study of the Metrical Usage
-                     of Tibullus, Propertius and Ovid</title>, Cambridge, Cambridge University
-                  Press, 1951.</bibl>
-               <bibl>PONTANO, Giovanni, <title>Ioannis Iovani Pontani Carminum, quae quidem extant,
-                     omnium, pars prima</title>. Basel, Cratander, 1531.</bibl>
+               <bibl>PEROSA, Alessandro and John SPARROW (1979). <title>Renaissance Latin Verse: An
+                  Anthology</title>. Chapel Hill. University of North Carolina Press and London:
+                  Duckworth.</bibl>
+               <bibl> PIGNATTI, Franco (2018). <title>Francesco Maria Molza intelletuale e poeta del
+                  Rinascimento italiano</title>, thèse de doctorat, vol. 3, Universitat de
+                  Genève: Genève.</bibl>
+               <bibl>PLATNAUER, Maurice (1951). <title>Latin Elegiac Verse: A Study of the Metrical
+                  Usage of Tibullus, Propertius and Ovid</title>. Cambridge University Press:
+                  Cambridge.</bibl>
+               <bibl>PONTANO, Giovanni (1531). <title>Ioannis Iovani Pontani Carminum, quae quidem
+                  extant, omnium, pars prima</title>. Cratander: Basel.</bibl>
                <bibl>POLITIAN (scil. Angelo Ambrogini) in website <title>Poeti d’Italia in lingua
-                     latina</title> (= <ref type="link_externo"
+                  latina</title> (= <ref type="link_externo"
                      target="https://www.poetiditalia.it/public/indici/autori/idautori/220"
                      >URL</ref>)</bibl>
-
-               <bibl>RACZYŃSKA, Alicja, “Il giardino di Venere nei poemi <hi style="italic"
-                     >Urania</hi> de Giovanni Pontano e <hi style="italic">Stanze</hi> di Angelo
-                  Poliziano”, <title>Romanica Olomucensia</title> 27.1 (2015), 141-149</bibl>
-               <bibl>RADT, Stefan, <title>Fragmenta Sophoclea in Tragicorum Graecorum
-                     Fragmenta</title>, vol. IV, Göttingen, Vandenhoeck &amp; Ruprecht, 1977.</bibl>
-               <bibl>RAVASINI, Ines, «Églogas piscatorias entre Italia y España», en <title>Rumbos
-                     del hispanismo en el umbral del Cincuentenario de la AIH</title>, Patrizia Bott
-                  (ed.), Roma, Bagatto Libri, 2012, 8 vols, III, pp. 330-37.</bibl>
-               <bibl>REED, Jay, «Textual Notes on the Latin Odes of Garcilaso de la Vega»,
-                     <title>Studia Aurea</title>, 15 (2021), pp. 475-84.</bibl>
-               <bibl>RIVERS, Elias L., <title>La Poesía de Garcilaso</title>, 1st ed., Barcelona,
-                  Editorial Ariel, S.A., 1974.</bibl>
-               <bibl> ROTA, Bernardino, <title>Rime</title>, ed. Luca Milite, Fondazione Pietro
-                  Bembo, Ugo Guanda Editore di Parma, 2000.</bibl>
-
-               <bibl>--, Berardino, <title>Carmina</title>, ed. Cristina Zampese, Turín, Edizioni
-                  RES, 2007.</bibl>
-
-               <bibl>SADOLETO, Jacopo, <title>Iacobi Sadoleti Curtius</title>, Bologna, Faelli,
-                  1532.</bibl>
-               <bibl> – – and Franceso SFONDRATI, <title>Duo poemata heroica illustriss. J.S. et F.
-                     Sfondrati, quorum alterum inscribitur Curtius, alterum vero De raptu
-                     Helenae</title>, Venice, Academia Veneta, 1559.</bibl>
+               
+               
+               <bibl>RADT, Stefan (1977). <title>Fragmenta Sophoclea in Tragicorum Graecorum
+                  Fragmenta</title>, vol. IV, Göttingen, Vandenhoeck &amp; Ruprecht.</bibl>
+               <bibl>RAVASINI, Ines (2012). «Églogas piscatorias entre Italia y España», en
+                  <title>Rumbos del hispanismo en el umbral del Cincuentenario de la AIH</title>.
+                  (Ed.) Patrizia Bott. Bagatto Libri: Roma, 8 vols, III, 330-37.</bibl>
+               <bibl>REED, Jay (2021). «Textual Notes on the Latin Odes of Garcilaso de la Vega»,
+                  <title>Studia Aurea</title>, 15, 475-84.</bibl>
+               <bibl>RIVERS, Elias L. (1974). <title>La Poesía de Garcilaso</title>, 1st ed.,
+                  Editorial Ariel, S.A.: Barcelona.</bibl>
+               <bibl> ROTA, Bernardino (2000). <title>Rime</title>. (Ed.) Luca Milite, Fondazione Pietro
+                  Bembo: Ugo Guanda Editore di Parma.</bibl>
+               
+               <bibl>— (2007). Berardino, <title>Carmina</title>. (Ed.) Cristina Zampese. Edizioni
+                  RES: Turín.</bibl>
+               
+               <bibl>SADOLETO, Jacopo (1532). <title>Iacobi Sadoleti Curtius</title> Faelli: Bologna.</bibl>
+               <bibl>— and Franceso SFONDRATI (1559). <title>Duo poemata heroica illustriss. J.S. et F.
+                  Sfondrati, quorum alterum inscribitur Curtius, alterum vero De raptu
+                  Helenae</title>. Academia Veneta: Venice.</bibl>
                <bibl> SANNAZARO, Jacopo, works in website <title>Poeti d’Italia in lingua
-                     latina</title> (= <ref type="link_externo"
+                  latina</title> (= <ref type="link_externo"
                      target="https://www.poetiditalia.it/public/indici/autori/idautori/226"
                      >URL</ref>)</bibl>
-               <bibl>—,<title> Arcadia</title>, ed., Carlo Vecce, Carocci Editore, Roma,
-                  2013.</bibl>
-               <bibl>SAVJ-LÓPEZ, Pablo and Eugenio MELE, «Una Oda latina de Garcilasso de la Vega»,
-                     <title>Revista Crítica de Historia y Literatura españoles, portuguesas, é
-                     hispano-americanas</title>, II, (1897), pp. 248-51.</bibl>
-               <bibl>SERRANO CUETO, Antonio, «El triunfo de Venus en los epitalamios neolatinos del
-                  Renacimiento», <title>Camenae</title>, 27 (2021), pp. 1-22.</bibl>
-               <bibl>SCHIBLI, H. S., <title>Pherekydes of Syros</title>, Oxford, Oxford University
-                  Press, 1990.</bibl>
-               <bibl>SLIWA, Krzysztof, ed., <title>Cartas, documentos y escrituras de Garcilaso de
-                     la Vega y de sus familiares</title>, Alcalá de Henares, Centro de Estudios
-                  Cervantinos, 2006.</bibl>
-               <bibl>STORONI Mazzolani, Lidia, <title>Iscrizioni funerarie, sortilegi e pronostici
-                     di Roma antica</title>, Torino, Einaudi, 1973.</bibl>
-               <bibl>TANSILLO, Luigi, <title>Rime</title>, ed. Tobia. R. Toscano, Roma, Bulzoni
-                  Editore, 2011, 2 vols.</bibl>
-               <bibl> TASSO, Bernardo, <title>Rime</title>, 2 vols., Edizioni RES, Torino,
-                  1995.</bibl>
-               <bibl> TATEO, Francesco, <title>L’umanesimo meridionale</title>, Bari, Laterza,
-                  1976.</bibl>
-
+               <bibl>— (2013). <title> Arcadia</title>. (Ed.) Carlo Vecce. Carocci Editore: Roma.</bibl>
+               <bibl>SAVJ-LÓPEZ, Pablo and Eugenio MELE (1897). «Una Oda latina de Garcilasso de la Vega»,
+                  <title>Revista Crítica de Historia y Literatura españoles, portuguesas, é
+                     hispano-americanas</title>, II, 248-51.</bibl>
+               <bibl>SERRANO CUETO, Antonio (2021). «El triunfo de Venus en los epitalamios neolatinos del
+                  Renacimiento», <title>Camenae</title>, 27, 1-22.</bibl>
+               <bibl>SCHIBLI, H. S. (1990). <title>Pherekydes of Syros</title>. Oxford University
+                  Press: Oxford.</bibl>
+               <bibl>SLIWA, Krzysztof (Ed.) (2006). <title>Cartas, documentos y escrituras de Garcilaso de
+                  la Vega y de sus familiares</title>. Centro de Estudios
+                  Cervantinos: Alcalá de Henares.</bibl>
+               <bibl>STORONI Mazzolani, Lidia (1973). <title>Iscrizioni funerarie, sortilegi e pronostici
+                  di Roma antica</title>. Einaudi: Torino.</bibl>
+               <bibl>TANSILLO, Luigi (2011). <title>Rime</title> (Ed.) Tobia. R. Toscano. Bulzoni
+                  Editore: Roma, 2 vols.</bibl>
+               <bibl> TASSO, Bernardo (1995). <title>Rime</title>, 2 vols., Edizioni RES: Torino.</bibl>
+               <bibl> TATEO, Francesco (1976). <title>L’umanesimo meridionale</title>. Laterza: Bari.</bibl>
+               
                <bibl>TELESIO, Antonio, <title>Imber aureus</title> in Antonii Thylesii Cosentini
                   Imber aureus tragoedia. Impressum Venetiis opera Bernardini Vitalis Veneti mense
                   Maio. M D XXIX</bibl>
-               <bibl> TILG, Stefan and Benjamin HARTER, <title>Neulateinische Metrik: Formen und
-                     Kontexte zwischen Rezeption und Innovation</title>, Tübingen, Narr,
-                  2019.</bibl>
-               <bibl>TORRE ÁVALOS, Gáldrick de la, «El grupo poético de Ischia y la adaptación al
-                  vulgar de la égloga piscatoria», <title>Bulletin hispanique</title>, 119 (2017),
-                  pp. 537-554.</bibl>
-               <bibl>TOSCANO, Tobia R., «Le egloghe latine di Giano Anisio ‘amico’ napoletano di
-                  Garcilaso», <title>Bulletin hispanique</title>, 119 (2017), pp. 495-515.</bibl>
-               <bibl> ——, «Fabio o Mario Galeota? Sull’identità di un rimatore napoletano del xvi
-                  secolo», <title>Filologia e critica</title>, XXXV, 2-3 (2010), pp. 178-203.</bibl>
-               <bibl>—, Onorato Fascitelli ‘alma de verdadero poeta’: dall’amicizia possibile con
+               <bibl>TILG, Stefan and Benjamin HARTER (1029). <title>Neulateinische Metrik: Formen und
+                  Kontexte zwischen Rezeption und Innovation</title>. Narr: Tübingen.</bibl>
+               <bibl>TORRE ÁVALOS, Gáldrick de la (2017). «El grupo poético de Ischia y la adaptación al
+                  vulgar de la égloga piscatoria», <title>Bulletin hispanique</title>, 119, 537-554.</bibl>
+               <bibl>TOSCANO, Tobia R. (2017). «Le egloghe latine di Giano Anisio ‘amico’ napoletano di
+                  Garcilaso», <title>Bulletin hispanique</title>, 119, 495-515.</bibl>
+               <bibl>— (2010). «Fabio o Mario Galeota? Sull’identità di un rimatore napoletano del xvi
+                  secolo», <title>Filologia e critica</title>, XXXV, 2-3, 178-203.</bibl>
+               <bibl>— (2018). Onorato Fascitelli ‘alma de verdadero poeta’: dall’amicizia possibile con
                   Garcilaso all’invettiva contro l’‘hispana avaritia’, in <title>Contexto latino y
                      vulgar de Garcilaso en Nápoles. Redes de relaciones de humanistas y poetas
                      (manuscritos, cartas, academias)</title>, a cura di Eugenia Fosalba e Gáldrick
-                  de la Torre Ávalos, Bern, Peter Lang, 2018, pp. 185-219.</bibl>
-
-               <bibl> —, ed. Bernardino Martirano, <title>Il pianto d’Aretusa</title>, ed. Tobia.
-                  R.Toscano, Napoli, Loffredo, 1993.</bibl>
-               <bibl>Vega, Garcilaso de la, <title>Obra poética y textos en prosa</title>, ed.
-                  Bienvenido</bibl>
-
-               <bibl>VAQUERO SERRANO, María del Carmen, «Dos poemas latinos: Uno nuevo a María de
+                  de la Torre Ávalos. Peter Lang: Bern, 185-219.</bibl>
+               
+               <bibl>— (1993). (Ed.) Bernardino Martirano, <title>Il pianto d’Aretusa</title>. (Ed.) Tobia.
+                  R.Toscano. Loffredo: Napoli.</bibl>
+               <bibl>Vega, Garcilaso de la (2007). <title>Obra poética y textos en prosa</title>. (Ed.) Bienvenido Morros. Crítica: Barcelona</bibl>
+               
+               <bibl>VAQUERO SERRANO, María del Carmen (2023). «Dos poemas latinos: Uno nuevo a María de
                   Mendoza, ¿la hija del Conde de Mélito?, y otro de Juan Ramírez»,
-                     <title>Lemir</title>, XXVII (2023), pp. 45-57, 08-06-2023, <ref
+                  <title>Lemir</title>, XXVII, 45-57, 08-06-2023, <ref
                      type="link_externo"
                      target="https://parnaseo.uv.es/lemir/Revista/Revista27/03_Vaquero_Carmen.pdf"
                      >URL</ref>.</bibl>
-               <bibl> WIND, E. <title>Pagan Mysteries in the Renaissance</title>, 2nd ed., New York,
-                  W. W. Norton &amp; Company, 1968.</bibl>
-
-               <bibl>ZAMPESE, Cristina (ed.), Berardino Rota, <title>Carmina</title>, Tur.n,
-                  Edizioni RES, 2007.</bibl>
+               <bibl> WIND, Edgar (1968). <title>Pagan Mysteries in the Renaissance</title>, 2nd ed.,
+                  W. W. Norton &amp; Company: New York.</bibl>
+               
+               <bibl>ZAMPESE, Cristina (Ed.), Berardino Rota (2007). <title>Carmina</title>.
+                  Edizioni RES: Turín.</bibl>
 
 
             </listBibl>
