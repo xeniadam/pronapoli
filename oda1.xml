@@ -1,0 +1,2411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="pronapoli.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="es">Oda I</title>
+            <title xml:lang="en">Ode I</title>
+            <author corresp="#GdV">Garcilaso de la Vega</author>
+            <respStmt xml:lang="es" resp="editor_filologico">
+               <resp>Edición filológica preparada por</resp>
+               <persName corresp="#RL" ref="https://pronapoli.com/equipo/lokaj-rodney/">Rodney Lokaj
+               </persName>
+            </respStmt>
+         </titleStmt>
+
+         <publicationStmt>
+            <publisher>Universitat de Girona</publisher>
+            <address>
+               <addrLine>Edifici Sant Domènec I</addrLine>
+               <addrLine> Pl. Ferrater i Mora, 1</addrLine>
+               <addrLine>17004 - Girona</addrLine>
+            </address>
+            <idno type="general">https://pronapoli.com/</idno>
+            <idno type="url_poema">https://pronapoli.com/soledadamena/oda1</idno>
+            <idno type="ISBN">978-84-09-62949-7</idno>
+            <availability status="restricted">
+               <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"
+                  >http://creativecommons.org/licenses/by-nc-nd/3.0/es/</licence>
+            </availability>
+         </publicationStmt>
+
+         <sourceDesc>
+            <p>Para la información de los testimonios utilizados para esta edición crítica digital,
+               se remite de momento, a la sección <ref type="link_interno"
+                  target="https://pronapoli.com/soledadamena/">Nuestra edición</ref>. </p>
+         </sourceDesc>
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="en">Inglés</language>
+            <language ident="es">Español</language>
+            <language ident="lat">Latín</language>
+            <language ident="cat">Catalán</language>
+         </langUsage>
+      </profileDesc>
+
+      <encodingDesc>
+         <p>Los criterios de edición se especifican en la sección general <ref type="link_interno"
+               target="https://pronapoli.com/soledadamena/">Nuestra edición</ref>, y los criterios
+            para codificación en XML-TEI del documento digital en <ref type="link_externo"
+               target="https://github.com/susannalles/pronapoli/blob/gh-pages/docs.md"/>.</p>
+         <p>La codificación XML-TEI ha sido modelada y realizada por <persName corresp="#SAT"
+               >Susanna Allés Torrent</persName>. Los archivos XML-TEI pueden encontrarse en <ref
+               type="link_externo"
+               target="https://github.com/susannalles/pronapoli/tree/gh-pages/SoledadAmena/XML-TEI"
+            /></p>
+      </encodingDesc>
+
+      <revisionDesc>
+         <change resp="#SAT"><date when="2024-02-17"/>Creación del documento XML-TEI.</change>
+         <change resp="#SAT"><date when="2024-02"/>Codificación documento XML-TEI.</change>
+         <change resp="#SAT"><date when="2024-05"/>Revisiones y homogeneización de la codificación
+            documento XML-TEI.</change>
+         <change resp="#SAT"><date when="2024-07-31">Correcciones y revisiones
+            finales.</date></change>
+      </revisionDesc>
+
+   </teiHeader>
+
+
+   <text>
+      <body>
+
+         <div type="contexto">
+            <div xml:lang="es">
+               <p> La <title>Oda I</title> empieza y concluye con el lamento, expresado a orillas de
+                  un río, por haber dejado atrás a los seres queridos: en su desarrollo, se da una
+                  oposición implícita entre el Danubio y el Sebeto, entre el Tajo y el Sebeto, y
+                  entre España e Italia. La Oda continúa con la figura de <persName
+                     ref="https://pronapoli.com/autor/telesio-antonio/">Antonio Telesio</persName>
+                  reconfortando con su canto al poeta español; es decir, componiendo la tragedia
+                     <title>Imber aureus</title> (desde Nápoles, o quizás ya de regreso en Cosenza,
+                  donde estaba destinado a morir a principios de 1534, es posible que antes; véase
+                     <bibl type="main">Fosalba, 2019: 42</bibl>). De este detalle podríamos inferir
+                  que Telesio también le había enviado, o le había entregado con anterioridad, una
+                  copia de esta tragedia a la que Garcilaso se refiere explícitamente en la Oda. El
+                  poema también rinde homenaje a un grupo de <term>sodales</term> de Garcilaso,
+                  napolitanos, propios de la nueva fase de la Accademia Pontaniana, en este momento
+                  posterior a la muerte en 1530 de <persName
+                     ref="https://pronapoli.com/autor/iacopo-sannazaro/">Jacopo
+                  Sannazaro</persName>, cuando parece que un lugar principal de reunión fue la
+                  mansión de <persName ref="https://pronapoli.com/autor/scipione-capece/">Scipione
+                     Capece</persName> (véase, de todas maneras, la pluralidad de academias que
+                  florecía en Nápoles en aquellos días en la sección <ref type="link_interno"
+                     target="https://pronapoli.com/academias/">Academias</ref>).</p>
+               <p>Además de las ediciones mencionadas en las notas y enumeradas en la bibliografía
+                  general, la <title>Oda I</title> ha sido editada por <bibl type="main">Rivers
+                     (1974: 459-483)</bibl>; <bibl type="main">Perosa y Sparrow (1979:
+                     521-524)</bibl>; y <bibl type="main">Alcina (2011: 345-348)</bibl>.</p>
+
+               <p>En 1532 Garcilaso se vio obligado a vivir durante cinco meses en una isla del
+                  Danubio (cf. <bibl type="main">Mele, 1924: 43</bibl>, sobre la isla en concreto, a
+                  todas luces perteneciente a la ciudad imperial de Ratisbona, cf. <bibl type="main"
+                     >Fosalba 2021</bibl>). Los primeros versos de la Oda hacen referencia a este
+                  periodo, pero, como sugiere Keniston, el poeta pudo haberla completado o compuesto
+                  en su totalidad poco después de su llegada a Nápoles en el otoño de ese año (<bibl
+                     type="main">Keniston, 1925: 297</bibl>), lo que sugiere una datación entre
+                  finales de 1532 y principios de 1533.</p>
+            </div>
+         </div>
+         <div type="metrica">
+
+            <div xml:lang="es">
+               <p>Esta composición está formada por estrofas alcaicas. Este nombre proviene del
+                  nombre del poeta que fue uno de los primeros en emplearla, Alceo de Mitilene, de
+                  Lesbos (620-580 a.C.), contemporáneo de Safo. La estrofa se compone de tres metros
+                  diferentes: dos endecasílabos (11 sílabas cada uno), un eneasílabo (9 sílabas) y
+                  un decasílabo (10 sílabas). La cadena silábica es la siguiente: <list>
+                     <item>Endecasílabo: sílaba (larga o corta) + larga + corta + dos largas +
+                        coriámbico (= troqueo + yambo) + corta + sílaba (larga o corta): x-u---uu-ux </item>
+                     <item>Eneasílabo: 2 largas + corta + 3 largas + corta + larga + sílaba (larga o
+                        corta): --u---u-x</item>
+                     <item>Decasílabo: coriámbico + 2 cortas + larga + corta + larga + sílaba (larga
+                        o corta): -uu-uu-u-x</item>
+                  </list>
+               </p>
+
+               <p>La estrofa alcaica es el metro lírico favorito de Horatius (cf. <cit>
+                     <quote>Nunc est bibendum, nunc pede libero / pulsanda tellus, nunc Saliaribus
+                        ecc</quote>
+                     <bibl type="main">Horatius, <title>Carmina</title>, 1, 37</bibl>
+                  </cit>, <cit>
+                     <quote>Eheu fugaces, Postume, Postume, / labuntur anni, nec pietas
+                        moram</quote>
+                     <bibl type="canon"><title>Carmina</title>, 2, 14</bibl>
+                  </cit>, et <bibl type="canon"><title>Carmina</title>, 1, 9, 16, 17, 26, 27, 29,
+                     31, 34, 35</bibl>; <bibl type="canon">2, 1, 3, 5, 7, 9, 11, 13, 15, 17, 19,
+                     20</bibl>; <bibl type="canon">3, 1-6, 17, 21, 23, 26, 29</bibl>; <bibl
+                     type="canon">4, 4, 9, 14, 15</bibl>). No obstante, después de Estacio, esta
+                  estrofa cayó en desuso y desapareció por completo en la Edad Media. Reaparece en
+                  el prehumanismo del siglo XIV con Quatrario, y vuelve a florecer en los siglos XV
+                  y XVI de la pluma de humanistas como Filelfo, Cleofilo, Geraldini, Buonaccorsi,
+                  Crinito, Marullo, Marcantonio Flaminio, Johannes (Janus) Secundus, Dolet y
+                  Macrinus (Dürr). Para un estudio detallado del Fortleben de tal metro, cf. <bibl
+                     type="main">Jean-Louis Charlet (2019: 180-194)</bibl>. </p>
+            </div>
+         </div>
+
+         <div type="notas">
+            <note xml:id="Od1_n1" n="01" corresp="#a_Od1_n1">
+               <note resp="#RL" xml:id="Od1_n1_es" xml:lang="es"><span type="link" from="#Od_1_1_1"
+                     n="0">1</span> El Sebethus/Sebethos es un río que Virgilio menciona
+                  indirectamente a través del nombre de la ninfa que habitaba en sus orillas (<cit>
+                     <quote>Sebethide nympha</quote>
+                     <bibl type="canon"><title>Aeneis</title>, 7, 734</bibl>
+                  </cit>), y directamente por <cit>
+                     <quote>pulchra tumeat Sebethos alumna</quote>
+                     <bibl type="canon">Statius, <title>Silvae</title>, 2, 263</bibl>
+                  </cit>, y por <cit>
+                     <bibl type="canon">Columela, 10, 134</bibl>
+                  </cit>. Véase el <ref type="link_int_c" target="#Od1_c1_es">Comentario v.
+                  1</ref></note>
+            </note>
+
+            <note xml:id="Od1_n2" n="02" corresp="#a_Od1_n2">
+               <note resp="#RL" xml:id="Od1_n2_es" xml:lang="es"><span type="link" from="#Od_1_1_1"
+                     n="4">1-5</span> La apertura forma parte de la tradición clásica relativa al
+                  motivo del abandono, al dejar atrás el hogar y a los seres queridos. Las
+                  principales referencias son Ovidio y Virgilio. En especial, en Virgilio se da la
+                  referencia no solo a las tierras extranjeras, sino también a las tierras conocidas
+                  por sus ríos. Véase <ref type="link_int_ls" target="#Od1_ls1">Loci similes vv.
+                     1-2</ref>, y <ref type="link_int_c" target="#Od1_c1_es">Comentario vv.
+                     1-2</ref>.</note>
+            </note>
+
+            <note xml:id="Od1_n3" n="03" corresp="#a_Od1_n3">
+               <note resp="#RL" xml:id="Od1_n3_es" xml:lang="es"><span type="link" from="#Od_1_2_5"
+                     n="1">5-6</span> Aprender a hacer eco de la propia voz por desfiladeros rocosos
+                  forma parte del mismo tema del abandono. La principal referencia es Virgilio,
+                  donde Melibeo recuerda con envidia a Tityro que este último tiene la suerte de
+                  poder ‘enseñar a los bosques a hacer eco del nombre de la hermosa Amarilis’, donde
+                  el <mentioned>didici</mentioned> de Garcilaso (‘aprendí’) resuena
+                  significativamente con <mentioned>doces</mentioned> (‘enseñas’) de Virgilio
+                  incluso en el mismo número de verso (Véase <ref type="link_int_ls"
+                     target="#Od1_ls3">Loci similes vv. 5-6</ref>).</note>
+            </note>
+
+            <note xml:id="Od1_n4" n="04" corresp="#a_Od1_n4">
+               <note resp="#RL" xml:id="Od1_n4_es" xml:lang="es"><span type="link" from="#Od_1_3_9"
+                     n="5">9-14</span> Así como Garcilaso (<foreign>alter ego</foreign> de Melibeo)
+                  se ve obligado a abandonar la patria y a sus seres queridos, también Telesio
+                     (<foreign xml:lang="lat">alter ego</foreign> de Tityro) resulta una figura
+                  reconfortante: relajado en el <foreign xml:lang="lat">locus amoenus</foreign>
+                  napolitano a orillas del Sebethus, e inspirándose tanto en Apolo como en las
+                  ninfas del río, brinda consuelo, al son de su lira, al amigo melancólico. Para un
+                  paralelo temático con el destierro de Ovidio en Tomis a orillas del Mar Muerto,
+                  cf. <bibl type="main">Alcina-Vilallonga (1995: 247</bibl>).</note>
+            </note>
+
+            <note xml:id="Od1_n5" n="05" corresp="#a_Od1_n5">
+               <note resp="#RL" xml:id="Od1_n5_es" xml:lang="es"><span type="link" from="#Od_1_3_12"
+                     n="0">12</span>
+                  <persName ref="https://pronapoli.com/autor/telesio-antonio/">Antonio
+                     Telesio</persName> (n. Cosenza 1482 - † 1534). En 1530, el año de la muerte de
+                  Sannazaro, entró a formar parte como miembro activo de la Accademia Pontaniana,
+                  donde coincidió con los principales intelectuales napolitanos, entre ellos
+                     <persName ref="https://pronapoli.com/autor/scipione-capece/">Scipione
+                     Capece</persName>. Es probable que los hermanos Brassicanus dirigieran a
+                  Garcilaso hacia Telesio, en previsión de su llegada a Nápoles, para introducirlo
+                  así en los círculos de humanistas partenopeos: Garcilaso acababa de dedicar la
+                     <title>Oda V</title> a Johan Alexander Brassicanus (Cannstatt, Stuttgart, 1500
+                  - Viena 1539, poeta laureado en 1518) a quien debió conocer estando confinado en
+                  la isla del Danubio cercana a Ratisbona; de ahí que sea altamente probable que
+                  fuera este humanista quien dirigiera a Garcilaso hacia Telesio, puesto que el
+                  hermano del poeta alemán, Ioannes Ludovicus Brassicanus (Johann Ludwig Köl,
+                  1509–49), editó el <title>De coronis</title> de Telesio, un tratado sobre la
+                  simbología política y religiosa de la corona en la Antigüedad, en donde Ludovicus
+                  elogio la erudición de que hace gala Telesio (<bibl type="main">Coroleu, 2018:
+                     181-182</bibl>). <bibl type="main">Morales (2023)</bibl> sugiere esta
+                  posibilidad, y considera que Garcilaso hubo de conocerse con Ludovicus en el cerco
+                  de Viena, lo que no es posible, puesto que Garcilaso había partido a Nápoles en el
+                  séquito de Pedro de Toledo (<bibl type="main">Fosalba 2023a</bibl>). Fue a su
+                  llegada a Nápoles, a partir de septiembre de 1532, cuando Telesio pudo presentar a
+                  Garcilaso a los humanistas napolitanos, y entre ellos a Capece. </note>
+            </note>
+
+            <note xml:id="Od1_n6" n="06" corresp="#a_Od1_n6">
+               <note resp="#RL" xml:id="Od1_n6_es" xml:lang="es"><span type="link" from="#Od_1_4_16"
+                     n="0">16</span> Las circunstancias crueles a las que se refiere Garcilaso aquí,
+                  son al destierro y el confinamiento en la isla del Danubio, viéndose el poeta
+                  apartado de la rutilante corte del Emperador, instalada en Rastisbona, y sobre
+                  todo, viviendo aislado durante cinco largos meses, lejos de la patria y sus seres
+                  queridos. Acerca de la naturaleza de la carcelería en que se encontraba y la isla
+                  en que debió sufrir el confinamiento, véase <bibl type="main">Fosalba
+                     (2022)</bibl></note>
+            </note>
+
+            <note xml:id="Od1_n7" n="07" corresp="#a_Od1_n7">
+               <note resp="#RL" xml:id="Od1_n7_es" xml:lang="es"><span type="link" from="#Od_1_5_18"
+                     n="1">18-19</span> La descripción de Garcilaso del río Tajo rodeando Toledo,
+                  casi abrazándola, no es nueva. De hecho, como se señala en los <ref
+                     type="link_int_ls" target="#Od1_ls11">Loci similes vv. 18-20</ref>, es similar
+                  a la descripción de Virgilio del Tíber fluyendo entre las siete colinas de Roma
+                  como una serpiente deslizándose, esta descripción aquí podría ser en parte un
+                  homenaje a una tradición estética de origen griego filtrada a través de <persName
+                     ref="https://pronapoli.com/autor/pietro-bembo/">Bembo</persName> (Venecia 1470
+                  - Roma 1547) y Navagero (Venecia 1483 - Blois 1529). Navagero describe Toledo
+                  entre 1525 y 1526, en las cartas de que envió a su amigo de la infancia, el
+                  diplomático veneciano, humanista y geógrafo Giovanni Battista Ramusio (Treviso
+                  1485 - Padua 1557), muy pormenorizadamente, con el Tajo circundando la ciudad, o
+                  abrazándola (véase <bibl type="main">Fosalba, 2019: 25-26</bibl>).</note>
+            </note>
+
+            <note xml:id="Od1_n8" n="08" corresp="#a_Od1_n8">
+               <note resp="#RL" xml:id="Od1_n8_es" xml:lang="es"><span type="link" from="#Od_1_6_21"
+                     n="1">21-22</span> El hogar de las Sirenas, las islas rocosas frente a la costa
+                  de Campania, también conocidas como los <term>scopuli Sirenum</term>, suele
+                  asociarse a la traición, el engaño y la belleza femenina que atrae a los hombres a
+                  un final desdichado. Aquí, por el contrario, las Sirenas se asocian a los orígenes
+                  del canto y la poesía. Se dice de Parténope, una de las tres sirenas que no
+                  lograron tentar a Ulises, que se lanzó al mar y terminó enterrada donde
+                  posteriormente se fundaría la ciudad de Nápoles.</note>
+            </note>
+
+            <note xml:id="Od1_n9" n="09" corresp="#a_Od1_n9">
+               <note resp="#RL" xml:id="Od1_n9_es" xml:lang="es"><span type="link" from="#Od_1_6_23"
+                     n="1">23-24</span> La tumba de Virgilio en Piedigrotta, Nápoles, objeto de
+                  veneración durante siglos, visitada por eruditos y poetas por igual (Estacio,
+                  Plinio el Joven, Cino de Pistoia, Boccaccio) para rendir homenaje al poeta romano.
+                     <bibl type="canon">Petrarca (<title>Familiarium rerum libri</title>, 21, 10,
+                     13)</bibl> afirma que incluso San Pablo, mientras lloraba ante la tumba de
+                  Virgilio, parece que exclamó que el poeta habría sido el más elocuente heraldo de
+                  Cristo si lo hubiera conocido.</note>
+            </note>
+
+            <note xml:id="Od1_n10" n="10" corresp="#a_Od1_n10">
+               <note resp="#RL" xml:id="Od1_n10_es" xml:lang="es"><span type="link"
+                     from="#Od_1_7_25" n="3">25-28</span> Preguntar qué dios ha sido favorable es un
+                  locus clásico también presente en la primera égloga de Virgilio. Al igual que en
+                  el efecto de espejo mencionado anteriormente (<mentioned>doces</mentioned> ~
+                     <mentioned>didici</mentioned>), aquí Garcilaso invierte el locus: mientras
+                  Meliboeus le pide a Tityrus que le cuente, aquí Garcilaso quiere responder a
+                  Telesio, quien ha planteado la pregunta. El legado intelectual del tiempo pasado
+                  en Nápoles, especialmente a través de las obras de Telesio y Scipione Capece, que
+                  el segundo caso, como se constata en la siguiente nota sobre el <span type="link"
+                     from="#Od_1_7_26">v. 26</span>, también deja algún rastro textual aquí, es como
+                  la imagen lucreciana (<bibl type="canon">Lucretius, 1, 931-50, 4, 8-25</bibl>) de
+                  la copa que lleva una medicina amarga (ajenjo) oculta o disfrazada por la dulzura
+                  (de la miel).</note>
+            </note>
+
+            <note xml:id="Od1_n11" n="11" corresp="#a_Od1_n11">
+               <note resp="#RL" xml:id="Od1_n11_es" xml:lang="es"><span type="link"
+                     from="#Od_1_7_25" n="0">25</span>
+                  <ref type="texto_poema">Aegro</ref>: el enfermo es Garcilaso, que necesita
+                  consuelo y curación después de la dura experiencia de su confinamiento en el
+                  Danubio.</note>
+            </note>
+
+            <note xml:id="Od1_n12" n="12" corresp="#a_Od1_n12">
+               <note resp="#RL" xml:id="Od1_n12_es" xml:lang="es"><span type="link"
+                     from="#Od_1_7_26" n="0">26</span>
+                  <ref type="texto_poema">auxilium potens</ref>: ¿Se trata de una alusión al
+                     <title>Imber aureus</title> de Telesio, o quizás a <title>De principiis
+                     rerum</title> de Scipio Capece, o a ambos? El intertexto siguiente sugeriría lo
+                  último: <cit>
+                     <quote>Nam veluti pueris apsinthia taetra medentes....</quote>
+                     <bibl type="canon">Lucretius, 4, 11</bibl>
+                  </cit> (cf. las hierbas (<ref type="texto_poema">herbis</ref>). El <ref
+                     type="texto_poema">repostis</ref> ('escondido') de Garcilaso se explicaría
+                  mejor, por lo tanto, no a través de Virgilio o Horacio, sino más bien mediante la
+                  referencia a <cit>
+                     <quote>prius oras pocula circum / contingunt mellis dulci flavoque liquore, /
+                        ut puerorum aetas improvida ludificetur... deceptaque non capiatur</quote>
+                     <bibl type="canon">Lucretius, 4, 12-16</bibl>
+                  </cit>, donde la amargura de la medicina se esconde bajo la dulzura de la miel. De
+                  hecho, esta es precisamente la fuente tanto conceptual como léxica que hay tras el
+                     <title>De vate maximo</title> [es decir, San Juan Bautista] (publicado en 1533
+                  y 1535) de <cit>
+                     <quote>Quumque aegris cordi sint dulcia pocula nobis, / Quod mage conducat
+                        latices potamus amaros</quote>
+                     <bibl type="canon">Capece, 2, 359-60</bibl>
+                  </cit>, que, a su vez, no solo es la fuente conceptual sino también léxica del
+                     <ref type="texto_poema">aegro</ref> de Garcilaso en el comienzo del <span
+                     type="link" from="#Od_1_7_25" n="0">v. 25</span>. </note>
+            </note>
+
+            <note xml:id="Od1_n13" n="13" corresp="#a_Od1_n13">
+               <note resp="#RL" xml:id="Od1_n13_es" xml:lang="es"><span type="link"
+                     from="#Od_1_7_28" n="0">28</span> Virgilio nació en el año 70 a.C. en Andes
+                  (hoy Pietole Vecchia), justo a las afueras de Mantua (hoy en la región italiana
+                  conocida como Lombardía), y falleció el 21 de septiembre del año 19 a.C. en
+                  Brindisi, a su regreso de un viaje a Grecia. La leyenda cuenta que murió antes de
+                  poder dar los toques finales a su obra maestra, la <title>Eneida</title>, que
+                  supuestamente intentó destruir. Su cuerpo fue llevado de vuelta a Nápoles y
+                  enterrado en una cueva llamada Piedigrotta, al pie de la colina Posillipo,
+                     <foreign xml:lang="gr">Παυσίλυπον</foreign>, que aún hoy en día es uno de los
+                  lugares de residencia más prestigiosos de la ciudad, con una magnífica vista sobre
+                  el Golfo de Nápoles. El topónimo Posillipo, como señala el poeta trágico griego
+                  Eurípides (<title>Bacantes</title>, 772), significa etimológicamente ‘alejar el
+                  peligro (o el dolor)’. Intelectuales y poetas a lo largo de los siglos siempre se
+                  han detenido en Piedigrotta para rendir homenaje al gran poeta latino. Entre ellos
+                  se encuentran Estacio, Plinio el Joven, Cino de Pistoia, Boccaccio y Petrarca. En
+                  1837, en la misma área arqueológica, el mayor poeta romántico de Italia, Giacomo
+                  Leopardi, también fue enterrado en una majestuosa tumba, declarando más tarde todo
+                  el sitio de importancia nacional.</note>
+            </note>
+
+            <note xml:id="Od1_n14" n="14" corresp="#a_Od1_n14">
+               <note resp="#RL" xml:id="Od1_n14_es" xml:lang="es"><span type="link"
+                     from="#Od_1_8_29" n="3">29-32</span> El dios en cuestión podría ser Apolo (u
+                  Orfeo, a quien Proteo atribuye poderes divinos en las <title>Geórgicas</title> de
+                  Virgilio, libro 4). <bibl type="main">Alcina-Vilallonga (1995: 249)</bibl> señalan
+                  que Garcilaso también describe el poder de la lira de Orfeo en el <title>Soneto
+                     XV</title> (vv. 1-10); <title>Canción V</title> (vv. 1-10); <title>Égloga
+                     II</title> ( vv. 940-44 y 1077-85).</note>
+            </note>
+
+            <note xml:id="Od1_n15" n="15" corresp="#a_Od1_n15">
+               <note resp="#RL" xml:id="Od1_n15_es" xml:lang="es"><span type="link"
+                     from="#Od_1_9_33" n="3">33-36</span> Obsérvese aquí el uso de <ref
+                     type="texto_poema">nexus</ref>, antes ‘de oro’ para rodear la ciudad natal de
+                  Garcilaso, Toledo (<span type="link" from="#Od_1_5_19" n="0">v. 19</span>), ahora
+                     <ref type="texto_poema">grati</ref>, que lo ata a él. Téngase en cuenta aquí
+                  también el uso aquí para Telesio del verbo <term>iuvare</term>, empleado a su vez
+                  antes (<span type="link" from="#Od_1_6_21" n="0">v. 21</span>), una repetición de
+                  concepto y sonido lograda también a través de la figura etimológica del mismo
+                  verso (<span type="link" from="#Od_1_9_33" n="0">v. 33</span>): <ref
+                     type="texto_poema">revinxit me tibi vinculo</ref>, una alternancia que las
+                  musas romanas, las <term>Camoenae</term>, citadas a continuación, encontraron
+                  particularmente agradable (cf. <cit>
+                     <quote>amant alterna Camenae</quote>
+                     <bibl type="canon">Virgilius, <title>Eclogae</title>, 3, 59</bibl>
+                  </cit>).</note>
+            </note>
+
+            <note xml:id="Od1_n16" n="16" corresp="#a_Od1_n16">
+               <note resp="#RL" xml:id="Od1_n16_es" xml:lang="es"><span type="link"
+                     from="#Od_1_10_37" n="3">37-40</span> El contexto amoroso aquí referenciado se
+                  basa en la tragedia <title> Imber aureus</title> de Telesio (sobre el mito de
+                  Danae), a quien, sin embargo, Garcilaso rinde aún mayor homenaje mediante el uso
+                  del diminutivo "amoroso" (<ref type="texto_poema">languidulus</ref>), que
+                  significa ‘languideciendo en la desdicha’, utilizado por <bibl type="canon"
+                     >Catullus, 64, 331</bibl> (cf. también <bibl type="canon">Cicero apud
+                     Quintilianus, 8, 3, 66</bibl>). Para el mito, consultar la <title>Oda
+                     III</title>, 24-25 (que también utiliza la locución <mentioned>imber
+                     aureus</mentioned>).</note>
+            </note>
+
+            <note xml:id="Od1_n17" n="17" corresp="#a_Od1_n17">
+               <note resp="#RL" xml:id="Od1_n17_es" xml:lang="es"><span type="link"
+                     from="#Od_1_11_44">44</span> ‘volar con palabras’ es un leitmotiv de origen
+                  clásico. Mercurio, el mensajero de los dioses, se representa con pies alados
+                     (<bibl type="canon">Virgilius, <title>Aeneis</title>, 4, 259</bibl>). En
+                  contextos poéticos similares de la metáfora náutica, el remo de un barco a menudo
+                  se asemeja a alas que llevan rápidamente su carga de palabras. Sin embargo, cuando
+                  un poeta se siente en deuda con alguien considerado superior, como Garcilaso con
+                  Telesio, quien le ha obsequiado aquí con su <title>Imber aureus</title>, o en la
+                     <ref type="link_interno" target="https://soledadamena.com/oda4">Ode
+                     IV</ref>, con respecto a Píndaro, Horacio y Bembo, el vuelo es posible de
+                  manera vicaria. Al igual que se puede ver más lejos al estar sentado sobre los
+                  hombros de gigantes, se puede elevar más rápidamente y con mayor altura al volar
+                  siguiendo la estela del verdadero genio poético.</note>
+            </note>
+
+            <note xml:id="Od1_n18" n="18" corresp="#a_Od1_n18">
+               <note resp="#RL" xml:id="Od1_n18_es" xml:lang="es"><span type="link"
+                     from="#Od_1_12_45" n="27">45-72</span> Parecería que Garcilaso presenta la
+                  buena acogida en Nápoles en una suerte de ensoñación en la que Telesio lo
+                  introduce en el círculo de Scipione Capece. Siguiendo a <bibl type="main">Mele
+                     (1924)</bibl> en <span type="link" from="#Od_1_7_25" n="0">v. 25</span> (‘El
+                  cardenal Seripando, probablemente’), <bibl type="main">Keniston (1925:
+                     299-300)</bibl> sugiere en los <span type="link" from="#Od_1_8_49" n="7">vv.
+                     49-56</span> que la alusión a la figura paternal a quien Garcilaso respeta
+                  profundamente podría ser Girolamo Seripando (ver también <bibl type="main">Alcina,
+                     2011: 341</bibl>; <bibl type="main">Fosalba, 2019: 111</bibl>; <bibl
+                     type="main">Cortés Tovar, 2023: 121, 129, 133</bibl>); sin embargo, en una idea
+                  a la que se suma <bibl type="main">Alcina-Vilallonga (1995: 250)</bibl>, quien
+                  admite que los elementos a favor de Capece son de hecho más convincentes. Este
+                  mismo nombre, venerado como aparece la figura en el contexto, incluso puede haber
+                  sugerido la fuente misma del lenguaje utilizado ahí. Es decir, junto con la
+                  convincente candidatura de Maecenas a través de Horacio (<bibl type="canon"
+                     >Horatius, <title>Satirae</title>, 1, 3, 64</bibl>) avanzada por <bibl
+                     type="main">Cortés Tovar (2023: 133)</bibl>, el nombre Scipione Capece puede
+                  haber revivido en Garcilaso también recuerdos escolásticos del <title>Somnium
+                     Scipionis</title>, sugiriendo así su <ref type="texto_poema">obtulit
+                  sese</ref>, fuertemente reminiscente de la descripción en Cicerón del encuentro
+                  entre el abuelo Escipión Africano -un <foreign xml:lang="lat">parens</foreign> en
+                  cierto sentido- y el nieto, Escipión Emiliano, en la Vía Láctea. El catálogo y la
+                  intensidad misma de los elementos deícticos en <span type="link"
+                     from="#Od_1_12_45" n="1">vv. 45-46</span>
+                  <ref type="texto_poema">Te, mi ... te ... sese</ref>, refuerzan la idea de gran
+                  intimidad y calidez. A su vez, la intertextualidad mostrada por Garcilaso (véanse
+                  todas las citas de Capece en los <ref type="link_int_ls" target="#Od1_ls31">Loci
+                     similes vv. 49-50</ref>, <ref type="link_int_ls" target="#Od1_ls32">vv.
+                     51-52</ref>, <ref type="link_int_ls" target="#Od1_ls33">vv. 53-54</ref> y <ref
+                     type="link_int_n" target="#Od1_n12_es">Nota v. 26</ref>) demuestra su
+                  conocimiento directo de las obras literarias de Capece, especialmente del primer
+                  libro del <title>De principiis rerum</title> (posiblemente en una etapa de
+                  preparación avanzada a principios de la década de 1530, durante la estancia de
+                  Capece en Salerno), así como ofrece muestras también conocer sus elegías. De todas
+                  formas, no hay que descartar que Garcilaso se pudiera referir a ambos personajes,
+                  Girolamo Seripando y Scipione Capece, con más elementos para creer que se refería
+                  en el fondo a Capece, sin querer ofender la amistad y admiración de Seripando.
+                  Este tipo de ambivalencias se dan en otras obras suyas, cuyos dedicatarios pueden
+                  ser dos personajes distintos, cuando a Garcilaso no le interesa ofender a nadie,
+                  aunque el verdadero destinatario puede reconocerse a través de alguna palabra
+                  clave (léase, por ejemplo, el <title>Soneto XXI</title>, que puede estar dedicado
+                  al Marqués del Vasto y al Marqués de Villafranca, con la solapada referencia a
+                     <mentioned>alto</mentioned> y <mentioned>profundo</mentioned>,
+                     <mentioned>alt</mentioned> y <mentioned>fons</mentioned> en catalán, como
+                  advierte <bibl type="main">Morros (1995: 39)</bibl>. </note>
+            </note>
+
+            <note xml:id="Od1_n19" n="19" corresp="#a_Od1_n19">
+               <note resp="#RL" xml:id="Od1_n19_es" xml:lang="es"><span type="link"
+                     from="#Od_1_12_46" n="0">46</span> La figura paterna, <foreign xml:lang="lat"
+                     >parens</foreign>, es o bien Girolamo Seripando o Scipione Capece. El debate
+                  académico tiende a favorecer a este último. Véase la nota anterior.</note>
+            </note>
+
+            <note resp="#RL" xml:id="Od1_n20" n="20" corresp="#a_Od1_n20">
+               <note xml:id="Od1_n20_es" xml:lang="es" resp="#RL"><span type="link"
+                     from="#Od_1_14_53" n="3">53-56</span> Aquí se dan múltiples niveles de alusión.
+                  Como se explica en los <ref type="link_int_ls" target="#Od1_ls33">Loci similes vv.
+                     53-54</ref>, el mismo Scipione Capece, en sus obras poéticas, alude a los
+                  crímenes del padre que recaen de diversas maneras sobre el hijo. Por otro lado,
+                  podría ser (también) una alusión a Pelops, mencionados por <bibl type="canon"
+                     >Horatius (<title>Carmina</title>, 1, 6; 8, 10</bibl>). Otra posibilidad es que
+                  sea una alusión al injusto castigo del destierro y confinamiento impuesto a
+                  Garcilaso por el Emperador, el simbólico "padre" de todos sus súbditos.</note>
+            </note>
+
+            <note xml:id="Od1_n21" n="21" corresp="#a_Od1_n21">
+               <note resp="#RL" xml:id="Od1_n21_es" xml:lang="es"><span type="link"
+                     from="#Od_1_15_58" n="0">58</span> Mario Galeota, gran amigo de Garcilaso,
+                  recordaba a nuestro poeta muchos años después de su muerte por su
+                     <mentioned>amicitia strettissima</mentioned>, es a quien se alude en clave en
+                  la <title>Ode ad florem Gnidi</title> en los versos 34-35, al <mentioned>remo
+                     condenado,/ en la concha de Venus amarrado</mentioned>; es decir, condenado a
+                  las galeras del amor, como galeote, en referencia velada a su apellido, como el
+                  Brocense desveló en su día. Véase <ref type="link_int_c" target="#Od1_c8_es"
+                     >Comentario v. 58</ref>. Para el <ref type="texto_poema">meus</ref> de <ref
+                     type="texto_poema">Marius meus</ref>, como una posible referencia a <bibl
+                     type="canon">Catullus, 10, 1</bibl>, y que por lo tanto, debe entenderse a
+                  Galeota como afín a Varo, véase <bibl type="main">Alcina Rovira (2023a:
+                     149)</bibl>. </note>
+            </note>
+
+            <note xml:id="Od1_n22" n="22" corresp="#a_Od1_n22">
+               <note resp="#RL" xml:id="Od1_n22_es" xml:lang="es"><span type="link"
+                     from="#Od_1_15_60" n="0">60</span> Placido de Sangro, noble extremadamente
+                  erudito, que prestó grandes servicios a Nápoles como embajador en la corte de
+                  Carlos V. Placido de Sandro fue también gran amigo de Garcilaso, de la que ha
+                  quedado constancia textual también. Véase <ref type="link_int_c"
+                     target="#Od1_c9_es">Comentario v. 60</ref>. </note>
+            </note>
+
+            <note xml:id="Od1_n23" n="23" corresp="#a_Od1_n23">
+               <note resp="#RL" xml:id="Od1_n23_es" xml:lang="es"><span type="link"
+                     from="#Od_1_17_67" n="0">67</span>
+                  <ref type="texto_poema">cohors</ref>: Cf. <ref type="texto_poema">coetusque
+                     silentum</ref> en <span type="link" from="#Od_1_15_57" n="1">vv.
+                  57-58</span>.</note>
+            </note>
+
+            <note xml:id="Od1_n24" n="24" corresp="#a_Od1_n24">
+               <note resp="#RL" xml:id="Od1_n24_es" xml:lang="es"><span type="link"
+                     from="#Od_1_17_68" n="0">68</span>
+                  <ref type="texto_poema">Cicones</ref>: antigua población que habitó en las orillas
+                  del río Hebros de Tracia. Se dice que Orfeo, profundamente entristecido y afligido
+                  por la pérdida de su esposa, Eurídice, rechazó los avances de las mujeres
+                  ciconianas que, ofendidas y en una frenética orgía en honor a Baco, lo
+                  despedazaron dispersando sus restos en los campos cercanos (<bibl type="canon"
+                     >Virgilius, <title>Georgicae</title>, 4, 516-527</bibl>; <bibl type="canon"
+                     >Silius Italicus, 1, 11, 477</bibl>). Cualquier conexión entre estas mujeres
+                  tracias y el término latino de "cigüeña", ciconia, y por lo tanto la supuesta
+                  apariencia "de cigüeña", es tal vez sugestiva pero etimológicamente insostenible.
+                  Lo que es plausible aquí, sin embargo, es que Garcilaso podría estar fusionando
+                  ambos elementos al referirse a ese gesto en particular mediante el cual, en la
+                  antigüedad, se ridiculizaba a las personas. Tanto <bibl type="canon">Persio
+                     (Saturae, 1, 58)</bibl> como <bibl type="canon">San Jerónimo (en prol. en
+                     Sophon. [= <title>Epistula</title>, 125, 18] y ad Rusticum Monachum [=
+                        <title>Epistula</title>, 4, 125])</bibl> describen este gesto como los dedos
+                  doblados en forma del pico de una cigüeña que se agitan detrás de la espalda de
+                  alguien. En casa de Capece, por lo tanto, cualquiera que se atreviera a presentar
+                  un pensamiento defectuoso sería ridiculizado de esta manera. </note>
+            </note>
+
+            <note xml:id="Od1_n25" n="25" corresp="#a_Od1_n25">
+               <note resp="#RL" xml:id="Od1_n25_es" xml:lang="es"><span type="link"
+                     from="#Od_1_17_68" n="0">68</span> El río mencionado aquí tanto por Virgilio
+                  como Silio Itálico, situado en Tracia, se llama Hebrus (<bibl type="canon"
+                     >Virgilius, <title>Georgicae</title>, 4, 524</bibl>; <bibl type="canon">Silius
+                     Italicus, 11, 477</bibl>), el mismo nombre latino del Ebro, el segundo río más
+                  importante de España. Para un locus similar garcilasiano en que el protagonista es
+                  despedazado por testigos frenéticos, cf. <ref type="link_interno"
+                     target="https://soledadamena.com/oda3">Oda III (vv. 58-60)</ref>
+                  (Cupido desgarrado en pedazos por los Coribantes en la temerosa imaginación de
+                  Venus).</note>
+            </note>
+
+            <note xml:id="Od1_n26" n="26" corresp="#a_Od1_n26">
+               <note resp="#RL" xml:id="Od1_n26_es" xml:lang="es"><span type="link"
+                     from="#Od_1_18_71" n="0">71</span>
+                  <ref type="texto_poema">putabas</ref>: imperfecto conativo, que sugiere
+                  imposibilidad.</note>
+            </note>
+
+            <note resp="#RL" xml:id="Od1_n27" n="27" corresp="#a_Od1_n27">
+               <note xml:id="Od1_n27_es" xml:lang="es"><span type="link" from="#Od_1_18_72" n="0"
+                     >72</span>
+                  <ref type="texto_poema">immemoremque</ref>: Cf. supra <span type="link"
+                     from="#Od_1_15_60" n="0">v. 60 </span><ref type="texto_poema">
+                  memor</ref>.</note>
+            </note>
+
+
+         </div>
+         <div type="comentarios">
+            <note xml:id="Od1_c1" n="01" corresp="#a_Od1_c1">
+               <note resp="#RL" xml:id="Od1_c1_es" xml:lang="es"><span type="link" from="#Od_1_1_1"
+                     n="0">1</span> Se cree que el Sebeto fluía directamente desde el volcán
+                  Vesubio, pasando por la ciudad de Nápoles y desembocando en el golfo, pero durante
+                  la Edad Media acabó sedimentado y sepultado bajo construcciones. No obstante, su
+                  recuerdo perduró en la literatura humanística, como en <cit>
+                     <quote>Forte quiescebat Veneris chorus ad caput amnis, / roscida Sebethos qua
+                        piger arva secat</quote>
+                     <bibl type="canon">Pontano, <title>De amore coniugali</title>, 2, 7, 7-8</bibl>
+                  </cit> (cuya <mentioned>roscida ... arva</mentioned> es importante, quizás también
+                  para la <title>Oda I</title> de Garcilaso, v. 70: <ref type="texto_poema">prata
+                     gyris uvida roscidis</ref>); <cit>
+                     <quote>Qua sua Sebethos candidus arva rigat</quote>
+                     <bibl type="canon"><title>Parthenopeus</title>, 2, 14, 10</bibl>
+                  </cit>; <cit>
+                     <quote>Sebethus miseros egit in amne modos</quote>
+                     <bibl type="canon">Pontano, 1, 20, 10</bibl>
+                  </cit>; <cit>
+                     <quote>Parthenope propriamque vocat Sebethos alumnam</quote>
+                     <bibl type="canon">Altilio, <title>Carmina</title>, 1, 135</bibl>
+                  </cit>; <cit>
+                     <quote>Sebethus riguo qua fluit amne pater</quote>
+                     <bibl type="canon">Molza, <title>Elegia</title>, 2, 3, 2</bibl>
+                  </cit>; <cit>
+                     <quote>gelidis arsit Sebethus in undis, / Parthenopeque iterum uixit et
+                        incaluit</quote>
+                     <bibl type="canon">Carbone, <title>Neniolae de morte Hieronymi
+                        Carbonis</title>, 3, 9-10</bibl>
+                  </cit>; <cit>
+                     <quote>Qua liquidis Sebethus aquis petit aequora propter / Parthenopem</quote>
+                     <bibl type="canon">Varchi, <title>Carmina</title>, 4, 21-22</bibl>
+                  </cit>; etc. En el siglo XVII, se erigió una estatua en el largo Sermoneta por
+                  Cosimo Fanzago para conmemorar el famoso y misterioso río Sebeto, cuya importancia
+                  estaba vinculada a los mismos orígenes de la ciudad de Nápoles.</note>
+            </note>
+
+            <note xml:id="Od1_c2" n="02" corresp="#a_Od1_c2">
+               <note resp="#RL" xml:id="Od1_c2_es" xml:lang="es"><span type="link" from="#Od_1_1_1"
+                     n="1">1-2</span> La referencia de Garcilaso a la isla donde estuvo confinado en
+                  el Danubio cerca de Ratisbona es similar, por lo tanto, a la de Melibeo, el
+                  personaje virgiliano que también se ve obligado a emigrar. En el contexto
+                  virgiliano, Tityrus enumera una serie de <term>adynata</term> también basados en
+                  masas de agua (<bibl type="canon">Virgilius, <title>Eclogae</title>, 1,
+                     59-63</bibl>), según las cuales los ciervos pastarán en el éter, el mar dejará
+                  todos sus peces en la playa, los partos "beberán" el agua del Arar, el actual río
+                  Saona en Francia, y los germanos la del Tigris en Mesopotamia. Los
+                     <term>adynata</term> virgilianos del co-texto señalan que el giro de los
+                  acontecimientos en la vida de Garcilaso recluido en el Danubio también es absurdo
+                  y antinatural, una conmoción de proporciones devastadoras. <bibl type="main"
+                     >Keniston (1925: 298)</bibl> señala que "Uxore" es la única mención, excepto
+                  por el <title>Soneto XVI</title>, de la esposa de Garcilaso en toda su obra, lo
+                  que respalda la interpretación de <ref type="texto_poema">mutare</ref>
+                  <span type="link" from="#Od_1_18_71" n="0">v. 71</span> en el sentido
+                  específicamente horaciano (consúltese <ref type="link_int_ls" target="#Od1_ls40"
+                     >Loci similes v. 69</ref>).</note>
+            </note>
+
+            <note xml:id="Od1_c3" n="03" corresp="#a_Od1_c3">
+               <note resp="#RL" xml:id="Od1_c3_es" xml:lang="es"><span type="link" from="#Od_1_4_13"
+                     n="4">13-17</span> El contraste entre Garcilaso en el Danubio, cuya mente
+                  vuelve a Toledo y al Tajo, y Telesio en el Sebethus de Nápoles se refuerza
+                  poéticamente con el <ref type="texto_poema">iam iam</ref> + participio presente
+                     (<ref type="texto_poema">sonantem</ref>) en el <span type="link"
+                     from="#Od_1_4_13" n="0">v. 13</span> y el <ref type="texto_poema">iam</ref> y
+                  participio pasado (<ref type="texto_poema">amatis</ref>) en el <span type="link"
+                     from="#Od_1_5_17" n="0">v. 17</span>. Téngase en cuenta que el modelo
+                  virgiliano que hay tras la apertura de la Oda parecería sugerir aquí que Apolo y
+                  las ninfas están incitando a Telesio a cantar, no a Garcilaso (de todas formas, se
+                  trata de un canto en <foreign xml:lang="lat">sodalitas</foreign>, de manera que lo
+                  uno no excluye lo otro). </note>
+            </note>
+
+            <note xml:id="Od1_c4" n="04" corresp="#a_Od1_c4">
+               <note resp="#RL" xml:id="Od1_c4_es" xml:lang="es"><span type="link" from="#Od_1_4_16"
+                     n="0">16</span> Dado que en su poema Benacus (alias <title>Lago de
+                     Garda</title>) Bembo utiliza el verso <quote>Volvite maiores, vaga flumina,
+                     volvite lymphas</quote> diecisiete veces (vv. 80, 87, 95, 103, 110, 117, 126,
+                  131, 139, 144, 151, 158, 163, 169, 179, 189), el uso por parte de Garcilaso del
+                  sintagma <ref type="texto_poema">vaga flumina</ref> podría plausiblemente ser un
+                  homenaje al poema latino más famoso de Bembo.</note>
+            </note>
+
+            <note xml:id="Od1_c5" n="05" corresp="#a_Od1_c5">
+               <note resp="#RL" xml:id="Od1_c5_es" xml:lang="es"><span type="link" from="#Od_1_5_18"
+                     n="1">18-19</span>
+                  <ref type="texto_poema">Tagus ... gestit</ref>: obsérvese que el verbo
+                     <term>gestio</term> se refiere a un deseo extremo que también se expresa a
+                  través de la gesticulación y movimiento del cuerpo, posiblemente refiriéndose aquí
+                  a la naturaleza sinuosa del río dorado que rodea la ciudad de Toledo por tres
+                  lados. La naturaleza dorada de este río, probablemente debido a sus arenas
+                  doradas, es un leitmotiv presente en la <title>Égloga III</title> (vv. 106 y
+                  202-206) de Garcilaso: “Del oro que el feliz Tajo envía” <bibl type="main">Morros
+                     (1995: 254)</bibl> y también más tarde en <cit>
+                     <quote>el licor del siempre rico y dorado Tajo</quote>
+                     <bibl type="canon">Cervantes, <title>El Quijote</title>, 1, 18</bibl>
+                  </cit>, tiene un precedente clásico en el Tíber a menudo presentado como rubio o
+                  de color dorado (véase <ref type="link_int_ls" target="#Od1_ls9">Loci similes vv.
+                     15-17</ref>). Para el Tajo como fuente de oro, véase <cit>
+                     <quote>amnis aurifer Tagus</quote>
+                     <bibl type="canon">Catullus, 29, 19</bibl>
+                  </cit>
+                  <bibl type="main">Alcina-Vilallonga (1995: 254)</bibl>; <cit>
+                     <quote>quodque suo Tagus amne vehit ... aurum</quote>
+                     <bibl type="canon">Ovidius, <title>Metamorphoses</title>, 2, 251</bibl>
+                  </cit>, <cit>
+                     <quote>Tagus auriferis harenis celebratur</quote>
+                     <bibl type="canon">Plinius, <title>Naturalis Historia</title>, 4, 115</bibl>
+                  </cit>; and, as such, in opposition to the Sebeto, cf. <cit>
+                     <quote>licet effuso Tagus auro / Et pater Oceanus spumanti perluat unda. / Nam
+                        mihi, nam tempus veniet cum reddita sceptra /Parthenopae</quote>
+                     <bibl type="canon">Sannazaro, <title>Eclogae piscatorie</title>, 4, 13-6</bibl>
+                  </cit>
+                  <bibl type="main">Alcina-Vilallonga (1995: 254)</bibl>.</note>
+            </note>
+
+            <note resp="#RL" xml:id="Od1_c6" n="06" corresp="#a_Od1_c6">
+               <note xml:id="Od1_c6_es" xml:lang="es" resp="#RL"><span type="link"
+                     from="#Od_1_10_40" n="0">40</span> Telesio utiliza sistemáticamente formas del
+                  verbo queror, "lamentar" (véase <ref type="link_int_ls" target="#Od1_ls24">Loci
+                     similes v. 40</ref>). Sin embargo, sigue la intención básica del mito, que es
+                  que el hombre no puede escapar a su propio destino, ya sea rey, como Akrisios, o
+                  una joven resguardada bajo llave, como Danae. Es cierto que Danae muestra al
+                  principio pavor y pudor ante la aparición de Zeus, no solo como lluvia sino
+                  también como granizo (<ref type="texto_poema">grando ... aurea</ref>), lo cual la
+                  aterroriza hasta casi la muerte (<ref type="texto_poema">nisi is Deus / Vetuisset,
+                     animula attonita abiisset metu</ref>). No obstante, cede rápidamente al abrazo
+                  amoroso del Dios del Trueno. De hecho, sucede sin miedo (Danae, Danae, animo
+                  timores discute), especialmente al oír que no está destinada a casarse con un
+                  mortal sino con Júpiter mismo, momento en que cede de inmediato, para quedar
+                  embarazada de Perseo. En Telesio, después Danae describe el abrazo como el de una
+                  abeja zumbando y una flor de tomillo, en la que la abeja deja su <ref
+                     type="texto_poema">spiculum / Desiderii, amorisque</ref>. En este punto, si
+                  este pasaje describe el anhelo de Danae (cf. <ref type="link_int_ls"
+                     target="#Od1_ls23">Loci similes v. 38</ref>), tal vez
+                     <mentioned>quaerentem</mentioned> (que no es métricamente adecuado en este
+                  lugar) sea un sentido subliminal del <ref type="texto_poema">querentem</ref> de
+                  Garcilaso.</note>
+            </note>
+
+            <note xml:id="Od1_c7" n="07" corresp="#a_Od1_c7">
+               <note resp="#RL" xml:id="Od1_c7_es" xml:lang="es"><span type="link"
+                     from="#Od_1_12_48" n="0">48</span> Este personaje, que permanece en el
+                  anonimato y que la crítica ha supuesto las más de las veces que se trata de
+                  Girolamo Seripando (véanse las principales opiniones en la <ref type="link_int_n"
+                     target="#Od1_n18_es">Nota v. 45-72</ref> a quien se refiere Garcilaso aquí,
+                  como alguien a quien venera podría tratarse de Scipione Capece (Nápoles 1480 - †
+                  ibídem 1551), ilustre jurista, académico y miembro del Santo Consejo Regio en
+                  Nápoles, con el nombre de humanista Scipio Capycius, se casó con Giunia
+                  Caracciolo, en cuya ocasión Telesio compuso el <title>Epitalamio in nuptias
+                     Scipionis Capycii et Iuniae Caracciolae</title>. Estudió bajo la tutela de
+                  Pontano y se convirtió en un dedicado miembro de la Accademia Pontaniana, cuyas
+                  reuniones organizaba en su propia casa después de que el virrey, don Pedro de
+                  Toledo, la suprimiera en los años cuarenta (y probablemente también antes de dicha
+                  prohibición). Peligrosamente curioso en su especulación sobre la fe, durante su
+                  exilio en la corte del príncipe de Salerno, Ferrante Sanseverino, compuso
+                     <title>De principiis rerum libri II</title>, cuyo primer libro, como se ha
+                  mencionado antes, podría haber obtenido alguna forma presentable a principios de
+                  la década de 1530. Aunque en los años cuarenta no gozaba del favor de las
+                  autoridades españolas, fue ampliamente conocido y apreciado (Aldo Manuzio,
+                  Bernardo Tasso, Vittoria Colonna) por su gran erudición y logros tanto en <foreign
+                     xml:lang="lat">litterae humanae</foreign>, en jurisprudencia, como en su labor
+                  editorial. Resulta particularmente interesante en este último campo que en 1535
+                  invitara a Giovanni Paolo Flavio a publicar la editio princeps de un manuscrito
+                  que había heredado de Pontano, que contenía las <title>Interpretationes
+                     vergilianae de Tiberius Claudius Donatu</title>s, redescubiertas en 1488. (cf.
+                     <bibl type="main">Alcina Rovira, 2023a: 142</bibl>). La edición finalmente se
+                  publicó en Nápoles bajo el título <title>Donati In libros duodecim Aeneidos quae
+                     antea desiderabatur absoluta interpretatio</title> y llevaba no solo una
+                  dedicatoria a Luis de Toledo, hijo del virrey, sino también una breve carta
+                  dirigida a Garcilaso de la Vega. De este texto podemos deducir que fue Garcilaso
+                  mismo quien convenció a Capece ("suasisti [...] tuo iussu [...] tua sententia") de
+                  publicar dicha edición "para beneficio común de todos los estudiosos". Además de
+                  algunos epigramas, tumuli, epístolas latinas y posiblemente algunos tratados
+                  breves de naturaleza no estrictamente jurídica, Capece compuso cuatro elegantes
+                  elegías, que han llegado hasta nosotros, una de las cuales está dedicada a
+                  Girolamo Seripando, otra a Antonio Perrenot, el futuro virrey de Nápoles. Como
+                  humanista cristiano, es conocido principalmente por su <title>De vate
+                     maximo</title> y su <title>De principiis rerum libri II</title>. El De vate
+                  maximo consta tres libros de hexámetros latinos publicados por primera vez en
+                  1533, y luego nuevamente en una edición revisada en 1535, muy apreciados tanto por
+                  Antonio Tebaldeo como por Teofilo Folengo. La obra es crítica con el <title>De
+                     partu Virginis</title> de Jacopo Sannazaro, en la medida en que también exalta
+                  la figura de San Juan Bautista (el "más grande de los profetas"), pero sin
+                  recurrir en absoluto a elementos mitológicos. <title>De principiis rerum libri
+                     II</title> es la obra más famosa de Capece y se publicó en 1546 en su forma
+                  definitiva por los herederos de Aldo Manuzio. Está dedicada a Paulo III Farnese
+                  (papa de 1534 a 1549), quien en 1540 autorizó la fundación de la Compañía de Jesús
+                  y en 1545 convocó el Concilio de Trento. También lleva una carta dedicatoria de
+                  Paolo Manuzio a Isabella Villamarina y un elogio de Pietro Bembo. Aunque
+                  desconocido por Garcilaso de la Vega en esta forma, el primer libro de los dos
+                  posiblemente ya estaba listo a principios de la década de 1530. En la venerada
+                  tradición napolitana de la poesía humanística didáctica de naturaleza científica,
+                  la forma, la inspiración e incluso el lenguaje de <title>De principiis</title> son
+                  íntimamente reminiscentes de <title>De rerum natura</title>, una obra que Lucrecio
+                  Caro posiblemente compuso en Nápoles. Sin embargo, los principios básicos no son
+                  lucrecianos, sino que se extraen, más bien, de la Verdad Revelada y están
+                  destinados a exponer y refutar la naturaleza aleatoria del atomismo lucreciano.
+                  Esencialmente antiepicúrea y, por lo tanto, antimaterialista, <title>De
+                     principiis</title> fue obra muy apreciada por los apologistas católicos de
+                  generaciones posteriores que defendían los conceptos cristianos de determinismo y
+                  Providencia Divina. Uno de esos apologistas fue el cardenal Melchior de Polignac
+                  (1661-1741), quien compuso el <title>Anti-Lucretius sive de Deo et Natura libri
+                     novem</title>, publicado póstumamente en 1745. </note>
+            </note>
+
+            <note xml:id="Od1_c8" n="08" corresp="#a_Od1_c8">
+               <note resp="#RL" xml:id="Od1_c8_es" xml:lang="es"><span type="link"
+                     from="#Od_1_15_58" n="0">58</span> Véase el tratado de fortificaciones en que
+                  se desliza esta alusión afectiva a Garcilaso por parte de Galeota: “Prossimo a
+                  questo defetto mi pare il servirsi di una natione, potendo servirsi ancora delle
+                  altre [...]. Ma ottima cosa mi pare di doversi servire di tutto con elettione,
+                  essendo certo che non mancano de buoni per tutto, come per tutto non mancano de
+                  cattivi. E ben dicea a questo proposito l’honorata memoria di Garsilasso della
+                  Vega, huomo raro di ingegno, di valore, et di lettere, che non si trovavano se non
+                  due nationi solo nel mondo, l’una delli buoni, et l’altra de tristi. Et già si
+                  vede che i buoni non ostante che tra loro sia diversità di lingua et di paese
+                  contrattano spesso amicitia strettissima, come fu tra me et lui, et così i cattivi
+                  quando tutti si dilettano di un male”. <bibl type="main">(Brunetti, 2006:
+                     267)</bibl>. Fragmento citado por <bibl type="main">Carlos Hernando (2003:
+                     102)</bibl>, que remite directamente al ms. (Libro 2, <title>Delle
+                     Fortificationi</title>), ms. 12-D-21, s.p., BNN, y también por <bibl
+                     type="main">Toscano (2010: 188)</bibl>. Recientemente también citado por <bibl
+                     type="main">Fosalba (2022: 234)</bibl>, con más detalles sobre la actividad
+                  poética de Galeota en relación con Garcilaso y el mismo Rota. Acerca de la
+                  actividad poética de Galeota bajo el seudónimo de Fabio y sus conexiones con la
+                     <title>Ode ad florem Gnidi</title>, véase Toscano (2010). (Sobre la
+                  biobibliografía de Mario Galeota consúltese la entrada de <ref type="link_externo"
+                     target="https://www.treccani.it/enciclopedia/ricerca/alessandro-pastore/Dizionario_Biografico/"
+                     >Alessandro Pastore al <title>Dizionario Biografico degli italiani</title>,
+                     volumen 52 (1998)</ref>, ahora online). Por otro lado, a través del participio
+                  presente silentes, Garcilaso rinde aún más homenaje a esta figura paternal
+                  (¿Capece?) comparando a este personaje, intertextualmente, con el hombre de Samos
+                  de las <title>Metamorfosis</title> de Ovidio, quien, eco a su vez de Lucrecio,
+                  enseña a un "grupo de silenciosos y admirados", lo que él mismo había aprendido
+                  sobre "las causas y la naturaleza de las cosas". A través de la similitud con las
+                  mujeres ciconianas (v. 68), además, Garcilaso compara específicamente a este
+                     <mentioned>parens</mentioned> con Orfeo, como en los versos 29-32. </note>
+            </note>
+
+            <note xml:id="Od1_c9" n="09" corresp="#a_Od1_c9">
+               <note resp="#RL" xml:id="Od1_c9_es" xml:lang="es"><span type="link"
+                     from="#Od_1_15_60" n="0">60</span> Sobre esta amistad con Placido de Sangro,
+                  véase la <title>Oratione […] nelle esequie di Carlo V, recitata in Napoli a 24 di
+                     febrero 1559</title>, de Girolamo Seripando, arzobispo de Salerno, en cuyo
+                  prefacio, dedicado a Placido de Sangro, y en plena alabanza de la suavitas del
+                  horacianimo de Garcilaso, escribe los siguiente: <quote>[…] quell’ honoratissimo e
+                     virtuossisimo cavaliero Garcilasso della Vega, amico nostro commone, … (che
+                     come sapete era studiossisimo d’Horatio, e l’imitava ne i suoi scritti
+                     felicemente) […] [sin paginación]</quote> (<bibl type="main">Fosalba, 2023b:
+                     14</bibl>). Sobre la presencia de Placido de Sangro en compañía de Mario
+                  Galeota y Girolamo Seripando en <title>Cicero relegatus &amp; Cicero revocatus,
+                     dialogi festivissimi</title> de Ortensio Lando, sobre la polémica ciceroniana,
+                  y en relación con la <title>Epístola a Boscán</title>, véase <bibl type="main"
+                     >Fosalba (2019: 221-222)</bibl>.</note>
+            </note>
+
+            <note xml:id="Od1_c10" n="10" corresp="#a_Od1_c10">
+               <note resp="#RL" xml:id="Od1_c10_es" xml:lang="es"><span type="link"
+                     from="#Od_1_18_69" n="1">69-70</span>
+                  <ref type="texto_poema">num ... num</ref>: una fuerte invitación a sugerir que el
+                  siguiente <ref type="texto_poema">putabas</ref>
+                  <span type="link" from="#Od_1_18_71" n="0">v. 71</span> debe producir una
+                  respuesta negativa; para <ref type="texto_poema">gyris ... roscidis</ref> como una
+                  posible alusión, no tanto a la naturaleza sinuosa del Tajo, como a las azudas, las
+                  ruedas hidráulicas moriscas también mencionadas en <title>Égloga III</title>,
+                  215-216, cf. <bibl type="main">Keniston (1925: 301)</bibl>, <bibl type="main"
+                     >Alcina-Vilallonga (1995: 257)</bibl> y <bibl type="main">Cortés Tovar (2023:
+                     129)</bibl>. Nótese, no obstante, el perfecto paralelo semántico y estructural
+                  que describe el Tajo: <ref type="texto_poema">18 aureo ~ 69 divitiis, 19 nodare
+                     nexu gestit ~ 70 gyris</ref>. Sobre un posible eco catuliano aquí, cf. <bibl
+                     type="main">Alcina Rovira (2023a: 149-150)</bibl>. En la junctura con <ref
+                     type="texto_poema">gyris</ref>, hay una posible alusión al símil virgiliano
+                  entre los campos a las orillas del Tíber, mientras el río serpentea entre sus
+                  siete colinas, y una serpiente deslizándose en <cit>
+                     <quote>fataliaque arva ... Thybrim ... lubricus anguis ... septem ingens gyros,
+                        septena volumina traxit</quote>
+                     <bibl type="canon">Virgilius, <title>Aeneis</title>, 5, 82-5</bibl>
+                  </cit>. La traducción de F. de la Serna, ‘yervas fertilizadas del rocío’ sigue la
+                  corrección (amétrica) de su MS en <mentioned>avias roscidis: avia</mentioned>,
+                  donde se menciona como planta medicinal, por lo demás desconocida, por <bibl
+                     type="canon">Columella, 6, 14, 3</bibl>. </note>
+            </note>
+         </div>
+
+         <div type="loci_similes">
+
+            <note resp="#RL" xml:id="Od1_ls1"><span type="link" from="#Od_1_1_1" n="1">1-2</span>
+               <ref type="texto_poema">Uxore ... loca</ref>: <cit>
+                  <quote>nos patriae finis et dulcia linquimus arva, / nos patriam fugimus</quote>
+                  <bibl type="canon">Virgilius, <title>Eclogae</title>, 1, 3</bibl>
+               </cit>; <cit>
+                  <quote>finibus exul</quote>
+                  <bibl type="canon">Virgilius, <title>Eclogae</title>, 1, 61</bibl>
+               </cit>; <cit>
+                  <quote>en umquam patrios longo post tempore finis ... tuguri ... culmen / mea
+                     regna</quote>
+                  <bibl type="canon">Virgilius, <title>Eclogae</title>, 1, 67-9</bibl>
+               </cit>; <cit>
+                  <quote>exilioque graves exiliique loco</quote>
+                  <bibl type="canon">Ovidius, <title>Tristia</title>, 3, 11, 36</bibl>
+               </cit>; <cit>
+                  <quote>uxore natis genitore et matre relictis</quote>
+                  <bibl type="canon">Ausonius, <title>Commemoratio professorum
+                        Burdigalensium</title>, 24, 13</bibl>
+               </cit>. <bibl type="main">Alcina Rovira (2023a:145)</bibl> propone para la
+               enumeración en asíndeton: <cit>
+                  <quote>(Attis) patria, bonis, amicis, genitoribus abero?</quote>
+                  <bibl type="canon">Catullus, 63, 59</bibl>
+               </cit>. Para el impacto del locus clásico en el siglo XVI, <bibl type="main">Falcone,
+                     <title>Carmina</title>, 38 (<title>Epitaphium Antonij Glaucie exulis</title>) y
+                  21 (<title>Ad Sodales</title>)</bibl>. </note>
+
+            <note resp="#RL" xml:id="Od1_ls2"><span type="link" from="#Od_1_1_3" n="2">3-5</span>
+               <ref type="texto_poema">barbarorum ferre superbiam... coactus</ref>: para la idea de
+               ‘verse obligado’ a soportar la altivez extranjera, cf.<cit>
+                  <quote>nemo e vobis fastidium Macedonum, nemo vultum superbum ferre
+                     cogetur</quote>
+                  <bibl type="canon">Curtius, 5, 8</bibl>
+               </cit> (para la formulación véase <cit>
+                  <quote>miraris, si liberi homines superbiam tuam ferre non possumus?</quote>
+                  <bibl type="canon">Curtius, 7, 7</bibl>
+               </cit>).</note>
+
+            <note resp="#RL" xml:id="Od1_ls3"><span type="link" from="#Od_1_2_5" n="1">5-6</span>
+               <ref type="texto_poema">invia ... ingeminantia</ref>: para la alusión a rocas que
+               hacen eco, véase, <cit>
+                  <quote>formosam resonare doces Amaryllida silvas</quote>
+                  <bibl type="canon">Virgilius, <title>Eclogae</title>, 1, 5</bibl>
+               </cit>, <cit>
+                  <quote>ubi concava pulsu / saxa sonant vocisque offensa resultat imago</quote>
+                  <bibl type="canon"><title>Georgicae</title>, 4, 49-50</bibl>
+               </cit>; <cit>
+                  <quote>Interea toto clamanti litore “Theseu!” / reddebant nomen concava saxa tuum,
+                     / et quotiens ego te, totiens locus ipse vocabat</quote>
+                  <bibl type="canon">Ovidius, <title>Epistulae ex Ponto</title>, 10, 23-25</bibl>
+               </cit>). Compárese también, <cit>
+                  <quote>ausus quin etiam voces iactare per umbram / implevi clamore vias maestusque
+                     Creusam / nequiquam ingeminans iterumque iterumque vocavi and 5.227-28 tum vero
+                     ingeminat clamor cunctique sequentem / instigant studiis resonatque fragoribus
+                     aether</quote>
+                  <bibl type="canon">Virgilius, <title>Aeneis</title>, 2, 768-70</bibl>
+               </cit>. Para un uso contemporáneo, véase, <cit>
+                  <quote>et plausu resonant concava saxa novo</quote>
+                  <bibl type="canon">Castiglione, 10 (<title>Ad eandem</title>), 98</bibl>
+               </cit>. Sobre un posible eco lucreciano aquí (<cit>
+                  <quote>didicere querellas</quote>
+                  <bibl type="canon">Lucretius, 5, 1384</bibl>
+               </cit>), véase<bibl type="main"> Alcina Rovira (2023a: 145 n.19)</bibl>.</note>
+
+            <note resp="#RL" xml:id="Od1_ls4"><span type="link" from="#Od_1_2_8" n="0">8</span>
+               <ref type="texto_poema">murmure Danubii</ref>: para el tema del exilio, <cit>
+                  <quote>ante pererratis amborum finibus exul / aut Ararim Parthus bibet aut
+                     Germania Tigrim</quote>
+                  <bibl type="canon">Virgilius, <title>Eclogae</title>, 1, 61-62</bibl>
+               </cit>. Para el léxico específico, <cit>
+                  <quote>murmure ventus</quote>
+                  <bibl type="canon">Lucretius, 1, 267</bibl>
+               </cit>; <cit>
+                  <quote>requierunt murmura ponti</quote>
+                  <bibl type="canon">Pontano, <title>Eglogae</title>, 1 (<title>Lepidina</title>)
+                     74</bibl>
+               </cit>; <cit>
+                  <quote>fremitum et fera murmura ponti</quote>
+                  <bibl type="canon">Castiglione, 10 (<title>Ad eandem</title>), 3</bibl>
+               </cit>; para la oposición entre el norte y el sur de Europa basada en sus respectivos
+               representantes, el frío Danubio y Apolo (scil. el cálido sol mediterráneo, <span type="link" from="#Od_1_2_13" n="0">v. 13</span> <ref
+                  type="texto_poema">Delius admovet</ref>), <cit>
+                  <quote>Danubius ... Frigescens ... glaciemque rigentem ... Adversoque nitet Phoebi
+                     fax fulgida in orbe ... calescit</quote>
+                  <bibl type="canon">Capece, <title>De principiis rerum</title>, 1,
+                     776-86</bibl>
+               </cit>. </note>
+            <note resp="#RL" xml:id="Od1_ls5"><span type="link" from="#Od_1_3_9" n="5">9-14</span>
+               <ref type="texto_poema">O nate tristem ... lenire mentem ... fulcire ... Thylesi ...
+                  sonantem ... barbiton</ref>: <cit>
+                  <quote>silvestrem tenui musam meditaris avena / ... tu, Tityre, lentus in umbra /
+                     ludere ... calamo ... agresti ... aeger ago</quote>
+                  <bibl type="canon">Virgilius, <title>Eclogae</title>, 1, 2-13</bibl>
+               </cit>. <cit>
+                  <quote>o nata mecum consule Manlio</quote>
+                  <bibl type="canon">Horatius, <title>Carmina</title>, 3,21,1</bibl>
+               </cit>
+               <bibl type="main">Alcina-Villallonga (1995: 252)</bibl>; <cit>
+                  <quote>quamquam lenire dolentem</quote>
+                  <bibl type="canon">Virgilius, <title>Aeneis</title>, 4, 393</bibl>
+               </cit>
+               <bibl type="main">Alcina-Vilallonga (1995: 252)</bibl>. también <bibl type="canon"
+                  >Catullus, 2, 10</bibl>
+               <bibl type="main">Alcina-Vilallonga (1995: 251)</bibl>; <bibl type="canon">116,
+                  3</bibl>
+               <bibl type="main">Alcina Rovira (2023a: 145)</bibl>. Para la construcción sintáctica
+               que gira en torno a <ref type="texto_poema">nate</ref>, véase <cit>
+                  <quote>fruges consumere nati</quote>
+                  <bibl type="canon">Horatius, <title>Epistulae</title>, 1, 2, 27</bibl>
+               </cit>; <cit>
+                  <quote>natum tolerare labores</quote>
+                  <bibl type="canon">Ovidius, <title>Metamorphoses</title>, 15, 121</bibl>
+               </cit>. (Agradezco a Reed las brillantes sugerencias aquí contenidas).</note>
+
+            <note resp="#RL" xml:id="Od1_ls6"><span type="link" from="#Od_1_3_11" n="1">11-12</span>
+               <ref type="texto_poema">amici pectora</ref>: <cit>
+                  <quote>vos quoque pectoribus nostris haeretis, amici</quote>
+                  <bibl type="canon">Ovidius, <title>Tristia</title>, 3, 4, 63</bibl>
+               </cit>
+               <bibl type="main">Morros (1995: 253)</bibl>; <cit>
+                  <quote>fidae pectus amicitiae</quote>
+                  <bibl type="canon">Martialis, 9, 14, 2</bibl>
+               </cit>.</note>
+
+            <note resp="#RL" xml:id="Od1_ls7"><span type="link" from="#Od_1_4_13" n="0">13</span>
+               <ref type="texto_poema">Iam iam</ref>: <cit>
+                  <quote>Iam iam efficaci</quote>
+                  <bibl type="canon">Horatius, <title>Epodo</title> 17, 1</bibl>
+               </cit>; <cit>
+                  <quote>iam iam tacturos [...] iam iam tacturos</quote>
+                  <bibl type="canon">Ovidius, <title>Tristia</title>, 1, 2, 20 y 22</bibl>
+               </cit>
+               <bibl type="main">Alcina-Vilallonga (1995: 253)</bibl>. </note>
+
+            <note resp="#RL" xml:id="Od1_ls8"><span type="link" from="#Od_1_4_13" n="1">13-14</span>
+               <ref type="texto_poema">Delius admovet / dexter tacentem</ref>: <cit>
+                  <quote>quondam cithara tacentem [...] Apollo</quote>
+                  <bibl type="canon">Horatius, <title>Carmina</title>, 2, 10, 18-20</bibl>
+               </cit>
+               <bibl type="main">Alcina-Vilallonga (1995: 253)</bibl>.</note>
+
+            <note resp="#RL" xml:id="Od1_ls9"><span type="link" from="#Od_1_4_15" n="2">15-17</span>
+               <ref type="texto_poema">Sebethi ... ad vaga flumina ... Nymphae</ref>
+               <span type="link" from="#Od_1_8_29" n="0">29</span>
+               <ref type="texto_poema">vaga flumina</ref>): <cit>
+                  <quote>nec tu carminibus nostris indictus abibis, / Oebale, quem generasse Telon
+                     Sebethide nympha / fertur, Teleboum Capreas cum regna teneret, / iam
+                     senior</quote>
+                  <bibl type="canon">Virgilius, <title>Aeneis</title>, 7, 733-36</bibl>
+               </cit>; <cit>
+                  <quote>et vaga flumina</quote>
+                  <bibl type="canon">Horatius, <title>Carmina</title>, 1, 34, 9</bibl>
+               </cit>
+               <bibl type="main">Alcina-Vilallonga (1995: 253)</bibl>; <cit>
+                  <quote>Ludere me placidos Sebethi ad fluminis hortos, / Et canere: “Ad citrios,
+                     lucida nympha, veni” [...] Pace tua interea Sebethi ad flumina cantem</quote>
+                  <bibl type="canon">Pontano, <title>Eridanus</title>, 2, 1, 33-4 y 47</bibl>
+               </cit>
+               <bibl type="main">Alcina-Vilallonga (1995: 253)</bibl>; <cit>
+                  <quote>cogit Anas, cogit ripa formosus utraque / Duria et albenti Baetis
+                     praecinctus oliva / Auratamque Tagus volvens sub gurgite arenam / Quique suo
+                     terras insignit nomine Iberus / Parte alia vastas circunvocat Africa
+                     vires</quote>
+                  <bibl type="canon">Sannazaro, <title>De partu Virginis</title>, 2, 200–204</bibl>
+               </cit> (<cit>
+                  <quote>Spes generis tanti, seu te nimbosa Pyrene / Pro dulci Latio, pro nostris
+                     detinet arvis, / Seu vagus obiecto munimine claudit Iberus, / Rumpe moras, nec
+                     te latis Hispania regnis / Alliciat stirpisve tuae primordia et ille / Gentis
+                     honos, licet efuso Tagus impleat auro / Et pater Oceanus spumanti perluat
+                     unda</quote>
+                  <bibl type="canon"><title>Eclogae piscatoriae</title>, 1, 105 y 4, 8–14</bibl>
+               </cit>.) también <cit>
+                  <quote>Volvite maiores, vaga flumina, volvite lymphas</quote>
+                  <bibl type="canon">Bembo, <title>Carmina</title>, 18, 74</bibl>
+               </cit>
+               <bibl type="main">Alcina-Vilallonga (1995: 253)</bibl>. </note>
+
+            <note resp="#RL" xml:id="Od1_ls10"><span type="link" from="#Od_1_4_16" n="2"
+                  >16-18</span>
+               <ref type="texto_poema">ad vaga ... cursitantes / Nymphae</ref>: <cit>
+                  <quote>et vaga flumina,</quote>
+                  <bibl type="canon">Horatius, <title>Carmina</title>, 1, 34, 9</bibl>
+               </cit>; <cit>
+                  <quote>properentque Nymphae,</quote>
+                  <bibl type="canon">Horatius, <title>Carmina</title>, 1, 30, 5</bibl>
+               </cit>; <cit>
+                  <quote>cuncta festinat manus, huc et illuc / cursitant mixtae pueris
+                     puellae</quote>
+                  <bibl type="canon">Horatius, <title>Carmina</title>, 4, 11, 9-10</bibl>
+               </cit>; <cit>
+                  <quote>timidi vaga flumina Nili</quote>
+                  <bibl type="canon">Propertius, 3, 11, 51</bibl>
+               </cit>; <cit>
+                  <quote>vagus ... Danubius</quote>
+                  <bibl type="canon">Capece, <title>De principiis rerum</title> 1,
+                     776-77</bibl>
+               </cit>. </note>
+
+            <note resp="#RL" xml:id="Od1_ls11"><span type="link" from="#Od_1_5_18" n="2"
+                  >18-20</span>
+               <ref type="texto_poema">non urbis ... furentem</ref>: <cit>
+                  <quote>furentem / ... urbe furens</quote>
+                  <bibl type="canon">Virgilius, <title>Aeneis</title>, 4, 65-9</bibl>
+               </cit>. <cit>
+                  <quote>Illam [...] furentem</quote>
+                  <bibl type="canon">Catullus, 64, 124</bibl>
+               </cit>
+               <bibl type="main">Alcina Rovira (2023a: 146)</bibl>. <ref type="texto_poema">aureo
+                  nodare nexu</ref>: <cit>
+                  <quote>ex auro, crines nodantur in aurum, / aurea ... fibula</quote>
+                  <bibl type="canon">Virgilius, <title>Aeneis</title>, 4, 138-9</bibl>
+               </cit>
+               <bibl type="main">Alcina-Vilallonga (1995: 254)</bibl>; para un pasaje paralelo sobre
+               el Tíber, famoso por sus arenas doradas, <cit>
+                  <quote>hunc inter fluvio Tiberinus amoeno / verticibus rapidis et multa flavos
+                     harena / in mare prorumpit</quote>
+                  <bibl type="canon"><title>Aeneis</title>, 7, 30-32</bibl>
+               </cit>. En esta misma tradición y también haciendo referencia a la naturaleza
+               tortuosa del lecho del río en línea con el <mentioned>gestit</mentioned> de
+               Garcilaso, <cit>
+                  <quote>flavom Tiberim retortis</quote>
+                  <bibl type="canon">Horatius, <title> Carmina</title>, 1, 2, 13</bibl>
+               </cit>, y <bibl type="canon">Horatius, <title>Carmina</title>, 1, 8, 8 </bibl>; para
+               una construcción similar a la garcilasiana de <ref type="texto_poema">urbis, amnis
+                  quam Tagus aureo ... gestit</ref>, <cit>
+                  <quote>villaque, flavos quam Tiberis lavit</quote>
+                  <bibl type="canon">Horatius, <title>Carmina</title>, 2, 3, 18</bibl>
+               </cit>; especificamente referido al Tajo, <cit>
+                  <quote>omnis harena Tagi quodque in mare volvitur aurum</quote>
+                  <bibl type="canon">Juvenalis, 3, 55</bibl>
+               </cit>. <ref type="texto_poema">lacerat ... amor furentem</ref>: <cit>
+                  <quote>clamore furentum</quote>
+                  <bibl type="canon">Virgilius, <title>Aeneis</title>, 11, 838</bibl>
+               </cit>; <cit>
+                  <quote>quid laceras pectora nostra mora?</quote>
+                  <bibl type="canon">Ovidius, <title>Epistulae</title>, 15, 212</bibl>
+               </cit> también <cit>
+                  <quote>Illam [...] furentem</quote>
+                  <bibl type="canon">Catullus, 64, 124</bibl>
+               </cit> (<bibl type="main">Alcina Rovira, 2023a: 146</bibl>) </note>
+
+            <note resp="#RL" xml:id="Od1_ls12"><span type="link" from="#Od_1_6_21" n="1"
+                  >21-22</span>
+               <ref type="texto_poema">Sirenum ... patria ... Parthenope</ref>: <cit>
+                  <quote>litus, ubi Ausonio se condidit hospita portu / Parthenope, tenues ignauo
+                     pollice chordas / Pulso Maroneique sedens in margine templi</quote>
+                  <bibl type="canon">Statius, <title>Silvae</title>, 4, 4, 52-54</bibl>
+               </cit> (<bibl type="main">Keniston 1925: 298</bibl>); <cit>
+                  <quote>scopulos Sirenum</quote>
+                  <bibl type="canon">Virgilius, <title>Aeneis</title>, 5, 864</bibl>
+               </cit>; <cit>
+                  <quote>Sirenum scopulos</quote>
+                  <bibl type="canon">Ovidius, <title>Metamorphoses</title>, 14, 88</bibl>
+               </cit>; <cit>
+                  <quote>petrae quas Sirenes habitarunt</quote>
+                  <bibl type="canon">Mela, 2, 4, 69</bibl>
+               </cit> (con una interesante asonancia aquí entre <mentioned>petrae</mentioned> y <ref
+                  type="texto_poema">patria</ref>). Sobre Nápoles como lugar propicio a la vocación
+               del canto artístico y al reposo placentero, <cit>
+                  <quote>doctae Sirenes</quote>
+                  <bibl type="canon">Ovidius, <title>Metamorphoses</title>, 5, 555</bibl>
+               </cit>; <cit>
+                  <quote>in otia natam / Parthenopen</quote>
+                  <bibl type="canon">15, 711-12</bibl>
+               </cit>; <cit>
+                  <quote>illo Vergilium me tempore dulcis alebat / Parthenope studiis florentem
+                     ignobilis oti, / carmina qui lusi pastorum audaxque iuventa, / Tityre, te
+                     patulae cecini sub tegmine fagi</quote>
+                  <bibl type="canon">Virgilius, <title>Georgicae</title>, 4, 563-6</bibl>
+               </cit>. </note>
+
+            <note resp="#RL" xml:id="Od1_ls13"><span type="link" from="#Od_1_6_23" n="1"
+                  >23-24</span>
+               <ref type="texto_poema">manes ... cineres Maronis</ref>: El supuesto auto-epitafio de
+               Virgilio: <cit>
+                  <quote>Mantua me genuit, Calabri rapuere, tenet nunc / Parthenope. Cecini pascua,
+                     rura, duces</quote>
+                  <bibl type="canon">Virgilius, <title>Vita Vergiliana</title>, 36</bibl>
+               </cit>. Para esta construcción clásica, efectivamente un caso de hendíadis, <cit>
+                  <quote>vosque mei Manes animaeque cinisque Sychaei</quote>
+                  <bibl type="canon">Ovidius, <title>Epistulae</title>, 7, 101</bibl>
+               </cit>; <cit>
+                  <quote>libabat cineri Andromache Manisque vocabat / Hectoreum ad tumulum ...
+                     inanem</quote>
+                  <bibl type="canon">Virgilius, <title>Aeneis</title>, 3, 303-4</bibl>
+               </cit>, <cit>
+                  <quote>id cinerem aut manis credis curare sepultos?</quote>
+                  <bibl type="canon">Virgilius, <title>Aeneis</title>, 4, 34</bibl>
+               </cit>, <cit>
+                  <quote>teque parentum / manibus et cineri ... remitto</quote>
+                  <bibl type="canon">Virgilius, <title>Aeneis</title>, 10, 827-8</bibl>
+               </cit>. Para un paralelo con el paisaje evocado en <cit>
+                  <quote>Litus [...] Maroneique sedens in margine templi</quote>
+                  <bibl type="canon">Statius, <title>Silvae</title>, 4, 3, 52-54</bibl>
+               </cit>
+               <bibl type="main">Alcina-Vilallonga (1995: 254)</bibl>.</note>
+
+            <note resp="#RL" xml:id="Od1_ls14"><span type="link" from="#Od_1_7_25" n="0">25</span>
+               <ref type="texto_poema">Aegro deorum quis tulerit, rogas</ref>: <cit>
+                  <quote>iste deus qui sit, da, Tityre, nobis</quote>
+                  <bibl type="canon">Virgilius, <title>Eclogae</title>, 1, 18</bibl>
+               </cit>.</note>
+
+            <note resp="#RL" xml:id="Od1_ls15"><span type="link" from="#Od_1_7_26" n="0">26</span>
+               <ref type="texto_poema">herbis repostis</ref>: <cit>
+                  <quote>epulae ... repostae ... herbae</quote>
+                  <bibl type="canon">Virgilius, <title>Georgicae</title>, 3, 527-28</bibl>
+               </cit>; <cit>
+                  <quote>repositum Caecubum</quote>
+                  <bibl type="canon">Horatius, <title>Epodo</title> 9, 1</bibl>
+               </cit>. </note>
+
+            <note resp="#RL" xml:id="Od1_ls16"><span type="link" from="#Od_1_7_27" n="0">27</span>
+               <ref type="texto_poema">consternationem</ref>: <cit>
+                  <quote>consternatam perculit urbem</quote>
+                  <bibl type="canon">Telesio, <title>Imber aureus</title> (Act. 5 fin.)</bibl>
+               </cit>. </note>
+
+            <note resp="#RL" xml:id="Od1_ls17"><span type="link" from="#Od_1_7_28" n="0">28</span>
+               <ref type="texto_poema">cantibus et fidibus levarit?</ref>: <cit>
+                  <quote>fidibus citharave Phoebi</quote>
+                  <bibl type="canon">Horatius, <title>Carmina</title>, 3, 4, 4</bibl>
+               </cit>, <cit>
+                  <quote> salutari levat arte</quote>
+                  <bibl type="canon">Horatius, <title>Carmen saeculare</title>, 63-4</bibl>
+               </cit>; <cit>
+                  <quote>aegro / nullus Apollinea qui levet arte malum</quote>
+                  <bibl type="canon">Ovidius, <title>Tristia</title>, 3, 3, 9-10</bibl>
+               </cit>
+               <bibl type="main">Alcina-Vilallonga (1995: 255)</bibl>; <cit>
+                  <quote>si valeant homines, ars tua, Phoebe, iacet</quote>
+                  <bibl type="canon">Ovidius, <title>Tristia</title>, 4, 3, 78</bibl>
+               </cit>. </note>
+
+            <note resp="#RL" xml:id="Od1_ls18"><span type="link" from="#Od_1_8_29" n="1"
+                  >29-30</span>
+               <ref type="texto_poema">vaga flumina sistunt ... vortices</ref>: para las juncturas
+                  <ref type="texto_poema">vaga flumina</ref> véase arriba <ref type="link_int_ls"
+                  target="#Od1_ls9">Loci similes vv. 15-17</ref>. Sobre ríos que detienen su curso
+               al escuchar una canción, <cit>
+                  <quote>mutata suos requierunt flumina cursus</quote>
+                  <bibl type="canon">Virgilius, <title>Eclogae</title>, 8, 4</bibl>
+               </cit>; <cit>
+                  <quote>victis minores volvere vortices</quote>
+                  <bibl type="canon">Horatius, <title>Carmina</title>, 2, 9, 22</bibl>
+               </cit>
+               <bibl type="main">Alcina-Vilallonga (1995: 255)</bibl>; <cit>
+                  <quote>flumina conticuere, iacet sine fluctibus aequor</quote>
+                  <bibl type="canon">Valerius Flaccus, 3, 732</bibl>
+               </cit>; <cit>
+                  <quote>stant sine murmure aquae</quote>
+                  <bibl type="canon">Castiglione, <title>Carmina</title>, 4 (<title>De Elisabella
+                        Gonzaga canente</title>) 7</bibl>
+               </cit>, <cit>
+                  <quote>Tybris arundineo glaucum caput extulit alveo, / et stupefacta novo restitit
+                     unda sono</quote>
+                  <bibl type="canon"><title>Carmina</title>, 13 (<title>De Paullo canente</title>)
+                     5-6</bibl>
+               </cit>. </note>
+
+            <note resp="#RL" xml:id="Od1_ls19"><span type="link" from="#Od_1_8_31" n="1"
+                  >31-32</span>
+               <ref type="texto_poema">ventos ... conquiesse</ref>: <cit>
+                  <quote>aer ... nubibus ille minax / inter utrumque fremunt inmani murmure
+                     venti</quote>
+                  <bibl type="canon">Ovidius, <title>Tristia</title>, 1, 2, 23-5</bibl>
+               </cit>. Sobre vientos que cesan de soplar al sonar una canción, <cit>
+                  <quote>conquievit et siluit omnis terra</quote>
+                  <bibl type="canon">Vulgata, <title>Isaiah</title>, 14:7</bibl>
+               </cit>; <cit>
+                  <quote>taciti sine flamine venti</quote>
+                  <bibl type="canon">Castiglione, <title>Carmina</title>, 4 (<title>De Elisabella
+                        Gonzaga canente</title>) 7</bibl>
+               </cit>. </note>
+
+            <note resp="#RL" xml:id="Od1_ls20"><span type="link" from="#Od_1_9_34" n="0">34</span>
+               <ref type="texto_poema">gratis Camoenae</ref>: <cit>
+                  <quote>gratus [...] Camoena</quote>
+                  <bibl type="canon">Horatius, <title>Carmina</title>, 1, 12, 39</bibl>
+               </cit>
+               <bibl type="main">Alcina-Vilallonga (1995: 255)</bibl>.</note>
+
+            <note resp="#RL" xml:id="Od1_ls21"><span type="link" from="#Od_1_9_36" n="0">36</span>
+               <ref type="texto_poema">me miserum</ref>: <cit>
+                  <quote>me miserum</quote>
+                  <bibl type="canon">Ovidius, <title>Tristia</title>, 1, 2, 19</bibl>
+               </cit>
+               <bibl type="main">Alcina-Vilallonga (1995: 255)</bibl>. </note>
+
+            <note resp="#RL" xml:id="Od1_ls22"><span type="link" from="#Od_1_10_37" n="0">37</span>
+               <ref type="texto_poema">imbrem ... aureum</ref>: <cit>
+                  <quote>Iovem / quo pacto Danaae misisse aiunt quondam in gremium imbrem
+                     aureum</quote>
+                  <bibl type="canon">Terentius, <title>Eunuchus</title>, 584-5</bibl>
+               </cit>; <cit>
+                  <quote>quem pluuio Danae conceperat auro</quote>
+                  <bibl type="canon">Ovidius, <title>Metamorphoses</title>, 4, 611</bibl>
+               </cit>, <cit>
+                  <quote>aureus ut Danaen</quote>
+                  <bibl type="canon"><title>Metamorphoses</title>, 6, 113</bibl>
+               </cit>; <cit>
+                  <quote>Non semper imbres nubibus</quote>
+                  <bibl type="canon">Horatius, <title>Carmina</title>, 2, 9, 1</bibl>
+               </cit>
+               <bibl type="main">Alcina-Villalonga (1995: 255)</bibl>; <cit>
+                  <quote>Iuppiter forma uirginis captus, in pluuiam auream mutatus illam
+                     uitiat</quote>
+                  <bibl type="canon">Telesio, <title>Imber aureus</title> (Argumentum)</bibl>
+               </cit> y también <cit>
+                  <quote>Crebrescit Imber diffluens mox Aureus,</quote>
+                  <bibl type="canon"><title>Imber aureus</title> (Act. 4
+                     <foreign>incipit</foreign>)</bibl>
+               </cit>. </note>
+
+            <note resp="#RL" xml:id="Od1_ls23"><span type="link" from="#Od_1_10_38" n="0">38</span>
+               <ref type="texto_poema">binaque ... compede</ref>: <cit>
+                  <quote>compede impeditum ferrea</quote>
+                  <bibl type="canon">Telesio, <title>Imber aureus</title> (Act. 3)</bibl>
+               </cit> (aplicado ahí a Danae; aquí quizá a Andrómeda: véase <bibl type="main"
+                  >Czepiel, 2022: 759</bibl>). Para posibles ecos catulianos en el <ref
+                  type="texto_poema">candidum</ref> de Garcilaso, <bibl type="main">Alcina Rovira,
+                  2023a: 147-8</bibl>. Sobre el locus, también <cit>
+                  <quote>Non non iam manicas dedisse credas / dedisti mihi compedes, Nearche</quote>
+                  <bibl type="canon">Falcone, <title>Ad Nearchum</title>, 26, 9-10 (ed.
+                     Lokaj)</bibl>
+               </cit>. </note>
+
+            <note resp="#RL" xml:id="Od1_ls24"><span type="link" from="#Od_1_10_40" n="0">40</span>
+               <ref type="texto_poema">languidulis oculis</ref>: <cit>
+                  <quote>languidulosque paret tecum coniungere somnos</quote>
+                  <bibl type="canon">Catullus, 64, 331</bibl>
+               </cit>
+               <bibl type="main">Morros (1995: 255)</bibl>; <cit>
+                  <quote>Mox auolans oculis, reliquit spiculum / Desiderii, amorisque</quote>
+                  <bibl type="canon">Telesio, <title>Imber aureus</title> (Act. 4)</bibl>
+               </cit>. <ref type="texto_poema">querentem</ref>: <cit>
+                  <quote>Querar et ego, querar te / Raptam mihi tam saevo / Te carcere
+                     coerceri</quote>
+                  <bibl type="canon">Telesio, <title>Imber aureus</title> (Act. 2)</bibl>
+               </cit>, <cit>
+                  <quote>Haud passus ulterius queri / Natam ipse ter Iouis uocantem numina</quote>
+                  <bibl type="canon">(Act. 5)</bibl>
+               </cit>. </note>
+
+            <note resp="#RL" xml:id="Od1_ls25"><span type="link" from="#Od_1_11_41" n="1"
+                  >41-42</span>
+               <ref type="texto_poema">animum rapit / mentemque</ref>: <cit>
+                  <quote>Tale tuum carmen nobis, divine poeta [...] rivo</quote>
+                  <bibl type="canon">Virgilus, <title>Eclogae</title>, 5, 45-47</bibl>
+               </cit>
+               <bibl type="main">Alcina-Vilallonga (1995: 256)</bibl>; <cit>
+                  <quote>Mentis ... concreta cum pars ... Obrigui ... animum tandem recepi
+                     perditum</quote>
+                  <bibl type="canon">Telesio, <title>Imber aureus</title> (Act. 4)</bibl>
+               </cit>. En el sentido ‘alma y corazón‘ como totalidad cf. <cit>
+                  <quote>magnum cui mentem animumque / Delius inspirat vates aperitque
+                     futura</quote>
+                  <bibl type="canon">Virgilius, <title>Aeneis</title>, 6, 11-12</bibl>
+               </cit>. también <cit>
+                  <bibl type="canon">Catullus, 64, 330</bibl>
+               </cit>
+               <bibl type="main">Alcina Rovira (2023a: 146)</bibl>.</note>
+
+            <note resp="#RL" xml:id="Od1_ls26"><span type="link" from="#Od_1_11_43" n="1"
+                  >43-44</span>
+               <ref type="texto_poema">evolemque / aliger his super elevatus</ref>: <cit>
+                  <quote>Gestisque puer [scil. Perseus] ex te editus Solis domum / Vtranque
+                     lustrabit stupendis aliger</quote>
+                  <bibl type="canon">Telesio, <title>Imber aureus</title> (Act. 4)</bibl>
+               </cit>; como posible eco del discurso de las Escrituras, cf. también <cit>
+                  <quote>vidi Dominum sedentem super solium excelsum et elevatum et ea quae sub eo
+                     erant implebant templum seraphin stabant super illud sex alae uni et sex alae
+                     alteri</quote>
+                  <bibl type="canon">Vulgata, <title>Isaiah</title>, 6, 1-2</bibl>
+               </cit>. </note>
+
+            <note resp="#RL" xml:id="Od1_ls27"><span type="link" from="#Od_1_12_45" n="1"
+                  >45-46</span>
+               <ref type="texto_poema">obtulit / sese</ref>: <cit>
+                  <quote>Hic mihi Africanus se ostendit ea forma</quote>
+                  <bibl type="canon">Cicero, <title>De re publica</title>, 6, 10</bibl>
+               </cit> (<mentioned>Africanus</mentioned> como el abuelo adoptivo de la voz poética); <cit>
+                  <quote>Mentre ch’i’ rovinava in basso loco, / dinanzi a li occhi mi si fu offerto
+                     / chi per lungo silenzio parea fioco</quote>
+                  <bibl type="canon">Dante, <title>Inferno</title>, 1, 61–3</bibl>
+               </cit> (Virgilio, a quien Dante considera una figura paterna). </note>
+
+            <note resp="#RL" xml:id="Od1_ls28"><span type="link" from="#Od_1_12_47" n="0">47</span>
+               <ref type="texto_poema">dulce pignus nostri amoris</ref>: <cit>
+                  <quote>monumentum et pignus amoris</quote>
+                  <bibl type="canon">Virgilius, <title>Aeneis</title>, 5, 538</bibl>
+               </cit>; <cit>
+                  <quote>nunc tibi commendo communia pignora natos</quote>
+                  <bibl type="canon">Propertius, 4, 11, 73</bibl>
+               </cit>; <cit>
+                  <quote>Fleui, Martha, tuos extremo tempore casus / ossaque composui. Pignus amoris
+                     habes</quote>
+                  <bibl type="canon">anon. epitaph (apud Storoni Mazzolani 1973: 48)</bibl>
+               </cit>; <cit>
+                  <quote>miserabile pignus amoris</quote>
+                  <bibl type="canon">Ovidius, <title>Epistulae</title>, 11, 113</bibl>
+               </cit>
+               <bibl type="main">Alcina-Vilallonga (1995: 256)</bibl>; <cit>
+                  <quote>amoris illorum pignora</quote>
+                  <bibl type="canon">Petrarca, <title>Epistolae familiares</title>, 9, 2, 6</bibl>
+               </cit>; <cit>
+                  <quote>Dulce quibus tanti pignus amoris inest</quote>
+                  <bibl type="canon">Poliziano, <title>Elegie</title>, 5 (In violas, a Venere mea
+                     dono acceptas) 2</bibl>
+               </cit>; <cit>
+                  <quote>unum est nostri tibi pignus amoris, / dulce onus</quote>
+                  <bibl type="canon">Castiglione, <title>Carmina</title>, 7 (<title>Prosopopoeia
+                        Ludovici Pici Mirandulani</title>) 55-6</bibl>
+               </cit>.</note>
+
+            <note resp="#RL" xml:id="Od1_ls29"><span type="link" from="#Od_1_12_48" n="0">48</span>
+               <ref type="texto_poema">non animum pigeat patere</ref>: para la construcción, <cit>
+                  <quote>Atque animum monitis non intendisse pigebit</quote>
+                  <bibl type="canon">Sannazaro, <title>Lamentatio de morte Christi</title>, 96</bibl>
+               </cit>. </note>
+
+            <note resp="#RL" xml:id="Od1_ls30"><span type="link" from="#Od_1_13_49" n="0">49</span>
+               <ref type="texto_poema">Arcana divum dum reserat</ref>: <cit>
+                  <quote>arcana movebo</quote>
+                  <bibl type="canon">Virgilius, <title>Aeneis</title>, 1, 262</bibl>
+               </cit>
+               <bibl type="main">Morros (1995: 256)</bibl>; <cit>
+                  <quote>fatorum arcana</quote>
+                  <bibl type="canon">Virgilius, <title>Aeneis</title>, 7, 123</bibl>
+               </cit>, <cit>
+                  <quote>infernas reseret sedes et regna recludat</quote>
+                  <bibl type="canon">Virgilius, <title>Aeneis</title>, 8, 244</bibl>
+               </cit>; <cit>
+                  <quote>Delphosque meos ipsumque recludam / aethera et angustae reserabo oracula
+                     mentis</quote>
+                  <bibl type="canon">Ovidius, <title>Metamorphoses</title>, 15, 144-45</bibl>
+               </cit>; <cit>
+                  <quote>arcanum iocoso</quote>
+                  <bibl type="canon">Horatius, <title>Carmina</title>, 3, 21, 15</bibl>
+               </cit>
+               <bibl type="main">Alcina-Vilallonga (1995: 256)</bibl>; <cit>
+                  <quote>arcanas da rerum pandere causas</quote>
+                  <bibl type="canon">Scipio Capece, <title>De principiis rerum</title>, 1, 24</bibl>
+               </cit> (que a su vez se basa en <cit>
+                  <quote>multa ac divinitus ipsis / immortalibu’ de divis dare dicta suerit, / atque
+                     omnem rerum naturam pandere dictis)</quote>
+                  <bibl type="canon">Lucretius, 5, 52-4</bibl>
+               </cit>, <cit>
+                  <quote>rursusque alii reserare latentis / Naturae arcana</quote>
+                  <bibl type="canon">Lucretius, 5, 193-94</bibl>
+               </cit>, así como <bibl type="canon">Capece, <title>De principiis rerum</title>
+                  1, 236; 1 442; 1, 448-49; 2, 19; 2, 200</bibl>; también su <cit>
+                  <quote>magnique arcana Tonantis</quote>
+                  <bibl type="canon">Elegiae, 2, 7 (<title>Ad Hieronymum Seripandum</title>)</bibl>
+               </cit>. </note>
+
+            <note resp="#RL" xml:id="Od1_ls31"><span type="link" from="#Od_1_13_49" n="1"
+                  >49-50</span>
+               <ref type="texto_poema">divum dum reserat novus / huic pectus alte sollicitat
+                  furor</ref>: <cit>
+                  <quote>Heu furiis ... augur Apollo / ... interpres divom ... is superis labor est,
+                     ea cura quietos / sollicitat</quote>
+                  <bibl type="canon">Virgilius, <title>Aeneis</title>, 4, 376-80</bibl>
+               </cit>, <cit>
+                  <quote>Quis furor iste novos</quote>
+                  <bibl type="canon">Virgilius, <title>Aeneis</title>, 5, 670</bibl>
+               </cit>; <cit>
+                  <quote>Labitur ecce novus furor in praecordia, numen / sentio ... Excitat ...
+                     Provocat</quote>
+                  <bibl type="canon">Baptista Mantuanus, <title>Parthenicae Divae Caeciliae</title>,
+                     1-6</bibl>
+               </cit>. Sobre un posoble eco en las Escrituras, cf. <cit>
+                  <quote>et dabo tibi thesauros absconditos et arcana secretorum ut scias</quote>
+                  <bibl type="canon">Vulgata, <title>Isaiah</title>, 45:3</bibl>
+               </cit>; <cit>
+                  <quote>quoniam raptus est in paradisum et audivit arcana verba quae non licet
+                     homini loqui</quote>
+                  <bibl type="canon">Vulgata, (<title>Ad Corinthios Epistula II sancti Pauli
+                        Apostoli</title>) 12.4</bibl>
+               </cit>.</note>
+
+            <note resp="#RL" xml:id="Od1_ls32"><span type="link" from="#Od_1_13_51" n="1"
+                  >51-52</span>
+               <ref type="texto_poema">curare seu mortalium res / caelicolas</ref>: <cit>
+                  <quote>Si sunt di, benefici in homines sunt. Quis hoc vobis dabit? Epicurusne? Qui
+                     negat quicquam deos nec alieni curare nec sui; an noster Ennius? Qui magno
+                     plausu loquitur adsentiente populo: “Ego deum genus esse semper dixi et dicam
+                     caelitum, / sed eos non curare opinor, quid agat humanum genus”</quote>
+                  <bibl type="canon">Cicero, <title>De divinatione</title>, 2, 104</bibl>
+               </cit>; para la continuación del fragmento citado, véase <cit>
+                  <quote>nam si curent, bene bonis sit, male malis, quod nunc abest</quote>
+                  <bibl type="canon">Cicero, <title>De natura deorum</title>, 3, 32, 79</bibl>
+               </cit>. también <cit>
+                  <quote>A ratione procul, qui nil mortalia summum / Caelicolum curare patrem,
+                     casuque putarunt</quote>
+                  <bibl type="canon">Capece, <title>De principiis rerum</title>, 1,
+                     255-56</bibl>
+               </cit> (<ref type="texto_poema">monstrat</ref> posiblemente tiene aquí un sentido de
+                  <foreign xml:lang="lat">demonstratio</foreign> o método de enseñanza a través del
+               debate avanzado). </note>
+
+            <note resp="#RL" xml:id="Od1_ls33"><span type="link" from="#Od_1_14_53" n="1"
+                  >53-54</span>
+               <ref type="texto_poema">natos parentum crimina ob impia / vexari</ref>: <cit>
+                  <quote>Undabitque suo foeda cruore parens? / In natos alii stringent fera tela ...
+                     Mactabitque suos nati de semine foetus / Mater ....</quote>
+                  <bibl type="canon">Capece, <title>Elegiae</title>, 4 (<title>De
+                        suis</title>) 42.</bibl>
+               </cit></note>
+
+            <note resp="#RL" xml:id="Od1_ls34"><span type="link" from="#Od_1_14_54" n="0">54</span>
+               <ref type="texto_poema">auras carpere dum licet</ref>: Para este lugar común
+               literario con el sentido de ‘existir’ o ‘vivir’, <cit>
+                  <quote>auras / vitalis carpis</quote>
+                  <bibl type="canon">Virgilius, <title>Aeneis</title>, 1, 387-88</bibl>
+               </cit>; <cit>
+                  <quote>dulces ... auras / carpere</quote>
+                  <bibl type="canon">Corsini, <title>Compendium in vitam Cosmi Medicis</title>, 1,
+                     76-7</bibl>
+               </cit>; <cit>
+                  <quote>licet ... auras / carpere</quote>
+                  <bibl type="canon">Molza, <title>Carmina</title>, 2, 39-40</bibl>
+               </cit>. </note>
+
+            <note resp="#RL" xml:id="Od1_ls35"><span type="link" from="#Od_1_14_55" n="0">55</span>
+               <ref type="texto_poema">luxui ipsi indulgeant</ref>: como alusión a los dioses que
+               supuestamente viven en el intermundia epicúreo y en un estado de <foreign
+                  xml:lang="gr">ἀταραξία</foreign> democritea, cf. <cit>
+                  <quote>Nam bene qui didicere deos securum agere aevom</quote>
+                  <bibl type="canon">Lucretius, 5, 82</bibl>
+               </cit> (et passim).</note>
+
+            <note resp="#RL" xml:id="Od1_ls36"><span type="link" from="#Od_1_15_57" n="0">57</span>
+               <ref type="texto_poema">Haec aure ... imbibunt</ref>: <cit>
+                  <quote>bibam sonante ... lyra</quote>
+                  <bibl type="canon">Horatius, <title>Epodo</title> 9, 4-5</bibl>
+               </cit>. </note>
+
+            <note resp="#RL" xml:id="Od1_ls37"><span type="link" from="#Od_1_15_57" n="1"
+                  >57-58</span>
+               <ref type="texto_poema">cuncti ... alte silentes</ref>: <cit>
+                  <quote>Vir fuit hic ortu Samius ... odioque tyrannidis exul ... in medium discenda
+                     dabat coetusque silentum / dictaque mirantum magni primordia mundi / et rerum
+                     causas et, quid natura, docebat ....</quote>
+                  <bibl type="canon">Ovidius, <title>Metamorphoses</title>, 15, 60-68</bibl>
+               </cit>
+            </note>
+
+            <note resp="#RL" xml:id="Od1_ls38"><span type="link" from="#Od_1_15_58" n="3"
+                  >58-61</span>
+               <ref type="texto_poema">alte ... et Marius meus ... Honesta ... domus</ref>: <cit>
+                  <quote>sub alta ... domo / beate Maecenas</quote>
+                  <bibl type="canon">Horatius, <title>Epodo</title> 9, 3-4</bibl>
+               </cit>. </note>
+
+            <note resp="#RL" xml:id="Od1_ls39"><span type="link" from="#Od_1_17_68" n="0">68</span>
+               <ref type="texto_poema">ut Ciconum irruit in canentem</ref>: <cit>
+                  <quote>spretae Ciconum quo munere matres... Discerptum latos iuvenem sparsere per
+                     agros</quote>
+                  <bibl type="canon">Virgilius, <title>Georgicae</title>, 4, 520-22</bibl>
+               </cit>, <cit>
+                  <quote>nurus Ciconum</quote>
+                  <bibl type="canon">Ovidius, <title>Metamorphoses</title>, 11, 3</bibl>
+               </cit> y <bibl type="canon">20-22</bibl> (donde <bibl type="main">Keniston (1925:
+                  300)</bibl> y <bibl type="main">Alcina-Vilallonga (1995: 257)</bibl> identifican
+               el posible origen del <ref type="texto_poema">canentem</ref> de Garcilaso en el
+                  <mentioned>canentis</mentioned> de Ovidio); <cit>
+                  <quote>O dirae Ciconum matres Geticique furores</quote>
+                  <bibl type="canon">Silius Italicus, 11, 475</bibl>
+               </cit>. </note>
+
+            <note resp="#RL" xml:id="Od1_ls40"><span type="link" from="#Od_1_18_69" n="0">69</span>
+               <ref type="texto_poema">fluentem divitiis Tagum</ref>: <bibl type="main">Alcina
+                  Rovira, 2023a: 149</bibl> lo compara con un pasaje de uno de los poemas de Anisio
+               dirigido a Garcilaso, <mentioned>divitis proles Tagi</mentioned> (<bibl type="main"
+                  >Toscano, 2017: 506, 2</bibl>). </note>
+
+            <note resp="#RL" xml:id="Od1_ls41"><span type="link" from="#Od_1_18_70" n="0">70</span>
+               <ref type="texto_poema">prata gyris uvida roscidis</ref>: <cit>
+                  <quote>uvidique / Tiburis ripas</quote>
+                  <bibl type="canon">Horatius, <title>Carmina</title>, 4, 2, 30-31</bibl>
+               </cit>; <cit>
+                  <quote>gelidumque Anienem et roscida rivis / Hernica saxa colunt</quote>
+                  <bibl type="canon">Virgilius, <title>Aeneis</title>, 7, 683-84</bibl>
+               </cit>; <cit>
+                  <quote>natalia rura ... parva, sed assiduis obvia semper aquis</quote>
+                  <bibl type="canon">Ovidius, <title>Fasti</title>, 4, 685-86</bibl>
+               </cit>; <cit>
+                  <quote>virent lacrimis roscida prata meis</quote>
+                  <bibl type="canon">Martialis, 1, 88, 6</bibl>
+               </cit> (con un uso figurado de ‘rocío’). </note>
+
+            <note resp="#RL" xml:id="Od1_ls42"><span type="link" from="#Od_1_18_72" n="0">72</span>
+               <ref type="texto_poema">dulcibus immemoremque amicis</ref>: <bibl type="main">Alcina
+                  Rovira (2023a: 151)</bibl> lo compara al <foreign xml:lang="lat">nexus</foreign>
+               de <cit>
+                  <quote>Alfene immemor atque unanimis false sodalibus, / iam te nil miseret, dure,
+                     tui dulcis amiculi?</quote>
+                  <bibl type="canon">Catullus, 30, 1-2</bibl>
+               </cit>
+            </note>
+
+         </div>
+
+         <div type="ApCrit">
+            <list>
+               <item>Codd. = Na fol. 62r-63r, V fol. 260v-261v, P (folios sin numeración)</item>
+               <item>Tit.: Ode Tricolos tetrastrophos Ad Thylesium Na V, Ejusdem ad Tylesium P,
+                  Garcilassi de Vega Toletani ad Antonium Thylesium ode Daniele</item>
+               <item>Ed. princ. = Daniele 128-9</item>
+               <item>Serna = <title>Oda latina de Garcilaso a Antonio Thylesio, traducida por D.
+                     Fernando de la Serna</title> Biblioteca Nacional de Madrid ms. 21291-07, cc.1-8
+               </item>
+            </list>
+
+            <ab><span type="link" from="#Od_1_2_5" n="0">5</span>
+               <app>
+                  <lem>invia et</lem>
+                  <rdg>invia et <wit>Mele (1924)</wit></rdg>
+                  <rdg>et invia <wit>NaVPDaniele</wit></rdg>
+                  <rdg>invia <wit>Savj-López/Mele Keniston</wit></rdg>
+               </app></ab>
+
+            <ab><span type="link" from="#Od_1_3_9" n="0">9</span>
+               <app>
+                  <lem>sollicitudine</lem>
+                  <rdg>sollicitudine <wit>NaV</wit></rdg>
+                  <rdg>sollicitudinem <wit>P</wit></rdg>
+               </app>
+            </ab>
+
+            <ab><span type="link" from="#Od_1_3_12" n="0">12</span>
+               <app>
+                  <lem>pectora</lem>
+                  <rdg>pectora <wit>NaV</wit></rdg>
+                  <rdg>pectore <wit>P</wit></rdg>
+               </app>
+               <app>
+                  <lem>Thylesi</lem>
+                  <rdg>Thylesi <wit>NaV</wit></rdg>
+                  <rdg>Tylesi <wit>P</wit></rdg>
+               </app>
+            </ab>
+
+            <ab><span type="link" from="#Od_1_4_13" n="0">13</span>
+               <app>
+                  <lem>admovet</lem>
+                  <rdg>admovet <wit>NaP</wit></rdg>
+                  <rdg>admonet <wit>V</wit></rdg>
+               </app>
+            </ab>
+
+            <ab><span type="link" from="#Od_1_5_19" n="0">19</span>
+               <app>
+                  <lem>gestit</lem>
+                  <rdg>gestit <wit>P Savj-Lopez/Mele</wit></rdg>
+                  <rdg>gestat <wit>V</wit></rdg>
+                  <rdg>en <wit>Na</wit> (resulta difícil leer si es una -a- o una -i-).</rdg>
+               </app>
+            </ab>
+
+            <ab><span type="link" from="#Od_1_6_21" n="0">21</span>
+               <app>
+                  <lem>patria</lem>
+                  <rdg>patria <wit>Mele (1924)</wit></rdg>
+                  <rdg>prima <wit>NaVP</wit></rdg>
+               </app></ab>
+
+            <ab><span type="link" from="#Od_1_6_22" n="0">22</span>
+               <app>
+                  <lem>pulchra Parthenope</lem>
+                  <rdg>pulchra Parthenope <wit>NaVP</wit></rdg>
+                  <rdg>pulchra Parthenopae <wit>Daniele</wit> (-ae -ae o -ae -es es la solución
+                     sugerida por Reed (2021)).</rdg>
+               </app>
+            </ab>
+
+            <ab><span type="link" from="#Od_1_6_23" n="0">23</span>
+               <app>
+                  <lem>consedere</lem>
+                  <rdg>consedere <wit>Keniston</wit></rdg>
+                  <rdg>considere <wit>NaVP</wit> (resulta difícil desde el punto de vista
+                     métrico).</rdg>
+               </app></ab>
+
+            <ab><span type="link" from="#Od_1_8_30" n="0">30</span>
+               <app>
+                  <lem>margine</lem>
+                  <rdg>r añadida en <wit>P</wit></rdg>
+               </app>
+            </ab>
+
+            <ab><span type="link" from="#Od_1_10_38" n="0">38</span>
+               <app>
+                  <lem>binaque</lem>
+                  <rdg>binaque <wit>P</wit></rdg>
+                  <rdg>vivaque <wit>NaV</wit></rdg>
+               </app>
+               <app>
+                  <lem>talum</lem>
+                  <rdg>talum <wit>NaV</wit></rdg>
+                  <rdg>Tialum <wit>P</wit></rdg>
+               </app>
+            </ab>
+
+            <ab><span type="link" from="#Od_1_11_41" n="0">41</span>
+               <app>
+                  <lem>animum</lem>
+                  <rdg>animum <wit>Savj-López/Mele, Keniston, Morros, Serna</wit></rdg>
+                  <rdg>animus <wit>NaVP</wit></rdg>
+               </app></ab>
+
+            <ab><span type="link" from="#Od_1_12_45" n="0">45</span>
+               <app>
+                  <lem>Thylesi</lem>
+                  <rdg>Thylesi <wit>NaV</wit></rdg>
+                  <rdg>Tylesi <wit>P</wit></rdg>
+               </app></ab>
+
+            <ab><span type="link" from="#Od_1_16_61" n="0">61</span>
+               <app>
+                  <lem>honesta</lem>
+                  <rdg>honesta <wit>NaVP</wit> (parece que P ha corregido honeste a honesta)</rdg>
+               </app>
+               <app>
+                  <lem>accipit</lem>
+                  <rdg>accipit <wit>NaV</wit></rdg>
+                  <rdg>recipit <wit>P</wit></rdg>
+               </app></ab>
+
+            <ab><span type="link" from="#Od_1_16_63" n="0">63</span>
+               <app>
+                  <lem>tortuosis</lem>
+                  <rdg>tortuosis <wit>NaVP</wit> (P parece haber corregido el tortuosios inicial por
+                     tortuosis)</rdg>
+               </app></ab>
+
+            <ab><span type="link" from="#Od_1_17_66" n="0">66</span>
+               <app>
+                  <lem>pertrahere</lem>
+                  <rdg>pertrahere <wit>NaV</wit></rdg>
+                  <rdg>protrahere <wit>P</wit></rdg>
+               </app></ab>
+
+            <ab><span type="link" from="#Od_1_18_70" n="0">70</span>
+               <app>
+                  <lem>uvida roscidis</lem>
+                  <rdg>uvida roscidis <wit>Savj-López/Mele</wit></rdg>
+                  <rdg>avias roscidis <wit>Serna</wit> (corregido de <mentioned>avida
+                        rosidis</mentioned>)</rdg>
+                  <rdg>avida rosidis <wit>NaVP</wit></rdg>
+                  <rdg/>
+               </app></ab>
+         </div>
+
+         <div type="poema" xml:id="Oda_1">
+            <lg xml:lang="lat">
+               <head><title xml:id="Od1_t">Ad Antonium Tylesium Ode</title></head>
+
+               <lg type="estrofa" xml:id="Od_1_1" corresp="#Od_1_1_trad">
+
+                  <l n="01" xml:id="Od_1_1_1">Uxore, natis, fratribus, et solo <linkGrp>
+                        <link type="a_notas" xml:id="a_Od1_n1" corresp="#Od1_n1"/>
+                        <link type="a_notas" xml:id="a_Od1_n2" corresp="#Od1_n2"/>
+                        <link type="a_comentarios" xml:id="a_Od1_c1" corresp="#Od1_c1"/>
+                        <link type="a_comentarios" xml:id="a_Od1_c2" corresp="#Od1_c2"/>
+                        <link type="a_ls" xml:id="a_Od1_ls1" corresp="#Od1_ls1"/>
+                     </linkGrp>
+                  </l>
+                  <l n="02" xml:id="Od_1_1_2">exul relictis frigida per loca</l>
+                  <l n="03" xml:id="Od_1_1_3">Musarum alumnus barbarorum <linkGrp>
+                        <link type="a_ls" xml:id="a_Od1_ls2" corresp="#Od1_ls2"/>
+                     </linkGrp>
+                  </l>
+                  <l n="04" xml:id="Od_1_1_4">ferre superbiam et insolentes </l>
+               </lg>
+
+               <lg type="estrofa" xml:id="Od_1_2">
+                  <l n="05" xml:id="Od_1_2_5">mores coactus iam didici invia et <linkGrp>
+                        <link type="a_notas" xml:id="a_Od1_n3" corresp="#Od1_n3"/>
+                        <link type="a_ls" xml:id="a_Od1_ls3" corresp="#Od1_ls3"/>
+                     </linkGrp>
+                  </l>
+                  <l n="06" xml:id="Od_1_2_6">per saxa voces ingeminantia</l>
+                  <l n="07" xml:id="Od_1_2_7">fletusque sub rauco querelas</l>
+                  <l n="08" xml:id="Od_1_2_8">murmure Danubii levare. <linkGrp>
+                        <link type="a_ls" xml:id="a_Od1_ls4" corresp="#Od1_ls4"/>
+                     </linkGrp>
+                  </l>
+               </lg>
+
+               <lg type="estrofa" xml:id="Od_1_3">
+                  <l n="09" xml:id="Od_1_3_9">O nate tristem sollicitudine <linkGrp>
+                        <link type="a_notas" xml:id="a_Od1_n4" corresp="#Od1_n4"/>
+                        <link type="a_ls" xml:id="a_Od1_ls5" corresp="#Od1_ls5"/>
+                     </linkGrp>
+                  </l>
+                  <l n="10" xml:id="Od_1_3_10">lenire mentem et rebus atrociter</l>
+                  <l n="11" xml:id="Od_1_3_11">urgentibus fulcire amici <linkGrp>
+                        <link type="a_ls" xml:id="a_Od1_ls6" corresp="#Od1_ls6"/>
+                     </linkGrp>
+                  </l>
+                  <l n="12" xml:id="Od_1_3_12">pectora docte manu Thylesi, <linkGrp>
+                        <link type="a_notas" xml:id="a_Od1_n5" corresp="#Od1_n5"/>
+                     </linkGrp>
+                  </l>
+               </lg>
+
+               <lg type="estrofa" xml:id="Od_1_4">
+                  <l n="13" xml:id="Od_1_4_13">iam iam sonantem Delius admovet <linkGrp>
+                        <link type="a_comentarios" xml:id="a_Od1_c3" corresp="#Od1_c3"/>
+                        <link type="a_ls" xml:id="a_Od1_ls7" corresp="#Od1_ls7"/>
+                        <link type="a_ls" xml:id="a_Od1_ls8" corresp="#Od1_ls8"/>
+                     </linkGrp>
+                  </l>
+                  <l n="14" xml:id="Od_1_4_14">dexter tacentem barbiton antea;</l>
+                  <l n="15" xml:id="Od_1_4_15">cantare Sebethi suadent <linkGrp>
+                        <link type="a_ls" xml:id="a_Od1_ls9" corresp="#Od1_ls9"/>
+                     </linkGrp>
+                  </l>
+                  <l n="16" xml:id="Od_1_4_16">ad vaga flumina cursitantes <linkGrp>
+                        <link type="a_notas" xml:id="a_Od1_n6" corresp="#Od1_n6"/>
+                        <link type="a_comentarios" xml:id="a_Od1_c4" corresp="#Od1_c4"/>
+                        <link type="a_ls" xml:id="a_Od1_ls10" corresp="#Od1_ls10"/>
+                     </linkGrp>
+                  </l>
+               </lg>
+
+               <lg type="estrofa" xml:id="Od_1_5">
+                  <l n="17" xml:id="Od_1_5_17">Nymphae; iam amatis moenibus inclytae</l>
+                  <l n="18" xml:id="Od_1_5_18">non urbis, amnis quam Tagus aureo <linkGrp>
+                        <link type="a_notas" xml:id="a_Od1_n7" corresp="#Od1_n7"/>
+                        <link type="a_comentarios" xml:id="a_Od1_c5" corresp="#Od1_c5"/>
+                        <link type="a_ls" xml:id="a_Od1_ls11" corresp="#Od1_ls11"/>
+                     </linkGrp>
+                  </l>
+                  <l n="19" xml:id="Od_1_5_19"> nodare nexu gestit, ultra</l>
+                  <l n="20" xml:id="Od_1_5_20">me lacerat modum amor furentem.</l>
+               </lg>
+
+               <lg type="estrofa" xml:id="Od_1_6">
+                  <l n="21" xml:id="Od_1_6_21">Sirenum amoena iam patria iuvat <linkGrp>
+                        <link type="a_notas" xml:id="a_Od1_n8" corresp="#Od1_n8"/>
+                        <link type="a_ls" xml:id="a_Od1_ls12" corresp="#Od1_ls12"/>
+                     </linkGrp>
+                  </l>
+                  <l n="22" xml:id="Od_1_6_22">cultoque pulchra Parthenope solo</l>
+                  <l n="23" xml:id="Od_1_6_23">iuxtaque manes consedere <linkGrp>
+                        <link type="a_notas" xml:id="a_Od1_n9" corresp="#Od1_n9"/>
+                        <link type="a_ls" xml:id="a_Od1_ls13" corresp="#Od1_ls13"/>
+                     </linkGrp>
+                  </l>
+                  <l n="24" xml:id="Od_1_6_24">vel potius cineres Maronis.</l>
+               </lg>
+
+               <lg type="estrofa" xml:id="Od_1_7">
+                  <l n="25" xml:id="Od_1_7_25">Aegro deorum quis tulerit, rogas, <linkGrp>
+                        <link type="a_notas" xml:id="a_Od1_n10" corresp="#Od1_n10"/>
+                        <link type="a_notas" xml:id="a_Od1_n11" corresp="#Od1_n11"/>
+                        <link type="a_ls" xml:id="a_Od1_ls14" corresp="#Od1_ls14"/>
+                     </linkGrp>
+                  </l>
+                  <l n="26" xml:id="Od_1_7_26">herbis repostis auxilium potens, <linkGrp>
+                        <link type="a_notas" xml:id="a_Od1_n12" corresp="#Od1_n12"/>
+                        <link type="a_ls" xml:id="a_Od1_ls15" corresp="#Od1_ls15"/>
+                     </linkGrp>
+                  </l>
+                  <l n="27" xml:id="Od_1_7_27">mentisque consternationem <linkGrp>
+                        <link type="a_ls" xml:id="a_Od1_ls16" corresp="#Od1_ls16"/>
+                     </linkGrp>
+                  </l>
+                  <l n="28" xml:id="Od_1_7_28">cantibus et fidibus levarit? <linkGrp>
+                        <link type="a_notas" xml:id="a_Od1_n13" corresp="#Od1_n13"/>
+                        <link type="a_ls" xml:id="a_Od1_ls17" corresp="#Od1_ls17"/>
+                     </linkGrp>
+                  </l>
+               </lg>
+
+               <lg type="estrofa" xml:id="Od_1_8">
+                  <l n="29" xml:id="Od_1_8_29">Idem sonanti cui vaga flumina <linkGrp>
+                        <link type="a_notas" xml:id="a_Od1_n14" corresp="#Od1_n14"/>
+                        <link type="a_ls" xml:id="a_Od1_ls18" corresp="#Od1_ls18"/>
+                     </linkGrp>
+                  </l>
+                  <l n="30" xml:id="Od_1_8_30">sistunt silentes margine vortices</l>
+                  <l n="31" xml:id="Od_1_8_31">ventosque narratur frementes <linkGrp>
+                        <link type="a_ls" xml:id="a_Od1_ls19" corresp="#Od1_ls19"/>
+                     </linkGrp>
+                  </l>
+                  <l n="32" xml:id="Od_1_8_32">per nemora ardua conquiesse,</l>
+               </lg>
+
+               <lg type="estrofa" xml:id="Od_1_9">
+                  <l n="33" xml:id="Od_1_9_33">hic nam revinxit me tibi vinculo <linkGrp>
+                        <link type="a_notas" xml:id="a_Od1_n15" corresp="#Od1_n15"/>
+                     </linkGrp>
+                  </l>
+                  <l n="34" xml:id="Od_1_9_34">gratis Camoenae quod mihi nexibus <linkGrp>
+                        <link type="a_ls" xml:id="a_Od1_ls20" corresp="#Od1_ls20"/>
+                     </linkGrp>
+                  </l>
+                  <l n="35" xml:id="Od_1_9_35">texere; praelargus quid ultra</l>
+                  <l n="36" xml:id="Od_1_9_36">me miserum potuit iuvare? <linkGrp>
+                        <link type="a_ls" xml:id="a_Od1_ls21" corresp="#Od1_ls21"/>
+                     </linkGrp>
+                  </l>
+               </lg>
+
+               <lg type="estrofa" xml:id="Od_1_10">
+                  <l n="37" xml:id="Od_1_10_37">Imbrem beatis nubibus aureum <linkGrp>
+                        <link type="a_notas" xml:id="a_Od1_n16" corresp="#Od1_n16"/>
+                        <link type="a_ls" xml:id="a_Od1_ls22" corresp="#Od1_ls22"/>
+                     </linkGrp>
+                  </l>
+                  <l n="38" xml:id="Od_1_10_38">binaque talum compede candidum <linkGrp>
+                        <link type="a_ls" xml:id="a_Od1_ls23" corresp="#Od1_ls23"/>
+                     </linkGrp>
+                  </l>
+                  <l n="39" xml:id="Od_1_10_39">nexam puellam coniugemque</l>
+                  <l n="40" xml:id="Od_1_10_40">languidulis oculis querentem <linkGrp>
+                        <link type="a_comentarios" xml:id="a_Od1_c6" corresp="#Od1_c6"/>
+                        <link type="a_ls" xml:id="a_Od1_ls24" corresp="#Od1_ls24"/>
+                     </linkGrp>
+                  </l>
+               </lg>
+
+               <lg type="estrofa" xml:id="Od_1_11">
+                  <l n="41" xml:id="Od_1_11_41">carmen canentis sic animum rapit <linkGrp>
+                        <link type="a_ls" xml:id="a_Od1_ls25" corresp="#Od1_ls25"/>
+                     </linkGrp></l>
+                  <l n="42" xml:id="Od_1_11_42">mentemque ut omnes subiaceant graves</l>
+                  <l n="43" xml:id="Od_1_11_43">curae et labores evolemque <linkGrp>
+                        <link type="a_ls" xml:id="a_Od1_ls26" corresp="#Od1_ls26"/>
+                     </linkGrp></l>
+                  <l n="44" xml:id="Od_1_11_44">aliger his super elevatus. <linkGrp>
+                        <link type="a_notas" xml:id="a_Od1_n17" corresp="#Od1_n17"/>
+                     </linkGrp>
+                  </l>
+               </lg>
+
+               <lg type="estrofa" xml:id="Od_1_12">
+                  <l n="45" xml:id="Od_1_12_45">Te, mi Thylesi, te comite obtulit <linkGrp>
+                        <link type="a_notas" xml:id="a_Od1_n18" corresp="#Od1_n18"/>
+                        <link type="a_ls" xml:id="a_Od1_ls27" corresp="#Od1_ls27"/>
+                     </linkGrp>
+                  </l>
+                  <l n="46" xml:id="Od_1_12_46">sese parentis quem veneror loco, <linkGrp>
+                        <link type="a_notas" xml:id="a_Od1_n19" corresp="#Od1_n19"/>
+                     </linkGrp>
+                  </l>
+                  <l n="47" xml:id="Od_1_12_47">cui dulce pignus nostri amoris <linkGrp>
+                        <link type="a_ls" xml:id="a_Od1_ls28" corresp="#Od1_ls28"/>
+                     </linkGrp>
+                  </l>
+                  <l n="48" xml:id="Od_1_12_48">non animum pigeat patere. <linkGrp>
+                        <link type="a_comentarios" xml:id="a_Od1_c7" corresp="#Od1_c7"/>
+                        <link type="a_ls" xml:id="a_Od1_ls29" corresp="#Od1_ls29"/>
+                     </linkGrp>
+                  </l>
+               </lg>
+
+               <lg type="estrofa" xml:id="Od_1_13">
+                  <l n="49" xml:id="Od_1_13_49">Arcana divum dum reserat, novus <linkGrp>
+                        <link type="a_ls" xml:id="a_Od1_ls30" corresp="#Od1_ls30"/>
+                        <link type="a_ls" xml:id="a_Od1_ls31" corresp="#Od1_ls31"/>
+                     </linkGrp></l>
+                  <l n="50" xml:id="Od_1_13_50">huic pectus alte sollicitat furor,</l>
+                  <l n="51" xml:id="Od_1_13_51">curare seu mortalium res <linkGrp>
+                        <link type="a_ls" xml:id="a_Od1_ls32" corresp="#Od1_ls32"/>
+                     </linkGrp></l>
+                  <l n="52" xml:id="Od_1_13_52">caelicolas grave sive monstrat</l>
+               </lg>
+
+               <lg type="estrofa" xml:id="Od_1_14">
+                  <l n="53" xml:id="Od_1_14_53">natos parentum crimina ob impia <linkGrp>
+                        <link type="a_notas" xml:id="a_Od1_n20" corresp="#Od1_n20"/>
+                        <link type="a_ls" xml:id="a_Od1_ls33" corresp="#Od1_ls33"/>
+                     </linkGrp>
+                  </l>
+                  <l n="54" xml:id="Od_1_14_54">vexari, ut auras carpere dum licet <linkGrp>
+                        <link type="a_ls" xml:id="a_Od1_ls34" corresp="#Od1_ls34"/>
+                     </linkGrp></l>
+                  <l n="55" xml:id="Od_1_14_55">nec luxui ipsi indulgeant nec <linkGrp>
+                        <link type="a_ls" xml:id="a_Od1_ls35" corresp="#Od1_ls35"/>
+                     </linkGrp></l>
+                  <l n="56" xml:id="Od_1_14_56">poena parentibus ulla desit. </l>
+               </lg>
+
+               <lg type="estrofa" xml:id="Od_1_15">
+                  <l n="57" xml:id="Od_1_15_57">Haec aure cuncti praecipue imbibunt <linkGrp>
+                        <link type="a_ls" xml:id="a_Od1_ls36" corresp="#Od1_ls36"/>
+                        <link type="a_ls" xml:id="a_Od1_ls37" corresp="#Od1_ls37"/>
+                     </linkGrp>
+                  </l>
+                  <l n="58" xml:id="Od_1_15_58">alte silentes et Marius meus <linkGrp>
+                        <link type="a_notas" xml:id="a_Od1_n21" corresp="#Od1_n21"/>
+                        <link type="a_comentarios" xml:id="a_Od1_c8" corresp="#Od1_c8"/>
+                        <link type="a_ls" xml:id="a_Od1_ls38" corresp="#Od1_ls38"/>
+                     </linkGrp>
+                  </l>
+                  <l n="59" xml:id="Od_1_15_59">rerumque multarum refertus</l>
+                  <l n="60" xml:id="Od_1_15_60">atque memor Placitus bonarum. <linkGrp>
+                        <link type="a_notas" xml:id="a_Od1_n22" corresp="#Od1_n22"/>
+                        <link type="a_comentarios" xml:id="a_Od1_c9" corresp="#Od1_c9"/>
+                     </linkGrp>
+                  </l>
+               </lg>
+
+               <lg type="estrofa" xml:id="Od_1_16">
+                  <l n="61" xml:id="Od_1_16_61">Honesta cunctos hinc domus accipit</l>
+                  <l n="62" xml:id="Od_1_16_62">liberque sermo nascitur, haud tamen</l>
+                  <l n="63" xml:id="Od_1_16_63">impune, nam si tortuosis</l>
+                  <l n="64" xml:id="Od_1_16_64">nexibus implicitum quid audes</l>
+               </lg>
+
+               <lg type="estrofa" xml:id="Od_1_17">
+                  <l n="65" xml:id="Od_1_17_65">suadere, sperans ingeniosius</l>
+                  <l n="66" xml:id="Od_1_17_66">quam verius nos pertrahere ad tuum</l>
+                  <l n="67" xml:id="Od_1_17_67">sensum, statim aggressa est cohors te <linkGrp>
+                        <link type="a_notas" xml:id="a_Od1_n23" corresp="#Od1_n23"/>
+                     </linkGrp>
+                  </l>
+                  <l n="68" xml:id="Od_1_17_68">ut Ciconum irruit in canentem. <linkGrp>
+                        <link type="a_notas" xml:id="a_Od1_n24" corresp="#Od1_n24"/>
+                        <link type="a_notas" xml:id="a_Od1_n25" corresp="#Od1_n25"/>
+                        <link type="a_ls" xml:id="a_Od1_ls39" corresp="#Od1_ls39"/>
+                     </linkGrp>
+                  </l>
+               </lg>
+
+               <lg type="estrofa" xml:id="Od_1_18">
+                  <l n="69" xml:id="Od_1_18_69">Num tu fluentem divitiis Tagum, <linkGrp>
+                        <link type="a_comentarios" xml:id="a_Od1_c10" corresp="#Od1_c10"/>
+                        <link type="a_ls" xml:id="a_Od1_ls40" corresp="#Od1_ls40"/>
+                     </linkGrp></l>
+                  <l n="70" xml:id="Od_1_18_70">num prata gyris uvida roscidis, <linkGrp>
+                        <link type="a_ls" xml:id="a_Od1_ls41" corresp="#Od1_ls41"/>
+                     </linkGrp></l>
+                  <l n="71" xml:id="Od_1_18_71">mutare me insanum putabas <linkGrp>
+                        <link type="a_notas" xml:id="a_Od1_n26" corresp="#Od1_n26"/>
+                     </linkGrp>
+                  </l>
+                  <l n="72" xml:id="Od_1_18_72">dulcibus immemoremque amicis? <linkGrp>
+                        <link type="a_notas" xml:id="a_Od1_n27" corresp="#Od1_n27"/>
+                        <link type="a_ls" xml:id="a_Od1_ls42" corresp="#Od1_ls42"/>
+                     </linkGrp>
+                  </l>
+               </lg>
+
+               <l/>
+            </lg>
+         </div>
+
+         <div type="poema_traduccion" xml:id="Oda_1_trad">
+            <lg xml:lang="es">
+               <head xml:id="Od1_t_trad">Oda a Antonio Telesio</head>
+
+               <lg type="estrofa" xml:id="Od_1_1_trad" corresp="#Od_1_1_1" n="3" select="1-4">
+                  <l>Desterrado a un lugar frío, tras abandonar a esposa, hijos, hermanos y patria,
+                     yo, siervo de las Musas, he aprendido ahora, a la fuerza, a soportar la
+                     soberbia y las insolentes</l>
+               </lg>
+               <lg type="estrofa" xml:id="Od_1_2_trad" corresp="#Od_1_2_5" n="3" select="5-8">
+                  <l>costumbres de los bárbaros y a aliviar mis lamentos al ronco murmullo del
+                     Danubio, entre rocas que redoblaron mis voces y querellas.</l>
+               </lg>
+               <lg type="estrofa" xml:id="Od_1_3_trad" corresp="#Od_1_3_9" n="3" select="9-12">
+                  <l>¡Oh Telesio, nacido para calmar la mente afligida por la angustia y para apoyar
+                     con tu mano el pecho del amigo en circunstancias que acongojan cruelmente:</l>
+               </lg>
+               <lg type="estrofa" xml:id="Od_1_4_trad" corresp="#Od_1_4_13" n="3" select="13-16">
+                  <l>¡el dios de Delos es propicio a que la lira que antes estaba en silencio suene,
+                     y las ninfas que corren a lo largo de los arroyos errantes del Sebeto me instan
+                     a cantar!</l>
+               </lg>
+               <lg type="estrofa" xml:id="Od_1_5_trad" corresp="#Od_1_5_17" n="3" select="17-20">
+                  <l>Ya el amor no me atormenta, en mi loca pasión, más allá de lo soportable, por
+                     la ciudad, famosa por sus amados muros, que el río Tajo anhela anudar con un
+                     lazo dorado.</l>
+               </lg>
+               <lg type="estrofa" xml:id="Od_1_6_trad" corresp="#Od_1_6_21" n="3" select="21-24">
+                  <l>Es un placer instalarse en la agradable tierra natal de las Sirenas, y en
+                     Nápoles, hermosa por su suelo cultivado, cerca del espíritu, o más bien de las
+                     cenizas, de Virgilio.</l>
+               </lg>
+               <lg type="estrofa" xml:id="Od_1_7_trad" corresp="#Od_1_7_25" n="3" select="25-28">
+                  <l>¿Qué dios, preguntas, ha proporcionado poderosa ayuda con misteriosas yerbas a
+                     un enfermo [como Garcilaso], y ha aligerado el estado turbado de [mi] mente con
+                     canciones y un laúd?</l>
+               </lg>
+               <lg type="estrofa" xml:id="Od_1_8_trad" corresp="#Od_1_8_29" n="3" select="29-32">
+                  <l>El mismo por quien los arroyos errantes se detienen y silencian sus remolinos
+                     en la orilla, mientras él toca y [por quien] se dice que los vientos aulladores
+                     se calmaron en todo el alto bosque.</l>
+               </lg>
+               <lg type="estrofa" xml:id="Od_1_9_trad" corresp="#Od_1_9_33" n="3" select="33-36">
+                  <l>Pues él me unió a ti con una cadena que las Musas tejieron para mí en gratos
+                     lazos. ¿Qué más podría haber hecho, en su gran munificencia, por ayudar a un
+                     desdichado como yo?</l>
+               </lg>
+               <lg type="estrofa" xml:id="Od_1_10_trad" corresp="#Od_1_10_37" n="3" select="37-40">
+                  <l>La lluvia dorada cae desde nubes de dicha y la muchacha atada por su hermoso
+                     tobillo con una doble cadena protesta contra su novio con ojos lánguidos:</l>
+               </lg>
+               <lg type="estrofa" xml:id="Od_1_11_trad" corresp="#Od_1_11_41" n="3" select="41-44">
+                  <l>mientras cantas [estas cosas], la canción se apodera tan profundamente de [mi]
+                     espíritu y mente que todas [mis] pesadas preocupaciones y trabajos yacen atrás,
+                     y vuelo con alas, elevándome por encima de estos asuntos.</l>
+               </lg>
+               <lg type="estrofa" xml:id="Od_1_12_trad" corresp="#Od_1_12_45" n="3" select="45-48">
+                  <l>En tu compañía, la tuya, Telesio, amigo mío, se ofreció como padre alguien a
+                     quien venero, alguien ante quien no debería avergonzarme por mostrar mi
+                     espíritu abierto, en dulce testimonio de nuestro afecto.</l>
+               </lg>
+
+               <lg type="estrofa" xml:id="Od_1_13_trad" corresp="#Od_1_13_49" n="3" select="49-52">
+                  <l>Mientras revela los secretos de los dioses, un nuevo furor agita profundamente
+                     su corazón, ya sea demostrando que los que moran en el cielo se preocupan
+                     seriamente por los asuntos de los mortales, </l>
+               </lg>
+               <lg type="estrofa" xml:id="Od_1_14_trad" corresp="#Od_1_14_53" n="3" select="53-56">
+                  <l> y si los jóvenes son afligidos por los crímenes impíos de sus padres, ni estos
+                     se entregarán al lujo ni habrá respiro para el castigo de sus padres.</l>
+               </lg>
+               <lg type="estrofa" xml:id="Od_1_15_trad" corresp="#Od_1_15_57" n="3" select="57-60">
+                  <l>En profundo silencio, con especial cuidado, todos absorben con los oídos estas
+                     palabras, mi amigo Mario también, y Plácido, que rebosa de abundantes buenos
+                     temas y está atento a ellos.</l>
+               </lg>
+               <lg type="estrofa" xml:id="Od_1_16_trad" corresp="#Od_1_16_61" n="3" select="61-64">
+                  <l>Entonces, la honrosa casa nos recibe a todos, y surge libre la conversación -no
+                     sin consecuencias, porque si intentas a convencernos de algo enredado en nudos
+                     retorcidos,</l>
+               </lg>
+               <lg type="estrofa" xml:id="Od_1_17_trad" corresp="#Od_1_17_65" n="3" select="65-68">
+                  <l>esperando movernos más por la astucia que por la verdad, inmediatamente el
+                     grupo te ataca, como la horda de mujeres ciconias se abalanzó sobre el
+                     cantante.</l>
+               </lg>
+               <lg type="estrofa" xml:id="Od_1_18_trad" corresp="#Od_1_18_69" n="3" select="69-72">
+                  <l>¿Creíste que yo, insensato y olvidadizo, iba a intercambiar a tales dulces
+                     amigos por el Tajo, que fluye con sus riquezas, y los prados regados con sus
+                     ruedas de rocío?</l>
+               </lg>
+               <note type="responsabilidad" resp="#JA">Traducción del latín al español realizada por
+                  Juan Alcina.</note>
+            </lg>
+
+         </div>
+
+         <div type="bibliografia">
+            <listBibl type="final">
+               <bibl>ALCINA, Juan Francisco (2011). <title>Garcilaso de la Vega: Poesía
+                     completa</title>, Austral: Madrid.</bibl>
+               <bibl>— (2023a). «Catulo en las Odas latinas de Garcilaso», <title>Bulletin
+                     Hispanique</title>. 2023/1 (n° 125), 141-160.</bibl>
+               <bibl>— (2023b). «Sobre la oda de Garcilaso a Juan Ginés de Sepúlveda»,
+                     <title>Homenaje a Elena Rodríguez Peregrina</title>. Universidad de Granada, en
+                  prensa.</bibl>
+               <bibl>ALCINA, Juan Francisco y VILLALONGA, Mariàngela (1955). Texto y apparatus de
+                     <title>Odas latinas</title>, in Garcilaso de la Vega, <title>Obra poética y
+                     textos en prosa</title>. (Ed.) Bienvenido Morros. Crítica: Barcelona,
+                  251-268.</bibl>
+               <bibl>BARBERIS, Walter (2017). «La ‘lancia’ di Carlo V. Una proposta iconografica»,
+                     <title>Annali della Scuola Normale Superiore di Pisa. Classe di Lettere e
+                     Filosofia</title>, ser. V, 9, n. 2), 445-463, 639-642.</bibl>
+               <bibl>BARNARD, Mary E. (2014). <title>Garcilaso de la Vega and the Material Culture
+                     of Renaissance Europe</title>. University of Toronto Press: Toronto.</bibl>
+               <bibl>BEMBO, Pietro (1562). <title>Il primo volume delle lettere di M. Pietro
+                     Bembo</title>. Girolamo Scotto: Venice.</bibl>
+               <bibl>BLOOM, Harold (1973). <title>The Anxiety of Influence: A Theory of
+                     Poetry</title>. Oxford University Press: New York.</bibl>
+               <bibl>BONILLA Y SAN MARTÍN, Adolfo (1899). «Oda latina de Garci-Lasso de la Vega»,
+                     <title>Revista Crítica de Historia y Literatura españoles, portuguesas, é
+                     hispano-americanas</title>, IV, 362-371.</bibl>
+               <bibl>BRUNETTI, Oronzo (2006). <title>A difesa dell’Impero. Pratica architettonica e
+                     dibattito teorico nel Viceregno di Napoli nel Cinquecento, con la trascrizione
+                     del ‘Trattato delle fortificazioni’ di Mario Galeota</title>. Congedo:
+                  Galatina.</bibl>
+               <bibl>CAPECE, Scipione (1754). <title>Il poema «De principiis rerum» di Scipione
+                     Capece, patrizio napoletano, illustre scrittore del secolo XVI, colla
+                     traduzione in verso italiano sciolto, e le Annotazioni, di Francesco Maria
+                     Ricci, romano, abate benedettino casinese. Dello stesso Capece il poema «De
+                     vate maximo», l’elegie, gli epigrammi, e due Prose Latine, con le notizie
+                     storiche e critiche, ec. del Conte Mazzuchelli, oltra le molte altrui
+                     testimonianze; e nel fine un Elegia, ed un poemetto di Onorato Fascitello. Il
+                     tutto con opportune Annotazioni del Traduttore</title>. Dalle Stampe
+                  Remondiniane con facoltà de’ superiori, e privilegio: Venezia.</bibl>
+               <bibl>CAPILUPI, Ippolito (1574). <title>Hippolyti Capilupi Carmina</title>.
+                  Christophorus Plantinus: Antwerp.</bibl>
+               <bibl>CARRETER, Lázaro (2003). <title>Clásicos españoles: de Garcilaso a los niños
+                     pícaros</title>. Alianza: Madrid.</bibl>
+               <bibl>CASTIGLIONE, Baldessar (2015). <title>Carmina</title>, apud Rodney LOKAJ, ed.,
+                     <title>Two Renaissance Friends: Baldassare Castiglione, Domizio Falcone, and
+                     their Neo-Latin Poetry</title>, Tempe, AZ, Arizona Center for Medieval and
+                  Renaissance Studies.</bibl>
+               <bibl>— (2018). <title>Carmina</title>. (Ed.) Rodney LOKAJ. <title>Two Renaissance
+                     Friends: Baldassare Castiglione, Domizio Falcone, and their Neo-Latin
+                     Poetry</title>, Tempe, AZ, Arizona Center for Medieval and Renaissance Studies,
+                  2015; revised and republished with new carmina in <title>Amicitia nel
+                     Rinascimento. I carmi di Baldassare Castiglione e Domizio Falcone</title>, di
+                  Rodney Lokaj. L’Erma di Bretschneider: Roma.</bibl>
+               <bibl>— (1981) <title>Il libro del cortegiano</title>. (Intr.) Amedeo Quondam.
+                  Garzanti: Milano.</bibl>
+               <bibl>CHARLET, Jean-Louis (2019). <title>Métrique latine humaniste des pré-humanistes
+                     padouans et de Pétrarque au XVIe siècle</title>. Droz: Geneva.</bibl>
+               <bibl>CORSINI, Amerigo in website Poeti d’Italia in lingua latina (= <ref
+                     type="link_externo"
+                     target="https://www.poetiditalia.it/public/indici/autori/idautori/194"
+                     >URL</ref>)</bibl>
+               <bibl>CORTÉS TOVAR (2008). Rosario, «Los intertextos latinos en la Ode ad Florem
+                  Gnidi: su dimensión metapoética», <title>Studia aurea</title>, 2, en línea.</bibl>
+               <bibl>— (2023). «La Ode ad Thylesium, un ejercicio de horacianismo», in
+                     <title>Clasicismo horaciano en tiempos de Garcilaso de la Vega Le Classicime
+                     horacien à l’époque de Garcilaso de la Vega, Bulletin Hispanique</title>, CXXV,
+                  121-139.</bibl>
+               <bibl>COURTNEY, Edward (1993). <title>The Fragmentary Latin Poets</title>. Oxford
+                  University Press: Oxford.</bibl>
+               <bibl>COX, Virginia (2016). «The Exemplary Vittoria Colonna», in <title>A Companion
+                     to Vittoria Colonna</title>, Leiden, Brill, 467–501.</bibl>
+               <bibl>CUART MONER, Baltasar (2011). «Juan Ginés de Sepúlveda: la impronta de Italia
+                  en un cronista del Emperador», <title>Historia, Antropología y Fuentes
+                     Orales</title>, 46, 73-89.</bibl>
+               <bibl>CZEPIEL, Maria (2019). «Garcilaso’s ‘Sedes ad cyprias’: A New Source and a Re-
+                  appraisal», <title>Bulletin of Spanish Studies</title>, 96, 737–754.</bibl>
+               <bibl>— (2022). «Two Newly Discovered Poems by Garcilaso de la Vega», <title>Bulletin
+                     of Spanish Studies</title>, 96, 741-776.</bibl>
+               <bibl>— (2022). «A Newly Discovered Poem Attributed to Diego Hurtado de Mendoza», in
+                     <title>Atti del Congresso Internazionale di Studi Diego Hurtado de Mendoza e
+                     l’Italia. Padova, 12-13 dicembre 2022</title>, Turnhout, Brepols
+                  (forthcoming).</bibl>
+               <bibl>— (2023). «Horacio y Sannazaro en las dos odas inéditas de Garcilaso de la
+                  Vega», <title>Bulletin Hispanique</title>, 125, 37-52.</bibl>
+               <bibl>DANIELE, F., Francesco (1762). <title>Antonii Thylesii Cosentini Opera</title>.
+                  Fratres Simonii: Naples</bibl>
+               <bibl>ERASMUS, Desiderius, and MORE, Thomas (1506). <title>Luciani viri quam
+                     disertissimi compluria opuscula longe festiuissima ab Erasmo Roterodamo et
+                     Thoma moro interpretibus optimis in latinorum linguam traducta</title>.
+                  Ascensius: Paris.</bibl>
+
+               <bibl>FALCONE, Domizio (2018). in <title>Amicitia nel Rinascimento. I carmi di
+                     Baldassare Castiglione e Domizio Falcone</title>. (Ed.) Rodney Lokaj. L’Erma di
+                  Bretschneider: Roma.</bibl>
+
+               <bibl>FICINO, Marsilio (1956). <title>Commentaire sur le Banquet de Platon</title>.
+                  (Ed.) and tr. Raymond Marcel. Les Belles Lettres: Paris.</bibl>
+               <bibl>FICINO, Marsilio (2004). <title>Platonic Theology</title>. (Ed.) J. Hankins,
+                  trans. M. J. B. Allen, vol. 4 (I Tatti Renaissance Library 13). Harvard University
+                  Press: Cambridge.</bibl>
+               <bibl>FOSALBA, Eugenia (2018). «Descripción del Ms. XIII AA 63 de la BN de Nápoles,
+                  transmisor de dos odas neolatinas de Garcilaso», in Eugenia Fosalba y Gáldrick de
+                  la Torre, eds., <title>Contexto latino y vulgar de Garcilaso en Nápoles: redes de
+                     relaciones de humanistas y poetas (manuscritos, cartas, academias)</title>,
+                  Peter Lang Verlag: Bern, 297-327.</bibl>
+               <bibl>— (2019). <title>Pulchra Parthenope: Hacia la faceta napolitana de la poesía de
+                     Garcilaso</title>. Iberoamericana Vervuert: Madrid.</bibl>
+               <bibl>— (2021). «La sodalitas como fuente de inspiración en la poesía de Garcilaso»,
+                     <title>Studia Aurea</title>, 15, 227-254.</bibl>
+               <bibl> Eugenia Fosalba, Adalid Nievas (2022). “Garcilaso de la Vega, espía y
+                  mensajero de confianza del Virrey de Nápoles. Un documento autógrafo inédito”,
+                     <title>Boletín de la Real Academia Española</title>, t. 102, v. 326),
+                  471-512.</bibl>
+               <bibl>Fosalba, Eugenia (2023a). «El viaje de Garcilaso desde Ratisbona a Nápoles, con
+                  estancia en Roma», in Davide Canfora, Nancy De Benedetto, y Paola Laskaris, eds.,
+                     <title>Aun a pesar de las tinieblas bella, aun a pesar de las estrellas clara.
+                     Pur nelle tenebre, bella / chiara, pur tra le stelle. Scritti in ricordo di
+                     Ines Ravasini</title>, Bari, Edizioni di Pagina, 355-73.</bibl>
+               <bibl>— (2023b). «Hacia la suavitas de Horacio en la trayectoria poética de
+                  Garcilaso», <title>Bulletin Hispanique</title>, 125, 1, 13-36.</bibl>
+               <bibl>— (2024). “Sobre la posible circunstancia y fecha de composición de Sedes ad
+                  cyprias Venus, oda latina de Garcilaso”, <title>e-Humanista</title>, 25, 10, en
+                  prensa.</bibl>
+               <bibl>— (2024). “Why, where, and when was Garcilaso's Ode ad Florem Gnidi
+                  conceived?», <title>Rassegna iberistica</title>, 47, 121, 20 en prensa.</bibl>
+
+
+               <bibl>GAGNAEUS, I. [= Jean de Gagny] (1547). <title>Doctissimorum nostra aetate
+                     Italorum epigrammata</title>. Nicolaus Dives [= Nicolas le Riche]:
+                  Paris.</bibl>
+               <bibl>GALLEGO MORELL, Antonio (1976). <title>Garcilaso: documentos completos</title>.
+                  Planeta: Barcelona.</bibl>
+               <bibl>GAISSER, Julia Haig (1993). <title>Catullus and His Renaissance
+                  Readers</title>. Oxford University Press: Oxford.</bibl>
+               <bibl>GARGANO, Antonio (2017). «El género bucólico en Nápoles», <title>Bulletin
+                     hispanique</title>, CXIX, 573-590.</bibl>
+               <bibl>— (2022). «Locating Garcilaso de la Vega: Between Petrarchism and vernacular
+                  Classicism», in Rodrigo Cacho Casal and Caroline Egan (eds), <title>The Routledge
+                     Hispanic Studies Companion to Early Modern Spanish Literature and
+                     Culture</title>. Routledge: Abingdon.</bibl>
+               <bibl>GRAVINA, Pietro (1532). <title>Petri Gravinae Neapolitani poematum
+                     libri</title>. Ex officina Ioannis Sulsbacchii Hagenovensis Germani:
+                  Naples.</bibl>
+               <bibl>GRAY, Andrew F. (2016). «Garcilaso at Home in Naples: On the Neo-Latin Muse of
+                  the Príncipe de los Poetas Castellanos», <title>Calíope</title>, 21, 5-33.</bibl>
+               <bibl>GUTTIÉRREZ VOLTA, J. (1952). «Las odas latinas de Garcilaso de la Vega»,
+                     <title>Revista de Literatura</title> II, 280-308.</bibl>
+               <bibl>HERNANDO SÁNCHEZ, Carlos José (2003). «Parthénope, ¿tan lejos de su tierra?
+                  Garcilaso de la Vega y la poesía de la corte en Nápoles», en <title>Garcilaso y su
+                     época: del amor y la guerra</title>. (Ed.) José María Díez Borque, Luis Ribot
+                  García, MSociedad Estatal de Conmemoraciones Culturales: Madrid.</bibl>
+
+               <bibl>HINDS, Stephen (1998). <title>Allusion and Intertext: dynamics of approproation
+                     in Roman poetry</title>. Cambridge University Press: Cambridge.</bibl>
+               <bibl>KENISTON, Hayward (1925). <title> Garcilaso De La Vega: Works: A Critical Text
+                     With A Bibliography</title>. Hispanic Society of America: New York.</bibl>
+               <bibl>LOKAJ, Rodney (2006). <title>Petrarch’s Ascent of Mount Ventoux: The Familiaris
+                     IV, 1,</title> Scriptores Latini vol. 23, Edizioni dell’Ateneo: Rome.</bibl>
+               <bibl>LÓPEZ GRIGERA, María Luisa (1988). «Notas sobre las amistades italianas de
+                  Garcilaso: un nuevo manuscrito de Pietro Bembo», in <title>Homenaje a Eugenio
+                     Asensio</title>. (Eds.) Luisa López Grigera, Augustin Redondo. Gredos: Madrid,
+                  219-310.</bibl>
+               <bibl>LOSADA Angel (1973)). <title>Juan Gines de Sepúlveda a través de su
+                     “Epistolario” y nuevos documentos</title>. Reimpresión, CSIC: Madrid
+                  [1949].</bibl>
+               <bibl>LUCIANO (1528). <title>Luciani Samosatensis opuscula quaedam, Erasmo Rote. et
+                     Thoma Moro interpretib. Quorum elenchum sequens pagella complectitur</title>,
+                  Seb. Gryphius Germ. excud Lugudnuni.</bibl>
+
+               <bibl>LUMSDEN, Audrey (1947). «Garcilaso de la Vega as a Latin poet»,
+                     <title>MLR</title>, XLII, 337-341.</bibl>
+               <bibl>LUQUE MORENO, J. (1979). «Las poesías latinas de Garcilaso de la Vega: notas
+                  sobre métrica y crítica textual», in Andrés Soria Ortega; Nicolás Marín (coord.),
+                  Antonio Gallego Morell (coord.), Emilio Orozco Díaz (hom.), <title>Estudios sobre
+                     literatura y arte dedicados al profesor Emilio Orozco Díaz</title>, Granada,
+                  Universidad de Granada, 297-310.</bibl>
+               <bibl>MACRIN, Jean Salmon (1978). <title>Le livre des Épithalames (1528-1531). Les
+                     Odes de 1530 (Livres I &amp; II)</title>. (Ed.) Georges Soubeille. Publications
+                  de l'Université de Toulouse-Le Mirail: Toulouse.</bibl>
+               <bibl>MANTUANUS, Baptista (scil. Battista Spagnoli) in website <title>Poeti d’Italia
+                     in lingua latina</title> (= <ref type="link_externo"
+                     target="https://www.poetiditalia.it/public/indici/autori/idautori/203"
+                     >URL</ref>)</bibl>
+
+               <bibl>MELE, Eugenio (1898). «Una Oda latina inedita de Garcilaso de la Vega y tres
+                  poesías inéditas a él dedicadas por Cosimo Anisio», <title>Revista Crítica de
+                     Historia y Literatura españoles, portuguesas, é hispano-americanas</title>,
+                  III, 362-8.</bibl>
+               <bibl>— (1924). «Las poesías latinas de Garcilaso de la Vega y su permanencia en
+                  Italia», parte 2, <title>Bulletin Hispanique</title>, XXVI, 35-51.</bibl>
+
+               <bibl>MOLZA, Francesco Maria in website <title>Poeti d’Italia in lingua
+                     latina</title> (= <ref type="link_externo"
+                     target="https://www.poetiditalia.it/public/indici/autori/idautori/282"
+                     >URL</ref>)</bibl>
+
+               <bibl>MORALES LARA, Enrique (2023). «Los dos nuevos poemas latinos de Garcilaso
+                  (Garcil IV y Garcil V): propuesta de traducción y comentario»,
+                     <title>eHumanista</title>, 56, 370-392.</bibl>
+               <bibl>MORROS, Bienvenido (1995). <title>Garcilaso de la Vega: Obra poética y textos
+                     en prosa</title>. Crítica: Barcelona.</bibl>
+               <bibl>MORROS, Bienvenido (2007). <title>Garcilaso de la Vega: Obra poética y textos
+                     en prosa</title>. Clásicos y Modernos 18. Crítica: Barcelona.</bibl>
+
+               <bibl>NOBLE WOOD, Oliver (2014). <title>A Tale Blazed Through Heaven: Imitation and
+                     Invention in the Golden Age of Spain</title>. OUP: Oxford.</bibl>
+               <bibl>MUSTARD, W. P. (Ed.) (1914). <title>The Piscatory Eclogues of Jacopo
+                     Sannazaro</title>, The Johns Hopkins Press: Baltimore.</bibl>
+               <bibl>PASTORE, Alessandro al (1988). <title>Dizionario Biografico degli
+                     italiani</title>, volumen 52, ahora online: <ref type="link_externo"
+                     target="https://www.treccani.it/enciclopedia/ricerca/pastore%20alessandro/"
+                     >URL</ref>.</bibl>
+               <bibl>PEROSA, Alessandro and John SPARROW (1979). <title>Renaissance Latin Verse: An
+                     Anthology</title>. Chapel Hill. University of North Carolina Press and London:
+                  Duckworth.</bibl>
+               <bibl> PIGNATTI, Franco (2018). <title>Francesco Maria Molza intelletuale e poeta del
+                     Rinascimento italiano</title>, thèse de doctorat, vol. 3, Universitat de
+                  Genève: Genève.</bibl>
+               <bibl>PLATNAUER, Maurice (1951). <title>Latin Elegiac Verse: A Study of the Metrical
+                     Usage of Tibullus, Propertius and Ovid</title>. Cambridge University Press:
+                  Cambridge.</bibl>
+               <bibl>PONTANO, Giovanni (1531). <title>Ioannis Iovani Pontani Carminum, quae quidem
+                     extant, omnium, pars prima</title>. Cratander: Basel.</bibl>
+               <bibl>POLITIAN (scil. Angelo Ambrogini) in website <title>Poeti d’Italia in lingua
+                     latina</title>. <ref type="link_externo"
+                     target="https://www.poetiditalia.it/public/indici/autori/idautori/220"
+                        >https://www.poetiditalia.it/public/indici/autori/idautori/22</ref></bibl>
+
+
+               <bibl>RADT, Stefan (1977). <title>Fragmenta Sophoclea in Tragicorum Graecorum
+                     Fragmenta</title>, vol. IV, Göttingen, Vandenhoeck &amp; Ruprecht.</bibl>
+               <bibl>RAVASINI, Ines (2012). «Églogas piscatorias entre Italia y España», en
+                     <title>Rumbos del hispanismo en el umbral del Cincuentenario de la AIH</title>.
+                  (Ed.) Patrizia Bott. Bagatto Libri: Roma, 8 vols, III, 330-37.</bibl>
+               <bibl>REED, Jay (2021). «Textual Notes on the Latin Odes of Garcilaso de la Vega»,
+                     <title>Studia Aurea</title>, 15, 475-84.</bibl>
+               <bibl>RIVERS, Elias L. (1974). <title>La Poesía de Garcilaso</title>, 1st ed.,
+                  Editorial Ariel, S.A.: Barcelona.</bibl>
+               <bibl> ROTA, Bernardino (2000). <title>Rime</title>. (Ed.) Luca Milite, Fondazione
+                  Pietro Bembo: Ugo Guanda Editore di Parma.</bibl>
+
+               <bibl>— (2007). Berardino, <title>Carmina</title>. (Ed.) Cristina Zampese. Edizioni
+                  RES: Turín.</bibl>
+
+               <bibl>SADOLETO, Jacopo (1532). <title>Iacobi Sadoleti Curtius</title> Faelli:
+                  Bologna.</bibl>
+               <bibl>— and Franceso SFONDRATI (1559). <title>Duo poemata heroica illustriss. J.S. et
+                     F. Sfondrati, quorum alterum inscribitur Curtius, alterum vero De raptu
+                     Helenae</title>. Academia Veneta: Venice.</bibl>
+               <bibl> SANNAZARO, Jacopo, works in website <title>Poeti d’Italia in lingua
+                     latina</title>. <ref type="link_externo"
+                     target="https://www.poetiditalia.it/public/indici/autori/idautori/226"
+                        >https://www.poetiditalia.it/public/indici/autori/idautori/226</ref></bibl>
+               <bibl>— (2013). <title> Arcadia</title>. (Ed.) Carlo Vecce. Carocci Editore:
+                  Roma.</bibl>
+               <bibl>SAVJ-LÓPEZ, Pablo and Eugenio MELE (1897). «Una Oda latina de Garcilasso de la
+                  Vega», <title>Revista Crítica de Historia y Literatura españoles, portuguesas, é
+                     hispano-americanas</title>, II, 248-51.</bibl>
+               <bibl>SERRANO CUETO, Antonio (2021). «El triunfo de Venus en los epitalamios
+                  neolatinos del Renacimiento», <title>Camenae</title>, 27, 1-22.</bibl>
+               <bibl>SCHIBLI, H. S. (1990). <title>Pherekydes of Syros</title>. Oxford University
+                  Press: Oxford.</bibl>
+               <bibl>SLIWA, Krzysztof (Ed.) (2006). <title>Cartas, documentos y escrituras de
+                     Garcilaso de la Vega y de sus familiares</title>. Centro de Estudios
+                  Cervantinos: Alcalá de Henares.</bibl>
+               <bibl>STORONI Mazzolani, Lidia (1973). <title>Iscrizioni funerarie, sortilegi e
+                     pronostici di Roma antica</title>. Einaudi: Torino.</bibl>
+               <bibl>TANSILLO, Luigi (2011). <title>Rime</title> (Ed.) Tobia. R. Toscano. Bulzoni
+                  Editore: Roma, 2 vols.</bibl>
+               <bibl> TASSO, Bernardo (1995). <title>Rime</title>, 2 vols., Edizioni RES:
+                  Torino.</bibl>
+               <bibl> TATEO, Francesco (1976). <title>L’umanesimo meridionale</title>. Laterza:
+                  Bari.</bibl>
+
+               <bibl>TELESIO, Antonio, <title>Imber aureus</title> in Antonii Thylesii Cosentini
+                  Imber aureus tragoedia. Impressum Venetiis opera Bernardini Vitalis Veneti mense
+                  Maio. M D XXIX</bibl>
+               <bibl>TILG, Stefan and Benjamin HARTER (1029). <title>Neulateinische Metrik: Formen
+                     und Kontexte zwischen Rezeption und Innovation</title>. Narr: Tübingen.</bibl>
+               <bibl>TORRE ÁVALOS, Gáldrick de la (2017). «El grupo poético de Ischia y la
+                  adaptación al vulgar de la égloga piscatoria», <title>Bulletin hispanique</title>,
+                  119, 537-554.</bibl>
+               <bibl>TOSCANO, Tobia R. (2017). «Le egloghe latine di Giano Anisio ‘amico’ napoletano
+                  di Garcilaso», <title>Bulletin hispanique</title>, 119, 495-515.</bibl>
+               <bibl>— (2010). «Fabio o Mario Galeota? Sull’identità di un rimatore napoletano del
+                  xvi secolo», <title>Filologia e critica</title>, XXXV, 2-3, 178-203.</bibl>
+               <bibl>— (2018). Onorato Fascitelli ‘alma de verdadero poeta’: dall’amicizia possibile
+                  con Garcilaso all’invettiva contro l’‘hispana avaritia’, in <title>Contexto latino
+                     y vulgar de Garcilaso en Nápoles. Redes de relaciones de humanistas y poetas
+                     (manuscritos, cartas, academias)</title>, a cura di Eugenia Fosalba e Gáldrick
+                  de la Torre Ávalos. Peter Lang: Bern, 185-219.</bibl>
+
+               <bibl>— (1993). (Ed.) Bernardino Martirano, <title>Il pianto d’Aretusa</title>. (Ed.)
+                  Tobia. R.Toscano. Loffredo: Napoli.</bibl>
+               <bibl>Vega, Garcilaso de la (2007). <title>Obra poética y textos en prosa</title>.
+                  (Ed.) Bienvenido Morros. Crítica: Barcelona</bibl>
+
+               <bibl>VAQUERO SERRANO, María del Carmen (2023). «Dos poemas latinos: Uno nuevo a
+                  María de Mendoza, ¿la hija del Conde de Mélito?, y otro de Juan Ramírez»,
+                     <title>Lemir</title>, XXVII, 45-57, 08-06-2023, <ref type="link_externo"
+                     target="https://parnaseo.uv.es/lemir/Revista/Revista27/03_Vaquero_Carmen.pdf"
+                     >URL</ref>.</bibl>
+               <bibl> WIND, Edgar (1968). <title>Pagan Mysteries in the Renaissance</title>, 2nd
+                  ed., W. W. Norton &amp; Company: New York.</bibl>
+
+               <bibl>ZAMPESE, Cristina (Ed.), Berardino Rota (2007). <title>Carmina</title>.
+                  Edizioni RES: Turín.</bibl>
+
+
+            </listBibl>
+         </div>
+      </body>
+   </text>
+</TEI>

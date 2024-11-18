@@ -1,0 +1,2529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="pronapoli.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="tranform.xsl"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="es">Elegía II</title>
+            <title xml:lang="en">Elegy II</title>
+            <author corresp="#GdV">Garcilaso de la Vega</author>
+
+            <respStmt xml:lang="es" resp="editor_filologico">
+               <resp>Edición filológica preparada por</resp>
+               <persName corresp="#BM" ref="https://pronapoli.com/equipo/bienvenido-morros/"
+                  >Bienvenido Morros</persName>
+            </respStmt>
+         </titleStmt>
+
+         <publicationStmt>
+            <publisher>Universitat de Girona</publisher>
+            <address>
+               <addrLine>Edifici Sant Domènec I</addrLine>
+               <addrLine> Pl. Ferrater i Mora, 1</addrLine>
+               <addrLine>17004 - Girona</addrLine>
+            </address>
+            <idno type="general">https://pronapoli.com/</idno>
+            <idno type="url_poema">https://pronapoli.com/soledadamena/elegia2</idno>
+            <idno type="ISBN">978-84-09-62949-7</idno>
+            <availability status="restricted">
+               <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"
+                  >http://creativecommons.org/licenses/by-nc-nd/3.0/es/</licence>
+            </availability>
+         </publicationStmt>
+
+         <sourceDesc xml:lang="en">
+            <p>Para la información de los testimonios utilizados para esta edición crítica digital,
+               se remite de momento, a la sección <ref type="link_interno"
+                  target="https://pronapoli.com/soledadamena/">Nuestra edición</ref>. </p>
+         </sourceDesc>
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="en">Inglés</language>
+            <language ident="es">Español</language>
+            <language ident="lat">Latín</language>
+            <language ident="cat">Catalán</language>
+         </langUsage>
+      </profileDesc>
+
+      <encodingDesc>
+         <p>Los criterios de edición se especifican en la sección general <ref type="link_interno"
+               target="https://pronapoli.com/soledadamena/">Nuestra edición</ref>, y los criterios
+            para codificación en XML-TEI del documento digital en <ref type="link_externo"
+               target="https://github.com/susannalles/pronapoli/blob/gh-pages/docs.md"/>.</p>
+         <p>La codificación XML-TEI ha sido modelada y realizada por <persName corresp="#SAT"
+               >Susanna Allés Torrent</persName>. Los archivos XML-TEI pueden encontrarse en <ref
+               type="link_externo"
+               target="https://github.com/susannalles/pronapoli/tree/gh-pages/SoledadAmena/XML-TEI"
+            /></p>
+      </encodingDesc>
+
+
+      <revisionDesc>
+         <change resp="#SAT"><date when="2024-05-03"/>Creación del documento XML-TEI.</change>
+         <change resp="#SAT"><date when="2024-05"/>Codificación documento XML-TEI.</change>
+      </revisionDesc>
+
+   </teiHeader>
+   <text>
+      <body>
+
+         <div type="contexto">
+            <div xml:lang="es">
+               <p>La elegía se compuso en Erice, pueblo situado sobre Trápani, durante los cuatro
+                  días en que las tropas del Emperador, que habían atracado en su puerto, de regreso
+                  de la Jornada de Túnez, permanecieron en el palacio de Chiaramonte: del 20 de
+                  agosto hasta finales de mes de 1535 (<bibl type="main">Morales Folguera
+                     2015</bibl>). Es, por tanto, anterior a la <title>Elegía I</title>, escrita con
+                  motivo de la muerte de don Bernaldino, ocurrida ya en el camino de Trápani a
+                  Palermo. El Emperador, como afirman las crónicas italianas, se hospedó en el
+                  antiguo palacio de Chiaramonte con sus hombres de confianza, mientras sus tropas
+                  se instalaron en Erice. </p>
+               <p>El dato sobre la residencia del Emperador en el palacio de Chiaramonte en Trápani
+                  lo ofrece un manuscrito anónimo, conservado en una biblioteca de Cuomo, anexa a la
+                  Società di Storia Patria de Napoli. El manuscrito tiene dos volúmenes con el mismo
+                  título “Memorie del Regno dette del Duca d’Osuna”. En el siglo XIX la crónica fue
+                  estudiada por historiadores italianos del siglo XIX, Bartolomeo Capasso y Giuseppe
+                  di Blasiis, con una refundición del duque de Osuna “non anteriore all’ultimo
+                  decennio del sec. XVI” (<bibl type="main">Castaldo, 1929: 85</bibl>). El autor o
+                  autores de la crónica narran la estancia del Emperador en Trápani con todo
+                  detalle: “Il 20 dello mesmo mese [Agosto] vi giungeva di persona con ventimilia
+                  cristiani, liberati dalla schiviatù tunisina, ed entró in Trapani stanco e un poc’
+                  malandato dal viaggio di retorno. Si portò a abitare nel palazzo degli antichi
+                  Chiaramonti (pasato poi ai Pepoli) di fronte allá porte centrale della chiesa di
+                  San Nicola, che perciò conservó per pareggio tempo lo stemma imperiale./ Donò a la
+                  Chiesa di S. Nicola una fonte d’alabrastro turquesca, portata dell’Africa; a la
+                  parrochia de Sam Pietro un stendardo di broccato di oro, sotto il quale fu apposta
+                  una breve iscrizione; e al convento dell’Annunziata, due porte di legno coperte di
+                  ferro, anche di provinienza tunnisina /Quello però che più interessa, e che
+                  Trapani giustamante vantò, si è che quivi l’Imperator giurò, per la prima volta in
+                  Sicilia, i privilegi. E la città ne fissò perenne memoria, incidendo nel sugello
+                  cittadino le parole: “Drepanum, civitas invictissima in qua Caesar primum
+                  iuravit.” / La ceremonia, per quanto se ne contestila data, si celebrò nel Duomo
+                  (S, Agostino) e memoria ne rimane anche in una grande lapide marmórea, custodita
+                  nel locale Museo Pepoli” (<bibl type="canon">Castaldo, 1929: 89-90</bibl>). </p>
+               <p>En el monte de Erice, según narra Virgilio en el libro 5 de la
+                     <title>Eneida</title>, Eneas celebró el primer aniversario de la muerte de
+                  padre Anquises porque en ese monte se conservaban sus cenizas junto al templo de
+                  Venus, madre de Eneas: <cit>
+                     <quote>Tum vicina Erycino i uertice sedes/ fundatur Venus Idaliae, tumulumque
+                        sacerdos/ ac lucus late sacer additur Anchiseo</quote>
+                     <bibl type="canon">(vv. 759-761)</bibl>
+                  </cit>. Véase al respecto <bibl type="main">Herrera Valenciano (2019: 34)</bibl>. </p>
+               <p>Garcilaso recrea ese ambiente porque se halla hospedado (probablemente acampado,
+                  junto al resto de la soldadesca) en un lugar rodeado de jardines, apto para
+                  dedicarse a las musas y componer su <title>Elegía II</title>. El dato es
+                  incuestionable por el testimonio de Virgilio y del propio Garcilaso. La tropa
+                  junto a los veinte mil cristianos liberados debió de instalarse en Erice al margen
+                  del Emperador, como también parece dar a entender La Lumia: <cit>
+                     <quote>Sull’ scorcio d’ Agosto…. L’ Imperatore approdava nel porto di Trapani;
+                        e quivi, licenziate le galere e le soldatesche imbarcatevi, trattenavà con
+                        asé i confidenti più intimi: il Duca dÁlba, D, Ferrante Gonzaga, i
+                        secretarii Accades e Uries, i signori di Agillar e di Granvelles, el Conte
+                        Benavente, il Duca di Medinaceli, il Principe di Sulmona e il Nunzio del
+                        Papa</quote>
+                     <bibl type="canon">(Castaldo, 1929: 89-90, 3)</bibl>
+                  </cit>. </p>
+               <p>La elegía contiene un núcleo fundamental de carácter amoroso, al estilo de la
+                  elegía de Ovidio tanto en los <title>Amores</title> como en las
+                     <title>Heroidas</title> o las de Pontano en <title>De amore coniugale</title>:
+                  el poeta se dirige a su amigo Boscán para narrarle la llegada a Sicilia, desde
+                  donde se trasladará a Nápoles, ciudad en la que había dejado a una amada que no
+                  sabe si estará esperándole. Las elegías de Pontano, quizá más próximas a las
+                  demás, por constituir la guerra el motivo de ausencia entre los esposos, son
+                     <title>Ad uxorem</title>, “Uxorem alloquitur de militia conquerens” y “Queritur
+                  de expeditione obeunda”. Pontano lamenta haber de servir a Marte para abandonar su
+                  vida de poeta junto a su esposa, a quien demanda fidelidad durante su larga
+                  ausencia. Pontano no tiene ningún amigo al que envidiar por su <foreign
+                     xml:lang="lat">otium</foreign> literario junto a su mujer porque ya lo tiene,
+                  pero se queja de haberlo de dejar para irse a la guerra. </p>
+               <p>En su inicio el poema adopta una forma claramente epistolar al mencionar al
+                  interlocutor, aparte de en el epígrafe, también en el primer verso, tras el
+                  deíctico de lugar <ref type="texto_poema">Aquí</ref>. Es precisamente el tono
+                  epistolar lo que permite al toledano la confesión íntima y personal en forma
+                  satírica que permite enlazar con el final de la elegía. Se trata de la
+                  identificación de dos bandos aparentemente contrarios entre toda la tropa de la
+                  que él también forma parte: los que han luchado buscando un beneficio económico y
+                  los que han querido convencer en público que ellos habían ido a la guerra pensando
+                  en el premio de la virtud, cuando en privado se contradecían al reconocer unos
+                  motivos parecidos a los de los primeros. Tanto en lo público como en lo privado,
+                  Garcilaso opta por un justo medio entre el bien económico y el bien moral. Las
+                  epístolas más que las sátiras de Horacio parecen ser la fuente más directa de los
+                  versos recién citados de Garcilaso. </p>
+               <p resp="#BM">Como los poemas de partida o de regreso al hogar, el poeta contrasta la
+                  vida equilibrada y tranquila que lleva su amigo Boscán frente a las playas de
+                  Barcelona junto a la que será su esposa Ana Girón de Rebolledo, con la suya en
+                  navegación peligrosa, no sabiendo si la amante que ha dejado en Nápoles estará ya
+                  con otro o le habrá sido fiel durante su ausencia. Esa parte de nuestra elegía
+                  está inspirada en otra de Bernardo Tasso, la “elegia sesta a Messer Nicolò Grazia”
+                     (<bibl type="canon">Tasso, 1994: 501-502</bibl>), compuesta con ocasión de su
+                  abandono de Venecia siguiendo a su señor, el príncipe de Salerno, Ferrante de
+                  Sanseverino, seguramente a su ciudad natal, en las campañas militares del
+                  Emperador (<bibl type="main">Caravaggi, 2007: 165-166</bibl>). Tasso también
+                  contrapone su vida militar con la que llevará Grazia acompañado de sus cultos
+                  amigos, Speron Speroni, poniendo <cit>
+                     <quote>di gravi noie eterno obblio</quote>
+                     <bibl type="canon">(Tasso, 1995: 301)</bibl>
+                  </cit>, expresión que recuerda la horaciana “amor curas habet/ haec inter
+                  obliviscitur” en su célebre epodo que comienza “Beatus ille” (<bibl type="main"
+                     >Morros 2022</bibl>). Las “noie”, que equivalen a las “curas” latinas, son de
+                  tipo amoroso. Por tanto, Tasso imagina a su amigo veneciano libre de las
+                  preocupaciones amorosas, que no perturbarán su vida de ocio intelectual. La
+                  diferencia con Garcilaso radica en que el toledano se halla agobiado por las
+                  preocupaciones amorosas, frente al equilibrio emocional de su amigo Boscán,
+                  mientras que Tasso podría ser víctima también de esas mismas preocupaciones, que
+                  no padecerá su amigo, no por haberse casado o estar a punto de hacerlo, sino por
+                  hallarse rodeado de hombres de ciencia. Entre las dos elegías hay unas
+                  coincidencias bastante literales, que se pueden comprobar en la nota a los<span
+                     type="link" from="#Elegia_2_145" n="5">vv. 145-150</span> (<ref
+                     type="link_int_n" target="#Elegia_2_n30_es" n="5">Nota vv. 145-150</ref></p>
+            </div>
+         </div>
+
+
+
+         <div type="metrica">
+            <div xml:lang="es">
+               <p resp="#EF">Tercetos encadenados. La <foreign>terza</foreign> rima (o
+                     <foreign>terzina</foreign> encadenada, o terzina dantesca) es, por supuesto, la
+                  forma métrica de la <title>Commedia</title>: se trata de versos endecasílabos, que
+                  se agrupan de tres en tres (en <foreign>terzine</foreign>, y están en grupos más
+                  amplios, según el esquema ABA BCB CDC DED... YZY Z). <bibl type="main">Beltrami
+                     (2002: 317)</bibl> recuerda uno de los ejemplos más antiguos (aparte de la
+                     <title>Commedia</title>), en un fragmento de la traducción al vernáculo del
+                     <title>De consolatione Philosophiae</title> de Boecio, llevada a cabo por
+                  Alberto della Piagentina entre 1322 y 1332. Beltrami también deja constancia de
+                  que la <foreign>terza rima</foreign> pronto se empleó en la poesía elegíaca y
+                  bucólica para las traducciones en vulgar, como equivalente del dístico elegíaco.
+                  Por su parte, la <title>Comedia delle ninfe florentine (Ameto)</title> de
+                  Boccaccio sería un precedente de la elegía en forma de capítulo ternario. Por otro
+                  lado, el nacimiento de la elegía vulgar habría tenido lugar con la
+                     <title>Mirtia</title> de Leon Battista Alberti (de entre 1428 y 1437, en forma
+                  de capítulo ternario, con alternancia de algún heptasílabo) y, por otro lado, se
+                  encuentran varias veces también heptasílabos en lugar de endecasílabos en la otra
+                  elegía de Alberti, la <title>Agilitta</title>, en forma, también esta, de capítulo
+                  ternario (<bibl type="main">Beltrami, 2002: 42</bibl>). Navarro Tomás otorga
+                  implícitamente a Boscán la primacía en el uso de esta forma métrica en castellano,
+                  al citarlo con anticipación a Garcilaso: pero es poco probable que así fuera.
+                  Primero porque Garcilaso, imitando a Sannazaro, empleó los tercetos en la
+                     <title>Égloga II</title> en una fecha muy temprana (finales de 1532 y
+                  principios de 1533), y en segundo lugar, porque fue en Garcilaso en quien su amigo
+                  barcelonés se inspiró, siguiendo su pionera iniciativa de verter en el cauce seco
+                  de la poesía clásica las aguas de la lengua castellana (véase el <title>Soneto
+                     XXIV</title>; <bibl type="main">Fosalba, 2019: 220</bibl> sugiere que Boscán
+                  tardó un lustro en publicar la obra conjunta en los talleres de Carles Amorós
+                  porque empleó ese tiempo en escribir su obra de corte neoclásico, continuando el
+                  camino abierto por Garcilaso). A continuación, Navarro Tomás recuerda los intentos
+                  de Hurtado de Mendoza y Gutierre de Cetina en sus epístolas, así como de Herrera
+                  en sus numerosas elegías y Barahona de Soto en elegías, epístolas y sátiras. Por
+                  otra parte, Don Juan de Almeida y el Brocense emplearon los tercetos en la
+                  traducción de una oda de Horacio con el pie quebrado de un heptasílabo que repite
+                  la rima de los endecasílabos precedentes, aBB: bCC: cDD, etc. Cf. <bibl
+                     type="main">Navarro Tomás (1986: 208-209)</bibl>.</p>
+            </div>
+         </div>
+
+         <div type="notas">
+            <note xml:id="Elegia_2_n1" n="01" corresp="#a_Elegia_2_n1">
+               <note xml:id="Elegia_2_n1_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_1" n="1">1-2</span> ‘Aquí […] donde el Mantuano (Virgilio)
+                  custodia, guarda ('conserva') la ceniza del buen troyano Anquises [padre de Eneas]
+                  con eterno nombre y vida’. Murió en Trápani (<bibl type="canon">Virgilio,
+                        <title>Eneida</title>, 3, 707-710</bibl>), pero sus cenizas se conservan en
+                  Erice (<bibl type="canon">Virgilio, 5, 25-26</bibl>, y <bibl type="canon"
+                     >759-761</bibl>) en el monte san Giuliano, al que se refiere, como hace
+                  Virgilio, Garcilaso en el <span type="link" from="#Elegia_2_28" n="0">v.
+                  28</span>. Erice, fundador de la ciudad que le da su nombre, era hermano de Eneas.
+                  Véase <ref type="link_int_ls" target="#Elegia_2_ls1">Loci similes vv. 1-2</ref>
+               </note>
+            </note>
+
+            <note xml:id="Elegia_2_n2" n="02" corresp="a_Elegia_2_n2">
+               <note xml:id="Elegia_2_n2_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_4" n="1">4–5</span> ‘… bandera ilustre, insigne/ de Carlos V,
+                  llamado <mentioned>César Africano</mentioned>', en recuerdo de emperadores romanos
+                  que habían obtenido grandes triunfos en esa parte del mundo. Véase <ref
+                     type="link_int_c" target="#Elegia_2_c1_es">Comentario vv. 4-5</ref>
+               </note>
+            </note>
+
+            <note xml:id="Elegia_2_n3" n="03" corresp="#a_Elegia_2_n3">
+               <note xml:id="Elegia_2_n3_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_5" n="1">5-6</span> ‘nos hallamos, / recogida, la vencedora
+                  gente’. Garcilaso recurre al plural mayestático (en vez de "me hallo") en un gesto
+                  de modestia para captar la benevolencia de sus lectores.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n4" n="04" corresp="#a_Elegia_2_n4">
+               <note xml:id="Elegia_2_n4_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_7" n="4">7-11</span> ‘diferentes en afanes
+                     (<mentioned>estudios</mentioned>): que unos vamos deseando con ansia recoger
+                  del cansancio el fruto que con el sudor sembramos; otros aducen la virtud como
+                  amiga y recompensa de sus obras’. Véase <ref type="link_int_c"
+                     target="#Elegia_2_c2_es">Comentario 7-11</ref>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n5" n="05" corresp="#a_Elegia_2_n5">
+               <note xml:id="Elegia_2_n5_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_13" n="0">13</span> ‘de esos otros’, es decir, de los primeros,
+                  ‘difieren en lo público’, porque en lo privado vienen a decir lo mismo que los
+                  otros.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n6" n="06" corresp="#a_Elegia_2_n6">
+               <note xml:id="Elegia_2_n6_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_17" n="0">17</span> ‘quise empeñarme
+                     (<mentioned>obligarme</mentioned>) en conseguir
+                     (<mentioned>procurar</mentioned>) hacienda
+                  (<mentioned>patrimonio</mentioned>)’.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n7" n="07" corresp="#a_Elegia_2_n7">
+               <note xml:id="Elegia_2_n7_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_19" n="1">19-20</span> La <ref type="texto_poema">estrecha
+                     senda</ref> lo es de la virtud y el sacrificio; la <ref type="texto_poema">otra
+                     vía</ref> es la ancha, símbolo de los placeres y los vicios. Véase <ref
+                     type="link_int_ls" target="#Elegia_2_ls5">Loci similes v. 19</ref></note>
+            </note>
+
+
+
+            <note xml:id="Elegia_2_n8" n="08" corresp="#a_Elegia_2_n8">
+               <note xml:id="Elegia_2_n8_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_21" n="0">21</span>
+                  <ref type="texto_poema">caminar</ref>: ‘ir de un lugar a otro, sea a pie, a
+                  caballo, en carro’. La <ref type="texto_poema">rienda</ref> es metáfora del
+                  pensamiento virtuoso, como en la epístola siguiente, que al llegar la noche es
+                  otro ya muy distinto, porque lo ha llevado por el camino opuesto.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n9" n="09" corresp="#a_Elegia_2_n9">
+               <note xml:id="Elegia_2_n9_es" xml:lang="es"><span type="link" from="#Elegia_2_22"
+                     n="0">22</span>
+                  <ref type="texto_poema">Mas, ¿dónde me llevó la pluma mía...</ref>: esta pregunta
+                  resulta muy indicativa de la reflexión metapoética, así como de la capacidad
+                  absolutamente innovadora (no solo en el panorama poético español, también italiano
+                  y europeo), que hay tras estos intentos neoclásicos, tras la estela horaciana, por
+                  parte de Garcilaso. Véase <ref type="link_int_ls" target="#Elegia_2_ls6">Loci
+                     similes v. 22</ref></note>
+            </note>
+            <note xml:id="Elegia_2_n10" n="10" corresp="#a_Elegia_2_n10">
+               <note xml:id="Elegia_2_n10_es" xml:lang="es" resp="EF"><span type="link"
+                     from="#Elegia_2_21" n="3">21-24</span>
+                  <ref type="texto_poema">Mas, ¿dónde me llevó la pluma mía, / que a sátira me voy
+                     mi paso a paso, / y aquesta que os ecribo es elegía?</ref>: esta reflexión
+                  meta-poética sobre el género en que el autor escribe se da en varios momentos en
+                  Garcilaso, como también en el exordio a la Epístola a Boscán, medita en voz alta
+                  acerca del estilo adecuado a una misiva.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n11" n="11" corresp="#a_Elegia_2_n11">
+               <note xml:id="Elegia_2_n11_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_26" n="0">26</span>
+                  <ref type="texto_poema">su proceso</ref>: ‘el cumplimiento de un fin determinado’;
+                  en este caso, la composición de una elegía, en vez de la sátira (<bibl type="main"
+                     >Vega, 2004: 209n.</bibl>), como con más precisión también ha notado <bibl
+                     type="main">Gargano, 2014: 87-88</bibl>: “[Garcilaso] confiesa la fidelidad por
+                  él siempre acordada, en su relación con las musas, a un estilo poético: el dulce
+                  estilo al que es connatural el tema amoroso”.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n12" n="12" corresp="#a_Elegia_2_n12">
+               <note xml:id="Elegia_2_n12_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_28" n="0">28</span> El <ref type="texto_poema">monte
+                     espeso</ref> (‘compacto y denso’, pero también ‘penoso, dificultoso’) es Erice,
+                  situado en el monte de San Giuliano, que para Garcilaso, como narra a
+                  continuación, acaba siendo su monte de las musas con bosques y jardines. Es el
+                  lugar en que había sido enterrado Anquises, como hemos dejado claro en la nota
+                  introductoria.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n13" n="13" corresp="#a_Elegia_2_n13">
+               <note xml:id="Elegia_2_n13_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_29" n="4">29-33</span> ‘subsisto a las diversidades no si
+                  dificultad, pero no por eso abandono a las musas, sino que vuelvo y voy de ellas,
+                  según lo acordamos, y así, al variar de oficio, el de las armas por el de las
+                  letras, me entretengo con las musas’. Véase <ref type="link_int_c"
+                     target="#Elegia_2_c6_es">Comentario vv. 29-33</ref>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n14" n="14" corresp="#a_Elegia_2_n14">
+               <note xml:id="Elegia_2_n14_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_35" n="0">35</span> El <ref type="texto_poema">duro afán</ref>
+                  (‘dura fatiga’) y la<ref type="texto_poema">grave pena</ref> (‘grandes tormentos’)
+                  son las provocadas por la lucha armada.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n15" n="15" corresp="#a_Elegia_2_n15">
+               <note xml:id="Elegia_2_n15_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_37" n="2">37-39</span> ‘De aquí iremos a ver la patria de la
+                  Sirena, que bien muestra haber sido antiguamente ya llena de amor y ocio’. Véase
+                     <ref type="link_int_c" target="#Elegia_2_c7_es">Comentario vv.
+                  37-39</ref>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n16" n="16" corresp="#a_Elegia_2_n16">
+               <note xml:id="Elegia_2_n16_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_42" n="0">43</span>
+                  <ref type="texto_poema">desparcido</ref>: ‘desperdigado, derramado’ y también
+                  ‘desocupado’.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n17" n="17" corresp="#a_Elegia_2_n17">
+               <note xml:id="Elegia_2_n17_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_43" n="2">43-45</span> El <ref type="texto_poema">frío
+                     temor</ref> lo causan los celos de suponer a la amada napolitana ocupada con
+                  otro amante. Véase <ref type="link_int_c" target="#Elegia_2_c8_es">Comentario vv.
+                     43-45</ref>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n18" n="18" corresp="#a_Elegia_2_n18">
+               <note xml:id="Elegia_2_n18_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_46" n="0">46</span>
+                  <ref type="texto_poema">de mi bien</ref>: ‘de mi amada’; el uso redundante, en el
+                     <span type="link" from="#Elegia_2_47" n="0"> v. 47</span>, de <ref
+                     type="texto_poema">lo</ref>, que anticipa ya el verso siguiente (<ref
+                     type="texto_poema">no niego que viviera con mayor seguridad</ref>), puede
+                  deberse a un reflejo de la lengua oral, muy apropiado para una elegía que no deja
+                  de ser una epístola familiar. Por tanto, cabe descartar cualquier tipo de error o
+                  en la puntuación o en una confusión de <mentioned>lo</mentioned> por
+                     <mentioned>yo</mentioned>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n19" n="19" corresp="#a_Elegia_2_n19">
+               <note xml:id="Elegia_2_n19_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_46" n="23">46-69</span> Garcilaso equipara el deseo amoroso con
+                  la fragua de un herrero y el agua que éste utiliza con la ausencia: el fuego de la
+                  fragua se aviva con poca agua (al igual que el amor cuando la ausencia es breve),
+                  pero el fuego se apaga si se le echa mucha agua a la ausencia). El toledano había
+                  abandonado Nápoles a finales de mayo de 1535 para dirigirse a Cagliari y entró en
+                  su ciudad adoptiva el 25 de noviembre del mismo año: son seis meses casi completos
+                  de ausencia. ‘La breve ausencia produce el mismo efecto (<ref type="texto_poema"
+                     >hace el mismo juego</ref>) en la fragua de amor que el agua moderada en el
+                  fuego de la fragua ardiente, la cual [<ref type="texto_poema">el agua
+                     moderada</ref>] verás que no solo no suele apagarlo (<ref type="texto_poema"
+                     >matar</ref>matar), sino que le da más fuerza (<ref type="texto_poema"
+                     >refuerza</ref>) con ardor más intenso y elevado (<ref type="texto_poema"
+                     >eminente</ref>), porque un contrario (<ref type="texto_poema">el fuego</ref>),
+                  con la poca fuerza de su contrario (<ref type="texto_poema">el agua
+                  moderada</ref>), para vencer en la lucha [de encenderse o apagarse], da mayor
+                  fuerza al brazo y le pone más robustez./ Pero si el agua se disemina y derrama
+                  sobre el fuego con mucha abundancia, el humo del fuego apagado sube al cielo, el
+                  sonido del fuego apagándose se oye […]/ Así la ausencia larga, que ha diseminado
+                  su agua en abundancia, apaga el fuego que el amor tenía encendido;/ de tal suerte
+                  deja el fuego, que la mano lo toca sin peligro en el momento en que el fuego en
+                  apariencia (el<ref type="texto_poema"> humo</ref>) y sonido (el que hace al
+                  apagarse) se desbarata’.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n20" n="20" corresp="#a_Elegia_2_n20">
+               <note xml:id="Elegia_2_n20_es" xml:lang="es"><span type="link" from="#Elegia_2_53"
+                     n="0">53</span> Frente a la variante del Brocense (véase aparato crítico v. 53,
+                  el verbo <ref type="texto_poema">refuerza</ref> es el correcto porque lo acompaña
+                  un complemento circunstancial de cantidad (<span type="link" from="#Elegia_2_54"
+                     n="0">v. 54</span>
+                  <ref type="texto_poema">con ardor más intenso y eminente</ref>) y porque
+                  concentra, mediante la figura etimológica (<span type="link" from="#Elegia_2_55"
+                     n="0">v. 55</span>
+                  <ref type="texto_poema">fuerza</ref> que esfuerza) y la políptoton (refuerza y
+                     <span type="link" from="#Elegia_2_57" n="0">57</span>
+                  <ref type="texto_poema">esfuerza</ref>), el vigor expresado en los versos
+                  siguientes. B se percata de la gradación de estos versos: ‘el fuego se opone a la
+                  poca fuerza del agua (porque su cantidad es moderada), pero toma fuerza (<ref
+                     type="texto_poema">su valor esfuerza</ref>) al hacerle frente para superar esa
+                  poca fuerza, y el resultado de ese contacto o lucha es que el fuego añade nueva
+                  fuerza (<ref type="texto_poema">refuerza</ref>) a la fuerza inicial para
+                  encenderse mucho más’; pero al optar por el mismo verbo en ambos casos, el primero
+                  intensificado por aun, monosílabo en la época, usado “para ponderar y exagerar el
+                  concepto” (<title>Diccionario de Autoridades</title>), con el sentido de
+                  ‘incluso’, empobrece el estilo de Garcilaso al hacer desaparecer una de las dos
+                  figuras etimológicas (<ref type="texto_poema">refuerza […] la poca fuerza</ref>) y
+                  la políptoton (<ref type="texto_poema">refuerza</ref> y <ref type="texto_poema"
+                     >esfuerza</ref>). </note>
+            </note>
+
+            <note xml:id="Elegia_2_n21" n="21" corresp="#a_Elegia_2_n21">
+               <note xml:id="Elegia_2_n21_es" xml:lang="es" resp="#"><span type="link"
+                     from="#Elegia_2_55" n="0">55</span> Según el Brocense, “Es de Ariosto en las
+                     <title>Rime</title>, 12.” <bibl type="main">(B-85), 280</bibl>. Debe referirse
+                  a los versos de la composición 16, <cit>
+                     <quote>O vero o falso che la fama suone", en que se refiere al efecto que surte
+                        la ausencia de amor: "Ché, s'un contrario all'altro è medicina, / non so
+                        perché, da l'un pigliando forza, / per l'altro la mia doglia non dechina./
+                        Piglia forza da l'uno e non s'ammorza / per l'altro già; né già si minuisce,
+                        / anzi più per l'absenza si rinforza.</quote>
+                     <bibl>(22-27)</bibl>
+                  </cit> Más adelante se referirá <quote>Ah crudo amore...</quote>, como aquí en el
+                     <span type="link" from="#Elegia_2_94" n="0">v. 94</span>, y como antes se ha
+                  referido <quote>al ferro, il foco e l'altre opre di Marte</quote> (<span
+                     type="link" from="#Elegia_2_34" n="0">v. 34</span>), que recuerda todo el
+                  pasaje sobre la fragua de amor (<span type="link" from="#Elegia_2_49" n="20">vv.
+                     49-69</span>) y el hierro de que se ve <quote>traspasado agudo y fuerte</quote>
+                     (<span type="link" from="#Elegia_2_105" n="0">v. 105</span>).</note>
+            </note>
+
+            <note xml:id="Elegia_2_n22" n="22" corresp="#a_Elegia_2_n22">
+               <note xml:id="Elegia_2_n22_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_70" n="14">70-84</span> ‘Yo solo estoy fuera de este extremo
+                  […]/ y pienso que debe de ser la razón la que permita la causa de este efecto (es
+                  decir, el motivo que produce que la ausencia larga haga crecer el amor en lugar de
+                  disminuirlo),/ que a mí solo se me manifiesta entre todos los amantes,/ porque
+                  como yo estaba eternamente supeditado por el cielo y destinado al amoroso fuego al
+                  que me arrojo (<ref type="texto_poema">meto</ref>); así para poder ser apagado
+                     (<ref type="texto_poema">amatado</ref>),/ la ausencia debe ser sin límite (<ref
+                     type="texto_poema">término</ref>), infinita, y sin un tiempo limitado./ lo que
+                  no hay razonamiento que permita tal cosa,/ porque, por más y más que ausencia
+                  dure,/ la ausencia se acaba con la vida, que es finita’. Véase <ref
+                     type="link_int_c" target="#Elegia_2_c12_es">Comentario vv. 70-84</ref>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n23" n="23" corresp="#a_Elegia_2_n23">
+               <note xml:id="Elegia_2_n23_es" xml:lang="es"><span type="link" from="#Elegia_2_83"
+                     n="0">83</span>
+                  <ref type="texto_poema">por más y más</ref>: Herrera detecta que es frase vulgar
+                     (<bibl>H-375</bibl>). </note>
+            </note>
+
+            <note xml:id="Elegia_2_n24" n="24" corresp="#a_Elegia_2_n24">
+               <note xml:id="Elegia_2_n24_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_85" n="8">85-93</span> ‘¿Pero a mí ¿quién habrá que me
+                  garantice/ que mi fortuna inestable, ayudada por sus cambios y olvido, no conspire
+                  contra mí? ¿Este temor [de la inestabilidad de la fortuna] atormenta, molesta a la
+                  esperanza y aflige y debilita el deseo,/ a consecuencia de todo lo cual, mis ojos
+                  se apartan del descanso;/ con ellos ahora veo solamente/ este dolor que rompe el
+                  corazón,/ y con él y conmigo mismo aquí (en Erice) me peleo?’. Véase <ref
+                     type="link_int_c" target="#Elegia_2_c13_es">Comentario vv. 85-93</ref>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n25" n="25" corresp="#a_Elegia_2_n25">
+               <note xml:id="Elegia_2_n25_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_94" n="8">94-102</span> ‘¡Oh cruel (<ref type="texto_poema"
+                     >crudo</ref>), oh duro, severo (<ref type="texto_poema">riguroso</ref>), oh
+                  fiero Marte,/ cubierto por una túnica de diamante y endurecido siempre en todas
+                  las partes de tu cuerpo. ¿Qué puede hacer el dulce amante […] llevado siempre a la
+                  vanguardia (<ref type="texto_poema">delante</ref>) por el furor o llevando siempre
+                  por delante el furor?/ Ejerciendo para mi mal tu deber (<ref type="texto_poema"
+                     >oficio</ref>), soy vuelto a unos límites/ que la muerte será mi último
+                  provecho (<ref type="texto_poema">beneficio</ref>)’. Véase <ref type="link_int_c"
+                     target="#Elegia_2_c14_es">Comentario vv. 94-102</ref>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n26" n="26" corresp="#a_Elegia_2_n26">
+               <note xml:id="Elegia_2_n26_es" xml:lang="es"><span type="link" from="#Elegia_2_99"
+                     n="0">99</span> Sobre la ambivalencia (bélica y amorosa) del <ref
+                     type="texto_poema">furor</ref> de Marte, Véase <ref type="link_int_c"
+                     target="#Elegia_2_c14_es">Comentario vv. 94-102</ref>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n27" n="27" corresp="#a_Elegia_2_n27">
+               <note xml:id="Elegia_2_n27_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_103" n="17">103-120</span> ‘Y la suerte adversa no permitió que
+                  ésta [la muerte] me ocurriese peleando, traspasado por hierro puntiagudo y
+                  fuerte,/ para que contemplase mi amado y dulce fruto en mano ajena,/ y su
+                  insensible y cruel posesor burlándose de mí/ ¿Mas adónde me transporta y me
+                  convierte en otro el triste miedo de los celos causado por mi propio sentido? [El
+                  triste miedo me transporta] a parte llena de vergüenza y dolor, donde, si el mal
+                  [el que mi amada esté con otro amante] viese, según con esperar verlo estaría
+                  fuera de mí (<ref type="texto_poema">perdido</ref>), / ya no podría aumentar mi
+                  desgracia en nada. / Así lo pienso ahora, y si él [el mal] ya hubiera llegado en
+                  la forma y figura de mi rival, tendría el presente por mejor conveniencia (<ref
+                     type="texto_poema">partido</ref>)’. Es lógico este último razonamiento porque
+                  en el actual presente aún no habría obtenido la evidencia del engaño de su amada,
+                  planteada en condicional.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n28" n="28" corresp="#a_Elegia_2_n28">
+               <note xml:id="Elegia_2_n28_es" xml:lang="es"><span type="link" from="#Elegia_2_114"
+                     n="0">114</span>
+                  <ref type="texto_poema">un dedo</ref>: Herrera detecta este giro coloquial, y lo
+                  localiza a su vez en la <title>Égloga II</title> (.<mentioned>..yo no puedo /
+                     mover el paso un dedo</mentioned>) (<bibl>H-388</bibl>). </note>
+            </note>
+
+            <note xml:id="Elegia_2_n29" n="29" corresp="#a_Elegia_2_n29">
+               <note xml:id="Elegia_2_n29_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_121" n="14">121-135</span> ‘Yo sé que es tener esperanza,
+                  aunque solo sea por poco tiempo, del bien del propio engaño [el que la amada no
+                  tiene ningún amante] y solamente pensar en él, como sucede al enfermo digno de
+                  compasión, a quien, por una parte, el verdadero y sensato amigo,/ le revela la
+                  gravedad del mal de su enfermedad, y le aconseja que el alma, liberada con vuelo
+                  ligero, comience a levantar del cuerpo humano a mejor lugar [el paraíso];/ mas la
+                  sensible mujer, por otra parte, no pudiendo desengañarlo, le encubre la mayor
+                  parte de su enfermedad; él [el enfermo], comprendiendo su dulce engaño,/ dirige
+                  los ojos a la voz piadosa de su mujer,/ y se alegra al morir a causa de su
+                  enfermedad./ Así yo aparto los ojos de cualquier cosa,/ y los pongo en el
+                  pensamiento solo de la esperanza, cierta o mentirosa;/ muero contento en este
+                  dulce error,/ porque al ver claro y al conocer la situación en que estoy [la de mi
+                  amada en brazos de otro hombre],/ no puedo ya curar la enfermedad que padezco,/ y
+                  acabo como aquél que metido en un templado baño, muere sin darse cuenta, teniendo
+                  las venas dulcemente abiertas, con la sangre derramándose’. Véase <ref
+                     type="link_int_c" target="#Elegia_2_c16_es">Comentario vv.
+                  121-135</ref>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n30" n="30" corresp="#a_Elegia_2_n30">
+               <note xml:id="Elegia_2_n30_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_145" n="8">145-153</span> ‘Tú, que en tu lugar de nacimiento
+                  [Barcelona] /, con quien bien te quiere, la deleitosa playa […]/ y oyendo el
+                  sonido del mar que golpea contra ella […]/ alégrate, porque más hermosa llama, que
+                  aquella que pudo causar el encendimiento de la ciudad de Troya, el corazón te
+                  inflama’. Véase <ref type="link_int_c" target="#Elegia_2_c17_es">Comentario vv.
+                     145-153</ref>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n31" n="31" corresp="#a_Elegia_2_n31">
+               <note xml:id="Elegia_2_n31_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_154" n="5">154-159</span> ‘no has de temer el movimiento de la
+                  fortuna, que, al cambiar de signo, el puro resplandor del sol serena el viento.
+                  Yo, como mandado soldado que lucha por una paga (<ref type="texto_poema">conducido
+                     mercenario</ref>), voy a dónde la diosa Fortuna, a mi pesar, me envía si no es
+                  a morir, que es muerte voluntaria’. La <ref type="texto_poema">fortuna</ref>
+                  también podría tener aquí secundariamente el sentido más específico de ‘tormenta
+                  marina’, que consigue aplacarse con el soplo contrario del viento. En ese caso, el
+                  sujeto de <ref type="texto_poema">serena</ref> (‘calma’, pero también ‘deja sin
+                  nubes’), por lógica, debería ser el <ref type="texto_poema">viento</ref>, pues con
+                  su intervención ha cambiado la meteorología, pero dejaría como complemento directo
+                  a el <mentioned>puro resplandor</mentioned>, que es el brillo inmaculado del sol,
+                  con el cielo despejado de nubes. </note>
+            </note>
+
+            <note xml:id="Elegia_2_n32" n="32" corresp="#a_Elegia_2_n32">
+               <note xml:id="Elegia_2_n32_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_160" n="5">160-165</span> ‘Un engaño tan débil solo sostiene
+                  (‘mantiene en pie’) mi esperanza,/ que es necesario (<ref type="texto_poema">es
+                     menester</ref>) cada día forjarlo como si fuera la primera vez (<ref
+                     type="texto_poema">hacello de nuevo</ref>), y si no lo creo y renuevo, mi
+                  esperanza deja de sostenerse y también da conmigo en el suelo, de tal suerte, que,
+                  inútilmente, intento levantarla’. El engaño consiste en pensar que su amada le
+                  sigue siendo fiel y que no está con otro. Es una tópica estrategia del celoso para
+                  protegerse a sí mismo, como el propio Garcilaso explica en el <title>Soneto
+                     XXX</title>. Véase <ref type="link_int_c" target="#Elegia_2_c18_es">Comentario
+                     vv. 160-165</ref>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n33" n="33" corresp="#a_Elegia_2_n33">
+               <note xml:id="Elegia_2_n33_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_166" n="2">166-168</span> ‘Mi servicio amoroso consigue este
+                  premio, / que únicamente en el infortunio (<ref type="texto_poema">miseria</ref>)
+                  de mi vida/ fortuna negó su habitual cambio’.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n34" n="34" corresp="#a_Elegia_2_n34">
+               <note xml:id="Elegia_2_n34_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_169" n="2">169-171</span> ‘¿A dónde podré huir que, sea de mí
+                  arrojada la pesada carga, que aprieta mi cerviz enflaquecida?’ La imagen que usa
+                  Garcilaso es la metáfora del yugo de los bueyes en que va sujeta la pértiga del
+                  carro en que lleva toda la carga. El yugo era un artefacto de madera que como si
+                  fuera un collar se ponía en el cuello de los bueyes. Véase <ref type="link_int_c"
+                     target="#Elegia_2_c20_es">Comentario vv. 169-171</ref>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n35" n="35" corresp="#a_Elegia_2_n35">
+               <note xml:id="Elegia_2_n35_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_172" n="20">172-192</span> ‘Si adonde el sol ardiente refleja
+                  sus rayos con mayor resplandor (<mentioned>reverbera</mentioned>) / en el desierto
+                  arenoso de Libia,/ engendrador de toda cosa venenosa (<ref type="texto_poema"
+                     >ponzoñosa</ref>),/ a donde [el sol ardiente] es vencido por la helada (rígida)
+                  nieve y por el helado viento, parte donde no se vive ni se habita (<ref
+                     type="texto_poema">mora</ref>); si a una de estas dos partes mi locura (<ref
+                     type="texto_poema">desvarío</ref>) o fortuna me llevase un día, y allí [en una
+                  de las dos partes] me consumiese (<ref type="texto_poema">gastase</ref>) el tiempo
+                  de vida que me quedara,/ el celoso temor con mano fría […] me maltrataría, me
+                  dañaría (apretarían) el triste corazón; y en el frío (<ref type="texto_poema"
+                     >rigor</ref>) del hielo, en la tranquila, serena/ noche, soplando el viento
+                  cortante y excesivo (<ref type="texto_poema">agudo y puro</ref>),/ que el curso
+                  veloz del agua frena, y espero poco a poco consumirme por este vivo fuego en el
+                  que me agoto (<ref type="texto_poema">apuro</ref>)’. Son versos en general que
+                  desmienten la eficacia de la huida o la lejanía como remedio de amor. Véase <ref
+                     type="link_int_c" target="#Elegia_2_c20_es">Comentario vv.
+                  169-171</ref>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_n36" n="36" corresp="#a_Elegia_2_n36">
+               <note xml:id="Elegia_2_n36_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_192" n="2">192-193</span> Este <ref type="texto_poema"
+                     >allí</ref>, donde el poeta no podrá estar seguro de seguir estando celoso o de
+                  estar vivo, es una de los dos partes que ha establecido como límite de sus
+                  sentimientos. Este <ref type="texto_poema">diverso</ref> no parece tener nada que
+                  ver con las “diversidades” de sus compañeros de tropa, y sí con los diversos
+                  lugares y climas en que imagina dirigirse para intentar mitigar sus celos.</note>
+            </note>
+         </div>
+
+         <div type="comentarios">
+            <note xml:id="Elegia_2_c1" n="01" corresp="#a_Elegia_2_c1">
+               <note xml:id="Elegia_2_c1_es" xml:lang="es">
+                  <span type="link" from="#Elegia_2_4" n="2" resp="#EF">4-6</span> Las tropas
+                  acababan de regresar triunfales de la Jornada de Túnez, habiendo conseguido
+                  expulsar de la Goleta a Barbarroja, que exactamente un año antes, en el verano de
+                  1534, había humillado al Virrey de Nápoles destruyendo a sus anchas la costa de
+                  Calabria sin encontrar resistencia alguna y desviándose después hacia África, y
+                  conquistando la Goleta, desde donde desafiaba a los imperiales y las costas de
+                  Italia. Sobre esta Jornada y la participación de Garcilaso en ella, véase <bibl
+                     type="main">Fosalba (2019: 180-200)</bibl>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_c2" n="02" corresp="#a_Elegia_2_c2">
+               <note xml:id="Elegia_2_c2_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_7" n="4">7-11</span> En la primera de las epístolas, Horacio
+                  saca a relucir su hipocresía porque en público es estoico defensor de la virtud,
+                  pero en privado lo es del hedonismo y el vicio: <cit>
+                     <quote>Nunc agiles fio et mersor civilibus undis/ Virtutis verae custos rigidus
+                        satelles;/ Nunc Aristippi furtim praecepta relabor/ Et mihi res, non me
+                        rebus, subiungere conor</quote>
+                     <bibl type="canon">Horacio, <title>Epístolas</title>, 1, 16-19</bibl>
+                  </cit>. En esa misma epístola no parece plantear como dicotomía lo que
+                  públicamente sí lo es en Garcilaso: primero el dinero y después la virtud: <cit>
+                     <quote>O cives, cives, querenda pecunia primum est;/ virtus post nummos</quote>
+                     <bibl>(1, 53-55)</bibl>
+                  </cit>. En sus <title>Sátiras</title>, Horacio se refiere, como aduce <bibl
+                     type="main">Gargano (2011: 92)</bibl>, a la clásica sentencia <mentioned>quot
+                     homines quot sententiae</mentioned>, formulada en términos cercanos a nuestro
+                  poeta: <cit>
+                     <quote>saltat Milonius, ut semel icto/ accessit fervor capiti numerusqiue
+                        lucernis;/ Castor gaudet equis, ovo prognatus eodem pugnis; quot capitum
+                        vivunt, totidem studiorum milia</quote>
+                     <bibl type="canon">(Horacio, <title>Sátiras</title>, 2, 1)</bibl>
+                  </cit>. Garcilaso emplea el latinismo semántico "estudio" tal vez por influencia
+                  de estos versos, pero en el pasaje no se menciona ninguna hipocresía, sino los
+                  distintos afanes de dos hermanos y de Milio. El propio Gargano, para este pasaje
+                  enlazado con los <span type="link" from="#Elegia_2_37" n="2">vv. 37-39</span>,
+                  también había propuesto como modelo unos tercetos, muy horacianos, de la
+                     <title>Sátira III</title> de Ariosto: <cit>
+                     <quote>Degli uomini son varii li appetiti:/ a chi piace la chierica, a chi la
+                        spada, a chi la patria, a chi li stranni liti […]/ Il servigio del Duca, da
+                        ogni parte/ che ci sia bona, più mi piace in questa: che dal nido natio raro
+                        si parte </quote>
+                     <bibl type="canon">(Ariosto, <title>Orlando furioso</title>, 52-54 y
+                        67-69)</bibl>
+                  </cit>. De hecho, Ariosto acaba confesando que nunca se había marchado del todo
+                  del lugar donde siempre tiene su corazón (<bibl type="canon"><title>Orlando
+                        furioso</title>, 70-72</bibl>).</note>
+            </note>
+
+            <note xml:id="Elegia_2_c3" n="03" corresp="#a_Elegia_2_c3">
+               <note xml:id="Elegia_2_c3_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_7" n="4">7-11</span> Cicerón convierte en crítica lo que en el
+                  toledano en principio es una dicotomía: <cit>
+                     <quote>Male enim se res habet, cum quod virtute effici debet, id temptatur
+                        pecunia</quote>
+                     <bibl type="canon">(<title>De officiis</title>, 2, 6, 22)</bibl>
+                  </cit>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_c4" n="04" corresp="#a_Elegia_2_c4">
+               <note xml:id="Elegia_2_c4_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_21" n="2">21-23</span> Garcilaso respeta las leyes clásicas de
+                  los géneros literarios, siendo consciente de que las fronteras entre ellos a
+                  menudo son poco claras. Nuestro poeta introduce la figura retórica
+                     <foreign>correctio</foreign> o <foreign>dubitatio</foreign> (así la llama Lope
+                  de Vega a propósito de este pasaje de Garcilaso) para dar a entender que ha estado
+                  cultivando otro género, la sátira, que ha consistido en el vituperio de sus
+                  compañeros, ya que ninguno parece practicar la virtud en público. Garcilaso sigue
+                  la concepción horaciana de sátira, "musa pedestre" (6, 18), poco poética y cercana
+                  a los <foreign>sermones</foreign>. Estos cambios se producen en Horacio en el
+                  epodo (a veces elegía amorosa, como el 12, pero otras, sátira), la epístola y la
+                  propia sátira. Parece cierto, como sugiere <bibl type="main">Gómez Moreno
+                     (2003)</bibl>, que a la elegía le correspondía un estilo medio. Sobre el estilo
+                  bajo de la epístola, al que aquí se acerca peligrosamente Garcilaso porque se
+                  trata de una elegía epistolar, y acerca de la citada figura
+                     <foreign>correctionis</foreign>, que hizo las delicias de poetas posteriores,
+                  como Antonio Hurtado de Mendoza, Francisco de Rioja, o Lope, entre otros. Cf.
+                     <bibl type="main">Fosalba (2011: 359-361, 369)</bibl>
+               </note>
+            </note>
+
+            <note xml:id="Elegia_2_c5" n="05" corresp="#a_Elegia_2_c5">
+               <note xml:id="Elegia_2_c5_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_27" n="0">27</span> Este tipo de <term>enálage</term> en que el
+                  poeta se alude a sí mismo en tercera persona, mencionando su nombre (en este caso,
+                  Garcilaso), estaba muy extendida en la poesía latina, como demuestra Herrera
+                  aportando numerosos ejemplos al respecto: <bibl type="canon">Virgilio,
+                        <title>Eneida</title>, 3, 443</bibl>; <bibl type="canon"
+                        ><title>Geórgicas</title>, 4, 563</bibl>; <bibl type="canon">Catulo, 8,
+                     1</bibl>, y <bibl type="canon">Propercio, <title>Elegías</title>, 2, 8, 17; 34,
+                     93-94</bibl> (<bibl>H-363</bibl>). Puede añadirse también, entre los españoles,
+                  a <cit>
+                     <bibl type="canon">Juan de Mena, <title>Laberinto de Fortuna</title>, 3,
+                        123-125:</bibl>
+                     <quote>non fallaréis así luego/ cada día un Johan de Mena</quote>
+                  </cit>, y <cit>
+                     <bibl type="canon"><title>Laberinto de Fortuna</title>, 5, 183-185:</bibl>
+                     <quote>mas vuestro galardonar/ quiera de tanto pesar/ guarescer un Juan de
+                        Mena</quote>
+                  </cit>. <bibl type="canon">(Mena, 1994: 10 y 21)</bibl>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_c6" n="06" corresp="#a_Elegia_2_c6">
+               <note xml:id="Elegia_2_c6_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_29" n="4">29-33</span> La idea de que los males de amor se
+                  combaten con el cultivo de las musas procede ya de <cit>
+                     <bibl type="canon">Teócrito, <title>Idilios</title>, 11, 1-2:</bibl>
+                     <quote>Ninguna otra medicina, Nicias, hay contra amor, ni ungüento, ni polvo
+                        alguno; sólo las Piérides</quote>
+                  </cit>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_c7" n="07" corresp="#a_Elegia_2_c7">
+               <note xml:id="Elegia_2_c7_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_37" n="2">37-39</span> Garcilaso se hace eco de una idea común
+                  entre los poetas napolitanos, como Agnolo Firenzuola en sus <title>Rime</title>:
+                     <quote>Nella bella Partenope, ch’un nido/ fu già di cortesie, d’Amore un
+                     seggio</quote>. En la elegía dedicada a Francesco Guidati, compuesta entre 1520
+                  y 1530, Luigi Alamanni acusa a su amigo de arrebatarle el nido que tenía en
+                  Florencia aprovechando su ausencia: <cit>
+                     <quote>Ben ch’io qui sia lontan […]/ Ah dolce amico, dir non voglio infido/ ma
+                        poco forte, a che turbando vai de’ miei primi pensier l’antico nido?/ […]
+                        Chi prende or le mise rose</quote>
+                     <bibl>(vv. 3, 13-15 y 37; Alamanni (1859: 39-40)</bibl>
+                  </cit>. Bernardino Martirano alude a la ciudad napolitana en los mismos términos
+                  que toda la tradición anterior: <cit>
+                     <quote>Da la nobil cittade agli ozi nata,/ che’l nome tien de la bella
+                        Sirena</quote>
+                     <bibl type="canon"><title>Il pianto d'Aretusa</title>, 6, 1-2</bibl>
+                  </cit> (<bibl type="main">Martirano, 1993: 60</bibl>). Cosme Anisio dirige un
+                  epigrama precisamente a Martirano para asombrarse de la dulzura con que el amigo
+                  de Cosenza suele invocar Nápoles cuando Cosme cultiva las musas estando luchando
+                  en la guerra: <cit>
+                     <quote>Quod dulcis patriae me saepe. Et dulcis ad ipsum/ Parthenopes gremium
+                        Martyriane uocas […]/ Ne procul hinc Musa est, terrores inter et hostes,/
+                        quos nunc militia dira licentia habet</quote>
+                     <bibl type="canon">(Anisio, 1533, fol. 67r)</bibl>
+                  </cit>. Habiendo publicado el epigrama en 1533 es posible que la guerra a la que
+                  alude sea la de Ratisbona contra el turco un año antes: ya en ese momento
+                  Garcilaso puedo conocerlo porque en esa edición le dedicó un epigrama (<bibl
+                     type="main">Morros 2024, en prensa</bibl>). Parténope es la sirena asociada a
+                  Nápoles porque su cuerpo se enterró en el lugar donde con el tiempo se construyó
+                  la ciudad. La versión más aceptada es la que convierte a Parténope en una sirena
+                  que se arroja al mar ante el poco caso que le hace Ulises cuando la oye cantar. El
+                  cadáver es arrastrado por las aguas hasta las costas napolitanas. Es difícil
+                  identificar la fuente que difundió la leyenda porque no es la
+                     <title>Odisea</title> de Homero, a pesar de que se la atribuyen muchos autores,
+                  pero parece que empezó a forjarla el poeta griego Licofronte de Calcis en su poema
+                     <title>Alexandra</title>, donde menciona a las tres sirenas arrojándose desde
+                  las rocas al mar: <quote>Y [Odiseo] matará a las tres hijas del plancton de Tetis,
+                     que aprendieron los cantos de su armoniosa madre, y con saltos suicidas desde
+                     el elevado acantilado se precipitarán con sus lamentos en las olas del mar
+                     Tirreno, donde las llevará el fatal tejido del destino. Una de ellas, devuelta
+                     a la playa, será acogida por la Ciudadela de Faleros y por el Glanis, que ama
+                     la tierra con sus corrientes. Los habitantes erigirán la tumba de la doncella
+                     y, anualmente, rendirán homenaje a Parténope como diosa alada con libaciones y
+                     sacrificios.</quote> (713-721). El mitógrafo y astrónomo Cayo Julio Higino
+                  relaciona también el castigo con Ulises pero sin vincularlo a ninguna sirena en
+                  concreto: <quote>Un oráculo les había vaticinado que vivirían hasta que alguien,
+                     al pasar delante de ellas, no escuchara su canto. Ulises fue malvado con ellas,
+                     pues con astucia, cuando navegaba ante las rocas en que ellas habitaban, hizo
+                     que se arrojaran al mar. Ellas dieron el nombre <hi style="italic">De las
+                        Sirenas</hi> a este lugar que está situado entre Sicilia e Italia</quote>.
+                     (<bibl type="canon">Higinio, <title>Fábulas</title>, 141, 113</bibl>). Higinio
+                  en otras de sus fábulas, resumen de la <title>Odisea</title>, insiste en ese
+                  castigo sin mencionar para nada a ninguna de las sirenas: <quote>Llegó entonces
+                     hasta las sirenas, hijas de la musa Melpómene, que tenían la parte superior del
+                     cuerpo de mujer y la inferior de pájaro. Su destino era vivir así hasta que
+                     algún mortal, al oír su canto, no pudiera pasar de largo. Ulises, advertido por
+                     Circe, hija del sol, tapó con cera los oídos de sus compañeros y ordenó que a
+                     él lo ataran al mástil. Así podrían pasar</quote>. (125, 124). En el contexto
+                  odiseico se conserva una vasija del Museo Británico, fechada en torno al año
+                  470a.C., y en la que aparecen tres sirenas, pero solo una se precipita al mar,
+                  mientras las otras dos se mantienen de pie sobre las piedras (<bibl type="main"
+                     >Brioso, 2013: 53, 32</bibl>). En el siglo XVI el polígrafo Luca Contile es el
+                  primero en asociar el castigo con Parténope, pero en su versión el mar la rechaza
+                  para que la ninfa en cuestión pueda ser enterrada honoríficamente: <cit>
+                     <quote>Napoli, chiamata Partenope, che fu una delle tre sirene, secondo
+                        Licofronte, sorelle, le quali. no hauendo potuto pur con loro belleza e
+                        eloquenzia trattenere Ulisse, in mare per disdegno si precipitorno. Imperò
+                        Partenope, ributtata dall’onde, fu honoramente sepolta, e la giuventù cumana
+                        poi a nome perpetuo di Partenope quivi una bellissima città edificarono per
+                        essere ancor quel paese fertile e giocondo, fu rifatta dopo molti anni da’
+                        Graeci e nominata Napoli</quote>
+                     <bibl type="canon">(Contile, <title>Ragionamento sopra la proprietà delle
+                           imprese 2</title>, 1574: 42r)</bibl>
+                  </cit>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_c8" n="08" corresp="#a_Elegia_2_c8">
+               <note xml:id="Elegia_2_c8_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_40" n="3">40-43</span> El Cariteo también recurre al doble
+                  sentido de refugio de aves y hogar: <cit>
+                     <quote>Qual rossignuol, che nell’usato nido/ ritornando non trova i figli cari
+                        […]; tal io, con basso e lagrimoso strido/ e col cor pien di più concetti
+                        amari,/ tornai quel dì dal colle amato e fido/ senza veder vostr’occhi
+                        honesti e chiari</quote>
+                     <bibl type="canon">(Cariteo, <title>Rime</title>, 16)</bibl>
+                  </cit>. La misma comparación introduce en la <title>Égloga I</title>, 324-337, con
+                  la misma imagen de alguien (en ese caso, la muerte) arrebatándole a la amada que
+                  tenía su nido en el corazón del poeta: <cit>
+                     <quote>Ella [la muerte airada] en mi corazón metió la mano, / y de allí me
+                        llevó mi dulce prenda, / que aquel era su nido y morada</quote>
+                     <bibl>(341-343)</bibl>
+                  </cit>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_c9" n="09" corresp="#a_Elegia_2_c9">
+               <note xml:id="Elegia_2_c9_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_43" n="2">43-45</span> Garcilaso adopta una de las fórmulas más
+                  típicas de Virgilio en su <bibl type="canon"><title>Eneida</title>, 2, 120; 12,
+                     447</bibl>, para referir en la segunda cita a los celos de Turno al ver a Eneas
+                  (la primera se refiere a la impresión que causa en el pueblo el oráculo de Apolo
+                  de sacrificar a Polixena): <quote>obstipuere animi gelidusque per ima cucurrit
+                     ossa tremor</quote>. Otros autores lo imitaron, como <cit>
+                     <bibl type="canon">Ovidio, <title>Amores</title>, 3, 14, 38:</bibl>
+                     <quote>perque meos artus frígida gutta fluit</quote>
+                  </cit>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_c10" n="10" corresp="#a_Elegia_2_c10">
+               <note xml:id="Elegia_2_c10_es" xml:lang="es"><span type="link" from="#Elegia_2_50"
+                     n="13">50-63</span> La imagen del herrero que aviva el fuego con agua en su
+                  fragua, pero sin ninguna vinculación amorosa, la reconoce Herrera (H-370) en <bibl
+                     type="canon">Pontano, <title>De rebus coelestibus</title>, libri 14, 1</bibl>:
+                     <quote>El hervor de Marte se recoge mucho más en sí y cobra más encendidas
+                     fuerzas por la naturaleza del escorpión que le contradice, como el herrero que,
+                     estando encendidos y abrasados los carbones en la hornaza, los rocía con alguna
+                     agua, con que el fuego se aprieta y fortifica más en sí, y dentro se calienta y
+                     hierve más, como antes ardiese sin ese ímpetu, por no tener contrario que lo
+                     encendiese</quote> [<cit>
+                     <quote>Fervor enim Martius magis magis que in sese ipse cogitur, uiresque
+                        aestiosiores suscipit ob aduersariem scorpii naturam, quemadmodum faber duro
+                        ferrarius efferuescentibus in fornacula carbonum aqua superinspergit, qua e
+                        re ignis ipse cogitur ampliusque intus qua antea quidem sparsim efflabat,
+                        nullo penitus aduersante;</quote>
+                     <bibl/>
+                  </cit>]. El mismo Boscán debió de escribir el soneto (2, 85) en que parece
+                  contestar a estos versos de su amigo: <cit>
+                     <quote>Quien dice que’l ausencia causa olvido/ merece ser de todos olvidado. /
+                        El verdadero y firme enamorado/ está, cuando está ausente, más perdido. //
+                        Aviva la memoria su sentido</quote>
+                     <bibl type="canon">(Boscán, 1999: 194)</bibl>
+                  </cit>. Estos versos fueron aprovechados por Benito Arias Montano en su paráfrasis
+                  del <title>Cantar de los cantares</title>: <cit>
+                     <quote>Mas con nuevos ardores/ abrasa mis entrañas do se encierra,/ que cuando
+                        se destierra/ de mí tu presencia/muero por te buscar/ y nunca te apartar,
+                        porque me da gran pena la tu ausencia, / y siempre estoy en quejas/ cuando
+                        de mí, Teolampo mío, te alejas […] Debajo de los cielos,/ no hay llama tan
+                        ardiente, [f]uego que tanto dura,/ que no sea gran frescura, si a la llama
+                        de amor se represente; no la podrá apagar/ cuanta agua hay en los ríos y en
+                        el mar</quote>
+                     <bibl type="canon">(Arias Montano, 2016: 152-153)</bibl>
+                  </cit>; y también por Cervantes en <title>La Galatea</title>, 1: <cit>
+                     <quote>-¡Ay, claras y frescas aguas!, ¡Cuán poca parte es vuestra frialdad para
+                        templar el fuego que en mis entrañas siento! Mal podré esperar de vosotras,
+                        ni aun de todas las que contienen el gran mar océano, el remedio que he de
+                        menester, pues, aplicadas todas al ardor que me consume, haríades el mesmo
+                        efecto que suele hacer la pequeña cantidad en la ardiente fragua, que más su
+                        llama acrecienta</quote>
+                     <bibl type="canon">(Cervantes, 2014: 56, 161 y 619)</bibl>
+                  </cit>. </note>
+            </note>
+
+            <note xml:id="Elegia_2_c11" n="11" corresp="#a_Elegia_2_c1">
+               <note xml:id="Elegia_2_c11_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_64" n="0">64</span>
+                  <ref type="texto_poema">ausencia larga</ref>, se contrapone aquí a la <ref
+                     type="texto_poema">breve ausencia</ref> del <span type="link"
+                     from="#Elegia_2_49" n="0">v. 49</span>. Veronica Franca defiende en una de sus
+                  epístolas la idea de que la ausencia y la lejanía mitigaban la pasión amorosa:
+                     <title>Risposta della signora Veronica Franca</title>, con una explicación de
+                  su contenido: <cit>
+                     <quote>Non potento ella, invaghita d’un uomo a lei caro se tutii, corrispondere
+                        ad altro affetto, s’è allontanata da Venezia, perché nella sua assenza si
+                        mitighi l’ardore di chi l’ama senza speranza</quote>
+                     <bibl type="canon">(<title>Rime</title>, 10)</bibl>
+                  </cit>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_c12" n="12" corresp="#a_Elegia_2_c12">
+               <note xml:id="Elegia_2_c12_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_70" n="14">70-84</span> Garcilaso trata como silogismo una idea
+                  que también desarrolla Diego Hurtado de Mendoza: <cit>
+                     <quote>Solo era dado a mi suerte, / sufrir tan pesada carga, / porque una
+                        ausencia que es larga/ no es ausencia sino muerte.// Muerto porque causa
+                        olvido,/ que el amador apartado/ es muerto si es olvidado,/ muerto, mas
+                        tiene sentido</quote>
+                     <bibl type="main">(Mendoza, 1992: 348)</bibl>
+                  </cit>. Hurtado de Mendoza alude a la muerte metafórica, producido por el desamor
+                  de su amada.</note>
+            </note>
+
+            <note xml:id="Elegia_2_c13" n="13" corresp="#a_Elegia_2_c13">
+               <note xml:id="Elegia_2_c13_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_85" n="8">85-93</span> En los primeros versos de este pasaje,
+                  podría haber una reminiscencia de <cit>
+                     <bibl type="canon">Tasso, <title>Rime</title>, 1, 89, 8-9:</bibl>
+                     <quote>Ma Fotuna rubella a le mie voglie/ con Amor congiurata a farmi
+                        oltraggio”; pero también en unas coplas de Jorge Manrique: Quien no
+                        estuviere en presencia/ no tenga en fe confianza,/ pues son olvido y
+                        mudanza/ las condiciones de la ausencia.// Quien quisiere ser amado/ trabaje
+                        por ser presente,/ que cuan presto fuera ausente/ tan presto será olvidado;/
+                        y pierda toda esperanza/ quien no estuviere en presencia,/ pues son olvido y
+                        mudanza/ las condiciones de ausencia</quote>
+                     <bibl type="main">(Manrique, 1993: 113; 2000: 166)</bibl>
+                  </cit>. En los versos finales, nuestro poeta parece establecer una yuxtaposición
+                  entre spes y requies, como ya hace <bibl type="canon">Virgilio,
+                        <title>Eneida</title>, 12, 57-38</bibl>, y también <cit>
+                     <bibl type="canon">Sannazaro, <title>Piscatorias</title>, 1, 60-62:</bibl>
+                     <quote>Quis mihi, quis tete rapuit, dulcissima Phylli,/ Phylii meae quondam
+                        requis et spes unica vitae,/ nunc dolor aeternusque imo sub pectore
+                        luctus?</quote>
+                  </cit>. Garcilaso ha podido tener en cuenta al poeta napolitano cuando enfatiza el
+                  dolor que en ese momento experimenta por haber perdido la esperanza y el descanso:
+                  con ellos solamente <ref type="texto_poema">agora veo/ este dolor que'l corazón me
+                     parte</ref>, <cit>
+                     <quote>nunc dolor aeternusque imo sub pectore luctus?</quote>
+                  </cit></note>
+            </note>
+
+            <note xml:id="Elegia_2_c14" n="14" corresp="#a_Elegia_2_c14">
+               <note xml:id="Elegia_2_c14_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_94" n="8">94-102</span> Marte, dios de la guerra, es calificado
+                  con los atributos que le eran propios, y en una ocasión Garcilaso le aplica un
+                  sustantivo susceptible de dos interpretaciones: el <ref type="texto_poema"
+                     >furor</ref> del <span type="link" from="#Elegia_2_99" n="0">v. 99</span> puede
+                  referirse al propio dios o al dulce amante. Cf. esta misma duplicidad de la voz
+                     <mentioned>furor</mentioned> (bélica y amorosa) la encontramos en el primer
+                  verso del <title>Soneto XXXIII</title>(<bibl type="main"> Fosalba, 2019:
+                  195</bibl>). La imagen de Marte vistiendo una túnica de diamante procede de
+                  Horacio, como ya señaló el Brocense: <cit>
+                     <quote>quis Martem tunica tectum adamantina</quote>
+                     <bibl type="canon"><title>Carmina</title>, 1, 6, 13</bibl>
+                  </cit>) (B-87), que cuenta con una larga tradición desde <bibl type="canon"
+                     >Homero, <title>Ilíada</title>, 5, 859, 704 y 86, 6</bibl>, que usa la
+                  expresión el broncíneo Ares. En los <bibl type="canon"><title>Himnos homéricos [a
+                        Ares]</title>, 8, 5</bibl>, se presenta a Ares también con <mentioned>una
+                     armadura de bronce</mentioned>. El autor que emplea la palabra "túnica", aunque
+                  no para referirse a Ares, sino a las distintas armas de cualquier guerrero, es <cit>
+                     <bibl type="canon">Varro, <title>De lingua latina</title>, 5, 116:</bibl>
+                     <quote>ex anullis férrea tunica</quote>
+                  </cit>. <bibl>Herrera (H-383)</bibl>, para aportar algo más que el Brocense, saca
+                  a relucir a Lodovico Paterno, poeta que frecuentó Nápoles, pero casi dos
+                  generaciones posteriores a Garcilaso. Es la elegía 14, de su libro 3 de <title>Le
+                     nuove fiamme</title> (Lyon, 1568): <cit>
+                     <quote>ne perchìo segua il furibundo Marte/ di tunica coperta
+                        adamantina</quote>
+                     <bibl type="canon">(25-26)</bibl>
+                  </cit> (H-383-384). Es posible que Paterno imite directamente a Garcilaso porque
+                  en esa misma elegía reproduce unos famosos versos de Garcilaso, de la
+                     <title>Églgoa III</title>, dedicados seguramente a María Cardona:
+                     <quote>prender ora l’espada, ora la penna</quote> (v. 36). Luigi Tansillo en
+                  uno de los sonetos que dedica a nuestro poeta también había recordado la
+                  expresión: <quote>ch’or Marte et or Apollo</quote> (<title>Égloa III</title>, 39,
+                  5; <bibl type="main">Tansillo, 2011: 301</bibl>, además de <bibl type="main"
+                     >Toscano, 2012 y 2023: 212</bibl>).</note>
+            </note>
+
+            <note xml:id="Elegia_2_c15" n="15" corresp="#a_Elegia_2_c15">
+               <note xml:id="Elegia_2_c15_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_103" n="17">103-120</span> La juntura y la idea de los versos
+                  iniciales del pasaje recuerdan otra de Atalanta sobre su pretendiente Hipómenes,
+                  dispuesto a morir por casarse con ella: <cit>
+                     <quote>ut pereat,/ si me sors illi dura negari?</quote>
+                     <bibl type="canon">(Ovidio, <title>Metamorfosis</title>, 10, 19)</bibl>
+                  </cit>. La burla del rival hacia el poeta podría estar sugerida por otra de amor
+                  al amante en <cit>
+                     <bibl type="canon">Boscán, 2, 94, 1-2:</bibl>
+                     <quote>Amor de mis engaños no se harta;/ burlando está de mí de punto en
+                        punto</quote>
+                     <bibl type="canon">(Boscán, 1999: 221)</bibl>
+                  </cit>; y sin duda se ha de poner en relación (tal vez autobiográfica) con la
+                  queja de Salicio por la infidelidad de Galatea en la <title>Égloga I</title>:
+                     <quote>y cierto no trocara mi figura/ con ese que de mí s’está reyendo</quote>
+                  (179-180). El trasfondo de la escena puede proceder de unos versos de Fracastoro
+                  que presenta a Galatea riéndose de Polifemo: <cit>
+                     <quote>At tu, tuta mari magno, Cyclopis amores/ despiciens, ridensque minas et
+                        inania verba</quote>
+                     <bibl type="canon"><title>Carmina</title>, 39, 18-19</bibl>
+                  </cit> (<bibl type="main">Fracastoro 2013</bibl>).</note>
+            </note>
+
+            <note xml:id="Elegia_2_c16" n="16" corresp="#a_Elegia_2_c16">
+               <note xml:id="Elegia_2_c16_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_121" n="14">121-135</span> Este símil desarrolla otro de Ausiàs
+                  March en que sólo interviene el médico (nunca la mujer) con el cargo de
+                  consciencia de mantener en secreto el peligro que corre la vida de su enfermo, y
+                  aunque el cuerpo se pierda, hay que salvar el alma para que pueda rendir cuentas
+                  de su vida antes de morir: <cit>
+                     <quote>Tot metge pren carech de consciença,/ si lo perill al malalt té secret;/
+                        lo cors hi pert, mas l’arma’n bon lloch met:/ comptes mortals port’en
+                        reconevença. La coincidencia es entre mas l’arma’n bon lloch met y comience
+                        a levantar en mejor parte/ el alma</quote>
+                     <bibl type="canon">(Ausias March, 44, 1-6)</bibl>
+                  </cit> (cf. <bibl type="main">Lapesa, 1985: 62 y 152)</bibl>. Para la forma de
+                  morir del poeta, imitando la que se atribuyó a Séneca, que se dejó desangrar en un
+                  baño de agua templada, con las venas cortadas, utiliza el acusativo griego: el yo
+                  está “desatado” (‘desangrado’) por lo que se refiere a las “venas”. En realidad,
+                  Séneca, como comprobaremos a continuación, no murió por desangramiento, sino por
+                  asfixia: al padecer asma, la sufrió en el baño en el que se había metido a causa
+                  de sus vapores. La noticia del suicidio de Séneca procede de <cit>
+                     <bibl type="canon">Tácito, <title>Anales</title>, 15, 63-65:</bibl>
+                     <quote>Ella [Pompeya Paulina, esposa de Séneca] le responde asegurándole que
+                        tiene decidido morir también, y reclama la mano del ejecutor […]. Tras esto
+                        y de un mismo golpe se abren las venas de los brazos con el hierro. Como a
+                        Séneca, debilitado el cuerpo por la vejez y la parquedad en el alimento, la
+                        sangre se le escapaba lentamente; se abrió también las venas de los muslos y
+                        pantorrillas […]./ Mas Nerón, como no abrigaba un odio particular a Paulina
+                        […] ordena que se le impida morir […] Entretanto Séneca, como se alargaba el
+                        lento trance de su muerte, pide a Estacio Anneo, en cuya amistad y arte
+                        médica confiaba por larga experiencia, que le proporcione un veneno,
+                        prevenido desde tiempo atrás […]; se lo llevó y de nada le sirvió tomarlo,
+                        porque, al estar ya sus miembros, se cerraba su cuerpo a la acción del
+                        tóxico. Por fin entró en un baño de agua caliente, y salpicando a los
+                        esclavos que se encontraban a su lado […]. Acto seguido se metió en la
+                        bañera, cuyos vapores le asfixiaron. Su cuerpo es incinerado sin funeral
+                        alguno</quote>
+                     <bibl type="canon">(Tácito, 1980: 261-262)</bibl>
+                  </cit>. Séneca, pues, no murió desangrado, sino ahogado. Garcilaso pudo leer el
+                  relato del suicido de Séneca en muchas de las vidas que circularon en el
+                  Renacimiento, según recoge <bibl type="main">Pérez Rodríguez (2013)</bibl>:
+                  especialmente, las vidas conservadas en la Biblioteca Nacional de Madrid, como el
+                     <title>Liber chronicarum</title> de Harmann Schedel y Anton Koberger: <cit>
+                     <quote>[Seneca] periit ut in tepenti aqua poneret, et ibidem omnes vene eidem
+                        aperirent donec spiritum exalaret; suaue genus mortis arbitratus mori
+                        incisioni venarum, et ita vitam finiuit</quote>
+                     <bibl>(fol. CVr)</bibl>
+                  </cit>. Para otras biografías siguen siendo válidas la que ofrece el clásico
+                  estudio de <bibl type="main">Blüher (1983: 223-230</bibl>). Véanse <ref
+                     type="link_int_ls" target="#Elegia_2_ls18">Loci similes vv. 142-144.</ref>
+               </note>
+            </note>
+
+            <note xml:id="Elegia_2_c17" n="17" corresp="#a_Elegia_2_c17">
+               <note xml:id="Elegia_2_c17_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_145" n="8">145-153</span> Garcilaso alude a la dama valenciana,
+                  doña Ana Girón de Rebolledo, con quien Boscán se casaría en septiembre de 1539. El
+                  toledano debió coincidir con la pareja en septiembre de 1534, cuando pasó por la
+                  ciudad condal, como parece deducirse en la epístola siguiente. Lo que realmente
+                  puede estar contemplando Boscán junto a Ana desde su casa en la calle Lledó,
+                  número 13, en Barcelona es <ref type="texto_poema">la deleitosa playa</ref>,
+                  porque la ciudad condal aún no tenía puerto, como así lo confirma Andrea Navagero
+                  al escribir una carta a su amigo Giomabattista Ramusio sobre su accidentada
+                  llegada al puerto de Palamós en abril de 1525 y por tierra a Barcelona el 1 de
+                  mayo, refiriéndose al carácter de los catalanes y a las peculiaridades de la
+                  ciudad, abierta al mar: <cit>
+                     <quote>E’ posta al mare, ma no ha porto. Ha un arsenal [¿las antiguas
+                        atarazanas?], dove altre volte solevano aver buen numero de galee, ora non
+                        ne hanno alcuna</quote>
+                     <bibl type="canon">(Navagero, 1714: 298; Morros, 2019: 467)</bibl>
+                  </cit>. El puerto de Barcelona se empezó a construir en 1474, pero las obras que
+                  iban haciéndose se las llevaba un fuerte levante. Hasta 1696 no se consiguió la
+                  construcción definitiva del puerto de Barcelona. Este contraste entre la vida
+                  feliz del barcelonés y la infeliz del amigo se halla expresado también por
+                  Bernardo Tasso en su elegía sexta dedicada a messer Nicolò Grazia: <cit>
+                     <quote>Tu rimarrai nel tuo lito nato,/ ne la tua patria aventurosa e queta,/
+                        ov’è di gravi noie eterno oblido</quote>
+                     <bibl type="canon">(115, 7-9)</bibl>
+                  </cit>. La diferencia entre ambos textos está en que el castellano envidia a su
+                  amigo por estar acompañado de su dama y el italiano hace otro tanto con el suyo
+                  por tener que dejar la compañía de cultos amigos. <mentioned>La hermosa
+                     llama</mentioned> de Ana Girón que inspira a Boscán parece corresponderse con
+                  unos versos de su cancionero petrarquista dedicados a ella: <quote>Este fuego que
+                     ahora en mi siento/ es puro y simple</quote> (‘sencillo’) (véase <bibl
+                     type="main">Morros, 2008, 2009</bibl>). También Cosme Anisio envidia a su
+                  hermano Giano por poder haberse quedado en su patria mientras él sigue a Marte: <cit>
+                     <quote>O felix ter et amplius/ Anysi, in gremio Parthenopes tuae,/ qui laetus
+                        fruere otio,/ nec te tot strepitus fulminaque et minae/ Martis solicitant
+                        neque/ Fortunae uariae et tam dubia uices/ pacem pectore dimouent./ Cui non
+                        attonitum turba clientium/ somos impediunt graues,/ Ne coniux, agitant aut
+                        querula nurus,/ aut iam filia nubilis,/ sed contentus agis, in tenui lare/
+                        vivens</quote>
+                     <bibl type="canon">(Anisio, 1533, fol. 20)</bibl>
+                  </cit>. <lb/>Por lo que respecta a la evocación horaciana Tasso pudo hacerla a
+                  través de <bibl type="canon">Silio Itálico, <title>Punica</title>, 12,
+                     35-36</bibl>, donde se refiere a la ciudad a la que dio nombre la sirena
+                  Parténope como hospitalaria del ocio de las musas y libre de preocupaciones
+                  enojosas: <cit>
+                     <quote>nunc molles urbis ritus atque hospita Musis/ otia et exemtum curis
+                        gravioribus aevum</quote>
+                  </cit>. Garcilaso podía haberse basado más directamente en unos versos de Horacio
+                  por establecer la misma comparación con el fuego que quema a su interlocutor que
+                  el que quemó la ciudad de Troya: <cit>
+                     <quote>ureris ipse miser, quodsi non pulcrior ignis/ accendit obsessam
+                        Ilion</quote>
+                     <bibl type="canon">(<title>Épodos</title>, 14, 13-14)</bibl>
+                  </cit>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_c18" n="18" corresp="#a_Elegia_2_c18">
+               <note xml:id="Elegia_2_c18_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_160" n="5">160-165</span> En estos versos parece haber un
+                  trasfondo religioso, como se deduce por un pasaje de Juan de Zabaleta, <title>El
+                     día de fiesta por la mañana y por la tarde</title>: <cit>
+                     <quote>Dios, digámosle así, crió [´creó’] dos veces el mundo: una cuando lo
+                        hizo de nuevo y otro cuando en la Redención le rehízo</quote>
+                     <bibl type="canon">(Zabaleta, 1983: 305)</bibl>
+                  </cit> (<bibl type="main">Rico, 1987: 72, 3</bibl>). La <ref type="texto_poema"
+                     >esperanza</ref> representada con capacidad de vuelo y caída está muy presente
+                  en el Ovidio que lamenta su destierro en Tomis (actual Costanza): <cit>
+                     <quote>spes mihi magna subit, cum te, mitissime prínceps,/ spes mihi, respicio
+                        cum mea facta, cadit</quote>
+                     <bibl type="canon">(<title>Tristia</title>, 1 1, 147-148)</bibl>
+                  </cit> y <cit>
+                     <quote>cum video quam sint mea fata tenacia,/ frangor spesque levis magno victa
+                        timore cadit</quote>
+                     <bibl type="main">(<title>Ex Ponto</title>, 1, 2, 62-63)</bibl>
+                  </cit>. Siguiendo esa tradición Angelo di Constanzo, a quien Garcilaso conoció a
+                  partir de 1534 en la tertulia de la isla Ichia (<bibl type="main">Torre Ávalos
+                     2010</bibl>), compuso un soneto que desarrolló semejante representación de la
+                  esperanza: <cit>
+                     <quote>Spinta d’un generoso alto pensiero,/ talor le speme al ciel s’innalza e
+                        sale […]/ Esce poi la ragion, scorta dal vero, e le troca in un punto il
+                        volo e l’ale […]/ Ne dopo molto spazio in terra giace</quote>
+                     <bibl type="canon">(Rime, 7, 1-2, 5-6 y 9)</bibl>
+                  </cit>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_c19" n="19" corresp="#a_Elegia_2_c19">
+               <note xml:id="Elegia_2_c19_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_166" n="2">166-168</span> Es un atributo ya clásico de la
+                  fortuna, como, por ejemplo, en <cit>
+                     <bibl type="canon">Terencio, <title>Truculentus</title>, 219: </bibl>
+                     <quote>Actutum fortunae solent mutarier</quote>
+                  </cit>. En estos versos del toledano podría haber un recuerdo de uno de los
+                  sonetos de <cit>
+                     <bibl type="canon">Ariosto, 43, 1-2:</bibl>
+                     <quote>Voi che in regno d’amor con fe servite,/ no isperate mai nulla mercede
+                        da l’impia sorte</quote>
+                  </cit>; y de otro del <cit>
+                     <bibl type="canon">Cariteo, <title>Rime</title>, 36, 1-4:</bibl>
+                     <quote>Mutabile, inconstante, impia fortuna,/¿per chè con frode e arti
+                        insidïose/ una volta mostrasti varie cose,/ or sempre ti dimostri ferma e
+                        una</quote>
+                  </cit>; e incluso, coincidiendo con el uso del verbo “negar”, de su amigo <cit>
+                     <bibl type="canon">Boscán, 2, 59, 1-4:</bibl>
+                     <quote>Ha tanto ya que mi desdicha dura,/ que en esto solo tuve mi esperanza,/
+                        Esperé de fortuna su mudanza,/ que por mí no negara su natura</quote>
+                  </cit>. La situación de nuestro poeta también la había expresado en términos
+                  parecidos <cit>
+                     <bibl type="canon">Garci Sánchez de Badajoz, 107, 57-60:</bibl>
+                     <quote>Pues si tiene mi esperanza/ el doliente de mi mal, / por ser mi mudanza
+                        tal,/ haré bien su mal andanza</quote>
+                  </cit>.</note>
+            </note>
+            <note xml:id="Elegia_2_c20" n="20" corresp="#a_Elegia_2_c20">
+               <note xml:id="Elegia_2_c20_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_169" n="2">169-171</span> La metáfora amorosa la explica
+                  Propercio: <cit>
+                     <quote>Ac ueluti primo taurus detractat aratra,/ post uenit assueto mollisat
+                        arua iugo,/ sic primo iuuenes trepidant in amore feroces,/ dehinc domiti
+                        post harc aequa e iniqua ferunt</quote>
+                     <bibl type="canon">Propercio, <title>Elegías</title>, 2, 3, 47-50</bibl>
+                  </cit>.</note>
+            </note>
+
+            <note xml:id="Elegia_2_c21" n="21" corresp="#a_Elegia_2_c21">
+               <note xml:id="Elegia_2_c21_es" xml:lang="es" resp="#BM"><span type="link"
+                     from="#Elegia_2_172" n="7">172-179</span> En el caso de Garcilaso, como se
+                  puede comprobar en el <span type="link" from="#Elegia_2_184" n="0">v. 184</span>,
+                  son los celos que seguirán atormentándole vaya a donde vaya. Como nuestra elegía,
+                  la oda de Horacio tiene dos partes: una moral (el hombre de íntegra vida) y otra
+                  amorosa por Lálage. El toledano parece imitarlo, no tanto a la letra, pero sí en
+                  el tratamiento del tópico de los lugares más inhóspitos del mundo: <cit>
+                     <quote>Pone me pigris ubi ulla campis/ arbor aestiva recreatur aura,/ quod
+                        latus mundo nebulae malusque/ Iuppiter urget;// pone sub curru nimium
+                        propinqui/ solis in terra domibus negata</quote>
+                     <bibl type="canon">(<title>Carmina</title>, 1, 22, 17-21)</bibl>
+                  </cit>. Petrarca establece tres partes, como en Horacio, pero todas habitables: la
+                  tórrida, la glacial y la temperada: <cit>
+                     <quote>Ponmi ove’i sol occide i fiori et l’erba,/ o dove vince lui il giacchio
+                        et la neve;/ ponmi ov’è ‘l carro suo temprato et leve,/ et ov’è cho ce’l
+                        rende, o chi ‘l serba;/ ponmi in humil fortuna, od en superba</quote>
+                     <bibl type="canon">Petrarca, <title>Rerum vulgarium fragmenta</title>, 95,
+                        1-6</bibl>
+                  </cit>. Garcilaso, en cambio, parece identificar dos: la tórrida y la glacial o
+                  inhabitable, pero sigue casi literalmente a Petrarca en el primer cuarteto: <cit>
+                     <quote>ove ‘l sole occide i fiori et l’erba,/ o dove vince lui il ghiaccio et
+                        la neve</quote>
+                     <bibl type="canon">Petrarca, <title>Rerum vulgarium fragmenta</title>, 95,
+                        1-2</bibl>
+                  </cit>, <ref type="texto_poema">donde ‘l sol ardiente […]/ en la arenosa Libia
+                     […],/ o adonde’l es vencido de la rígida nieve y viento frío</ref>.</note>
+            </note>
+
+         </div>
+
+         <div type="loci_similes">
+
+            <note xml:id="Elegia_2_ls1" resp="#RL">
+               <span type="link" from="#Elegia_2_1" n="1">1-2</span>
+               <ref type="texto_poema">buen troyano / Anchises</ref>: la raíz etimológica ἄγχι de
+               origen prehelénico asocia al padre de Eneas con Afrodita, por lo tanto, de
+               καλοκαγαθία implícita ('de estatura agradable y bondad inherente'), de ahí la
+               tradición que hay tras el <mentioned>buen</mentioned> de Garcilaso. <cit>
+                  <quote>Anchisen [...] pater optime</quote>
+                  <bibl type="canon">Virgilio, <title>Eneida</title>, 3.710</bibl>
+               </cit>; también, para el aura poética: <cit>
+                  <quote>l buono Augusto [...] cantai [scil. Virgil] di quel giusto / figliuol
+                     d’Anchise che venne di Troia</quote>
+                  <bibl type="canon">Dante, <title>Inferno</title>, 1, 71-74</bibl>
+               </cit>.</note>
+
+            <note xml:id="Elegia_2_ls1b" resp="#EF">
+               <span type="link" from="#Elegia_2_1" n="1">1-2</span> Herrera aduce un pasaje de la
+                  <title>Eneida</title> y otro del <title>Orlando furioso</title> de Ariosto para
+               este pasaje: ...así introduce Virgilio en el canto 3 de su divina
+                  <title>Eneida</title> a Eneas llorando la muerte de su padre en aquel lugar, donde
+               dice: <cit>
+                  <quote>Hinc Drepani me portus, et illaetabilis ora / accipit. Hic, pelagi tot
+                     tempestatibus actus, / heu genitorem, omnis curae, casusque levamen, / amitto
+                     Anchisen</quote>
+                  <bibl type="canon">(Virgilio, <title>Eneida</title>, 3, 707-710)</bibl>
+               </cit>. (Y lo traduce así: <quote>De aquí el puerto de Trápana me acoge / y la ribera
+                  lagrimosa y triste; / aquí, del mar con tantas tempestades / revuelto y
+                  trabajando, ay a mi padre, / de todos mis cuidados el descanso / y de los casos
+                  todos, pierdo Anquises</quote>). Y el Ariosto imitandolo en el canto 4 [sic]: <cit>
+                  <quote>Per mare e la cittade, a cui commise / il pietoso figliol l'ossa
+                     d'Anchise</quote>
+                  <bibl type="canon">(Ariosto, <title>Orlando furioso</title>, 4, 43, 149</bibl>
+               </cit>. (<bibl type="canon">H-356</bibl>).</note>
+
+            <note xml:id="Elegia_2_ls2" resp="#RL">
+               <span type="link" from="#Elegia_2_3" n="0">3</span>
+               <ref type="texto_poema">el Mantüano</ref>: no solo un gentilicio, también es
+               plausible que haya aquí una alusión al poder divino. Virgilio "el Mantuano", como
+               sugiere Virgilio mismo en la <title>Eneida</title>, provenía originalmente de una
+               línea de sacerdotes etruscos asentados en Mantua bajo el auspicio simbólico y
+               genético de su fundador, Ocnus, quien le dio a la ciudad el nombre de su madre, la
+               adivina Mantus. <bibl type="canon">Virgilio, <title>Eneida</title>, 10,
+                  198-203</bibl>; <cit>
+                  <quote>mantoani per patrïa ambedui</quote>
+                  <bibl type="canon">Dante, <title>Inferno</title>, 1, 69</bibl>
+               </cit>. </note>
+
+            <note xml:id="Elegia_2_ls3" resp="#BM">
+               <span type="link" from="#Elegia_2_10" n="1">10-11</span> Hay aquí una alusión al
+               adagio latino, <mentioned>virtuti sua praemia</mentioned>, presente también en <bibl
+                  type="canon">Séneca, <title>De vita beata</title>, 9, 4</bibl> (<bibl type="main"
+                  >Rivers, 1981: 244</bibl>). </note>
+
+            <note xml:id="Elegia_2_ls4" resp="#RL">
+               <span type="link" from="#Elegia_2_10" n="6">10-16</span>
+               <ref type="texto_poema">virtud amiga [...] Yo voy por medio</ref>: el proverbio de
+               origen aristotélico, <mentioned>in medio stat virtus</mentioned>, un eco del cual se
+               encuentra en muchos autores entre los que se incluye a <cit>
+                  <quote>Virtus est medium vitiorum et utrimque reductum</quote>
+                  <bibl type="canon">Horacio, <title>Epístolas</title>, 1, 18, 9</bibl>
+               </cit>; idea desarrollada en el <span type="link" from="#Elegia_2_29" n="0">v.
+               29</span>: <ref type="texto_poema">de las diversidades me sostengo</ref>, también
+               recogida en el <span type="link" from="#Elegia_2_193" n="0">v. 193</span>: <ref
+                  type="texto_poema">diverso entre contrarios...</ref>. Véase también el v. 25 de la
+                  <title>Epístola a Boscán</title>: <mentioned>a veces sigo un agradable
+                  medio</mentioned>. Véase Comentario v. 25 de la <ref type="link_int_c"
+                  target="https://soledadamena.com/epistolaBoscan">Epístola a
+               Boscán</ref>) </note>
+
+            <note xml:id="Elegia_2_ls5" resp="#EF">
+               <span type="link" from="#Elegia_2_19" n="0">19</span> La <ref type="texto_poema"
+                  >estrecha senda</ref> de la virtud se menciona en <cit>
+                  <quote>quam angusta porta et arta via, quae ducit ad vitam, et pauci sunt, qui
+                     inveniunt eam!</quote>
+                  <bibl type="canon">Mateo, 7, 13-14</bibl>
+               </cit> (‘porque estrecha es la puerta, y angosto el camino que lleva a la vida, y
+               pocos son los que la hallan’). </note>
+
+            <note xml:id="Elegia_2_ls6" resp="EF">
+               <span type="link" from="#Elegia_2_22" n="0">22</span> Dicha <foreign>figura
+                  correctionis</foreign> obtuvo particular impacto en las epístolas de Lope de Vega,
+               como en la dirigida a don Lorenzo van der Hamen de León: <cit>
+                  <quote>Pero advertid que dijo Garcilaso: / «Aquesta que os escribo es elegía, / y
+                     a sátira me voy mi paso a paso». / No lo penséis así; que no querría / que
+                     nadie presumiese mal respeto / a la divina cándida poesía</quote>
+               </cit>. Hay otra <foreign>figura correctionis</foreign> del mismo estilo al final de
+               la epístola a don Antonio Hurtado de Mendoza (secretario de cámara de Felipe IV): <cit>
+                  <quote>Pero, detente, pluma, que deliras /con la licencia que el amor te ha dado;
+                     / aunque si el genio del sujeto miras, / lo mismo que te atreve te ha
+                     culpado</quote>
+               </cit>. Recuérdese también la que se filtra en la epístola a Francisco de Rioja: <cit>
+                  <quote>¡Qué necia digresión! Mas no es dragmática / la epistolar poesía; estad
+                     gustoso, / que ya están los paréntesis en práctica</quote>
+               </cit>. (<bibl type="main">Fosalba, 2019: 92-93</bibl>). </note>
+
+            <note xml:id="Elegia_2_ls7" resp="#BM">
+               <span type="link" from="#Elegia_2_31" n="0">31</span> El toledano ha podido tener en
+               cuenta el equivalente italiano “vado et torno”, usado ya por Muzzarelli: <cit>
+                  <quote>Or vado ora torno</quote>
+                  <bibl type="canon">Muzzarelli, <title>Rime</title>, 88, 7</bibl>
+               </cit> o por Aretino: <cit>
+                  <quote>che io vado in cimbalis, e tornando en dietro</quote>
+                  <bibl type="canon">Aretino, <title>Dialogo</title>, 1 (1995: 233)</bibl>
+               </cit> y también por León Hebreo: <cit>
+                  <quote>e no so decidere se vado o se ritorno</quote>
+                  <bibl type="canon">Hebreo, <title>Elegia sopra il destino</title>, 39-40 (1929:
+                     458)</bibl>
+               </cit>.</note>
+
+            <note xml:id="Elegia_2_ls8" resp="#RL">
+               <span type="link" from="#Elegia_2_34" n="0">34</span>
+               <ref type="texto_poema">las horas engañando</ref>: para la sensación de engañar al
+               tiempo mientras se compone poesía, <cit>
+                  <quote>Quod quamvis nemo est, cuius referatur ad aures / sic tamen absumo
+                     decipioque diem</quote>
+                  <bibl type="canon">Ovidio, <title>Tristia</title>, 4, 10, 113-4</bibl>
+               </cit>; de manera similar en la elegía de Castiglione <cit>
+                  <quote>Balthassaris Castilionis, qua fingit Hippolyten suam ad se ipsum
+                     scribentem</quote>
+                  <bibl type="canon">(Lokaj, 2015: 149, 16, 34)</bibl>
+               </cit>: longos decipioque dies; para una repetición de la misma idea, <span
+                  type="link" from="#Elegia_2_161" n="1">vv.161-162</span>. </note>
+
+            <note xml:id="Elegia_2_ls9" resp="#RL">
+               <span type="link" from="#Elegia_2_35" n="0">35</span>
+               <ref type="texto_poema">duro afán y grave pena</ref>: para la tradición petrarquista
+               de este pasaje, véase <cit>
+                  <quote>e benedetto il primo dolce affanno</quote>
+                  <bibl type="canon">Petrarca, <title>Rerum vulgarium fragmenta</title>, 61,
+                     5</bibl>
+               </cit>; <cit>
+                  <quote>del bel lume leggiadro, / senza ’l qual non vivrei in tanti affanni</quote>
+                  <bibl type="canon">207, 9-10</bibl>
+               </cit>; <cit>
+                  <quote>Felice agnello a la penosa mandra / mi giacqui un tempo</quote>
+                  <bibl type="canon">43-44</bibl>
+               </cit>; et passim. </note>
+
+            <note xml:id="Elegia_2_ls10" resp="#RL">
+               <span type="link" from="#Elegia_2_43" n="3">43-46</span>
+               <ref type="texto_poema">frίo temor [...] per mis huesos discurre [...] triste</ref>:
+               para el leitmotiv, <cit>
+                  <quote>Frigidus excussit percita membra tremor</quote>
+                  <bibl type="canon">Marrasio, <title>Carmina varia</title>, 30, 144</bibl>
+
+               </cit>; <cit>
+                  <quote>Obstupuit, gelidusque tremor per membra cucurrit</quote>
+                  <bibl type="canon">Aldegati <title>Gigantomachia</title> 3.646</bibl>
+               </cit>; <cit>
+                  <quote>Talia cernenti gelidus tremor ossa pererrat</quote>
+                  <bibl type="canon">Vespasiano, <title>Eroticon</title>, 2, 8, 69</bibl>
+               </cit>; <cit>
+                  <quote>Tristis erat facies [...] Obstupui, gelidusque tremor per membra
+                     cucurrit</quote>
+                  <bibl type="canon">Castiglione, <title>Prosopopoeia Ludovici Pici
+                        Mirandulani</title>, 13-15</bibl>
+               </cit>. </note>
+
+            <note xml:id="Elegia_2_ls11" resp="#RL">
+               <span type="link" from="#Elegia_2_50" n="7">50-57</span>
+               <ref type="texto_poema">en la fragua d’amor [...] su valor esfuerza</ref>: para el
+               origen de lo que normalmente sería un adynaton, <cit>
+                  <quote>οὔποθ᾽ ὕδωρ καὶ πυ̂ρ συμμείξεται, οὐδέ ποθ᾽ ἡμει̂ς πιστοὶ ἐπ᾽ ἀλλήλοις καὶ
+                     φίλοι ἐσσόμεθα</quote>
+                  <bibl type="canon">Theognis, 1245-1246</bibl>
+               </cit> (‘Nunca seremos amigos verdaderos uno del otro así como el agua y el fuego se
+               mezclarán’); <cit>
+                  <quote>com’acqua ’l foco amorza</quote>
+                  <bibl type="canon">Petrarca, <title>Rerum vulgarium fragmenta</title>, 361,
+                     7</bibl>
+               </cit>; <cit>
+                  <quote>et ardo, et son un ghiaccio</quote>
+                  <bibl type="canon">134, 2</bibl>
+               </cit>. </note>
+
+            <note xml:id="Elegia_2_ls12" resp="#RL">
+               <span type="link" from="#Elegia_2_61" n="1">61-62</span>
+               <ref type="texto_poema">viva llama / en polvo y en ceniza convertido</ref>: para la
+               tradición, <cit>
+                  <quote>Chiusa fiamma è piú ardente</quote>
+                  <bibl type="canon">Petrarca, <title>Rerum vulgarium fragmenta</title>, 207,
+                     66</bibl>
+               </cit>; <cit>
+                  <quote>Et nova flamma patet quod fuit ante cinis</quote>
+                  <bibl type="canon"><title>Gabriele Altilio carmina</title>, 30, 4</bibl>
+               </cit>; para la misma idea, <span type="link" from="#Elegia_2_190" n="0">v.190</span>
+               <ref type="texto_poema">vivo fuego</ref>. </note>
+
+            <note xml:id="Elegia_2_ls13" resp="#RL">
+               <span type="link" from="#Elegia_2_94" n="2">94-96</span>
+               <ref type="texto_poema">Oh crudo [...] oh fiero Marte [...] endurecido</ref>: <cit>
+                  <quote>Vedi, Segnor cortese, / di che lievi cagion’ che crudel guerra; / e i cor’,
+                     che ’ndura et serra / Marte superbo et fero</quote>
+                  <bibl type="canon">Petrarca, <title>Rerum vulgarium fragmenta</title>, 128,
+                     10-13</bibl>
+               </cit>; también <bibl type="canon">Boccaccio, <title>Mavortis milex</title></bibl>
+               (scil. miles = 'soldado de Marte') dirigida a Petrarca. </note>
+
+            <note xml:id="Elegia_2_ls14" resp="#EF">
+               <span type="link" from="#Elegia_2_94" n="2">94-96</span>
+               <cit>
+                  <quote>Quis Martem tunica tectum adamantina / digne scripserit</quote>
+                  <bibl type="canon">Horacio, <title>Carmina</title>, 1, 6</bibl>
+
+               </cit>, (B-87); Herrera lo recoge del Brocense, sin citarlo, y lo traduce: "¿Quién
+               dignamente ha de cantar a Marte / con túnica cubierto de diamante" (H-473) </note>
+
+            <note xml:id="Elegia_2_ls15" resp="#RL">
+               <span type="link" from="#Elegia_2_97" n="0">97</span>
+               <ref type="texto_poema">tierno amante</ref>: <cit>
+                  <quote>apri Tu, Padre, e ’ntenerisci et snoda; / ivi fa che ’l Tuo vero, / qual io
+                     mi sia, per la mia lingua s’oda</quote>
+                  <bibl type="canon">Petrarca, <title>Rerum vulgarium fragmenta</title>, 128,
+                     14-16</bibl>
+
+               </cit>. </note>
+
+            <note xml:id="Elegia_2_ls16" resp="#RL">
+               <span type="link" from="#Elegia_2_105" n="1">105-106</span>
+               <ref type="texto_poema">hierro traspasado agudo y fuerte / porque me
+               consumiese</ref>: <cit>
+
+                  <quote>Y como un ciervo herido por una flecha, / con el hierro envenenado dentro
+                     del costado, / huye, y más se duele cuanto más se apresura, / así yo, con
+                     aquella flecha en el lado izquierdo, / que me consume y me deleita</quote>
+                  <bibl type="canon">Petrarca, <title>Rerum vulgarium fragmenta</title>, 209,
+                     9-13</bibl>
+               </cit>. </note>
+
+            <note xml:id="Elegia_2_ls17" resp="#RL">
+               <span type="link" from="#Elegia_2_139" n="0">139</span>
+               <ref type="texto_poema">este dulce error</ref>: cf. <cit>
+                  <quote>quel dolce error</quote>
+                  <bibl type="canon">Petrarca, <title>Rerum vulgarium fragmenta</title>, 129,
+                     50</bibl>
+
+               </cit>. </note>
+
+            <note xml:id="Elegia_2_ls18" resp="#RL">
+               <span type="link" from="#Elegia_2_142" n="2">142-144</span>
+               <ref type="texto_poema">y acabo [...] las venas... desatado</ref> (también <span
+                  type="link" from="#Elegia_2_159" n="0">v. 159</span>): posiblemente constituya una
+               condensación del prototipo clásico de tal muerte, la de Séneca, quien, sin embargo,
+               primero se abre las venas para suicidarse, luego es detenido por los hombres de
+               Nerón, por lo que finalmente toma veneno en un baño caliente, logrando así su intento
+               de terminar su vida honorablemente. Para la fuente, véase <cit>
+                  <quote>Post quae eodem ictu brachia ferro exsolvunt. Seneca, quoniam senile corpus
+                     et parco victu tenuatam lenta effugia sanguini praebebat, crurum quoque et
+                     poplitum venas abrumpit; [...] Postremo stagnum calidae aquae introiit,
+                     respergens proximos servorum addita voce libare se liquorem illum Iovi
+                     liberatori. Exim balneo inlatus et vapore eius exanimatus, sine ullo funeris
+                     sollemni crematur</quote>
+                  <bibl type="canon">Tácito, <title>Anales</title>, 15, 62, 64</bibl>
+               </cit>. </note>
+
+            <note xml:id="Elegia_2_ls19" resp="#RL">
+               <span type="link" from="#Elegia_2_157" n="1">157-158</span>
+               <ref type="texto_poema">Yo, como [...] m’envía</ref>: tal vez un recuerdo del perfil
+               de Eneas en <cit>
+                  <quote>Arma virum cano, Troiae qui primus ab oris / Italiam fato profugus
+                     Laviniaque venit / litora, multum ille et terris iactatus et alto / vi superum,
+                     saevae memorem Iunonis ob iram / multa quoque et bello passus</quote>
+                  <bibl type="canon">Virgilio, <title>Eneida</title>, 1, 1-5</bibl>
+               </cit>. </note>
+
+            <note xml:id="Elegia_2_ls20" resp="#RL">
+               <span type="link" from="#Elegia_2_168" n="0">168</span>
+               <ref type="texto_poema">fortuna [...] mudanza</ref>: para una summa muy leída del
+               concepto antiguo y renacentista de la mutación de la Fortuna, muy debatida e
+               integrada en las obras literarias de Maquiavelo (especialmente respecto a César
+               Borgia), Guicciardini y otros, especialmente con máximas de <cit>
+                  <quote>Nunc est stabile; Famam si casus dedit, eripiet; Hinc transformatio illa
+                     ridicula clarorum adolescentium in obscuros senes</quote>
+                  <bibl type="canon">Petrarca, <title>De remediis utriusque fortune</title></bibl>
+
+               </cit>; etc. </note>
+
+            <note xml:id="Elegia_2_ls21" resp="#RL">
+               <span type="link" from="#Elegia_2_169" n="2">169-171</span>
+               <ref type="texto_poema">Donde [...] grave carga [...] cerviz enflaquecida?</ref>: <cit>
+
+                  <quote>I dolci colli ov’io lasciai me stesso, / partendo onde partir già mai non
+                     posso, / mi vanno innanzi et émmi, ognor adosso / quel caro peso ch’Amor m’à
+                     commesso. / Meco di me mi meraviglio spesso, / ch’i’ pur vo sempre, et non son
+                     anchor mosso / dal bel giogo più volte indarno scosso, / ma com più me
+                     n’allungo, et più m’appresso / [...] / di duol mi struggo, et di fuggir mi
+                     stanco</quote>
+                  <bibl type="canon">Petrarca, <title>Rerum vulgarium fragmenta</title>, 209</bibl>
+               </cit>. </note>
+
+            <note xml:id="Elegia_2_ls22">
+               <span type="link" from="#Elegia_2_176" n="0">176</span>
+               <ref type="texto_poema">la arenosa Libya</ref>: <cit>
+                  <quote>volabat / litus harenosum ad Libyae</quote>
+                  <bibl type="canon">Virgilio, <title>Eneida</title>, 4, 256-257</bibl>
+               </cit>. </note>
+
+            <note xml:id="Elegia_2_ls23" resp="#RL">
+               <span type="link" from="#Elegia_2_176" n="1">176-177</span>
+               <ref type="texto_poema">engendradora / de toda cosa ponzoñosa y fiera</ref>: Para las
+               famosas serpientes venenosas de Libia, consultar: <cit>
+
+                  <quote>sed maiora parant Libycae spectacula pestes / inpressit dentes haemorrhois
+                     aspera Tullo, / magnanimo iuueni miratorique Catonis</quote>
+                  <bibl type="canon">Lucano, <title>Farsalia</title>, 805-807</bibl>
+               </cit>. </note>
+
+            <note xml:id="Elegia_2_ls24" resp="#RL">
+               <span type="link" from="#Elegia_2_190" n="3">190-193</span>
+               <ref type="texto_poema">de este vivo fuego, en que me apuro [...] espero [...]
+                  muero</ref>: epílogo de Petrarca a su historia de amor con Laura en <cit>
+                  <quote>Tenemmi Amor anni ventuno ardendo, / lieto nel foco, et nel duol pien di
+                     speme; / poi che madonna e ’l mio cor seco inseme / saliro al ciel, dieci altri
+                     anni piangendo. / [...] pentito et tristo de’ miei sí spesi anni, /che spender
+                     si deveano in miglior uso, / in cercar pace et in fuggir affanni. / Signor che
+                     ’n questo carcer m’ài rinchiuso, / tràmene [...]</quote>
+                  <bibl type="canon"><title>Rerum vulgarium fragmenta</title>, 364, 1-4 et
+                     passim</bibl>
+               </cit>. </note>
+
+         </div>
+
+         <div type="ApCrit">
+            <ab resp="#BM">Texto: O presenta un texto bastante deficiente, que debemos corregir a
+               través de las ediciones posteriores (N, D y F). Tales enmiendas parecen hechas sobre
+               O y no atestiguan necesariamente una tradición manuscrita. </ab>
+            <ab>
+               <span type="link" from="#Elegia_2_5" n="0">5</span>
+               <app>
+                  <lem>Caesar</lem>
+                  <rdg>Caesar <wit>OCGBHT</wit></rdg>
+                  <rdg>Cesar <wit>SQEJNsUIAsVDFAmAlAn</wit></rdg>
+               </app>
+            </ab>
+
+            <ab><span type="link" from="#Elegia_2_7" n="0">7</span>
+               <app>
+                  <lem>vamos</lem>
+                  <rdg>vanos <wit>Q</wit></rdg>
+               </app>
+            </ab>
+
+            <ab><span type="link" from="#Elegia_2_20" n="0">20</span>
+               <app>
+                  <lem>cierto</lem>
+                  <rdg>ciertos <wit>G</wit></rdg>
+               </app>
+            </ab>
+
+            <ab><span type="link" from="#Elegia_2_25" n="0">25</span>
+               <app>
+                  <lem>paso</lem>
+                  <rdg>peso <wit>E</wit></rdg>
+               </app></ab>
+
+            <ab><span type="link" from="#Elegia_2_27" n="0">27</span>
+               <app>
+                  <lem>lleva</lem>
+                  <rdg>leva <wit>E</wit></rdg>
+               </app></ab>
+
+            <ab><span type="link" from="#Elegia_2_31" n="0">31</span>
+               <app>
+                  <lem>torno</lem>
+                  <rdg>torno <wit>O</wit></rdg>
+                  <rdg>voy <wit>B</wit></rdg>
+               </app>
+               <note type="n_ApCrit">B enmienda el pasaje pensando en la expresión bastante usual de
+                  “voy y vengo”, “ir y venir en una cosa o pensamiento es dejarla un rato y volver
+                  luego a él inconstantemente” (<bibl type="canon">Covarrubias</bibl>). La lectura
+                  de la <term>prínceps</term> no es errónea porque Garcilaso intercambia los
+                  términos de la expresión ‘torno y vengo”, ‘vuelvo y voy’, puesto que venir tiene
+                  el sentido mayoritario de ‘ir’, como registra el <title>Diccionario de
+                     Autoridades</title>. Véase <ref type="link_int_ls" target="#Elegia_2_ls7">Loci
+                     similes v. 31</ref>.</note>
+            </ab>
+            <ab><span type="link" from="#Elegia_2_46" n="0">46</span>
+               <app>
+                  <lem>yo</lem>
+                  <rdg>yo <wit>O</wit></rdg>
+                  <rdg><foreign xml:lang="lat">om.</foreign>
+                     <wit>CBHTLA</wit></rdg>
+               </app>
+               <note type="n_ApCrit">Es curioso que B haya omitido de manera consecutiva los dos
+                  pronombres de primera persona; en este caso parece incurrir en error, creo que
+                  consciente, porque el uso de <term>yo</term> recalca la acción del verbo tras un
+                  condicional rematado por otro pronombre personal, pero de proposición, que es
+                     <term>mí</term>.</note>
+            </ab>
+
+            <ab><span type="link" from="#Elegia_2_46" n="0">46</span>
+               <app>
+                  <lem>de mi bien</lem>
+                  <rdg>de mi <wit>G</wit></rdg>
+               </app>
+            </ab>
+
+            <ab><span type="link" from="#Elegia_2_47" n="0">47</span>
+               <app>
+                  <lem>no lo</lem>
+                  <rdg>no lo <wit>O</wit></rdg>
+                  <rdg>yo no <wit>CHTLA</wit></rdg>
+                  <rdg>non <wit>Q</wit></rdg>
+               </app>
+               <note type="n_ApCrit">El uso redundante de <term>lo</term>, que aglutina como
+                  complemento directo de persona el condicional anterior, está documentado en la
+                  sintaxis del Siglo de Oro (véase H. <bibl type="main">Keniston, 1937:
+                  7-275</bibl>); la eliminación de este pronombre comporta la repetición en dos
+                  versos consecutivos del pronombre de primera persona yo, precisamente producida
+                  por la atracción del verso anterior; no puede entenderse <mentioned>no lo
+                     niego</mentioned> como un inciso, porque la acción del verbo afecta
+                  directamente al verso siguiente (véase <bibl type="main">Rivers, 1981:
+                  247</bibl>).</note>
+            </ab>
+
+            <ab><span type="link" from="#Elegia_2_53" n="0">53</span>
+               <app>
+                  <lem>le refuerza</lem>
+                  <rdg>le refuerza <wit>OCQ</wit></rdg>
+                  <rdg>lo refuerza <wit>DAmH</wit></rdg>
+                  <rdg>la refuerza <wit>G</wit></rdg>
+                  <rdg>aun le esfuerza <wit>CBA</wit></rdg>
+                  <rdg>le esfuerça <wit>B</wit></rdg>
+               </app>
+               <note type="n_ApCrit">El verbo <mentioned>refuerza</mentioned> exige el pronombre
+                  leísta, totalmente correcto por ser el complemento directo (<mentioned>el
+                     fuego</mentioned>) masculino, singular y de cosa, al haberlo ya usado en el
+                  mismo verso con el verbo anterior (<mentioned>No le suele matar</mentioned>);
+                  algunos editores, regularizan inoportunamente. Véase <ref type="link_int_ls"
+                     target="#Elegia_2_ls11">Loci similes v. 53</ref></note>
+            </ab>
+
+            <ab><span type="link" from="#Elegia_2_54" n="0">54</span>
+               <app>
+                  <lem>eminente</lem>
+                  <rdg>semejante <wit>G</wit></rdg>
+               </app>
+            </ab>
+
+            <ab><span type="link" from="#Elegia_2_64" n="0">64</span>
+               <app>
+                  <lem>que ha esparcido</lem>
+                  <rdg>que ha esparcido <wit>Mr</wit></rdg>
+                  <rdg>que a esparzido <wit>CEJNsAsH</wit></rdg>
+                  <rdg>que ha esparzido <wit>NSUIVDFGAmBAl</wit></rdg>
+                  <rdg>que a esperzido <wit>O</wit></rdg>
+                  <rdg>que a espeazido <wit>Q</wit></rdg>
+               </app>
+            </ab>
+
+            <ab><span type="link" from="#Elegia_2_77" n="0">77</span>
+               <app>
+                  <lem>eternamente</lem>
+                  <rdg>eternalmente <wit>Al</wit></rdg>
+               </app>
+            </ab>
+
+            <ab><span type="link" from="#Elegia_2_90" n="0">90</span>
+               <app>
+                  <lem>van</lem>
+                  <rdg>van <wit>OSBH</wit></rdg>
+                  <rdg>van <wit>B</wit></rdg>
+                  <rdg>ven <wit>NF</wit></rdg>
+                  <rdg>veen <wit>G</wit></rdg>
+                  <rdg>venden <wit>ENsUAsDAlAn</wit></rdg>
+               </app>
+               <note type="n_ApCrit">B74n enmienda el verso introduciendo una coma entre
+                     <mentioned>van</mentioned> y <mentioned>de su holganza</mentioned>
+                     (<mentioned>con que mis ojos van, de su holganza</mentioned>) para ofrecer una
+                  interpretación muy genuina del verso: “y quiere decir: ‘Este temor persigue la
+                  esperanza, y oprime el gran deseo de su holganza, con el cual deseo van mis ojos’”
+                     (<bibl type="main">Gallego Morell, 1972: 280</bibl>). B propone esta puntuación
+                  del verso, que no hace constar en el texto (fol. 14r), porque cree que
+                     <mentioned>holganza</mentioned> es el complemento del nombre de deseo, al
+                  considerar que de es una simple preposición, pero no de régimen verbal
+                     (<mentioned>van de su holganza</mentioned>). La idea de B74n es que
+                     <mentioned>mis ojos</mentioned> se van, se marchan, con el
+                     <mentioned>deseo</mentioned> que tienen de <mentioned>holganza</mentioned>,
+                  palabra a la que el editor no atribuye un sentido claro: podría ser ‘deseo de
+                  deleite’ o también ‘deseo de descanso’. Garcilaso debe usar holganza con el
+                  sentido de ‘tranquilidad, descanso’ porque recuerda en este pasaje la
+                  yuxtaposición entre <foreign>spes</foreign> y <foreign>requies</foreign>, que en
+                  su caso no se alcanza por culpa del <mentioned>temor</mentioned>: la lectura más
+                  lógica del pasaje es editar <mentioned>van de</mentioned> como un verbo con su
+                  complemento de régimen verbal (‘se apartan de, se marchan de’, porque precisamente
+                  es lo que hacen <mentioned>mis ojos</mentioned> con respecto a <mentioned>su
+                     holganza</mentioned>, a consecuencia de los efectos producidos por su
+                     <mentioned>temor</mentioned> en la <mentioned>esperanza</mentioned> y el
+                     <mentioned>deseo</mentioned>). Esta interpretación del pasaje está confirmada
+                  por los versos siguientes: <mentioned>con ellos solamente agora / veo este
+                     dolor</mentioned>, y es lo que ven los ojos al haberse apartado de su
+                  tranquilidad y descanso. <bibl type="main">García Aguilar (2020: 313)</bibl>
+                  acepta la interpretación de B, pero no pone al verso la coma correspondiente,
+                  inducido sin duda por <bibl type="main">Morros (1995: 110)</bibl>. La lectura de
+                  NF puede tratarse de un error mecánico de cajista, que inconscientemente piensa en
+                  el <mentioned>agora veo</mentioned> del verso siguiente; y la de D de otro error
+                  por duplografía (<mentioned>ven de de</mentioned>), que tiene como modelo NF
+                     (<mentioned>ven de</mentioned>).</note>
+            </ab>
+            <ab><span type="link" from="#Elegia_2_102" n="0">102</span>
+               <app>
+                  <lem>postrimero</lem>
+                  <rdg>postrimero <wit>UVDFAmGBHTMr</wit></rdg>
+                  <rdg>postrimero <wit>UVDFAmBHT</wit></rdg>
+                  <rdg>postrimer <wit>ONSQEJNsAsAlAn</wit></rdg>
+                  <rdg>postrer <wit>C</wit></rdg>
+               </app>
+               <note type="n_ApCrit">A partir de D, todas las ediciones corrigen la hipermetría de
+                  la <foreign>princeps</foreign>, cuya apócope de la -o podría explicarse como una
+                  forma de evitar cierta <foreign>similiter cadens</foreign> con
+                     <mentioned>beneficio</mentioned>. Cf. <bibl type="main">M. Rosso Gallo (1990:
+                     297)</bibl>.</note>
+            </ab>
+            <ab><span type="link" from="#Elegia_2_105" n="0">105</span>
+               <app>
+                  <lem>de hierro traspasado agudo y fuerte</lem>
+                  <rdg>de hierro traspasado y fuerte <wit>Q</wit></rdg>
+               </app></ab>
+
+            <ab><span type="link" from="#Elegia_2_111" n="0">111</span>
+               <app>
+                  <lem>dolor llena</lem>
+                  <rdg>dolor llena <wit>CSQEJNsUAsVFMr</wit></rdg>
+                  <rdg>dolor lleva <wit>O</wit></rdg>
+               </app>
+            </ab>
+
+            <ab><span type="link" from="#Elegia_2_131" n="0">131</span>
+               <app>
+                  <lem>al</lem>
+                  <rdg>al <wit>O</wit></rdg>
+                  <rdg>a <wit>CSFGH</wit></rdg>
+               </app></ab>
+
+            <ab><span type="link" from="#Elegia_2_148" n="0">148</span>
+               <app>
+                  <lem>impedimento</lem>
+                  <rdg>impedimento N</rdg>
+                  <rdg>impedimiento O</rdg>
+               </app>
+               <note type="n_ApCrit">La forma culta, sin diptongación, parece ser la más usada ya en
+                  el siglo XV.</note></ab>
+
+            <ab><span type="link" from="#Elegia_2_149" n="0">149</span>
+               <app>
+                  <lem>vas eterna fama</lem>
+                  <rdg>das eterna fama <wit>G</wit></rdg>
+               </app>
+               <note type="n_ApCrit">El Brocense anota aquí: “Leo: <mentioned>vas, juntándolo con lo
+                     de abajo: vas procurando</mentioned>” (B-88).</note></ab>
+
+            <ab><span type="link" from="#Elegia_2_150" n="0">150</span>
+               <app>
+                  <lem>vivos escritos</lem>
+                  <rdg>vinos escritos <wit>E</wit></rdg>
+               </app></ab>
+
+            <ab><span type="link" from="#Elegia_2_153" n="0">153</span>
+               <app>
+                  <lem>pudo</lem>
+                  <rdg>pudo <wit>NMrJNsUAsDFBAlAnGHT</wit></rdg>
+                  <rdg>puedo <wit>OCQE</wit></rdg>
+               </app>
+               <note type="n_ApCrit">Error evidente de O que se halla corregido en casi todas las
+                  ediciones desde N: el sujeto del verbo, en efecto, no es yo, sino “troyano
+                  encendimiento” (<bibl type="main">Rosso Gallo, 1990: 298</bibl>).</note>
+            </ab>
+
+            <ab><span type="link" from="#Elegia_2_157" n="0">157</span>
+               <app>
+                  <lem>Yo</lem>
+                  <rdg>Yo <wit>DFAmGBHMr</wit>
+                     <wit>OCNSQEJNsUAsVDAlAn</wit>
+                  </rdg>
+                  <rdg>Io, como conduzido mercenario <wit>T</wit></rdg>
+               </app>
+               <note type="n_ApCrit">La conjunción “y”, en lugar del pronombre de primera persona
+                  Yo, conlleva una transición muy brusca entre el <mentioned>Tú</mentioned> del
+                  verso 145 y el comienzo en este de la primera persona, que rompe la marcada
+                  contraposición que nuestro poeta establece entre su vida y la de Boscán (<bibl
+                     type="main">Rivers, 1981: 225</bibl> y <bibl type="main">Rosso Gallo
+                     1990:298</bibl>), como hace su fuente, la elegía sexta de Bernardo Tasso:
+                  “Grazia io ritorno […] Tu rimarrai nel tuo lito natio”. Es un evidente error que
+                  el editor antuerpiense, afincado en Salamanca, debió corregir con la ayuda del
+                  Brocense, del que había editado su <title>De arte dicendi</title> en 1558. No es
+                  una evidencia la intervención del Catedrático de Retórica de su ciudad adoptiva,
+                  pero puede deducirse de una parte de su dedicatoria, dirigida “Al muy ilustre
+                  señor don Sancho de Ávila, rector de la insigne ciudad de Salamanca”: “y también
+                  se ha ganado que lo di a corregir a hombres que lo entendían, y que de ingenio, de
+                  libros, le han puesto de manera que parece sin encarecimiento que sale tan nuevo
+                  como solo” (fol. 3v).</note>
+            </ab>
+
+            <ab><span type="link" from="#Elegia_2_169" n="0">169</span>
+               <app>
+                  <lem>huir</lem>
+                  <rdg>hair <wit>O</wit></rdg>
+               </app>
+            </ab>
+
+            <ab><span type="link" from="#Elegia_2_173" n="0">173</span>
+               <app>
+                  <lem>el triste</lem>
+                  <rdg>el triste <wit>O</wit></rdg>
+                  <rdg>en el triste <wit>SF</wit></rdg>
+               </app>
+            </ab>
+
+            <ab><span type="link" from="#Elegia_2_179" n="0">179</span>
+               <app>
+                  <lem>rígida nieve</lem>
+                  <rdg>frígida nieve <wit>F</wit></rdg>
+               </app></ab>
+
+            <ab><span type="link" from="#Elegia_2_187" n="0">187</span>
+               <app>
+                  <lem>y en el rigor del hielo, en la serena noche</lem>
+                  <rdg>y en el rigor del hielo, en la serena noche <wit>DG</wit></rdg>
+                  <rdg> y en el rigor del hielo, y en la serena choche <wit>ONSUR64Ros</wit></rdg>
+               </app>
+               <note type="n_ApCrit">La hipermetría de la prínceps obliga a prescindir de la segunda
+                  conjunción (<bibl type="main">Rivers, 1981: 256</bibl>), quizá introducida por la
+                  atracción de la primera o de la del verso siguiente (<mentioned>agudo y
+                     puro</mentioned>); <bibl type="main">Rosso Gallo (1990: 296)</bibl> acepta la
+                  lección de O, suponiendo una posible sinalefa en ye-loyen-, nada frecuente en
+                  Garcilaso (véase <title>Égloga I</title>, 171: «la manteca y el queso está
+                  sobrado»).</note>
+            </ab>
+            <ab><span type="link" from="#Elegia_2_191" n="0">191</span>
+               <app>
+                  <lem>espero</lem>
+                  <rdg>espo <wit>E</wit></rdg>
+               </app>
+            </ab>
+
+            <note type="nota_final">
+               <p resp="#BM">Cotejo realizado por <expan resp="#BM">Bienvenido Morros</expan> y
+                     <expan resp="#EF">Eugenia Fosalba</expan>
+                  <lb/> Notas elaboradas por Bienvenido Morros.</p>
+            </note>
+
+         </div>
+
+         <div type="poema" xml:id="Elegia_2">
+            <lg xml:lang="lat">
+               <head>
+                  <title xml:id="Elegia_2_t">Elegía II</title>
+               </head>
+
+               <lg type="estrofa">
+                  <l n="1" xml:id="Elegia_2_1">Aquí, Boscán, donde del buen troyano <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n1" corresp="#Elegia_2_n1"/>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls1" corresp="#Elegia_2_ls1"/>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls1b" corresp="#Elegia_2_ls1b"/>
+                     </linkGrp>
+                  </l>
+                  <l n="2" xml:id="Elegia_2_2">Anchises con eterno nombre y vida</l>
+                  <l n="3" xml:id="Elegia_2_3">conserva la ceniza el Mantüano, <linkGrp>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls2" corresp="#Elegia_2_ls2"/>
+                     </linkGrp>
+                  </l>
+                  <l n="4" xml:id="Elegia_2_4">debajo de la seña esclarecida <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n2" corresp="#Elegia_2_n2"/>
+                        <link type="a_comentarios" xml:id="a_Elegia_2_c1" corresp="#Elegia_2_c1"/>
+                     </linkGrp>
+                  </l>
+                  <l n="5" xml:id="Elegia_2_5">de César africano, nos hallamos <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n3" corresp="#Elegia_2_n3"/>
+                     </linkGrp></l>
+                  <l n="6" xml:id="Elegia_2_6">la vencedora gente recogida:</l>
+                  <l n="7" xml:id="Elegia_2_7">diversos en estudio, que unos vamos <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n4" corresp="#Elegia_2_n4"/>
+                        <link type="a_comentarios" xml:id="a_Elegia_2_c2" corresp="#Elegia_2_c2"/>
+                        <link type="a_comentarios" xml:id="a_Elegia_2_c3" corresp="#Elegia_2_c3"/>
+                     </linkGrp></l>
+                  <l n="8" xml:id="Elegia_2_8">muriendo por coger de la fatiga</l>
+                  <l n="9" xml:id="Elegia_2_9"> el fruto que con el sudor sembramos;</l>
+                  <l n="10" xml:id="Elegia_2_10">otros, que hacen la virtud amiga <linkGrp>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls3" corresp="#Elegia_2_ls3"/>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls4" corresp="#Elegia_2_ls4"/>
+                     </linkGrp>
+                  </l>
+                  <l n="11" xml:id="Elegia_2_11">y premio de sus obras y así quieren</l>
+                  <l n="12" xml:id="Elegia_2_12">que la gente lo piense y que lo diga,</l>
+                  <l n="13" xml:id="Elegia_2_13">destotros en lo público difieren, <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n5" corresp="#Elegia_2_n5"/>
+                     </linkGrp>
+                  </l>
+                  <l n="14" xml:id="Elegia_2_14">y en lo secreto sabe Dios en cuánto</l>
+                  <l n="15" xml:id="Elegia_2_15">se contradicen en lo que profieren.</l>
+                  <l n="16" xml:id="Elegia_2_16">Yo voy por medio, porque nunca tanto</l>
+                  <l n="17" xml:id="Elegia_2_17">quise obligarme a procurar hacienda, <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n6" corresp="#Elegia_2_n6"/>
+                     </linkGrp>
+                  </l>
+                  <l n="18" xml:id="Elegia_2_18">que un poco más que aquéllos me levanto;</l>
+                  <l n="19" xml:id="Elegia_2_19">ni voy tampoco por la estrecha senda <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n7" corresp="#Elegia_2_n7"/>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls5" corresp="#Elegia_2_ls5"/>
+                     </linkGrp>
+                  </l>
+                  <l n="20" xml:id="Elegia_2_20">de los que cierto sé que a la otra vía</l>
+                  <l n="21" xml:id="Elegia_2_21">vuelven, de noche al caminar, la rienda. <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n8" corresp="#Elegia_2_n8"/>
+                        <link type="a_notas" xml:id="a_Elegia_2_n10" corresp="#Elegia_2_n10"/>
+                        <link type="a_comentarios" xml:id="a_Elegia_2_c4" corresp="#Elegia_2_c4"/>
+                     </linkGrp></l>
+                  <l n="22" xml:id="Elegia_2_22">Mas ¿dónde me llevó la pluma mía, <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n9" corresp="#Elegia_2_n9"/>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls6" corresp="#Elegia_2_ls6"/>
+                     </linkGrp>
+                  </l>
+                  <l n="23" xml:id="Elegia_2_23">que a sátira me voy mi paso a paso,</l>
+                  <l n="24" xml:id="Elegia_2_24">y aquesta que os escribo es elegía?</l>
+                  <l n="25" xml:id="Elegia_2_25">Yo enderezo, señor, en fin mi paso</l>
+                  <l n="26" xml:id="Elegia_2_26">por donde vos sabéis que su proceso <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n11" corresp="#Elegia_2_n11"/>
+                     </linkGrp>
+                  </l>
+                  <l n="27" xml:id="Elegia_2_27">siempre ha llevado y lleva Garcilaso; <linkGrp>
+                        <link type="a_comentarios" xml:id="a_Elegia_2_c5" corresp="#Elegia_2_c5"/>
+                     </linkGrp>
+                  </l>
+                  <l n="28" xml:id="Elegia_2_28">y así, en mitad d’aqueste monte espeso, <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n12" corresp="#Elegia_2_n12"/>
+                     </linkGrp>
+                  </l>
+                  <l n="29" xml:id="Elegia_2_29">de las diversidades me sostengo, <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n13" corresp="#Elegia_2_n13"/>
+                        <link type="a_comentarios" xml:id="a_Elegia_2_c6" corresp="#Elegia_2_c6"/>
+                     </linkGrp>
+                  </l>
+                  <l n="30" xml:id="Elegia_2_30">no sin dificultad, mas no por eso</l>
+                  <l n="31" xml:id="Elegia_2_31">dejo las musas, antes torno y vengo <linkGrp>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls7" corresp="#Elegia_2_ls7"/>
+                     </linkGrp>
+                  </l>
+                  <l n="32" xml:id="Elegia_2_32">dellas al negociar, y, varïando,</l>
+                  <l n="33" xml:id="Elegia_2_33">con ellas dulcemente me entretengo.</l>
+                  <l n="34" xml:id="Elegia_2_34">Así se van las horas engañando; <linkGrp>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls8" corresp="#Elegia_2_ls8"/>
+                     </linkGrp>
+                  </l>
+                  <l n="35" xml:id="Elegia_2_35">así del duro afán y grave pena <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n14" corresp="#Elegia_2_n14"/>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls9" corresp="#Elegia_2_ls9"/>
+                     </linkGrp>
+                  </l>
+                  <l n="36" xml:id="Elegia_2_36">estamos algún hora descansando.</l>
+                  <l n="37" xml:id="Elegia_2_37">D’aquí iremos a ver de la Serena <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n15" corresp="#Elegia_2_n15"/>
+                        <link type="a_comentarios" xml:id="a_Elegia_2_c7" corresp="#Elegia_2_c7"/>
+                     </linkGrp>
+                  </l>
+                  <l n="38" xml:id="Elegia_2_38">la patria, que bien muestra haber ya sido</l>
+                  <l n="39" xml:id="Elegia_2_39">de ocio y d’amor antiguamente llena.</l>
+                  <l n="40" xml:id="Elegia_2_40">Allí mi corazón tuvo su nido <linkGrp>
+                        <link type="a_comentarios" xml:id="a_Elegia_2_c8" corresp="#Elegia_2_c8"/>
+                        <link type="a_comentarios" xml:id="a_Elegia_2_c9" corresp="#Elegia_2_c9"/>
+                     </linkGrp>
+                  </l>
+                  <l n="41" xml:id="Elegia_2_41">un tiempo ya; mas no sé, triste, agora</l>
+                  <l n="42" xml:id="Elegia_2_42">o si estará ocupado o desparcido.</l>
+                  <l n="43" xml:id="Elegia_2_43">D’aquesto un frío temor así a deshora <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n16" corresp="#Elegia_2_n16"/>
+                        <link type="a_notas" xml:id="a_Elegia_2_n17" corresp="#Elegia_2_n17"/>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls10" corresp="#Elegia_2_ls10"/>
+                     </linkGrp>
+                  </l>
+                  <l n="44" xml:id="Elegia_2_44">por mis huesos discurre en tal manera,</l>
+                  <l n="45" xml:id="Elegia_2_45">que no puedo vivir con él un’hora.</l>
+                  <l n="46" xml:id="Elegia_2_46">Si, triste, de mi bien yo estado hubiera <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n18" corresp="#Elegia_2_n18"/>
+                        <link type="a_notas" xml:id="a_Elegia_2_n19" corresp="#Elegia_2_n19"/>
+                     </linkGrp>
+                  </l>
+                  <l n="47" xml:id="Elegia_2_47">un breve tiempo ausente, no lo niego</l>
+                  <l n="48" xml:id="Elegia_2_48">que con mayor seguridad viviera.</l>
+                  <l n="49" xml:id="Elegia_2_49">La breve ausencia hace el mismo juego</l>
+                  <l n="50" xml:id="Elegia_2_50">en la fragua d’amor que en fragua ardiente <linkGrp>
+                        <link type="a_comentarios" xml:id="a_Elegia_2_c10" corresp="#Elegia_2_c10"/>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls11" corresp="#Elegia_2_ls11"/>
+                     </linkGrp>
+                  </l>
+                  <l n="51" xml:id="Elegia_2_51">el agua moderada hace al fuego,</l>
+                  <l n="52" xml:id="Elegia_2_52">la cual verás que no tan solamente</l>
+                  <l n="53" xml:id="Elegia_2_53">no le suele matar, mas le refuerza <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n20" corresp="#Elegia_2_n20"/>
+                     </linkGrp>
+                  </l>
+                  <l n="54" xml:id="Elegia_2_54">con ardor más intenso y eminente,</l>
+                  <l n="55" xml:id="Elegia_2_55">porque un contrario, con la poca fuerza <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n21" corresp="#Elegia_2_n21"/>
+                     </linkGrp>
+                  </l>
+                  <l n="56" xml:id="Elegia_2_56">de su contrario, por vencer la lucha</l>
+                  <l n="57" xml:id="Elegia_2_57">su brazo aviva y su valor esfuerza.</l>
+                  <l n="58" xml:id="Elegia_2_58">Pero si el agua en abundancia mucha</l>
+                  <l n="59" xml:id="Elegia_2_59">sobre’l fuego s’esparce y se derrama,</l>
+                  <l n="60" xml:id="Elegia_2_60">el humo sube al cielo, el son s’escucha</l>
+                  <l n="61" xml:id="Elegia_2_61">y, el claro resplandor de viva llama <linkGrp>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls12" corresp="#Elegia_2_ls12"/>
+                     </linkGrp>
+                  </l>
+                  <l n="62" xml:id="Elegia_2_62">en polvo y en ceniza convertido,</l>
+                  <l n="63" xml:id="Elegia_2_63">apenas queda dél sino la fama;</l>
+                  <l n="64" xml:id="Elegia_2_64">así el ausencia larga, que ha esparcido <linkGrp>
+                        <link type="a_comentarios" xml:id="a_Elegia_2_c11" corresp="#Elegia_2_c11"/>
+                     </linkGrp>
+                  </l>
+                  <l n="65" xml:id="Elegia_2_65">en abundancia su licor que amata</l>
+                  <l n="66" xml:id="Elegia_2_66">el fuego que’l amor tenía encendido,</l>
+                  <l n="67" xml:id="Elegia_2_67">de tal suerte lo deja, que lo trata</l>
+                  <l n="68" xml:id="Elegia_2_68">la mano sin peligro en el momento</l>
+                  <l n="69" xml:id="Elegia_2_69">que en aparencia y son se desbarata.</l>
+                  <l n="70" xml:id="Elegia_2_70">Yo solo fuera voy d’aqueste cuento, <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n22" corresp="#Elegia_2_n22"/>
+                        <link type="a_comentarios" xml:id="a_Elegia_2_c12" corresp="#Elegia_2_c12"/>
+                     </linkGrp>
+                  </l>
+                  <l n="71" xml:id="Elegia_2_71">porque’l amor m’aflige y m’atormenta,</l>
+                  <l n="72" xml:id="Elegia_2_72">y en el ausencia crece el mal que siento;</l>
+                  <l n="73" xml:id="Elegia_2_73">y pienso yo que la razón consienta</l>
+                  <l n="74" xml:id="Elegia_2_74">y permita la causa deste efeto,</l>
+                  <l n="75" xml:id="Elegia_2_75">que a mí solo entre todos se presenta,</l>
+                  <l n="76" xml:id="Elegia_2_76">porque como del cielo yo sujeto</l>
+                  <l n="77" xml:id="Elegia_2_77">estaba eternamente y diputado</l>
+                  <l n="78" xml:id="Elegia_2_78">al amoroso fuego en que me meto,</l>
+                  <l n="79" xml:id="Elegia_2_79">así, para poder ser amatado,</l>
+                  <l n="80" xml:id="Elegia_2_80">el ausencia sin término, infinita</l>
+                  <l n="81" xml:id="Elegia_2_81">debe ser, y sin tiempo limitado;</l>
+                  <l n="82" xml:id="Elegia_2_82">lo cual no habrá razón que lo permita,</l>
+                  <l n="83" xml:id="Elegia_2_83">porque por más y más que ausencia dure, <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n23" corresp="#Elegia_2_n23"/>
+                     </linkGrp>
+                  </l>
+                  <l n="84" xml:id="Elegia_2_84">con la vida s’acaba, qu’es finita.</l>
+                  <l n="85" xml:id="Elegia_2_85">Mas a mí ¿quién habrá que m’asegure <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n24" corresp="#Elegia_2_n24"/>
+                        <link type="a_comentarios" xml:id="a_Elegia_2_c13" corresp="#Elegia_2_c13"/>
+                     </linkGrp>
+                  </l>
+                  <l n="86" xml:id="Elegia_2_86">que mi mala fortuna con mudanza</l>
+                  <l n="87" xml:id="Elegia_2_87">y olvido contra mí no se conjure?</l>
+                  <l n="88" xml:id="Elegia_2_88">Este temor persigue la esperanza</l>
+                  <l n="89" xml:id="Elegia_2_89">y oprime y enflaquece el gran deseo</l>
+                  <l n="90" xml:id="Elegia_2_90">con que mis ojos van de su holganza;</l>
+                  <l n="91" xml:id="Elegia_2_91">con ellos solamente agora veo</l>
+                  <l n="92" xml:id="Elegia_2_92">este dolor que’l corazón me parte,</l>
+                  <l n="93" xml:id="Elegia_2_93">y con él y comigo aquí peleo.</l>
+                  <l n="94" xml:id="Elegia_2_94">¡Oh crudo, oh riguroso, oh fiero Marte, <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n25" corresp="#Elegia_2_n25"/>
+                        <link type="a_comentarios" xml:id="a_Elegia_2_c14" corresp="#Elegia_2_c14"/>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls13" corresp="#Elegia_2_ls13"/>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls14" corresp="#Elegia_2_ls14"/>
+                     </linkGrp>
+                  </l>
+                  <l n="95" xml:id="Elegia_2_95">de túnica cubierto de diamante</l>
+                  <l n="96" xml:id="Elegia_2_96">y endurecido siempre en toda parte!</l>
+                  <l n="97" xml:id="Elegia_2_97">¿Qué tiene que hacer el tierno amante <linkGrp>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls15" corresp="#Elegia_2_ls15"/>
+                     </linkGrp>
+                  </l>
+                  <l n="98" xml:id="Elegia_2_98">con tu dureza y áspero ejercicio,</l>
+                  <l n="99" xml:id="Elegia_2_99">llevado siempre del furor delante? <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n26" corresp="#Elegia_2_n26"/>
+                     </linkGrp>
+                  </l>
+                  <l n="100" xml:id="Elegia_2_100">Ejercitando por mi mal tu oficio,</l>
+                  <l n="101" xml:id="Elegia_2_101">soy reducido a términos que muerte</l>
+                  <l n="102" xml:id="Elegia_2_102">será mi postrimero beneficio;</l>
+                  <l n="103" xml:id="Elegia_2_103">y ésta no permitió mi dura suerte, <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n27" corresp="#Elegia_2_n27"/>
+                        <link type="a_comentarios" xml:id="a_Elegia_2_c15" corresp="#Elegia_2_c15"/>
+                     </linkGrp>
+                  </l>
+                  <l n="104" xml:id="Elegia_2_104">que me sobreviniese peleando,</l>
+                  <l n="105" xml:id="Elegia_2_105">de hierro traspasado agudo y fuerte, <linkGrp>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls16" corresp="#Elegia_2_ls16"/>
+                     </linkGrp>
+                  </l>
+                  <l n="106" xml:id="Elegia_2_106">porque me consumiese contemplando</l>
+                  <l n="107" xml:id="Elegia_2_107">mi amado y dulce fruto en mano ajena,</l>
+                  <l n="108" xml:id="Elegia_2_108">y el duro posesor de mí burlando.</l>
+                  <l n="109" xml:id="Elegia_2_109">Mas ¿dónde me trasporta y enajena</l>
+                  <l n="110" xml:id="Elegia_2_110">de mi propio sentido el triste miedo?</l>
+                  <l n="111" xml:id="Elegia_2_111">A parte de vergüenza y dolor llena,</l>
+                  <l n="112" xml:id="Elegia_2_112">donde, si el mal yo viese, ya no puedo,</l>
+                  <l n="113" xml:id="Elegia_2_113">según con esperalle estoy perdido,</l>
+                  <l n="114" xml:id="Elegia_2_114">acrecentar en la miseria un dedo. <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n28" corresp="#Elegia_2_n28"/>
+                     </linkGrp></l>
+                  <l n="115" xml:id="Elegia_2_115">Así lo pienso agora, y si él venido</l>
+                  <l n="116" xml:id="Elegia_2_116">fuese en su misma forma y su figura,</l>
+                  <l n="117" xml:id="Elegia_2_117">ternia el presente por mejor partido,</l>
+                  <l n="118" xml:id="Elegia_2_118">y agradeceria siempre a la ventura</l>
+                  <l n="119" xml:id="Elegia_2_119">mostrarme de mi mal solo el retrato</l>
+
+                  <l n="120" xml:id="Elegia_2_120">que pintan mi temor y mi tristura.</l>
+                  <l n="121" xml:id="Elegia_2_121">Yo sé qué cosa es esperar un rato <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n29" corresp="#Elegia_2_n29"/>
+                        <link type="a_comentarios" xml:id="a_Elegia_2_c16" corresp="#Elegia_2_c16"/>
+                     </linkGrp>
+                  </l>
+                  <l n="122" xml:id="Elegia_2_122">el bien del propio engaño y solamente</l>
+                  <l n="123" xml:id="Elegia_2_123">tener con él inteligencia y trato,</l>
+                  <l n="124" xml:id="Elegia_2_124">como acontece al mísero doliente</l>
+                  <l n="125" xml:id="Elegia_2_125">que, del un cabo, el cierto amigo y sano</l>
+                  <l n="126" xml:id="Elegia_2_126">le muestra el grave mal de su acidente,</l>
+                  <l n="127" xml:id="Elegia_2_127">y le amonesta que del cuerpo humano</l>
+                  <l n="128" xml:id="Elegia_2_128">comience a levantar a mejor parte</l>
+                  <l n="129" xml:id="Elegia_2_129">el alma suelta con volar liviano;</l>
+                  <l n="130" xml:id="Elegia_2_130">mas la tierna mujer, de la otra parte,</l>
+                  <l n="131" xml:id="Elegia_2_131">no se puede entregar al desengaño</l>
+                  <l n="132" xml:id="Elegia_2_132">y encúbrele del mal la mayor parte;</l>
+                  <l n="133" xml:id="Elegia_2_133">él, abrazado con su dulce engaño,</l>
+                  <l n="134" xml:id="Elegia_2_134">vuelve los ojos a la voz piadosa</l>
+                  <l n="135" xml:id="Elegia_2_135">y alégrase muriendo con su daño.</l>
+                  <l n="136" xml:id="Elegia_2_136">Así los quito yo de toda cosa</l>
+                  <l n="137" xml:id="Elegia_2_137">y póngolos en solo el pensamiento</l>
+                  <l n="138" xml:id="Elegia_2_138">de la esperanza, cierta o mentirosa;</l>
+                  <l n="139" xml:id="Elegia_2_139">en este dulce error muero contento, <linkGrp>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls17" corresp="#Elegia_2_ls17"/>
+                     </linkGrp>
+                  </l>
+                  <l n="140" xml:id="Elegia_2_140">porque ver claro y conocer mi ’stado</l>
+                  <l n="141" xml:id="Elegia_2_141">no puede ya curar el mal que siento,</l>
+                  <l n="142" xml:id="Elegia_2_142">y acabo como aquel que’n un templado <linkGrp>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls18" corresp="#Elegia_2_ls18"/>
+                     </linkGrp>
+                  </l>
+                  <l n="143" xml:id="Elegia_2_143">baño metido, sin sentillo muere,</l>
+                  <l n="144" xml:id="Elegia_2_144">las venas dulcemente desatado.</l>
+                  <l n="145" xml:id="Elegia_2_145">Tú, que en la patria, entre quien bien te quiere, <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n30" corresp="#Elegia_2_n30"/>
+                        <link type="a_comentarios" xml:id="a_Elegia_2_c17" corresp="#Elegia_2_c17"/>
+                     </linkGrp>
+                  </l>
+                  <l n="146" xml:id="Elegia_2_146">la deleitosa playa estás mirando</l>
+                  <l n="147" xml:id="Elegia_2_147">y oyendo el son del mar que en ella hiere,</l>
+                  <l n="148" xml:id="Elegia_2_148">y sin impedimento contemplando</l>
+                  <l n="149" xml:id="Elegia_2_149">la misma a quien tú vas eterna fama</l>
+                  <l n="150" xml:id="Elegia_2_150">en tus vivos escritos procurando,</l>
+                  <l n="151" xml:id="Elegia_2_151">alégrate, que más hermosa llama</l>
+                  <l n="152" xml:id="Elegia_2_152">que aquella que’l troyano encendimiento</l>
+                  <l n="153" xml:id="Elegia_2_153">pudo causar el corazón t’inflama;</l>
+                  <l n="154" xml:id="Elegia_2_154">no tienes que temer el movimiento <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n31" corresp="#Elegia_2_n31"/>
+                     </linkGrp>
+                  </l>
+                  <l n="155" xml:id="Elegia_2_155">de la fortuna con soplar contrario,</l>
+                  <l n="156" xml:id="Elegia_2_156">que el puro resplandor serena el viento.</l>
+                  <l n="157" xml:id="Elegia_2_157">Yo, como conducido mercenario, <linkGrp>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls19" corresp="#Elegia_2_ls19"/>
+                     </linkGrp>
+                  </l>
+                  <l n="158" xml:id="Elegia_2_158">voy do fortuna a mi pesar m’envía,</l>
+                  <l n="159" xml:id="Elegia_2_159">si no a morir, que aquéste’s voluntario;</l>
+                  <l n="160" xml:id="Elegia_2_160">solo sostiene la esperanza mía <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n32" corresp="#Elegia_2_n32"/>
+                        <link type="a_comentarios" xml:id="a_Elegia_2_c18" corresp="#Elegia_2_c18"/>
+                     </linkGrp>
+                  </l>
+                  <l n="161" xml:id="Elegia_2_161">un tan débil engaño, que de nuevo</l>
+                  <l n="162" xml:id="Elegia_2_162">es menester hacelle cada día,</l>
+                  <l n="163" xml:id="Elegia_2_163">y si no le fabrico y le renuevo,</l>
+                  <l n="164" xml:id="Elegia_2_164">da consigo en el suelo mi esperanza</l>
+                  <l n="165" xml:id="Elegia_2_165">tanto que’n vano a levantalla pruebo.</l>
+                  <l n="166" xml:id="Elegia_2_166">Aqueste premio mi servir alcanza, <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n33" corresp="#Elegia_2_n33"/>
+                        <link type="a_comentarios" xml:id="a_Elegia_2_c19" corresp="#Elegia_2_c19"/>
+                     </linkGrp>
+                  </l>
+                  <l n="167" xml:id="Elegia_2_167">que en sola la miseria de mi vida</l>
+                  <l n="168" xml:id="Elegia_2_168">negó fortuna su común mudanza. <linkGrp>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls20" corresp="#Elegia_2_ls20"/>
+                     </linkGrp>
+                  </l>
+                  <l n="169" xml:id="Elegia_2_169">¿Dónde podré hüir que sacudida <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n34" corresp="#Elegia_2_n34"/>
+                        <link type="a_comentarios" xml:id="a_Elegia_2_c20" corresp="#Elegia_2_c20"/>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls21" corresp="#Elegia_2_ls21"/>
+                     </linkGrp>
+                  </l>
+                  <l n="170" xml:id="Elegia_2_170">un rato sea de mí la grave carga</l>
+                  <l n="171" xml:id="Elegia_2_171">que oprime mi cerviz enflaquecida?</l>
+                  <l n="172" xml:id="Elegia_2_172">Mas ¡ay!, que la distancia no descarga <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n35" corresp="#Elegia_2_n35"/>
+                        <link type="a_comentarios" xml:id="a_Elegia_2_c21" corresp="#Elegia_2_c21"/>
+                     </linkGrp>
+                  </l>
+                  <l n="173" xml:id="Elegia_2_173">el triste corazón, y el mal, doquiera</l>
+                  <l n="174" xml:id="Elegia_2_174">que ’stoy, para alcanzarme el brazo alarga.</l>
+                  <l n="175" xml:id="Elegia_2_175">Si donde’l sol ardiente reverbera</l>
+                  <l n="176" xml:id="Elegia_2_176">en la arenosa Libya, engendradora <linkGrp>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls22" corresp="#Elegia_2_ls22"/>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls23" corresp="#Elegia_2_ls23"/>
+
+                     </linkGrp>
+                  </l>
+                  <l n="177" xml:id="Elegia_2_177">de toda cosa ponzoñosa y fiera,</l>
+                  <l n="178" xml:id="Elegia_2_178">o adonde’l es vencido a cualquier hora</l>
+                  <l n="179" xml:id="Elegia_2_179">de la rígida nieve y viento frío,</l>
+                  <l n="180" xml:id="Elegia_2_180">parte do no se vive ni se mora;</l>
+                  <l n="181" xml:id="Elegia_2_181">si en ésta o en aquélla el desvarío</l>
+                  <l n="182" xml:id="Elegia_2_182">o la fortuna me llevase un día,</l>
+                  <l n="183" xml:id="Elegia_2_183">y allí gastase todo el tiempo mío,</l>
+                  <l n="184" xml:id="Elegia_2_184">el celoso temor con mano fría,</l>
+                  <l n="185" xml:id="Elegia_2_185">en medio del calor y ardiente arena,</l>
+                  <l n="186" xml:id="Elegia_2_186">el triste corazón m’apretaría;</l>
+                  <l n="187" xml:id="Elegia_2_187">y en el rigor del hielo, en la serena</l>
+                  <l n="188" xml:id="Elegia_2_188">noche, soplando el viento agudo y puro</l>
+                  <l n="189" xml:id="Elegia_2_189">que’l veloce correr del agua enfrena,</l>
+                  <l n="190" xml:id="Elegia_2_190">d’aqueste vivo fuego, en que m’apuro <linkGrp>
+                        <link type="a_ls" xml:id="a_Elegia_2_ls24" corresp="#Elegia_2_ls24"/>
+                     </linkGrp></l>
+                  <l n="191" xml:id="Elegia_2_191">y consumirme poco a poco espero,</l>
+                  <l n="192" xml:id="Elegia_2_192">sé que aun allí no podré estar seguro, <linkGrp>
+                        <link type="a_notas" xml:id="a_Elegia_2_n36" corresp="#Elegia_2_n36"/>
+                     </linkGrp>
+                  </l>
+                  <l n="193" xml:id="Elegia_2_193">y así diverso entre contrarios muero.</l>
+               </lg>
+            </lg>
+         </div>
+
+
+         <div type="bibliografia">
+            <listBibl type="final">
+
+               <bibl>ALAMANNI, Luigi (2018). <title>Versi e prose</title>. (Ed.) Pietro Raffaelli,
+                  Le Monnier: Florencia, 2 vols.</bibl>
+               <bibl>ANISIO, Cosme (1533). <title>Poemata</title>. Ioannem Sultzbacchium
+                  Hagenouensem: Nápoles.</bibl>
+               <bibl>ARETINO, Pietro (1995). <title>Ragionamento. Dialogo</title>. (Ed.) Paolo
+                  Proccacioli, con introduzione di Nino Borsellino. Garzanti: Milán.</bibl>
+               <bibl>ARIAS MONTANO, Benito, y fray José de Sigüenza (2016). <title>Poesía
+                     castellana</title>. (Ed.) Ignacio García Aguilar. Universidad: Huelva.</bibl>
+               <bibl>ARIOSTO, Lodovico (1992). <title>Orlando Furioso</title>. (Ed.) Lanfranco
+                  Caretti, Einaudi Tascabali: Turín, 2 vols. </bibl>
+               <bibl>ARISTÓTELES (1985). <title>Ética a Nicómaco. Ética Eudemia</title>,
+                  Introducción por Emilio Lledó Íñigo, traducción y notas por Julio Pallí Bonet.
+                  Gredos: Madrid.</bibl>
+               <bibl>BELTRAMI, G. Pietro (2002). <title>La metrica italiana</title>. Il Mulino,
+                  Strumenti: Bologna.</bibl>
+               <bibl>BERTRÁN, Viçens (2017). “De Túnez a Cartago: propaganda política y tradiciones
+                  poéticas en la época del Emperador”, <title>Boletín de la Real Academia
+                     Española</title>, 97, 45-114.</bibl>
+               <bibl> BLÜHER, Karl Alfred (1983). <title>Séneca en España. Investigaciones sobre la
+                     recepción de Séneca en España desde el siglo XIII hasta el siglo XVII</title>.
+                  Gredos: Madrid.</bibl>
+               <bibl>BOSCÁN, Juan (1999). <title>Obra completa</title>. (Ed.) Carlos Clavería.
+                  Cátedra: Madrid.</bibl>
+               <bibl>BRIOSO SÁNCHEZ, Máximo (2013). “Las sirenas en la épica griega: de Homero a las
+                     <title>Argonáuticas órficas</title> (II)”, <title>Habis</title>, 44,
+                  43-49.</bibl>
+               <bibl>CALCIS, Licofronte de (1996). <title>Alexandra</title>. (Ed.) Josep Antoni
+                  Clua. Fundació Bernat Metge: Barcelona.</bibl>
+               <bibl>CAPPELLO, Bernardo (2018). <title>Rime</title>. (Ed.) crítica por Irene Tani.
+                  Ca’Foscari: Venecia.</bibl>
+               <bibl>CARITEO (Benet Garret) (1897). <title>Le rime. Parte seconda: testo</title>.
+                  (Ed.) Erasmo Pèrcopo, Nápoles. </bibl>
+               <bibl>— (2021). <title>Endimion a la Luna</title>. (ed.) Alessandro Carlomusto.
+                  Alessandria. Edizioni dell’Orso.</bibl>
+               <bibl>CASTALDO, Vincenzo (1929). “Il viaggio di Carlo V in Sicilia (1535) secondo una
+                  cronaca manoscritta napolitana”, <title>Archivo Storico per la Sicilia
+                     orientale</title>. fasc. I, vol. 25, 85-108. </bibl>
+               <bibl>CASTIGLIONE, Baldesar (1981). <title>Il libro del Cortegliano con nova scelta
+                     delle Opere minori</title>. (Ed.) Bruno Maier. UTET: Turín.</bibl>
+               <bibl>CATULO (2009). <title>Poesías</title>. (Eds.) José Carlos Fernández Corte y
+                  Juan Antonio González Iglesias. Cátedra: Madrid.</bibl>
+               <bibl>CERVANTES, Miguel de (2014). <title>La Galatea</title>. (ed.) Juan Montero en
+                  colaboración con Francisco J. Escobar y Flavia Gherardi. RAE: Madrid.</bibl>
+               <bibl>COLONNA, Vittoria (1982). <title>Rime</title>. (Ed.) Alan Bullok. Laterza:
+                  Roma-Bari.</bibl>
+               <bibl>CONTILE, Luca (1574). <title>Ragionamento sopra la proprietà delle
+                     imprese</title>, appresso Girolamo Bartoli: Pavía.</bibl>
+               <bibl>FIRENZUOLA, Agnolo (1549). <title>Le rime</title>. appresso Bernardo Giunti:
+                  Florencia.</bibl>
+               <bibl>FOSALBA, Eugenia (2019). <title>Pulchra Parthenope. Hacia la faceta napolitana
+                     de la poesía de Garcilaso</title>. Iberoamericana: Madrid.</bibl>
+               <bibl>FRACASTORO, Girolamo (2013). <title>Latin poems</title>. (ed.) James Gardner.
+                  Londres-Cambidge-Massachusets: Londres.</bibl>
+               <bibl>FRANCO, Veronica (1913). <title>Rime</title>. (ed.) Salza Abdelkadrer. Laterza:
+                  Bari.</bibl>
+               <bibl>GALLEGO MORELL, Antonio (1972). <title>Garcilaso de la Vega y sus
+                     comentaristas</title>. Gredos: Madrid.</bibl>
+               <bibl>GALLO, Filenio (1973). <title>Rime</title>. (ed.) crítica por Maria Antonietta
+                  Grignani. Olsxhki: Florencia.</bibl>
+               <bibl>GARGANO, Antonio (2011). “Riflessione e invenzione nell’epistola a Boscán di
+                  Garcilaso de la Vega”, en <title>Però convien ch’io canti per disdegno”. La satira
+                     en versi tra Italia e Spagna al Seicento</title>. (ed.) Antonio Gargano.
+                  Liguori: Nápoles, 75-116. </bibl>
+               <bibl>— (2014). “Reescrituras garcilasianas”, en <title>El texto infinito. Tradición
+                     y reescritura en la Edad Media y en el Renacimiento</title>. SEMYR: Salamanca,
+                  83-107. </bibl>
+               <bibl>— (2014) “Góngora y el ruiseñor. Lectura del soneto ‘Con diferencia tal, con
+                  gracia tanta’ como epigrama agudo”, en <title>Aurea poesis. Estudios para Begoña
+                     López Bueno</title>. (Eds.) Luis Gómez Canseco, Juan Montero y Pedro Ruiz
+                  Pérez, Córdoba, Sevilla y Huelva, Servicio de publicaciones, 125-140. </bibl>
+               <bibl>GUILLÉN, Claudio (1988). <title>El primer siglo de oro. Estudios géneros y
+                     modelos</title>. Crítica: Barcelona.</bibl>
+               <bibl>KENISTON, Hayward (1937). <title>The syntax of Castilian prose. The sixteenth
+                     Century</title>. University Chicago Press: Chicago-Illinois.</bibl>
+               <bibl>HEBREO, León (1929). <title>Poesie ebraiche</title>, en <title>Dialoghi
+                     d’amore</title>. Laterza: Bari.</bibl>
+               <bibl> HERRERA, Fernando (2018). <title>Obras de Garcilaso de la Vega con anotaciones
+                     […]</title>, en Sevilla, por Alonso de la Barrera, 1580. Servicio de
+                  Publicaciones: Sevilla.</bibl>
+               <bibl> HERRERA VALENCIANO, Minor (2019). “El <foreign>funus romanorum</foreign> en la
+                     <title>Eneida</title>: un análisis de los funerales heroicos de Miseno,
+                  Anquises y Palante”; recogido en <ref type="link_externo"
+                     target="https://cerac.unlpam.edu.ar/">
+                  https://cerac.unlpam.edu.ar</ref>.</bibl>
+               <bibl>HIGINIO, Julio Cayo (2008). <title>Fábulas. Astronomía</title>. (ed.) Guadalupe
+                  Morcillo Expósito.Akal: Madrid. </bibl>
+               <bibl>HORACIO, Quinto (1900). <title>Odas y Epodos</title>. (Ed.) Manuel Fernández
+                  Galiano y Vicente Cristóbal. Cátedra: Madrid.</bibl>
+               <bibl>— (1996). <title>Sátiras, Epístolas. Arte poética</title>. (Ed.) Horacio
+                  Silvestre. Cátedra: Madrid.</bibl>
+               <bibl>HURTADO DE MENDOZA, Diego (1990). <title>Poesía</title>. (Eds.) Luis F. Díaz
+                  Larios y Olga Gete Carpio. Cátedra: Madrid.</bibl>
+               <bibl>LAPESA, Rafael, (1985). <title>La trayectoria poética de Garcilaso</title>,
+                  Madrid, 1948; 1969, recogido, con adiciones bibliográficas, en Lapesa 1985.</bibl>
+               <bibl>—, <title>Garcilaso. Estudios completos</title>, Istmo, Madrid, 1985.</bibl>
+               <bibl>LOKAJ, Rodney (2015). <title>Two Renaissance Friends. Baldassare Castiglione,
+                     Domizio Falcone and their Neo-Latin Poetry</title>. Arizona Center for
+                  -medieval and Renaissance Studies: Arizona.</bibl>
+               <bibl>LÓPEZ BUENO, Begoña (1996). “De la elegía en el sistema poético renacentista o
+                  el incierto devenir de un género”, en <title>La elegía</title>. (Ed.) Begoña López
+                  Bueno. Grupo PASO, Universidades: Sevilla-Córdoba, 133-166. </bibl>
+               <bibl>MENA, Juan de (1994). <title>Laberinto de Fortuna y otros poemas</title>, (Ed.)
+                  Carla de Nigris, con estudio preliminar de Guillermo Serés. Crítica:
+                  Barcelona.</bibl>
+               <bibl>MALDE, de Vania, “La elegía poética en Italia en los siglos XVI y XVII”, en
+                     <title>La elegía</title>. (ed.) cit, 41-73.</bibl>
+               <bibl>MALDELPUECH-TOUCHERON, Florence (2007). “El abismo de la duración infinita y el
+                  acontecimiento. La elegía II de Garcilaso de la Vega”, <title>Alfinge. Revista de
+                     Filología</title>, 19, 147-158.</bibl>
+               <bibl>MANRIQUE, Jorge (2000). <title>Poesía completa</title>. (Ed.) Ángel Moreno.
+                  Alianza Editorial: Madrid.</bibl>
+               <bibl>— (1993). <title>Poesía</title>. (Ed.) Vicens Beltrán. Crítica:
+                  Barcelona.</bibl>
+               <bibl> MARCH, Ausiàs (1997). <title>Obra completa</title>. (Ed.) Robert Archer.
+                  Anaya,: Madrid, 2 vols.</bibl>
+               <bibl>MARTÍN PUYA, Ana Isabel (2016)(Ed.) <title>Las obras de Garcilaso de la Vega,
+                     ilustradas con notas (1795) por José Nicolás de Azara</title>. Academia del
+                  Hispanismo: Vigo.</bibl>
+               <bibl>MONTERO, Juan (1998). “Estudio bibliográfico de <title>Obras de Garcilaso con
+                     anotaciones de Fernando de Herrera (Sevilla, Alonso de la Barrera,
+                     1580)</title>. Servicio de Publicaciones: Sevilla.</bibl>
+               <bibl>— (2021). “Las Anotaciones de Herrera a Garcilaso como texto polémico: aspectos
+                  materiales, editoriales y autoriales”, <title>Calíope</title>, 26.1 , 1-18.</bibl>
+               <bibl>MARTIRANO, Bernardino (1993). <title>I pianto d’Aretusa</title>. (Ed.) Tobia R.
+                  Toscano, Loffredo: Nápoles.</bibl>
+               <bibl>MORALES FOLGUERA, José Miguel (2015). “El viaje triunfal de Carlos V por
+                  Sicilia tras la victoria de Túnez”, <title>Revista de emblemática y cultura
+                     visual</title>, 7 , 97-111.</bibl>
+               <bibl>MORROS, Mestres, Bienvenido (2000). “La canción IV de Garcilaso como infierno
+                  de amor: desde Garci Sánchez de Badajoz y el Cariteo a Bernardo Tasso”,
+                     <title>Criticón</title>, 80, 19-47.</bibl>
+               <bibl>— (2005). “El Canzoniere de Boscán (Libro II, Barcelona, 1543), <title>Revista
+                     de Filología Española</title>, 85 , 245-270.</bibl>
+               <bibl>— (2008). “Fuentes, fechas, orden y sentido del libro Ide las Obras de Boscán”,
+                     <title>Revista de Filología Española</title>, 88, 89-123.</bibl>
+               <bibl>— (2019). “Las dos vidas de Boscán Almogáver. Esbozo para una biografía de un
+                  precursor”, <title>Studia Aurea</title>, 13, 463-478.</bibl>
+               <bibl>— (2023). “Otra vez sobre las elegías de Garcilaso a través del neohoracionismo
+                  napolitano”, <title>Bulletin Hispanique. Clasicismo horaciano en tiempos de
+                     Garcilaso de la Vega</title>, dir. Eugenia Fosalba con la colaboración de Maria
+                  d’Agostino, 125, 87-108. </bibl>
+               <bibl>MUZZARELI, Giovanni (1983). <title>Rime</title>. (Ed.) crítica por Giuseppina
+                  Hanhüss Palazzini, Mantua, G. Arcari.</bibl>
+               <bibl>NAVAGERO, Andrea (1714). <title>Opera Omnia</title>. (Ed.) Antonio Cajetano
+                  Vulpiis, Josephus Cominus Vulpiorum: Padua.</bibl>
+               <bibl>NAVARRO TOMÁS, Tomás (1986). <title>Métrica española. Reseña histórica y
+                     descriptiva</title>. Editorial Labor: Barcelona.</bibl>
+               <bibl>PÉREZ RODRÍGUEZ, Manuel (2013). “S. de Séneca: vida y obras”. Madrid, en <ref
+                     type="link_externo" target="https://www.bne.es/es/blog"
+                     >https://www.bne.es/es/blog</ref>.</bibl>
+               <bibl>PETRARCA, Francesco (2018). <title>Canzoniere</title>. (Ed.) Marco Santagata.
+                  Mondadori: Milán.</bibl>
+               <bibl>— (2011). Mi secreto. <title>Epístolas</title>. (Ed.) Rossend Arqués Corominas.
+                  Cátedra: Madrid.</bibl>
+               <bibl>PONTANO, Giovanni (1530). <title>De rebus coelestibus libri XIIII</title>.
+                  Basilea. </bibl>
+               <bibl>(2003). <title>Antologia di Carmi</title>. (Ed.) Liliana Monti Sabia. EFFE
+                  Frabrizio Fabbri Editore s.r.l.: Perugia..</bibl>
+               <bibl>— (1973). <title>Eclogae</title>. (Ed.) Liliana Monti Sabia, Liguori.</bibl>
+               <bibl>PROPERCIO (1964). <title>Elegías</title>. (Eds.) Antonio Tovar y María T,
+                  Belfiore Mártire. Alma Mater: Barcelona.</bibl>
+               <bibl>RICO, Francisco (1987). “A fianco de Garcilaso: poesia italiana y poesia
+                  spagnola nel primo Cinquecento”, <title>Studi Petrarcheschi</title>,
+                  229-236</bibl>
+               <bibl>RIVERS, Elias (1966). “Garcilaso divorciado de Boscán”, en <title>Homenaje a
+                     Rodríguez Moñino</title>. Castalia: Madrid, 121-129.</bibl>
+               <bibl>— (1986). “El problema de los géneros neoclásicos y la poesía de Garcilaso”, en
+                     <title>Garcilaso. Actas de la IV Academia Literaria Renacentista</title>. (Ed.)
+                  Víctor de la Concha. Universidad: Salamanca, 49-60. </bibl>
+               <bibl>ROTA, Berardino (2000). <title>Rime</title>. (Ed.) Luca Milite. Fodazione
+                  Pietro Bembo: Parma. </bibl>
+               <bibl>— (2005). <title>Egloghe pescatorie</title>. (Ed.) Stefano Bianchi. Carocci:
+                  Roma. </bibl>
+               <bibl>RUBIO ÁRQUEZ, Marcial (2006). “Garcilaso, égloga I: entre conflicto sentimental
+                  y escritura poética”, en <title>Scrittura e conflitto</title>. (Eds.) Antonella
+                  Cancellier, Caterina Ruta y Laura Silvestri. Associazione Ispanisti
+                  Italiani/Instituto Cervantes, vol. I, 367-378. </bibl>
+               <bibl>OVIDIO (1975). <title>Tristia. Ex ponto</title>. (Ed.) Arthur Leslie Wheeler.
+                  University Press-William Heinemann LTD: Cambridge-Londres.</bibl>
+               <bibl>PANTOJA RIVERO, Juan Carlos, y Mª del Carmen Vaquero Serrano (2006).
+                     <title>Garcilaso de la Vega</title>. Cénlit: Berriozar.</bibl>
+               <bibl>RABONE, Rich (2023). <title>Moderation and the Mean in the Literature of Spain
+                     Golden Age</title>. Oxfrod Modern Languages and Literature Monographs, Oxford
+                  University Press.</bibl>
+               <bibl>SÁNCHEZ DE BADAJOZ, Garci (1980). <title>Cancionero</title>. (Ed.) Julia
+                  Castillo. Editora Nacional: Madrid.</bibl>
+               <bibl>SANNAZARO, Jacopo (2009). <title>Latin poetry</title>. (Ed.) Michael C. J.
+                  Putnam. University Press: Harvard.</bibl>
+               <bibl>SPAGGIARI, Bárbara (2018). “História da tradiçao e crítica das variantes em
+                  dois sonetos de Garcilaso de la Vega (n. XVII e n, XXIX)”.
+                  <title>Criticón</title>, 134 , 65-75.</bibl>
+               <bibl>STAMPA, Gaspara (1994). <title>Rime</title>. (Ed.) Maria Bellonci. BUR:
+                  Milán.</bibl>
+               <bibl>TÁCITO, Cornelio (1980). <title>Anales</title>, trad. José L. Moralejo, 2 vols,
+                  Gredos: Madrid.</bibl>
+               <bibl>TANSILLO, Luigi (2011). <title>Rime</title>, con introducción, texto al cuidado
+                  de Tobia R. Toscano, con el comentario de Erika Milbum y Rossano Pestarino, 2
+                  vols. Bulzoni: Roma.</bibl>
+               <bibl>— (2013). <title>L’egloga e i poemetti</title>, con introducción, texto al
+                  cuidado de Tobia R. Toscano. BUR: Roma.</bibl>
+               <bibl>TASSO, Bernardo (1994). <title>Rime</title>. Vol. 1. I tre libri degli Amori.
+                  (Ed.) Domenico Chiodo. RES: Turín.</bibl>
+               <bibl>TEÓCRITO (1986) en <title>Bucólicos griegos</title>, introducciones,
+                  traducciones y notas por Manuel García Teijeiro y Mª Teresa Molinos Tejada.
+                  Gredos: Madrid.</bibl>
+               <bibl>TERENCIO (2012). <title>Comedias</title>. (Ed.) bilingüe José Román Bravo.
+                  Cátedra: Madrid.</bibl>
+               <bibl>TÍBULO (1990). <title>Elegías</title>. (Ed.) Hugo Francisco Bauzá. CSIC:
+                  Madrid.</bibl>
+               <bibl>TORRE ÁVALOS, Gáldrick de la (2017). “El grupo poético de Ischia y la
+                  adaptación al vulgar de la égloga piscatoria”, <title>Bulletin Hispanique. La
+                     égloga renacentista en el reino de Nápoles</title>. (Ed.) Eugenia Fosalba y
+                  Gáldrick de la Torre Ávalos, 119, 537-554. </bibl>
+               <bibl>TOSCANO, Tobia R. (2012). “Tra corti e campi di battaglia: Alfonso d’Avalos,
+                  Luigi Tansillo e le affinità electiva tra petrarchisti napoletani e spagnoli”,
+                     <title>e-Spania. Revue interdisciplinaire d’études hispaniques medievales et
+                     modernes. Convivencias de lengua y conflictos de poder/ Les poètes de
+                     l’Empereur</title>, 13, en <ref type="link_externo"
+                     target="https://doi.org/10.4000/e-spania.21383"
+                     >https://doi.org/10.4000/e-spania.21383.</ref>
+               </bibl>
+               <bibl>— (2023) “Entre poesía lírica y sermo quotidianus: el legado horaciano de Luigi
+                  Tansillo”, <title>Bulletin hispanique</title>, 125, 199-214. </bibl>
+               <bibl>VARRO (1977). <title>De lingua latina</title>. (Ed.) Roland G. Kent. Willian
+                  Heinemann: Camdridge-Massachusetts, Harvard University, Londres, 2 vols.</bibl>
+               <bibl>VEGA, Garcilaso de la (1968). <title>Obras completas</title>. (Ed.) E. L.
+                  Rivers, Nueva York, Columbia, 1964; Castalia: Madrid..</bibl>
+               <bibl>— (1978). <title>Obra poética</title>. (Ed.) Jesús Toboso. Clásicos Alce:
+                  Madrid.</bibl>
+               <bibl>— (1981). <title>Obras completas</title>. (Ed.) E. L. Rivers. Castalia: Madrid. </bibl>
+               <bibl>— (1995). <title>Obra poética y textos en prosa</title>. (Ed.) Bienvenido
+                  Morros Mestres. Crítica: Barcelona.</bibl>
+               <bibl>— (2004). <title>Obra completa</title>. (Ed.) Guillermo Suazo Pascual.
+                  Biblioteca Edaf: Madrid.</bibl>
+               <bibl>— (2017). <title>Poesía castellana</title>. (Eds.) Julián Jiménez Heffernan e
+                  Ignacio García Aguilar, con Estudio preliminar de Pedro Ruiz Pérez. Akal:
+                  Madrid.</bibl>
+               <bibl>— (2020). <title>Poesía</title>. (Ed.) Ignacio García Aguilar. Cátedra:
+                  Madrid.</bibl>
+               <bibl>VIRGILIO (1957). <title>Éneide</title>. (Ed.) René Durand y traducido por André
+                  Bellessort. Les Belles Lettres: París, 2 vols.</bibl>
+               <bibl>— (1989). <title>Eclogues</title>. (Ed.) Robert Coleman. University Press:
+                  Cambridge.</bibl>
+               <bibl>— (1900). <title>Georgics</title>. (Ed.) Richard F. Thomas. University Press:
+                  Cambridge, 2 vols.</bibl>
+               <bibl>ZABALETA, Juan (1983). <title>El día de fiesta por la mañana y por la
+                     tarde</title>. (Ed.) Cristóbal Cuevas. Castalia: Madrid.</bibl>
+
+            </listBibl>
+         </div>
+      </body>
+   </text>
+</TEI>
